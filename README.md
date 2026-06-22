@@ -1,5 +1,7 @@
 # Optimistic Verifiable Claims (OVC) — Reproducibility Package
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20794988.svg)](https://doi.org/10.5281/zenodo.20794988)
+
 This repository contains the smart contracts, gas-measurement test suite, and the raw
 measurement results for the paper:
 
@@ -141,8 +143,11 @@ npx hardhat test tests/scenarios/ovc-feature.js     --network localhost
 
 ## Citation
 
-If you use this code or data, please cite the paper above. (BibTeX entry to be added on
-publication.)
+If you use this code or data, please cite the paper above and this archived software
+record:
+
+> Corn, M., Rožman, N., Podržaj, P. *Optimistic Verifiable Claims (OVC): Reproducibility
+> Package* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20794988
 
 ## License
 
