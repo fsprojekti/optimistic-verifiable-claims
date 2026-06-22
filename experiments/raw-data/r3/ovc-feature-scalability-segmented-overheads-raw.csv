@@ -1,0 +1,5 @@
+measurement_group,instance,operation,gas_used,method,note
+R3F-overhead,OVC-Feature,commitClaim,163925,transaction,"Measured on a 1 KB baseline claim; commit/dispute recorded for completeness, excluded from derived matrix."
+R3F-overhead,OVC-Feature,disputeClaim,52914,transaction,"Measured on a 1 KB baseline claim; commit/dispute recorded for completeness, excluded from derived matrix."
+R3F-overhead,OVC-Feature,startAdjudication,37173,transaction,"Measured on a 1 KB baseline claim; commit/dispute recorded for completeness, excluded from derived matrix."
+R3F-overhead,OVC-Feature,finalizeAdjudication,39114,transaction,"Measured on a 1 KB baseline claim; commit/dispute recorded for completeness, excluded from derived matrix."

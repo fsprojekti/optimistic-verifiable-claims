@@ -1,0 +1,9 @@
+# Node / Hardhat
+node_modules/
+artifacts/
+cache/
+
+# Logs and OS cruft
+*.log
+.DS_Store
+Thumbs.db

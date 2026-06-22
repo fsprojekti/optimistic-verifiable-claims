@@ -1,0 +1,2 @@
+measurement_group,instance,chunk_size_kb,gcode_size_kb,chunk_count,total_gas,total_gigagas,status,note
+R3b-I,OVC-Identity,128,1024,8,1586698387,1.587,OK,Total includes revealKey + startAdjudication + N * processChunk + finalizeAdjudication.

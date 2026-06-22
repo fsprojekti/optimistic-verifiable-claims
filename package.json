@@ -1,0 +1,17 @@
+{
+  "name": "optimistic-verifiable-claims",
+  "version": "1.0.0",
+  "description": "Reproducibility package for the paper \"Optimistic Verifiable Claims: A Blockchain Protocol for Conditionally Confidential Bidding in Decentralized Manufacturing\".",
+  "license": "MIT",
+  "scripts": {
+    "test": "hardhat test"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^11.15.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.28.6"
+  },
+  "dependencies": {
+    "chai": "^4.5.0"
+  }
+}

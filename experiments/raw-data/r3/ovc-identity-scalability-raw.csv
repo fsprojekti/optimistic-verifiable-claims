@@ -1,0 +1,12 @@
+measurement_group,instance,gcode_size_label,gcode_size_bytes,operation,gas_used,gas_per_byte,method,status,note
+R3I-monolithic,OVC-Identity,1 KB,1024,revealWitness,1428918,1395.43,transaction,OK,"Adjudication: reads stored C, decrypts against revealed K, verifies rolling hash."
+R3I-monolithic,OVC-Identity,4 KB,4096,revealWitness,5595443,1366.07,transaction,OK,"Adjudication: reads stored C, decrypts against revealed K, verifies rolling hash."
+R3I-monolithic,OVC-Identity,16 KB,16384,revealWitness,22262981,1358.82,transaction,OK,"Adjudication: reads stored C, decrypts against revealed K, verifies rolling hash."
+R3I-monolithic,OVC-Identity,64 KB,65536,revealWitness,88956173,1357.36,transaction,OK,"Adjudication: reads stored C, decrypts against revealed K, verifies rolling hash."
+R3I-monolithic,OVC-Identity,256 KB,262144,revealWitness,356097581,1358.40,transaction,OK,"Adjudication: reads stored C, decrypts against revealed K, verifies rolling hash."
+R3I-monolithic,OVC-Identity,512 KB,524288,revealWitness,713203629,1360.33,transaction,OK,"Adjudication: reads stored C, decrypts against revealed K, verifies rolling hash."
+R3I-monolithic,OVC-Identity,1 MB,1048576,revealWitness,1430561453,1364.29,transaction,OK,"Adjudication: reads stored C, decrypts against revealed K, verifies rolling hash."
+R3I-monolithic,OVC-Identity,5 MB,5242880,revealWitness,7320418989,1396.26,transaction,OK,"Adjudication: reads stored C, decrypts against revealed K, verifies rolling hash."
+R3I-monolithic,OVC-Identity,10 MB,10485760,revealWitness,15060228281,1436.26,transaction,OK,"Adjudication: reads stored C, decrypts against revealed K, verifies rolling hash."
+R3I-monolithic,OVC-Identity,25 MB,26214400,revealWitness,40796238521,1556.25,transaction,OK,"Adjudication: reads stored C, decrypts against revealed K, verifies rolling hash."
+R3I-monolithic,OVC-Identity,50 MB,52428800,revealWitness,92078196921,1756.25,transaction,OK,"Adjudication: reads stored C, decrypts against revealed K, verifies rolling hash."

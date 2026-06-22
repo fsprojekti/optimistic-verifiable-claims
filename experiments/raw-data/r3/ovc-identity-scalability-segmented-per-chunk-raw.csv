@@ -1,0 +1,12 @@
+measurement_group,instance,chunk_size_kb,chunk_size_bytes,per_chunk_gas,effective_gas_per_byte,method,status,note
+R3I-per-chunk,OVC-Identity,1,1024,1646787,1608.19,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.
+R3I-per-chunk,OVC-Identity,4,4096,6289665,1535.56,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.
+R3I-per-chunk,OVC-Identity,16,16384,24862617,1517.49,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.
+R3I-per-chunk,OVC-Identity,64,65536,99177465,1513.33,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.
+R3I-per-chunk,OVC-Identity,256,262144,396805497,1513.69,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.
+R3I-per-chunk,OVC-Identity,512,524288,794560377,1515.50,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.
+R3I-per-chunk,OVC-Identity,1024,1048576,1593215865,1519.41,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.
+R3I-per-chunk,OVC-Identity,5120,5242880,8133454713,1551.33,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.
+R3I-per-chunk,OVC-Identity,10240,10485760,16686240633,1591.32,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.
+R3I-per-chunk,OVC-Identity,25600,26214400,44861180793,1711.32,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.
+R3I-per-chunk,OVC-Identity,51200,52428800,100208022393,1911.32,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.

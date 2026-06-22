@@ -1,0 +1,2 @@
+measurement_group,instance,chunk_size_kb,gcode_size_kb,chunk_count,total_gas,total_gigagas,status,note
+R3b-C,OVC-Conformance,128,1024,8,1080351198,1.080,OK,Total includes startAdjudication + N * processChunk + finalizeAdjudication.

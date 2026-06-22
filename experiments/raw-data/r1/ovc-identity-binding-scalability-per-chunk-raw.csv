@@ -1,0 +1,10 @@
+measurement_group,instance,chunk_size_kb,chunk_size_bytes,per_chunk_gas,effective_gas_per_byte,method,status
+R1b.1,OVC-Identity,1,1024,823405,804.11,eth_estimateGas,OK
+R1b.1,OVC-Identity,4,4096,3004366,733.49,eth_estimateGas,OK
+R1b.1,OVC-Identity,16,16384,11728569,715.86,eth_estimateGas,OK
+R1b.1,OVC-Identity,64,65536,46631139,711.53,eth_estimateGas,OK
+R1b.1,OVC-Identity,256,262144,186333579,710.81,eth_estimateGas,OK
+R1b.1,OVC-Identity,512,524288,372832875,711.12,eth_estimateGas,OK
+R1b.1,OVC-Identity,1024,1048576,746617899,712.03,eth_estimateGas,OK
+R1b.1,OVC-Identity,5120,5242880,3774646827,719.96,eth_estimateGas,OK
+R1b.1,OVC-Identity,10240,10485760,7654054827,729.95,eth_estimateGas,OK

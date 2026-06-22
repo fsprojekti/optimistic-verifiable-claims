@@ -1,0 +1,6 @@
+measurement_group,instance,operation,gas_used,method,note
+R3I-overhead,OVC-Identity,commitClaim,184569,transaction,"Measured on a 1 KB baseline claim; commit/dispute recorded for completeness, excluded from derived matrix."
+R3I-overhead,OVC-Identity,disputeClaim,57364,transaction,"Measured on a 1 KB baseline claim; commit/dispute recorded for completeness, excluded from derived matrix."
+R3I-overhead,OVC-Identity,revealKey,53757,transaction,"Measured on a 1 KB baseline claim; commit/dispute recorded for completeness, excluded from derived matrix."
+R3I-overhead,OVC-Identity,startAdjudication,34974,transaction,"Measured on a 1 KB baseline claim; commit/dispute recorded for completeness, excluded from derived matrix."
+R3I-overhead,OVC-Identity,finalizeAdjudication,39472,transaction,"Measured on a 1 KB baseline claim; commit/dispute recorded for completeness, excluded from derived matrix."

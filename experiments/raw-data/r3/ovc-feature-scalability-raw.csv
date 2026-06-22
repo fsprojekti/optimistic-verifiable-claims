@@ -1,0 +1,12 @@
+measurement_group,instance,gcode_size_label,gcode_size_bytes,operation,gas_used,gas_per_byte,method,status,note
+R3F-monolithic,OVC-Feature,1 KB,1024,revealWitness,572742,559.32,transaction,OK,Numeric E-value extraction and sum over entire buffer in one tx.
+R3F-monolithic,OVC-Feature,4 KB,4096,revealWitness,2184594,533.35,transaction,OK,Numeric E-value extraction and sum over entire buffer in one tx.
+R3F-monolithic,OVC-Feature,16 KB,16384,revealWitness,8621816,526.23,transaction,OK,Numeric E-value extraction and sum over entire buffer in one tx.
+R3F-monolithic,OVC-Feature,64 KB,65536,revealWitness,34387008,524.70,transaction,OK,Numeric E-value extraction and sum over entire buffer in one tx.
+R3F-monolithic,OVC-Feature,256 KB,262144,revealWitness,137545209,524.69,transaction,OK,Numeric E-value extraction and sum over entire buffer in one tx.
+R3F-monolithic,OVC-Feature,512 KB,524288,revealWitness,275318853,525.13,transaction,OK,Numeric E-value extraction and sum over entire buffer in one tx.
+R3F-monolithic,OVC-Feature,1 MB,1048576,revealWitness,551647300,526.09,transaction,OK,Numeric E-value extraction and sum over entire buffer in one tx.
+R3F-monolithic,OVC-Feature,5 MB,5242880,revealWitness,2800034158,534.06,transaction,OK,Numeric E-value extraction and sum over entire buffer in one tx.
+R3F-monolithic,OVC-Feature,10 MB,10485760,revealWitness,5704892207,544.06,transaction,OK,Numeric E-value extraction and sum over entire buffer in one tx.
+R3F-monolithic,OVC-Feature,25 MB,26214400,revealWitness,15048606693,574.06,transaction,OK,Numeric E-value extraction and sum over entire buffer in one tx.
+R3F-monolithic,OVC-Feature,50 MB,52428800,revealWitness,32718619665,624.06,transaction,OK,Numeric E-value extraction and sum over entire buffer in one tx.

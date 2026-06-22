@@ -1,0 +1,8 @@
+measurement_group,instance,operation,gas_used,method,note
+R1a,OVC-Access,commitClaim,184604,transaction,size-independent
+R1a,OVC-Access,acceptClaim,30791,transaction,size-independent
+R1a,OVC-Conformance,commitClaim,143979,transaction,size-independent
+R1a,OVC-Conformance,acceptClaim,30956,transaction,size-independent
+R1a,OVC-Feature,commitClaim,144001,transaction,size-independent
+R1a,OVC-Feature,acceptClaim,30978,transaction,size-independent
+R1b-overhead,OVC-Identity,commitClaim,164285,transaction,1 KB baseline claim used for per-chunk spectrum

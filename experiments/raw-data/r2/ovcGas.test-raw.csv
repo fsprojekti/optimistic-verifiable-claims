@@ -1,0 +1,5 @@
+measurement_group,instance,operation,gas_used,artifact_size_bytes,method,status,note
+R2,OVC-Access,acceptClaim,30791,302,transaction,OK,optimistic path — Provider acceptance cost only; commitClaim cost is in R1
+R2,OVC-Identity,acceptClaim,30813,302,transaction,OK,optimistic path — Provider acceptance cost only; commitClaim + depositChunk cost is in R1
+R2,OVC-Conformance,acceptClaim,30791,302,transaction,OK,optimistic path — Provider acceptance cost only; commitClaim cost is in R1
+R2,OVC-Feature,acceptClaim,30791,302,transaction,OK,optimistic path — Provider acceptance cost only; commitClaim cost is in R1
