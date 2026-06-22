@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the paper and this archived software record."
+title: "Optimistic Verifiable Claims (OVC): Reproducibility Package"
+type: software
+version: 1.0.0
+date-released: 2026-06-22
+license: MIT
+repository-code: "https://github.com/fsprojekti/optimistic-verifiable-claims"
+authors:
+  - family-names: Corn
+    given-names: Marko
+    affiliation: "Faculty of Mechanical Engineering, University of Ljubljana"
+  - family-names: Rožman
+    given-names: Nejc
+    affiliation: "Faculty of Mechanical Engineering, University of Ljubljana"
+  - family-names: Podržaj
+    given-names: Primož
+    affiliation: "Faculty of Mechanical Engineering, University of Ljubljana"
+keywords:
+  - blockchain
+  - decentralized manufacturing
+  - optimistic adjudication
+  - smart contracts
+  - confidential bidding

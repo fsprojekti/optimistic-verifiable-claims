@@ -1,0 +1,20 @@
+{
+  "title": "Optimistic Verifiable Claims (OVC): Reproducibility Package",
+  "description": "Smart contracts, gas-measurement test suite, and raw measurement results for the paper \"Optimistic Verifiable Claims: A Blockchain Protocol for Conditionally Confidential Bidding in Decentralized Manufacturing\".",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    { "name": "Corn, Marko", "affiliation": "Faculty of Mechanical Engineering, University of Ljubljana" },
+    { "name": "Rožman, Nejc", "affiliation": "Faculty of Mechanical Engineering, University of Ljubljana" },
+    { "name": "Podržaj, Primož", "affiliation": "Faculty of Mechanical Engineering, University of Ljubljana" }
+  ],
+  "keywords": [
+    "blockchain",
+    "decentralized manufacturing",
+    "optimistic adjudication",
+    "smart contracts",
+    "confidential bidding",
+    "G-code",
+    "dispute resolution"
+  ]
+}
