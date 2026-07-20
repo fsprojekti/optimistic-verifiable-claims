@@ -1,12 +1,13 @@
 measurement_group,instance,chunk_size_kb,chunk_size_bytes,per_chunk_gas,effective_gas_per_byte,method,status,note
-R3F-per-chunk,OVC-Feature,1,1024,1204274,1176.05,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
-R3F-per-chunk,OVC-Feature,4,4096,4542338,1108.97,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
-R3F-per-chunk,OVC-Feature,16,16384,17889946,1091.92,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
-R3F-per-chunk,OVC-Feature,64,65536,71275730,1087.58,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
-R3F-per-chunk,OVC-Feature,256,262144,284818866,1086.50,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
-R3F-per-chunk,OVC-Feature,512,524288,569541498,1086.31,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
-R3F-per-chunk,OVC-Feature,1024,1048576,1138986762,1086.22,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
-R3F-per-chunk,OVC-Feature,5120,5242880,5694553522,1086.15,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
-R3F-per-chunk,OVC-Feature,10240,10485760,11389010810,1086.14,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
-R3F-per-chunk,OVC-Feature,25600,26214400,28472382674,1086.14,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
-R3F-per-chunk,OVC-Feature,51200,52428800,56944669114,1086.13,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
+R3F-per-chunk,OVC-Feature,1,1024,2397443,2341.25,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
+R3F-per-chunk,OVC-Feature,4,4096,9225014,2252.20,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
+R3F-per-chunk,OVC-Feature,16,16384,36529744,2229.60,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
+R3F-per-chunk,OVC-Feature,64,65536,145748509,2223.95,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
+R3F-per-chunk,OVC-Feature,128,131072,291385894,2223.10,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
+R3F-per-chunk,OVC-Feature,256,262144,582709816,2222.86,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
+R3F-per-chunk,OVC-Feature,512,524288,1165560181,2223.13,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
+R3F-per-chunk,OVC-Feature,1024,1048576,2332053006,2224.02,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
+R3F-per-chunk,OVC-Feature,5120,5242880,11701699288,2231.92,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
+R3F-per-chunk,OVC-Feature,10240,10485760,23508134581,2241.91,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
+R3F-per-chunk,OVC-Feature,25600,26214400,59556591973,2271.90,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
+R3F-per-chunk,OVC-Feature,51200,52428800,121734496438,2321.90,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.

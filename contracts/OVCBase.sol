@@ -30,6 +30,11 @@ abstract contract OVCBase {
         Outcome outcome;
     }
 
+    // Fixed-point scale for E-coordinates: 5 decimals, matching the precision
+    // slicers emit. At 3 decimals, truncation accumulates across ~10^5 motion
+    // commands into an error of order 1% of the total.
+    uint256 internal constant E_SCALE = 1e5;
+
     uint256 public claimCount;
     uint256 public immutable disputeWindowBlocks;
     address public coordinator;
@@ -195,56 +200,149 @@ abstract contract OVCBase {
         return false;
     }
 
-    // Total filament extrusion under absolute extrusion mode (M82): the FINAL
-    // cumulative E-value in the witness, decimal-scaled by 1000 (E6.0 -> 6000).
-    // Later E-values overwrite earlier ones, so the last one is the cumulative total.
-    function _extractLastE(bytes calldata data) internal pure returns (uint256) {
-        uint256 lastValue = 0;
-        uint256 i = 0;
-        while (i < data.length) {
-            if (data[i] == "E") {
-                uint256 j = i + 1;
-                uint256 intPart = 0;
-                uint256 fracPart = 0;
-                uint256 fracScale = 1;
-                bool hasDigits = false;
-                bool inFraction = false;
-                while (j < data.length) {
-                    bytes1 ch = data[j];
-                    if (ch >= "0" && ch <= "9") {
-                        hasDigits = true;
-                        if (inFraction) {
-                            if (fracScale < 1000) {
-                                fracPart = fracPart * 10 + uint256(uint8(ch) - 48);
-                                fracScale *= 10;
-                            }
-                        } else {
-                            intPart = intPart * 10 + uint256(uint8(ch) - 48);
+    // Net filament consumption f(G) = Σ ΔE over G0/G1 motion commands, evaluated
+    // against a stateful G-code machine model, scaled by E_SCALE.
+    //
+    //   - M82 / M83 select absolute / relative extrusion, switchable mid-file.
+    //     Marlin powers up absolute, so that is the initial state.
+    //   - G92 E<v> re-datums the extruder axis without extruding. Stock slicer
+    //     profiles emit thousands of these, which is why the final E-value is
+    //     NOT the cumulative total on real G-code.
+    //   - E fields are signed: a retraction subtracts and its re-prime adds back,
+    //     so the net sum is the filament actually consumed.
+    //   - E fields on non-motion commands are ignored. `M907 E538` (extruder motor
+    //     current) appears in stock Prusa end-G-code and a context-free byte scan
+    //     would read it as an extrusion value.
+    //
+    // OVCFeatureSegmented implements the same model chunk-wise; both agree on any
+    // witness. Kept in sync deliberately — divergence would let the two designs
+    // return different verdicts on identical input.
+    // Extruder machine state, threaded through the scan. Held in a struct so the
+    // per-line evaluator stays within the EVM's 16-slot stack depth.
+    struct EMachine {
+        bool   absolute; // M82 active
+        int256 datum;    // last absolute E position, scaled
+        int256 total;    // accumulated net extrusion, scaled
+    }
+
+    function _netExtrusion(bytes calldata data) internal pure returns (int256) {
+        EMachine memory m = EMachine({ absolute: true, datum: 0, total: 0 });
+        uint256 len = data.length;
+        uint256 lineStart = 0;
+
+        for (uint256 i = 0; i <= len; i++) {
+            if (i == len || data[i] == 0x0a) { // '\n' or end of witness
+                _feedLine(data, lineStart, i, m);
+                lineStart = i + 1;
+            }
+        }
+        return m.total;
+    }
+
+    // Evaluate one line [start, end), updating the machine state in place.
+    function _feedLine(
+        bytes calldata data,
+        uint256 start,
+        uint256 end,
+        EMachine memory m
+    ) private pure {
+        for (uint256 i = start; i < end; i++) {
+            if (data[i] == 0x3b) { end = i; break; } // ';' comment
+        }
+        while (start < end && (data[start] == 0x20 || data[start] == 0x09 || data[start] == 0x0d)) start++;
+        if (start >= end) return;
+
+        bytes1 letter = data[start];
+        if (letter != 0x47 && letter != 0x4d) return; // 'G' / 'M'
+
+        uint256 j = start + 1;
+        uint256 code = 0;
+        bool hasCode = false;
+        while (j < end && data[j] >= 0x30 && data[j] <= 0x39) {
+            code = code * 10 + uint256(uint8(data[j]) - 48);
+            hasCode = true;
+            j++;
+        }
+        if (!hasCode) return;
+
+        if (letter == 0x4d) { // 'M'
+            if (code == 82) m.absolute = true;
+            else if (code == 83) m.absolute = false;
+            return; // M907 E538 and friends are not extrusion
+        }
+
+        if (code != 0 && code != 1 && code != 92) return;
+
+        (int256 value, bool found) = _findEField(data, j, end);
+        if (!found) return;
+
+        if (code == 92) {
+            m.datum = value; // re-datum only; never extrudes
+        } else if (m.absolute) {
+            m.total += value - m.datum;
+            m.datum = value;
+        } else {
+            m.total += value;
+        }
+    }
+
+    // Word-initial `E` parameter in [pos, end), parsed as signed fixed-point
+    // scaled by E_SCALE. Handles leading-dot literals (`E.91934`) as slicers emit.
+    function _findEField(
+        bytes calldata data,
+        uint256 pos,
+        uint256 end
+    ) private pure returns (int256 value, bool found) {
+        for (uint256 i = pos; i < end; i++) {
+            if (data[i] != 0x45) continue; // 'E'
+            if (i > 0) {
+                bytes1 prev = data[i - 1];
+                if (prev != 0x20 && prev != 0x09) continue; // not word-initial
+            }
+
+            uint256 j = i + 1;
+            bool negative = false;
+            if (j < end && (data[j] == 0x2d || data[j] == 0x2b)) {
+                negative = (data[j] == 0x2d);
+                j++;
+            }
+
+            uint256 intPart = 0;
+            uint256 fracPart = 0;
+            uint256 fracDigits = 0;
+            bool inFraction = false;
+            bool hasDigits = false;
+
+            while (j < end) {
+                bytes1 ch = data[j];
+                if (ch >= 0x30 && ch <= 0x39) {
+                    hasDigits = true;
+                    if (inFraction) {
+                        if (fracDigits < 5) {
+                            fracPart = fracPart * 10 + uint256(uint8(ch) - 48);
+                            fracDigits++;
                         }
-                        j++;
-                        continue;
+                    } else {
+                        intPart = intPart * 10 + uint256(uint8(ch) - 48);
                     }
-                    if (ch == "." && !inFraction) {
-                        inFraction = true;
-                        j++;
-                        continue;
-                    }
+                    j++;
+                } else if (ch == 0x2e && !inFraction) {
+                    inFraction = true;
+                    j++;
+                } else {
                     break;
                 }
-                if (hasDigits) {
-                    uint256 scaled = intPart * 1000;
-                    if (fracScale > 1) {
-                        uint256 scaleFactor = 1000 / fracScale;
-                        scaled += fracPart * scaleFactor;
-                    }
-                    lastValue = scaled;
-                }
-                i = j;
-                continue;
             }
-            i++;
+            if (!hasDigits) continue;
+
+            uint256 scaled = intPart * E_SCALE;
+            while (fracDigits < 5) { fracPart *= 10; fracDigits++; }
+            scaled += fracPart;
+
+            value = negative ? -int256(scaled) : int256(scaled);
+            return (value, true);
         }
-        return lastValue;
+        return (0, false);
     }
 }
 

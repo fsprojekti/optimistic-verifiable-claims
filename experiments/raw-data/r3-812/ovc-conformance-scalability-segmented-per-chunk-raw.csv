@@ -1,0 +1,3 @@
+measurement_group,instance,chunk_size_kb,chunk_size_bytes,per_chunk_gas,effective_gas_per_byte,method,status,note
+R3C-per-chunk,OVC-Conformance,8,8192,8529618,1041.21,eth_estimateGas,OK,Worst-case syntax scan with the first valid G1 opcode at the end of the chunk.
+R3C-per-chunk,OVC-Conformance,12,12288,12746450,1037.31,eth_estimateGas,OK,Worst-case syntax scan with the first valid G1 opcode at the end of the chunk.

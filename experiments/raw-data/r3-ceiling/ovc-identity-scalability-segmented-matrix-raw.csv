@@ -1,0 +1,5 @@
+measurement_group,instance,chunk_size_kb,gcode_size_kb,chunk_count,total_gas,total_gigagas,status,note
+R3b-I,OVC-Identity,14,1024,74,1610883613,1.611,OK,Total includes revealKey + startAdjudication + N * processChunk + finalizeAdjudication.
+R3b-I,OVC-Identity,15,1024,69,1608848230,1.609,OK,Total includes revealKey + startAdjudication + N * processChunk + finalizeAdjudication.
+R3b-I,OVC-Identity,80,1024,13,1611572752,1.612,OK,Total includes revealKey + startAdjudication + N * processChunk + finalizeAdjudication.
+R3b-I,OVC-Identity,88,1024,12,1636312759,1.636,OK,Total includes revealKey + startAdjudication + N * processChunk + finalizeAdjudication.

@@ -131,15 +131,20 @@ describe("R3-F — OVC-Feature adjudication chunk-size spectrum", function () {
         const perChunkGas = {};
         const overheads   = {};
 
-        // G-code line used for payload generation.
-        // claimValue = 10 * repeats (E value per line is 10, scaled by 1000 → 10000, but
-        // the contract uses integer E × 1 so value = 10 per line).
-        const GCODE_LINE = "G1 X10.0 Y10.0 E10\n";
+        // G-code payload. M83 puts the machine in relative extrusion so every motion
+        // line contributes its E value to the accumulator — under absolute mode a
+        // repeated constant E would contribute only once and exercise nothing.
+        // claimValue is therefore 10mm per line, scaled by 1e5.
+        const MODE_HEADER = "M83\n";
+        const GCODE_LINE  = "G1 X10.0 Y10.0 E10\n";
 
         function buildPayload(bytes) {
-            const repeats  = Math.max(1, Math.floor(bytes / GCODE_LINE.length));
-            const plaintext = Buffer.from(GCODE_LINE.repeat(repeats).padEnd(bytes, " "));
-            const claimValue = 10 * repeats;
+            const body      = Math.max(0, bytes - MODE_HEADER.length);
+            const repeats   = Math.max(1, Math.floor(body / GCODE_LINE.length));
+            const plaintext = Buffer.from(
+                (MODE_HEADER + GCODE_LINE.repeat(repeats)).padEnd(bytes, " ")
+            );
+            const claimValue = BigInt(10 * repeats) * 100000n;
             return { plaintext, claimValue };
         }
 

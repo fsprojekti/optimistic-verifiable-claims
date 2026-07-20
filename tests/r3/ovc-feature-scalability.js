@@ -91,16 +91,21 @@ describe("R3-F Monolithic — OVC-Feature single-tx adjudication spectrum", func
         emit("| G-code size | revealWitness gas    | gas/byte | Status |");
         emit("|-------------|----------------------|----------|--------|");
 
-        // G-code line used for all payload generation.
-        // claimValue = 123 * repeats (E=0.123 scaled by 1000).
-        const GCODE_LINE = "G1 X10.0 Y10.0 E0.123\n";
+        // G-code payload. M83 selects relative extrusion so every motion line
+        // contributes its E value to the accumulator; under absolute mode a repeated
+        // constant E would contribute only once. claimValue = 0.123mm per line, ×1e5.
+        const MODE_HEADER = "M83\n";
+        const GCODE_LINE  = "G1 X10.0 Y10.0 E0.123\n";
 
         for (const s of TEST_SIZES) {
             try {
-                const repeats       = Math.floor(s.bytes / GCODE_LINE.length);
-                const buffer        = Buffer.from(GCODE_LINE.repeat(repeats).padEnd(s.bytes, " "));
+                const body          = Math.max(0, s.bytes - MODE_HEADER.length);
+                const repeats       = Math.max(1, Math.floor(body / GCODE_LINE.length));
+                const buffer        = Buffer.from(
+                    (MODE_HEADER + GCODE_LINE.repeat(repeats)).padEnd(s.bytes, " ")
+                );
                 const pHash         = ethers.keccak256(buffer);
-                const expectedESum  = 123 * repeats;
+                const expectedESum  = BigInt(12300 * repeats);
 
                 const commitRec = await (await ovcFeature.connect(claimant).commitClaim(
                     provider.address, pHash, ethers.ZeroHash, expectedESum, ethers.ZeroHash
@@ -110,7 +115,11 @@ describe("R3-F Monolithic — OVC-Feature single-tx adjudication spectrum", func
                 await (await ovcFeature.connect(provider).disputeClaim(claimId)).wait();
 
                 const revealRec = await (await ovcFeature.connect(claimant).revealWitness(
-                    claimId, buffer, { gasLimit: 60_000_000_000n }
+                    // 50 MB needs ~67 Ggas under the machine-model predicate
+                    // (1185.56 + bytes/524288 gas/byte, the second term being EVM
+                    // memory expansion). The previous 60 Ggas cap sufficed only for
+                    // the older, cheaper byte-scan predicate.
+                    claimId, buffer, { gasLimit: 150_000_000_000n }
                 )).wait();
 
                 const gasUsed = Number(revealRec.gasUsed);

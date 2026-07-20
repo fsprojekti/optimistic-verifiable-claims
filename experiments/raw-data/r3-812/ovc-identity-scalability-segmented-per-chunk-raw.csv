@@ -1,0 +1,3 @@
+measurement_group,instance,chunk_size_kb,chunk_size_bytes,per_chunk_gas,effective_gas_per_byte,method,status,note
+R3I-per-chunk,OVC-Identity,8,8192,12480393,1523.49,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.
+R3I-per-chunk,OVC-Identity,12,12288,18671377,1519.48,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.

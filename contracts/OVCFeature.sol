@@ -10,23 +10,24 @@ import "./OVCBase.sol";
  *
  * Witness:    w = G — plaintext G-code
  * Commitment: H(G)
- * Claim value: f_claim (filament length in mm × 1000, e.g. 6000 = 6.0 mm)
- * Predicate:  E_final(G) == f_claim
- * Feature:    Total filament extrusion under absolute extrusion mode (M82) is the
- *             FINAL cumulative E-value in G; decimal values are scaled by 1000.
+ * Claim value: f_claim (net filament consumption in mm, scaled ×1e5)
+ * Predicate:  f(G) == f_claim
+ * Feature:    f(G) = Σ ΔE over G0/G1 motion commands under a stateful G-code
+ *             machine model (M82/M83 mode, G92 re-datum, signed E, command-word
+ *             context). See OVCBase._netExtrusion.
  * Note:       No off-chain delivery — G is already known to Provider from
- *             OVC-Identity (derived as C XOR K). Provider computes E_final
+ *             OVC-Identity (derived as C XOR K). Provider computes f(G)
  *             locally and checks against f_claim committed on-chain.
  *
  * INCONSISTENT: revealed G does not match committed H(G)
- * INCORRECT:    H(G) matches but E_final(G) != f_claim
+ * INCORRECT:    H(G) matches but f(G) != f_claim
  */
 contract OVCFeature is OVCBase {
     constructor(uint256 _disputeWindowBlocks) OVCBase(_disputeWindowBlocks) {}
 
     /**
-     * @dev Extracts and verifies the total material consumption (E-sum) from G-code.
-     * Changed to 'view' because we must read 'claim.claimValue' from storage.
+     * @dev Extracts and verifies net material consumption from G-code.
+     * 'view' because we must read 'claim.claimValue' from storage.
      */
     function _verifyPredicate(uint256 /* claimId */, Claim storage claim, bytes calldata witness)
     internal
@@ -34,10 +35,13 @@ contract OVCFeature is OVCBase {
     override
     returns (bool)
     {
-        // 1. Final cumulative E-value = total filament extrusion (absolute mode), scaled ×1000
-        uint256 totalExtrusion = _extractLastE(witness);
+        // 1. Net extrusion over the whole witness, scaled ×1e5
+        int256 total = _netExtrusion(witness);
 
-        // 2. Exact match against the claimValue committed during the bid (e.g. 6.0mm = 6000)
-        return totalExtrusion == claim.claimValue;
+        // 2. A negative total is physically impossible and can never match a claim
+        if (total < 0) return false;
+
+        // 3. Exact match against the claimValue committed during the bid
+        return uint256(total) == claim.claimValue;
     }
 }

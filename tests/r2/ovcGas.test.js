@@ -82,8 +82,9 @@ describe("OVC gas usage — R2: Optimistic path (Accepted outcome)", function ()
             ciphertext[i] = gcodeBytes[i] ^ secretK[i % 32];
         const identityCommit = ethers.keccak256(ethers.concat([secretK, gcodeBytes, ciphertext]));
 
-        // OVC-Feature: last E value in G-code × 1000
-        const EXTRUSION_VALID = 6000n;
+        // OVC-Feature: net extrusion of the witness above (absolute mode, G92 E0
+        // datum, four 1.5mm deltas) = 6.0mm, scaled ×1e5
+        const EXTRUSION_VALID = 600000n;
 
         const getClaimId = (receipt, contract) => {
             const parsed = receipt.logs

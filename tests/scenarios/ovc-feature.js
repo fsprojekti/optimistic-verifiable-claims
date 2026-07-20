@@ -10,7 +10,8 @@ describe("OVC-Feature: Stage-Level Forensic Benchmarking", function () {
         "G21\nG90\nM82\nG92 E0\nG1 X20 Y0 E1.5\nG1 X20 Y20 E3.0\nG1 X0 Y20 E4.5\nG1 X0 Y0 E6.0"
     );
     const validHash = ethers.keccak256(validGcode);
-    const bidESum = 6000; // 6.0mm scaled by 1000
+    // Absolute mode: G92 E0 datums the axis, then four deltas of 1.5mm → 6.0mm net.
+    const bidESum = 600000; // 6.0mm scaled by 1e5
 
     // --- FRAUDULENT DATA: 5.0mm Extrusion ---
     const fraudGcode = ethers.toUtf8Bytes(
