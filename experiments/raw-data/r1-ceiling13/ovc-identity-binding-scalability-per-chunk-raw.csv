@@ -1,2 +1,2 @@
 measurement_group,instance,chunk_size_kb,chunk_size_bytes,per_chunk_gas,effective_gas_per_byte,method,status
-R1b.1,OVC-Identity,13,13312,9547464,717.21,eth_estimateGas,OK
+R1b.1,Demand (OVC-Identity ciphertext),13,13312,9512775,714.60,eth_estimateGas,OK

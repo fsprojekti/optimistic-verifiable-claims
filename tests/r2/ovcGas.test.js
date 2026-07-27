@@ -46,11 +46,19 @@ describe("OVC gas usage — R2: Optimistic path (Accepted outcome)", function ()
             { subdir: "r2" }
         );
 
+        // C15: segmented instances + Demand store. OVC-Identity is constructed with a
+        // reference to the Demand and reads the ciphertext cross-contract, so its
+        // acceptClaim cost reflects that cross-contract read.
+        const demand      = await (await ethers.getContractFactory("Demand")).deploy();
+        await demand.waitForDeployment();
+        const demandAddr  = await demand.getAddress();
         const access      = await (await ethers.getContractFactory("OVCAccess")).deploy(100);
-        const identity    = await (await ethers.getContractFactory("OVCIdentity")).deploy(100);
-        const conformance = await (await ethers.getContractFactory("OVCConformance")).deploy(100);
-        const feature     = await (await ethers.getContractFactory("OVCFeature")).deploy(100);
+        const identity    = await (await ethers.getContractFactory("OVCIdentitySegmented")).deploy(100, demandAddr);
+        const conformance = await (await ethers.getContractFactory("OVCConformanceSegmented")).deploy(100);
+        const feature     = await (await ethers.getContractFactory("OVCFeatureSegmented")).deploy(100);
         await Promise.all([access, identity, conformance, feature].map(c => c.waitForDeployment()));
+        // Claimant acts as coordinator so it can call setDemand at binding.
+        await (await identity.setCoordinator(claimant.address)).wait();
 
         // G-code payload
         const gcodeLines = [
@@ -75,12 +83,16 @@ describe("OVC gas usage — R2: Optimistic path (Accepted outcome)", function ()
             ethers.solidityPacked(["bytes", "bytes32"], [key, providerKeyHash])
         );
 
-        // OVC-Identity material: commitment = H(K‖G‖C), C = G XOR K
+        // OVC-Identity material (C15): commitment = H~(C), auxHash = H~(G),
+        // providerKeyHash = H(K). C = G XOR K, uploaded to the Demand at bidding.
+        // Single-chunk payload, so the rolling hash is keccak256(0 ‖ chunk).
         const secretK    = ethers.randomBytes(32);
         const ciphertext = new Uint8Array(gcodeBytes.length);
         for (let i = 0; i < gcodeBytes.length; i++)
             ciphertext[i] = gcodeBytes[i] ^ secretK[i % 32];
-        const identityCommit = ethers.keccak256(ethers.concat([secretK, gcodeBytes, ciphertext]));
+        const hC      = ethers.keccak256(ethers.concat([ethers.ZeroHash, ciphertext]));
+        const hG      = ethers.keccak256(ethers.concat([ethers.ZeroHash, gcodeBytes]));
+        const keyHash = ethers.keccak256(secretK);
 
         // OVC-Feature: net extrusion of the witness above (absolute mode, G92 E0
         // datum, four 1.5mm deltas) = 6.0mm, scaled ×1e5
@@ -116,12 +128,19 @@ describe("OVC gas usage — R2: Optimistic path (Accepted outcome)", function ()
             console.log(`[R2] OVC-Access acceptClaim = ${acceptRec.gasUsed.toLocaleString()} gas`);
         }
 
-        // OVC-Identity
+        // OVC-Identity (C15 two-phase): ciphertext posted to the Demand at bidding;
+        // acceptClaim reads the demand's rolling hash cross-contract.
         {
-            const commitRec = await (await identity.connect(claimant).commitIdentityClaim(
-                provider.address, identityCommit, ciphertext
+            await (await demand.connect(claimant).postDemand(hG, 0)).wait();
+            const demandId = await demand.demandCount();
+            await (await demand.connect(claimant).depositCiphertextChunk(demandId, ciphertext)).wait();
+            await (await demand.connect(claimant).seal(demandId)).wait();
+
+            const commitRec = await (await identity.connect(claimant).commitClaim(
+                provider.address, hC, hG, 0, keyHash
             )).wait();
             const claimId   = getClaimId(commitRec, identity);
+            await (await identity.connect(claimant).setDemand(claimId, demandId)).wait();
             const acceptRec = await (await identity.connect(provider).acceptClaim(claimId)).wait();
             results.push({ instance: "OVC-Identity", accept: acceptRec.gasUsed });
             rawWriter.appendRow({
@@ -132,7 +151,7 @@ describe("OVC gas usage — R2: Optimistic path (Accepted outcome)", function ()
                 artifact_size_bytes: gcodeBytes.length,
                 method: "transaction",
                 status: "OK",
-                note: "optimistic path — Provider acceptance cost only; commitClaim + depositChunk cost is in R1",
+                note: "optimistic path — Provider acceptance cost only (reads Demand rolling hash cross-contract); commitClaim + setDemand + bidding upload cost is in R1",
             });
             console.log(`[R2] OVC-Identity acceptClaim = ${acceptRec.gasUsed.toLocaleString()} gas`);
         }

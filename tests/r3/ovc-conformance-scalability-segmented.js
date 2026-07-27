@@ -30,7 +30,7 @@ function parseSpectrum(envName, fallback) {
 
 const CHUNK_SPECTRUM_KB = parseSpectrum(
     "R3_CHUNK_SPECTRUM_KB",
-    [1, 4, 16, 64, 128, 256, 512, 1024, 5 * 1024, 10 * 1024, 25 * 1024, 50 * 1024]
+    [1, 4, 8, 12, 16, 64, 128, 256, 512, 1024, 5 * 1024, 10 * 1024, 25 * 1024, 50 * 1024]
 );
 const GCODE_SPECTRUM_KB = parseSpectrum(
     "R3_GCODE_SPECTRUM_KB",

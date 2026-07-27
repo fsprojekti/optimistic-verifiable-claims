@@ -32,7 +32,7 @@ function parseSpectrum(envName, fallback) {
 
 const CHUNK_SPECTRUM_KB = parseSpectrum(
     "R3_CHUNK_SPECTRUM_KB",
-    [1, 4, 16, 64, 128, 256, 512, 1024, 5 * 1024, 10 * 1024, 25 * 1024, 50 * 1024]
+    [1, 4, 8, 12, 16, 64, 128, 256, 512, 1024, 5 * 1024, 10 * 1024, 25 * 1024, 50 * 1024]
 );
 const GCODE_SPECTRUM_KB = parseSpectrum(
     "R3_GCODE_SPECTRUM_KB",
@@ -50,8 +50,13 @@ function depositGasLimit(bytes) {
     return Math.ceil(bytes * 1500) + 100_000_000;
 }
 
+// Upper bound handed to eth_estimateGas. Identity's processChunk allocates a
+// decrypted buffer per chunk, so its memory-expansion cost grows quadratically and
+// the effective gas/byte climbs with chunk size (~800 at 16 KB, ~1800 at 25 MB).
+// 4000/byte keeps the 50 MB point inside the allowance while staying under anvil's
+// 300 Ggas node limit. This is only a ceiling — it does not affect the estimate.
 function estimateGasLimit(bytes) {
-    return Math.ceil(bytes * 2500) + 200_000_000;
+    return Math.ceil(bytes * 4000) + 200_000_000;
 }
 
 function extractClaimId(receipt, contract) {
@@ -133,8 +138,36 @@ describe("R3-I — OVC-Identity adjudication chunk-size spectrum", function () {
             { subdir: OUTPUT_SUBDIR }
         );
 
-        const contract = await (await ethers.getContractFactory("OVCIdentitySegmented")).deploy(DISPUTE_WINDOW);
+        // C15: ciphertext lives in the Demand store (posted at bidding); OVC-Identity
+        // reads it cross-contract during adjudication. Deploy the Demand, wire Identity
+        // to it, and let the claimant act as coordinator so it can call setDemand.
+        const demand   = await (await (await ethers.getContractFactory("Demand")).deploy()).waitForDeployment();
+        const contract = await (await ethers.getContractFactory("OVCIdentitySegmented"))
+            .deploy(DISPUTE_WINDOW, await demand.getAddress());
         await contract.waitForDeployment();
+        await (await contract.setCoordinator(claimant.address)).wait();
+
+        // Bidding + binding setup for a single ciphertext chunk, left in Adjudicating
+        // state ready for a processChunk gas estimate. Returns the Identity claimId.
+        async function setupDispute(ciphertext, hG) {
+            await (await demand.connect(claimant).postDemand(hG, 0)).wait();
+            const demandId = await demand.demandCount();
+            await (await demand.connect(claimant).depositCiphertextChunk(
+                demandId, ciphertext, { gasLimit: depositGasLimit(ciphertext.length) }
+            )).wait();
+            await (await demand.connect(claimant).seal(demandId)).wait();
+            const hC = await demand.ciphertextRollingHash(demandId);
+
+            const commitRec = await (await contract.connect(claimant).commitClaim(
+                provider.address, hC, hG, 0, KEY_HASH
+            )).wait();
+            const claimId = extractClaimId(commitRec, contract);
+            await (await contract.connect(claimant).setDemand(claimId, demandId)).wait();
+            await (await contract.connect(provider).disputeClaim(claimId)).wait();
+            await (await contract.connect(claimant).revealKey(claimId, SECRET_K)).wait();
+            await (await contract.connect(claimant).startAdjudication(claimId)).wait();
+            return claimId;
+        }
 
         const perChunkGas = {};
         const overheads   = {};
@@ -146,17 +179,23 @@ describe("R3-I — OVC-Identity adjudication chunk-size spectrum", function () {
             const baselineBytes  = 1024;
             const plaintext      = Buffer.alloc(baselineBytes, 0x47);
             const ciphertext     = xorEncrypt(plaintext, SECRET_K);
-            const commitment     = rollingKeccak(ciphertext, baselineBytes);
             const auxHash        = rollingKeccak(plaintext, baselineBytes);
 
+            // Bidding: post + upload one chunk + seal.
+            await (await demand.connect(claimant).postDemand(auxHash, 0)).wait();
+            const demandId = await demand.demandCount();
+            await (await demand.connect(claimant).depositCiphertextChunk(
+                demandId, ciphertext, { gasLimit: depositGasLimit(baselineBytes) }
+            )).wait();
+            await (await demand.connect(claimant).seal(demandId)).wait();
+            const commitment = await demand.ciphertextRollingHash(demandId);
+
+            // Binding: commit Identity, link the demand.
             const commitRec      = await (await contract.connect(claimant).commitClaim(
                 provider.address, commitment, auxHash, 0, KEY_HASH
             )).wait();
             const claimId        = extractClaimId(commitRec, contract);
-
-            await (await contract.connect(claimant).depositChunk(
-                claimId, ciphertext, { gasLimit: depositGasLimit(baselineBytes) }
-            )).wait();
+            await (await contract.connect(claimant).setDemand(claimId, demandId)).wait();
 
             const disputeRec       = await (await contract.connect(provider).disputeClaim(claimId)).wait();
             const revealKeyRec     = await (await contract.connect(claimant).revealKey(claimId, SECRET_K)).wait();
@@ -197,21 +236,10 @@ describe("R3-I — OVC-Identity adjudication chunk-size spectrum", function () {
             const bytes      = chunkKb * 1024;
             const plaintext  = Buffer.alloc(bytes, 0x47);
             const ciphertext = xorEncrypt(plaintext, SECRET_K);
-            const commitment = rollingKeccak(ciphertext, bytes);
             const auxHash    = rollingKeccak(plaintext, bytes);
 
             try {
-                const commitRec = await (await contract.connect(claimant).commitClaim(
-                    provider.address, commitment, auxHash, 0, KEY_HASH
-                )).wait();
-                const claimId = extractClaimId(commitRec, contract);
-
-                await (await contract.connect(claimant).depositChunk(
-                    claimId, ciphertext, { gasLimit: depositGasLimit(bytes) }
-                )).wait();
-                await (await contract.connect(provider).disputeClaim(claimId)).wait();
-                await (await contract.connect(claimant).revealKey(claimId, SECRET_K)).wait();
-                await (await contract.connect(claimant).startAdjudication(claimId)).wait();
+                const claimId = await setupDispute(ciphertext, auxHash);
 
                 const processEstimate = await withHeartbeat(
                     `[R3b-I] ${fmtSize(chunkKb)} estimateGas`,
@@ -233,7 +261,7 @@ describe("R3-I — OVC-Identity adjudication chunk-size spectrum", function () {
                     effective_gas_per_byte: (perChunkGas[chunkKb] / bytes).toFixed(2),
                     method:               "eth_estimateGas",
                     status:               "OK",
-                    note:                 "Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.",
+                    note:                 "Ciphertext C posted to the Demand at bidding; processChunk reads it cross-contract from the Demand and decrypts against revealed K.",
                 });
                 console.log(`[R3b-I] ${fmtSize(chunkKb)} processChunk = ${perChunkGas[chunkKb].toLocaleString()} gas`);
             } catch (error) {
@@ -274,7 +302,7 @@ describe("R3-I — OVC-Identity adjudication chunk-size spectrum", function () {
             `startAdjudication=${overheads.startAdjudication?.toLocaleString() ?? "-"} | ` +
             `finalizeAdjudication=${overheads.finalizeAdjudication?.toLocaleString() ?? "-"}`
         );
-        emit("C is deposited during binding. The derived matrix covers adjudication txs only: revealKey + startAdjudication + N * processChunk + finalizeAdjudication.");
+        emit("C is posted to the Demand at bidding and read cross-contract. The derived matrix covers adjudication txs only: revealKey + startAdjudication + N * processChunk + finalizeAdjudication.");
 
         // Per-chunk table
         emit(`\nTable R3a-I: OVC-Identity per-process-chunk gas vs chunk size`);
@@ -331,7 +359,7 @@ describe("R3-I — OVC-Identity adjudication chunk-size spectrum", function () {
         }
 
         emit(`\n${"=".repeat(88)}`);
-        emit("Methodology: processChunk gas measured via eth_estimateGas after commit -> depositChunk(C) -> dispute -> revealKey -> startAdjudication. Finalize gas measured from a real tx on a 1 KB baseline claim.");
+        emit("Methodology: processChunk gas measured via eth_estimateGas after bidding (Demand.postDemand -> depositCiphertextChunk -> seal) then binding (commitClaim -> setDemand -> dispute -> revealKey -> startAdjudication). processChunk reads C cross-contract from the Demand. Finalize gas measured from a real tx on a 1 KB baseline claim.");
         emit("=".repeat(88));
 
         matrixWriter.close();

@@ -39,7 +39,7 @@ function parseSpectrum(envName, fallback) {
 // Spectrum: chunk sizes for OVC-Identity R1b.1 measurements (env override: R1_CHUNK_SPECTRUM_KB)
 const CHUNK_SPECTRUM_KB = parseSpectrum(
     "R1_CHUNK_SPECTRUM_KB",
-    [1, 4, 16, 64, 128, 256, 512, 1024, 5 * 1024, 10 * 1024, 25 * 1024, 50 * 1024]
+    [1, 4, 8, 12, 16, 64, 128, 256, 512, 1024, 5 * 1024, 10 * 1024, 25 * 1024, 50 * 1024]
 );
 // G-code sizes for R1b.2 derived matrix (env override: R1_GCODE_SPECTRUM_KB)
 const GCODE_SPECTRUM_KB = parseSpectrum(
@@ -98,12 +98,21 @@ describe("R1 — Binding Phase chunk-size spectrum", function () {
             { subdir: OUTPUT_SUBDIR }
         );
 
-        // ── Deploy all four segmented contracts ───────────────────────────────
+        // ── Deploy the Demand store + all four segmented contracts ────────────
+        // C15: the ciphertext C is uploaded to the Demand at bidding (O(N)), not to
+        // OVC-Identity. OVC-Identity is constructed with a reference to the Demand and
+        // reads C cross-contract at adjudication. The per-chunk upload cost measured
+        // in R1b is therefore Demand.depositCiphertextChunk, the bidding-phase cost.
+        const demand      = await (await ethers.getContractFactory("Demand")).deploy();
+        await demand.waitForDeployment();
+        const demandAddr  = await demand.getAddress();
         const access      = await (await ethers.getContractFactory("OVCAccess")).deploy(100);
-        const identity    = await (await ethers.getContractFactory("OVCIdentitySegmented")).deploy(100);
+        const identity    = await (await ethers.getContractFactory("OVCIdentitySegmented")).deploy(100, demandAddr);
         const conformance = await (await ethers.getContractFactory("OVCConformanceSegmented")).deploy(100);
         const feature     = await (await ethers.getContractFactory("OVCFeatureSegmented")).deploy(100);
         await Promise.all([access, identity, conformance, feature].map(c => c.waitForDeployment()));
+        // Claimant acts as coordinator so it can call setDemand at binding.
+        await (await identity.setCoordinator(claimant.address)).wait();
 
         const keyHash = ethers.keccak256(SECRET_K);
 
@@ -201,30 +210,20 @@ describe("R1 — Binding Phase chunk-size spectrum", function () {
         console.log(`[R1a] OVC-Feature acceptClaim = ${featAcceptGas.toLocaleString()} gas`);
 
         // ═════════════════════════════════════════════════════════════════════
-        // R1b — OVC-Identity chunk-size spectrum
+        // R1b — OVC-Identity chunk-size spectrum (C15 two-phase)
+        //   Bidding : Demand.postDemand + depositCiphertextChunk (O(N) upload)
+        //   Binding : identity.commitClaim + setDemand + acceptClaim  (all O(1))
         // ═════════════════════════════════════════════════════════════════════
 
-        // commitClaim (O(1)) — small baseline deposit so we can also measure acceptClaim
-        const baselineChunk     = Buffer.alloc(1024, 0x58);                                 // 1 KB
-        const baselineCommitHash = ethers.keccak256(ethers.concat([ethers.ZeroHash, baselineChunk]));
+        // Bidding: post a demand and deposit a 1 KB baseline ciphertext chunk so the
+        // demand has a valid rolling hash. Left unsealed while we estimate the per-chunk
+        // upload spectrum, then sealed to drive the binding-phase overheads.
+        const baselineChunk = Buffer.alloc(1024, 0x58);                                     // 1 KB
+        await (await demand.connect(claimant).postDemand(ethers.keccak256(baselineChunk), 0)).wait();
+        const baselineDemandId = await demand.demandCount();
+        await (await demand.connect(claimant).depositCiphertextChunk(baselineDemandId, baselineChunk)).wait();
 
-        const idCommitRec = await (await identity.connect(claimant).commitClaim(
-            provider.address, baselineCommitHash, ethers.ZeroHash, 0, keyHash
-        )).wait();
-        const idClaimId   = extractClaimId(idCommitRec, identity);
-        const idCommitGas = Number(idCommitRec.gasUsed);
-        overheadWriter.appendRow({
-            measurement_group: "R1b-overhead",
-            instance: "OVC-Identity",
-            operation: "commitClaim",
-            gas_used: idCommitGas,
-            method: "transaction",
-            note: "1 KB baseline claim used for per-chunk spectrum",
-        });
-        console.log(`[R1b] OVC-Identity baseline commitClaim = ${idCommitGas.toLocaleString()} gas`);
-
-        // R1b.1 — per-chunk gas spectrum via estimateGas
-        const identityAddr = await identity.getAddress();
+        // R1b.1 — per-chunk upload gas spectrum via estimateGas on Demand.depositCiphertextChunk.
         const perChunkGas  = {};
         const perChunkLbl  = {};
 
@@ -232,17 +231,17 @@ describe("R1 — Binding Phase chunk-size spectrum", function () {
             const bytes = kb * 1024;
             const chunk = Buffer.alloc(bytes, 0x58);
             try {
-                console.log(`[R1b.1] Estimating depositChunk for ${fmtSize(kb)}...`);
+                console.log(`[R1b.1] Estimating depositCiphertextChunk for ${fmtSize(kb)}...`);
                 const est = await ethers.provider.estimateGas({
                     from: claimant.address,
-                    to:   identityAddr,
-                    data: identity.interface.encodeFunctionData("depositChunk", [idClaimId, chunk]),
+                    to:   demandAddr,
+                    data: demand.interface.encodeFunctionData("depositCiphertextChunk", [baselineDemandId, chunk]),
                 });
                 perChunkGas[kb] = Number(est);
                 perChunkLbl[kb] = "eth_estimateGas";
                 perChunkWriter.appendRow({
                     measurement_group: "R1b.1",
-                    instance: "OVC-Identity",
+                    instance: "Demand (OVC-Identity ciphertext)",
                     chunk_size_kb: kb,
                     chunk_size_bytes: bytes,
                     per_chunk_gas: perChunkGas[kb],
@@ -256,7 +255,7 @@ describe("R1 — Binding Phase chunk-size spectrum", function () {
                 perChunkLbl[kb] = "FAIL";
                 perChunkWriter.appendRow({
                     measurement_group: "R1b.1",
-                    instance: "OVC-Identity",
+                    instance: "Demand (OVC-Identity ciphertext)",
                     chunk_size_kb: kb,
                     chunk_size_bytes: bytes,
                     per_chunk_gas: "",
@@ -268,8 +267,38 @@ describe("R1 — Binding Phase chunk-size spectrum", function () {
             }
         }
 
-        // Complete the baseline deposit and measure acceptClaim
-        await (await identity.connect(claimant).depositChunk(idClaimId, baselineChunk)).wait();
+        // Binding overheads: seal the demand, commit the Identity claim against the
+        // demand's rolling hash, link it (setDemand), then accept. All O(1).
+        await (await demand.connect(claimant).seal(baselineDemandId)).wait();
+        const baselineCommitHash = await demand.ciphertextRollingHash(baselineDemandId);
+
+        const idCommitRec = await (await identity.connect(claimant).commitClaim(
+            provider.address, baselineCommitHash, ethers.ZeroHash, 0, keyHash
+        )).wait();
+        const idClaimId   = extractClaimId(idCommitRec, identity);
+        const idCommitGas = Number(idCommitRec.gasUsed);
+        overheadWriter.appendRow({
+            measurement_group: "R1b-overhead",
+            instance: "OVC-Identity",
+            operation: "commitClaim",
+            gas_used: idCommitGas,
+            method: "transaction",
+            note: "1 KB baseline demand used for per-chunk spectrum",
+        });
+        console.log(`[R1b] OVC-Identity commitClaim = ${idCommitGas.toLocaleString()} gas`);
+
+        const idSetDemandRec = await (await identity.connect(claimant).setDemand(idClaimId, baselineDemandId)).wait();
+        const idSetDemandGas = Number(idSetDemandRec.gasUsed);
+        overheadWriter.appendRow({
+            measurement_group: "R1b-overhead",
+            instance: "OVC-Identity",
+            operation: "setDemand",
+            gas_used: idSetDemandGas,
+            method: "transaction",
+            note: "C15: links the binding-phase claim to the bidding-phase demand",
+        });
+        console.log(`[R1b] OVC-Identity setDemand = ${idSetDemandGas.toLocaleString()} gas`);
+
         const idAcceptRec = await (await identity.connect(provider).acceptClaim(idClaimId)).wait();
         const idAcceptGas = Number(idAcceptRec.gasUsed);
         overheadWriter.appendRow({
@@ -278,9 +307,9 @@ describe("R1 — Binding Phase chunk-size spectrum", function () {
             operation: "acceptClaim",
             gas_used: idAcceptGas,
             method: "transaction",
-            note: "1 KB baseline claim used for per-chunk spectrum",
+            note: "C15: acceptClaim reads the demand's rolling hash cross-contract",
         });
-        console.log(`[R1b] OVC-Identity baseline acceptClaim = ${idAcceptGas.toLocaleString()} gas`);
+        console.log(`[R1b] OVC-Identity acceptClaim = ${idAcceptGas.toLocaleString()} gas`);
         overheadWriter.close();
         perChunkWriter.close();
 
@@ -313,8 +342,8 @@ describe("R1 — Binding Phase chunk-size spectrum", function () {
         }
 
         // ── R1b.1: per-chunk gas spectrum ───────────────────────────────────
-        emitSummary("\nTable R1b.1: OVC-Identity per-deposit-chunk gas vs chunk size");
-        emitSummary(`commitClaim O(1) = ${idCommitGas.toLocaleString()} gas   |   acceptClaim O(1) = ${idAcceptGas.toLocaleString()} gas`);
+        emitSummary("\nTable R1b.1: bidding-phase per-ciphertext-chunk upload gas vs chunk size (Demand.depositCiphertextChunk)");
+        emitSummary(`Binding O(1): commitClaim = ${idCommitGas.toLocaleString()} | setDemand = ${idSetDemandGas.toLocaleString()} | acceptClaim = ${idAcceptGas.toLocaleString()} gas`);
         emitSummary("-".repeat(80));
         emitSummary("| Chunk size | Per-chunk gas      | Effective gas/byte | Method          |");
         emitSummary("|------------|--------------------|--------------------|-----------------|");
@@ -330,8 +359,8 @@ describe("R1 — Binding Phase chunk-size spectrum", function () {
         }
 
         // ── R1b.2: derived total binding gas matrix ──────────────────────────
-        emitSummary("\nTable R1b.2: OVC-Identity total binding gas vs chunk × G-code");
-        emitSummary("Derived: total = commitClaim + ⌈G-code/chunk⌉ × per_chunk + acceptClaim");
+        emitSummary("\nTable R1b.2: OVC-Identity total demand+bind gas vs chunk × G-code");
+        emitSummary("Derived: total = ⌈G-code/chunk⌉ × per_chunk (bidding) + commitClaim + setDemand + acceptClaim (binding)");
         emitSummary("Values shown in gigagas (Ggas, ×10^9)");
         emitSummary("-".repeat(110));
 
@@ -356,7 +385,7 @@ describe("R1 — Binding Phase chunk-size spectrum", function () {
                     row += `${'FAIL'.padStart(12)} |`;
                 } else {
                     const N = Math.ceil(gBytes / cBytes);
-                    const total = idCommitGas + N * perChunkGas[cKb] + idAcceptGas;
+                    const total = idCommitGas + idSetDemandGas + N * perChunkGas[cKb] + idAcceptGas;
                     const gigaGas = (total / 1e9).toFixed(3);
                     const cell = `${gigaGas}(N=${N})`;
                     row += `${cell.padStart(12)} |`;

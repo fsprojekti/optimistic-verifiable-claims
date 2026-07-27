@@ -1,5 +1,5 @@
 measurement_group,instance,chunk_size_kb,chunk_size_bytes,per_chunk_gas,effective_gas_per_byte,method,status,note
-R3I-per-chunk,OVC-Identity,14,14336,21766965,1518.34,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.
-R3I-per-chunk,OVC-Identity,15,15360,23314783,1517.89,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.
-R3I-per-chunk,OVC-Identity,80,81920,123957273,1513.15,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.
-R3I-per-chunk,OVC-Identity,88,90112,136348713,1513.10,eth_estimateGas,OK,Ciphertext C deposited at binding; processChunk reads stored ciphertext and decrypts against revealed K.
+R3I-per-chunk,OVC-Identity,14,14336,11486021,801.20,eth_estimateGas,OK,Ciphertext C posted to the Demand at bidding; processChunk reads it cross-contract from the Demand and decrypts against revealed K.
+R3I-per-chunk,OVC-Identity,15,15360,12299381,800.74,eth_estimateGas,OK,Ciphertext C posted to the Demand at bidding; processChunk reads it cross-contract from the Demand and decrypts against revealed K.
+R3I-per-chunk,OVC-Identity,80,81920,65339381,797.60,eth_estimateGas,OK,Ciphertext C posted to the Demand at bidding; processChunk reads it cross-contract from the Demand and decrypts against revealed K.
+R3I-per-chunk,OVC-Identity,88,90112,71890741,797.79,eth_estimateGas,OK,Ciphertext C posted to the Demand at bidding; processChunk reads it cross-contract from the Demand and decrypts against revealed K.

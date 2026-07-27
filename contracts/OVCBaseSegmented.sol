@@ -180,7 +180,9 @@ abstract contract OVCBaseSegmented {
 
     // Process the next stored chunk. Permissionless — chunks are already on-chain
     // and the outcome is deterministic, so any party can advance adjudication.
-    function processChunk(uint256 claimId) external {
+    // Virtual so an instance can source its chunks elsewhere (e.g. OVC-Identity
+    // reads the ciphertext cross-contract from the Demand store).
+    function processChunk(uint256 claimId) external virtual {
         require(claims[claimId].state == State.Adjudicating, "Not adjudicating");
         AdjudicationSession storage session = sessions[claimId];
         uint256 idx = session.nextChunkIndex;

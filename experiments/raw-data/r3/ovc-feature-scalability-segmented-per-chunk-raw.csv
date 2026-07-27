@@ -1,6 +1,8 @@
 measurement_group,instance,chunk_size_kb,chunk_size_bytes,per_chunk_gas,effective_gas_per_byte,method,status,note
 R3F-per-chunk,OVC-Feature,1,1024,2397443,2341.25,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
 R3F-per-chunk,OVC-Feature,4,4096,9225014,2252.20,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
+R3F-per-chunk,OVC-Feature,8,8192,18322585,2236.64,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
+R3F-per-chunk,OVC-Feature,12,12288,27426132,2231.94,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
 R3F-per-chunk,OVC-Feature,16,16384,36529744,2229.60,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
 R3F-per-chunk,OVC-Feature,64,65536,145748509,2223.95,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.
 R3F-per-chunk,OVC-Feature,128,131072,291385894,2223.10,eth_estimateGas,OK,Numeric extraction over G-code-like lines with integer E-values.

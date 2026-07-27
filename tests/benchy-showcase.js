@@ -7,9 +7,10 @@
  *   OVC-Access      (OVCBase, non-segmented — O(1), artifact-size-independent)
  *     commitClaim → disputeClaim → revealWitness(K)
  *
- *   OVC-Identity    (OVCIdentitySegmented)
- *     commitClaim → depositChunk(C) → disputeClaim → revealKey(K)
- *     → startAdjudication → estimateGas(processChunk)
+ *   OVC-Identity    (OVCIdentitySegmented, Demand-sourced ciphertext — C15)
+ *     Bidding: Demand.postDemand → depositCiphertextChunk(C) → seal
+ *     Binding: commitClaim → setDemand → disputeClaim → revealKey(K)
+ *     → startAdjudication → estimateGas(processChunk)  [reads C cross-contract]
  *
  *   OVC-Conformance (OVCConformanceSegmented)
  *     commitClaim → disputeClaim → depositChunk(G) → startAdjudication
@@ -31,6 +32,7 @@
 const fs   = require("fs");
 const path = require("path");
 const { ethers } = require("hardhat");
+const { createCsvReportWriter } = require("../scripts/benchmarkCsv");
 const { netExtrusion, slicerFilamentUsed } = require("./lib/gcode-reference");
 
 // ── Artifact ──────────────────────────────────────────────────────────────────
@@ -130,22 +132,26 @@ async function measureAccess(contract, claimant, provider) {
 
 // ── OVC-Identity segmented ────────────────────────────────────────────────────
 
-async function measureIdentityPerChunk(contract, claimant, provider, gcode, chunkBytes) {
+async function measureIdentityPerChunk(contract, demand, claimant, provider, gcode, chunkBytes) {
     const key32     = Buffer.from(ethers.randomBytes(32));
     const plain     = gcode.slice(0, chunkBytes);
     const ciph      = xorWithKey(plain, key32);
-    const ciphHash  = rollingKeccak(ciph,   chunkBytes);
     const gcodeHash = rollingKeccak(plain,  chunkBytes);
     const keyHash   = ethers.keccak256(key32);
+
+    await (await demand.connect(claimant).postDemand(gcodeHash, 0)).wait();
+    const demandId = await demand.demandCount();
+    await (await demand.connect(claimant).depositCiphertextChunk(
+        demandId, ciph, { gasLimit: dlim(chunkBytes) }
+    )).wait();
+    await (await demand.connect(claimant).seal(demandId)).wait();
+    const ciphHash = await demand.ciphertextRollingHash(demandId);
 
     const startRec = await (await contract.connect(claimant).commitClaim(
         provider.address, ciphHash, gcodeHash, 0, keyHash
     )).wait();
     const claimId = extractClaimId(startRec, contract);
-
-    await (await contract.connect(claimant).depositChunk(
-        claimId, ciph, { gasLimit: dlim(chunkBytes) }
-    )).wait();
+    await (await contract.connect(claimant).setDemand(claimId, demandId)).wait();
     await (await contract.connect(provider).disputeClaim(claimId)).wait();
     await (await contract.connect(claimant).revealKey(claimId, `0x${key32.toString("hex")}`)).wait();
     await (await contract.connect(claimant).startAdjudication(claimId)).wait();
@@ -155,19 +161,26 @@ async function measureIdentityPerChunk(contract, claimant, provider, gcode, chun
     return g;
 }
 
-async function measureIdentityOverhead(contract, claimant, provider, chunkBytes) {
+async function measureIdentityOverhead(contract, demand, claimant, provider, chunkBytes) {
     const key32     = Buffer.from(ethers.randomBytes(32));
     const plain     = Buffer.alloc(chunkBytes, 0x41);
     const ciph      = xorWithKey(plain, key32);
-    const ciphHash  = rollingKeccak(ciph,  chunkBytes);
     const gcodeHash = rollingKeccak(plain, chunkBytes);
     const keyHash   = ethers.keccak256(key32);
+
+    await (await demand.connect(claimant).postDemand(gcodeHash, 0)).wait();
+    const demandId = await demand.demandCount();
+    await (await demand.connect(claimant).depositCiphertextChunk(
+        demandId, ciph, { gasLimit: dlim(chunkBytes) }
+    )).wait();
+    await (await demand.connect(claimant).seal(demandId)).wait();
+    const ciphHash = await demand.ciphertextRollingHash(demandId);
 
     const r0 = await (await contract.connect(claimant).commitClaim(
         provider.address, ciphHash, gcodeHash, 0, keyHash
     )).wait();
     const claimId = extractClaimId(r0, contract);
-    await (await contract.connect(claimant).depositChunk(claimId, ciph, { gasLimit: dlim(chunkBytes) })).wait();
+    await (await contract.connect(claimant).setDemand(claimId, demandId)).wait();
     await (await contract.connect(provider).disputeClaim(claimId)).wait();
     await (await contract.connect(claimant).revealKey(claimId, `0x${key32.toString("hex")}`)).wait();
     const rS = await (await contract.connect(claimant).startAdjudication(claimId)).wait();
@@ -271,15 +284,28 @@ describe("Benchy Showcase — all four OVC instances", function () {
         console.log(`\n3DBenchy: ${gcodeSize.toLocaleString()} bytes (${(gcodeSize/1024/1024).toFixed(2)} MB), ${lineCount.toLocaleString()} lines`);
         console.log(`  f(G) = ${fClaim} (${fClaimMm.toFixed(2)} mm); slicer header ${slicerMm} mm`);
 
-        // Deploy all contracts
+        // Deploy all contracts. C15: OVC-Identity sources its ciphertext from the
+        // Demand store, so deploy the Demand first and wire Identity to it; the
+        // claimant acts as coordinator so it can call setDemand at binding.
+        const demandC = await (await (await ethers.getContractFactory("Demand")).deploy()).waitForDeployment();
         const accessC = await (await (await ethers.getContractFactory("OVCAccess")).deploy(DISPUTE_WINDOW)).waitForDeployment();
-        const idC     = await (await (await ethers.getContractFactory("OVCIdentitySegmented")).deploy(DISPUTE_WINDOW)).waitForDeployment();
+        const idC     = await (await (await ethers.getContractFactory("OVCIdentitySegmented")).deploy(DISPUTE_WINDOW, await demandC.getAddress())).waitForDeployment();
         const confC   = await (await (await ethers.getContractFactory("OVCConformanceSegmented")).deploy(DISPUTE_WINDOW)).waitForDeployment();
         const featC   = await (await (await ethers.getContractFactory("OVCFeatureSegmented")).deploy(DISPUTE_WINDOW)).waitForDeployment();
+        await (await idC.setCoordinator(claimant.address)).wait();
         console.log("  Contracts deployed.\n");
 
         // OVC-Access: O(1), measure once
         const accessGas = await measureAccess(accessC, claimant, provider);
+
+        // Per-chunk gas + O(1) adjudication overheads, emitted so scripts/compute_r4.py
+        // reads the measured 3DBenchy numbers instead of hand-copied constants.
+        const perChunkWriter = createCsvReportWriter(
+            __filename, "per-chunk-raw",
+            ["measurement_group", "chain", "chunk_size_kb", "instance", "per_chunk_gas",
+             "start_adjudication_gas", "finalize_adjudication_gas", "artifact_size_bytes", "note"],
+            { subdir: "benchy" }
+        );
 
         const results = [];
 
@@ -289,12 +315,12 @@ describe("Benchy Showcase — all four OVC instances", function () {
             console.log(`\n--- ${chain.name} (${chain.chunkKB} KB chunks, ${chunks} chunks) ---`);
 
             // Overheads (startAdjudication + finalizeAdjudication)
-            const idOH   = await measureIdentityOverhead(idC,   claimant, provider, chunkBytes);
+            const idOH   = await measureIdentityOverhead(idC, demandC, claimant, provider, chunkBytes);
             const confOH = await measureConformanceOverhead(confC, claimant, provider, chunkBytes);
             const featOH = await measureFeatureOverhead(featC,  claimant, provider, chunkBytes);
 
             // Per-chunk gas on a representative first chunk
-            const idPC   = await measureIdentityPerChunk(idC,   claimant, provider, gcode, chunkBytes);
+            const idPC   = await measureIdentityPerChunk(idC, demandC, claimant, provider, gcode, chunkBytes);
             const confPC = await measureConformancePerChunk(confC, claimant, provider, gcode, chunkBytes);
             const featPC = await measureFeaturePerChunk(featC,  claimant, provider, gcode, chunkBytes, fClaim);
 
@@ -303,6 +329,35 @@ describe("Benchy Showcase — all four OVC instances", function () {
             const confGas = confOH.start + confOH.finalize + chunks * confPC;
             const featGas = featOH.start + featOH.finalize + chunks * featPC;
             const worstGas = accessGas + idGas + confGas + featGas;
+
+            for (const [instance, pc, oh, note] of [
+                ["OVC-Identity",    idPC,   idOH,   "processChunk reads C cross-contract from the Demand and decrypts against revealed K"],
+                ["OVC-Conformance", confPC, confOH, "short-circuits on the first valid G0/G1, so cost is per-transaction rather than per-byte"],
+                ["OVC-Feature",     featPC, featOH, "machine-model net-extrusion scan over the chunk"],
+            ]) {
+                perChunkWriter.appendRow({
+                    measurement_group:         "benchy-per-chunk",
+                    chain:                     chain.name,
+                    chunk_size_kb:             chain.chunkKB,
+                    instance,
+                    per_chunk_gas:             pc,
+                    start_adjudication_gas:    oh.start,
+                    finalize_adjudication_gas: oh.finalize,
+                    artifact_size_bytes:       gcodeSize,
+                    note,
+                });
+            }
+            perChunkWriter.appendRow({
+                measurement_group:         "benchy-per-chunk",
+                chain:                     chain.name,
+                chunk_size_kb:             chain.chunkKB,
+                instance:                  "OVC-Access",
+                per_chunk_gas:             "",
+                start_adjudication_gas:    "",
+                finalize_adjudication_gas: "",
+                artifact_size_bytes:       gcodeSize,
+                note:                      `O(1) full lifecycle = ${accessGas} gas, size- and chunk-independent`,
+            });
 
             results.push({ chain: chain.name, chunkKB: chain.chunkKB, chunks,
                 accessGas, idGas, confGas, featGas, worstGas,
@@ -314,6 +369,8 @@ describe("Benchy Showcase — all four OVC instances", function () {
                 time:       projectTime(chunks, chain),
             });
         }
+
+        perChunkWriter.close();
 
         // ── Report ────────────────────────────────────────────────────────────
         const lines = [];

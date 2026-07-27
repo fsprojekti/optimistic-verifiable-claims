@@ -1,6 +1,6 @@
 # R3-C Monolithic Summary
 
-Source script: r3\ovc-conformance-scalability.js
+Source script: tests\r3\ovc-conformance-scalability.js
 
 ```text
 

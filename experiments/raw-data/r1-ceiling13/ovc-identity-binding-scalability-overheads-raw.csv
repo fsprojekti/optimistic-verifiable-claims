@@ -5,5 +5,6 @@ R1a,OVC-Conformance,commitClaim,143979,transaction,size-independent
 R1a,OVC-Conformance,acceptClaim,30956,transaction,size-independent
 R1a,OVC-Feature,commitClaim,144001,transaction,size-independent
 R1a,OVC-Feature,acceptClaim,30978,transaction,size-independent
-R1b-overhead,OVC-Identity,commitClaim,164285,transaction,1 KB baseline claim used for per-chunk spectrum
-R1b-overhead,OVC-Identity,acceptClaim,35428,transaction,1 KB baseline claim used for per-chunk spectrum
+R1b-overhead,OVC-Identity,commitClaim,164263,transaction,1 KB baseline demand used for per-chunk spectrum
+R1b-overhead,OVC-Identity,setDemand,78374,transaction,C15: links the binding-phase claim to the bidding-phase demand
+R1b-overhead,OVC-Identity,acceptClaim,45008,transaction,C15: acceptClaim reads the demand's rolling hash cross-contract

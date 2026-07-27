@@ -1,209 +1,196 @@
 # Optimistic Verifiable Claims (OVC) — Reproducibility Package
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20794987.svg)](https://doi.org/10.5281/zenodo.20794987)
+Public artifacts accompanying the paper:
 
-This repository contains the smart contracts, gas-measurement test suite, and the raw
-measurement results for the paper:
+> **"Optimistic Verifiable Claims: A Blockchain Protocol for Conditionally Confidential
+> Bidding in Decentralized Manufacturing"**
 
-> **Optimistic Verifiable Claims: A Blockchain Protocol for Conditionally Confidential
-> Bidding in Decentralized Manufacturing.**
-> Marko Corn, Nejc Rožman, Primož Podržaj. Faculty of Mechanical Engineering, University
-> of Ljubljana.
+This repository contains the **smart contracts**, the **gas-measurement harnesses**, and the
+**raw measurement results** needed to reproduce the empirical findings of the paper. Its goal
+is reproducibility of the on-chain gas measurements, not regeneration of the paper's figures:
+the plotting and presentation scripts are not included here.
 
-It lets a reader (i) re-run every on-chain gas measurement reported in the paper and
-(ii) inspect the exact result files those measurements produced. All numbers in the paper
-are raw EVM gas; the chain-cost and dispute-duration projections (R4) are computed
-analytically from these gas measurements and the deployment-chain parameters given in the
-paper, so R4 requires no separate execution. The R4 model is stated in full under
-"Reproducing R4" below so the projections can be re-derived from the CSVs alone.
+---
 
-> **Note.** This package reproduces the *measurements and result files*. It does not
-> include the figure-rendering scripts; the figures in the paper are visualisations of the
-> CSV data under `experiments/raw-data/`.
+## Protocol in brief
+
+OVC lets a manufacturing Consumer publish a *claim* about a concealed design file (G-code) —
+for example, the length of filament it consumes — so that a Provider can price and bid on it
+without seeing the design. A claim is committed when the job is posted and stands unless the
+selected Provider challenges it; a challenge triggers a deterministic on-chain predicate that
+exposes any dishonesty. The design stays confidential on the honest, no-dispute path.
+
+The lifecycle has three pre-contractual phases:
+
+1. **Bidding** — the Consumer posts a provider-independent **Demand**: the artifact
+   commitment `H̃(G)`, the declared feature value `f_claim`, and the on-chain ciphertext
+   `C` (the encrypted design, uploaded in chunks). Providers bid on the Demand.
+2. **Binding** — against the *selected* Provider, all four OVC instances are instantiated in
+   one atomic coordinator transaction, and the encrypted decryption key is published
+   on-chain.
+3. **Specification Handover** — the Provider decrypts and verifies; acceptance or dispute of
+   any claim is adjudicated here.
+
+The four OVC instances, each a commit–dispute–reveal claim over the Demand:
+
+| Instance | Contract | What it asserts | Dispute predicate |
+| :--- | :--- | :--- | :--- |
+| **OVC-Access** | `OVCAccess` | Key `K` is correctly wrapped for the Provider | `keccak256(K ∥ providerKeyHash) == commitment` |
+| **OVC-Identity** | `OVCIdentitySegmented` | Ciphertext `C` in the Demand is `G ⊕ K` | `H̃(C) == rollingKeccak(G ⊕ K)` |
+| **OVC-Conformance** | `OVCConformanceSegmented` | `G` contains valid motion commands | syntactic scan for `G0`/`G1` |
+| **OVC-Feature** | `OVCFeatureSegmented` | Declared `f_claim` matches `G` | machine-model evaluation of net extrusion |
+
+All instances share `OVCBase` / `OVCBaseSegmented`, a common state machine whose terminal
+outcomes are **Accepted**, **Valid**, **Inconsistent**, **Incorrect**, and **Withheld**.
+Cross-instance consistency is enforced at binding: the coordinator reads `H̃(G)`, `H̃(C)`,
+and `f_claim` from the sealed Demand rather than accepting them from its caller, so all four
+instances are bound to the artifact that was published for bidding.
+
+---
+
+## Segmentation and chunk size
+
+A multi-megabyte artifact cannot be uploaded or adjudicated in a single transaction: it would
+exceed any real chain's block gas limit. The segmented contracts process the artifact in
+fixed-size **chunks**, resetting EVM memory between transactions. A single rolling-hash
+commitment `H̃` fixes the chunk boundaries, so every party that must reproduce the hash
+replays the same boundaries. The **operating chunk** is the largest chunk whose heaviest
+transaction still fits within a target chain's block gas limit; it is a deployment parameter,
+not a protocol constant.
+
+---
+
+## What is measured
+
+All gas is measured on a high-capacity local node (`hardhat.config.js` raises the block gas
+limit) so that raw EVM demand is isolated from any particular chain's block limit; chain
+limits and prices re-enter only in the paper's projections. Two measurement methods return
+bit-identical gas counts (the EVM is deterministic):
+
+- **`tx`** — a transaction is mined and `gasUsed` is read from the receipt.
+- **`eth_estimateGas`** — direct EVM execution via JSON-RPC, used only when calldata size
+  physically prevents block inclusion in the test environment (large chunks).
+
+The harnesses write per-chunk and per-operation gas as CSVs under `experiments/raw-data/`.
+Because per-chunk gas is constant by EVM physics, total gas for any artifact size is composed
+arithmetically from the per-chunk gas and the chunk count; the paper's cost and time
+projections are derived from these CSVs and the chain parameters below.
+
+### Harnesses → measurements
+
+| Harness | Writes to | Measures |
+| :--- | :--- | :--- |
+| `tests/r1/ovc-identity-binding-scalability.js` | `raw-data/r1/` | ciphertext-deposit gas per chunk, across the chunk-size spectrum |
+| `tests/r1/binding-phase.js` | `raw-data/r1/` | full two-phase flow: `postDemand`, `depositCiphertextChunk`, `seal`, `bindProvider`, `accept` |
+| `tests/r2/ovcGas.test.js` | `raw-data/r2/` | per-instance stage gas across the four terminal outcomes |
+| `tests/r3/ovc-identity-scalability-segmented.js` | `raw-data/r3/` | OVC-Identity adjudication gas per chunk |
+| `tests/r3/ovc-conformance-scalability-segmented.js` | `raw-data/r3/` | OVC-Conformance adjudication gas per chunk |
+| `tests/r3/ovc-feature-scalability-segmented.js` | `raw-data/r3/` | OVC-Feature adjudication gas per chunk |
+| `tests/benchy-showcase.js` | `raw-data/benchy/` | per-chunk gas measured on the real 6.41 MB 3DBenchy artifact |
+
+The `*-ceiling` and `*-ceiling13` raw-data directories hold focused runs near each chain's
+operating chunk (13/14/15/80/88 KB). The monolithic (`tests/r3/ovc-*-scalability.js`)
+harnesses are retained for reference; they measure the single-transaction case that motivates
+segmentation.
+
+The measured constants that anchor the paper (at the operating chunk):
+
+- ciphertext deposit ≈ **714 gas/byte**
+- OVC-Identity adjudication ≈ **801 gas/byte** (reads `C` from the Demand into memory)
+- OVC-Conformance ≈ **1,750 gas/byte** worst case (deposit + full syntactic scan)
+- OVC-Feature ≈ **2,945 gas/byte** worst case (deposit + machine-model evaluation)
+- Binding handshake = **1,007,554 gas**, size-independent (`bindProvider` 898,290 + `accept` 109,264)
+
+---
+
+## Chain parameters (used for the paper's projections)
+
+| Chain | Block gas limit | Gas price | Token | Block time | Operating chunk |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| Ethereum (L1) | 36 M | 0.5 Gwei | $3,000 (ETH) | 12 s | 14 KB |
+| Arbitrum (L2) | 32 M (exec) | 0.02 Gwei | $3,000 (ETH) | 0.25 s | 13 KB |
+| opBNB (L2) | 200 M | 0.001 Gwei | $600 (BNB) | 1 s | 80 KB |
+
+Token prices are representative midpoints; absolute USD scales linearly with them, while the
+chain ranking and all feasibility thresholds are invariant. The projection arithmetic
+(gas → USD and gas → duration) is documented in `RESULTS.md`; the scripts that generate the
+paper's tables and figures from these CSVs are not part of this package.
+
+---
+
+## Reproducing the measurements
+
+```bash
+# Install dependencies
+npm install
+
+# Two-phase flow sanity check (honest accept-all-four + Identity dispute)
+npx hardhat test tests/c15-two-phase-flow.js
+
+# Ciphertext-deposit and full two-phase gas
+npx hardhat test tests/r1/ovc-identity-binding-scalability.js
+npx hardhat test tests/r1/binding-phase.js
+
+# Per-instance stage gas across the four outcomes
+npx hardhat test tests/r2/ovcGas.test.js
+
+# Adjudication gas per chunk (dispute path)
+npx hardhat test tests/r3/ovc-identity-scalability-segmented.js
+npx hardhat test tests/r3/ovc-conformance-scalability-segmented.js
+npx hardhat test tests/r3/ovc-feature-scalability-segmented.js
+
+# Real-artifact measurement (3DBenchy)
+npx hardhat test tests/benchy-showcase.js
+```
+
+Each run writes CSVs under `experiments/raw-data/`. The measured values of record are
+tabulated in [`RESULTS.md`](RESULTS.md).
 
 ---
 
 ## Repository layout
 
 ```
-contracts/            Solidity sources (OVC base + four instances, monolithic & segmented)
-  OVCBase.sol             atomic OVC primitive / FSM
-  OVCAccess.sol           OVC-Access      (key access + provider linkage)
-  OVCIdentity.sol         OVC-Identity    (K|G|C triple + XOR consistency)
-  OVCConformance.sol      OVC-Conformance (G-code G0/G1 syntax scan)
-  OVCFeature.sol          OVC-Feature     (net material consumption, G-code machine model)
-  OVC*Segmented.sol       segmented (chunked) variants
-  OVCBaseSegmented.sol    segmented base (rolling-hash anchoring)
-  BindingPhase.sol        atomic four-instance binding coordinator
+contracts/
+  OVCBase.sol / OVCBaseSegmented.sol   # shared commit-dispute-reveal state machine
+  Demand.sol                           # bidding-phase Demand store (C, H̃(G), f_claim)
+  BindingPhase.sol                     # binds all four instances against a selected Provider
+  OVCAccess.sol                        # OVC-Access
+  OVCIdentity.sol / OVCIdentitySegmented.sol      # OVC-Identity (segmented reads C from Demand)
+  OVCConformance.sol / OVCConformanceSegmented.sol
+  OVCFeature.sol / OVCFeatureSegmented.sol
 
-tests/                Hardhat gas-measurement suite (see tests/run.md for full commands)
-  scenarios/             end-to-end per-instance scenario tests (R-labels in run.md)
-  r1/                    R1 — binding-phase gas, chunk-size sweep
-  r2/                    R2 — optimistic / stage-level outcome gas
-  r3/                    R3 — scalability: monolithic + segmented adjudication
-  benchy-showcase.js     all four instances on the real 3DBenchy artifact
-  feature-parser.js      OVC-Feature machine-model correctness suite
-  lib/gcode-reference.js off-chain reference implementation of f(G)
-  *.gcode                real slicer output used as measurement input
-  run.md                 canonical, copy-pasteable run commands
-  run-128.ps1            focused single-chunk (128 KB) probe runner
+tests/
+  c15-two-phase-flow.js                # bidding→binding→handover sanity test
+  r1/  binding-phase.js                # full two-phase gas
+       ovc-identity-binding-scalability.js   # ciphertext-deposit chunk spectrum
+  r2/  ovcGas.test.js                  # per-instance stage gas, four outcomes
+  r3/  ovc-{identity,conformance,feature}-scalability-segmented.js   # adjudication chunk spectrum
+       ovc-{identity,conformance,feature}-scalability.js             # monolithic reference
+  benchy-showcase.js                   # real 3DBenchy measurement
+  scenarios/                           # per-instance correctness tests
 
 scripts/
-  benchmarkCsv.js       CSV/Markdown report writer used by the tests (required)
+  benchmarkCsv.js                      # CSV writer used by the harnesses
 
-experiments/          PRE-COMPUTED RESULTS (the exact files used in the paper)
-  raw-data/              measured CSVs (re-running the tests overwrites these)
-    r1/ r1-812/ r1-ceiling/ r1-ceiling13/ r2/
-    r3/ r3-128/ r3-812/ r3-ceiling/ r3-ceiling13/
-  reports/              human-readable .md/.txt summaries per measurement
-  error-catalog.md      notes on failure modes encountered during measurement
+experiments/raw-data/                  # measured gas CSVs (the results of record)
 
-hardhat.config.js     Solidity 0.8.20, optimizer disabled (conservative upper-bound gas)
-```
-
-The measured results are committed under `experiments/`, so the paper's numbers can be
-inspected without re-running anything. Re-running the tests regenerates these files
-in place.
-
----
-
-## Requirements
-
-- **Node.js 20.x** and npm
-- **Foundry / Anvil** — used as the local EVM node with a very high block gas limit, which
-  is required for the monolithic adjudication tests (single transactions exceeding 88 M
-  gas). Install via <https://book.getfoundry.sh/getting-started/installation>.
-- ~16 GB RAM for the large-artifact (R1/R3) sweeps; the commands set a 16 GB Node heap.
-
-Solidity is compiled with the **optimizer disabled** (0 runs), so all reported gas
-figures are conservative upper bounds, exactly as in the paper.
-
----
-
-## Setup
-
-```bash
-npm install
-npx hardhat compile
+RESULTS.md                             # measured and derived numbers
 ```
 
 ---
 
-## Reproducing the measurements
+## Configuration
 
-Start a local Anvil node once (high gas limit so monolithic reveals fit a single block):
-
-```bash
-anvil --host 0.0.0.0 --port 8545 --gas-limit 300000000000 --no-request-size-limit
-```
-
-Then run the suites below from the repository root. `tests/run.md` is the canonical,
-copy-pasteable list (including the environment-variable overrides for custom
-chunk/G-code ladders); the essentials are:
-
-```powershell
-# R1 — Binding phase (chunk-size sweep + coordinator)
-$env:NODE_OPTIONS='--max-old-space-size=16384'; npx hardhat test tests/r1/ovc-identity-binding-scalability.js --network localhost
-npx hardhat test tests/r1/binding-phase.js --network localhost
-
-# R2 — Optimistic / stage-level outcome gas
-$env:NODE_OPTIONS='--max-old-space-size=16384'; npx hardhat test tests/r2/ovcGas.test.js --network localhost
-
-# R3 — Scalability: monolithic baselines
-$env:NODE_OPTIONS='--max-old-space-size=16384'; npx hardhat test tests/r3/ovc-identity-scalability.js --network localhost
-$env:NODE_OPTIONS='--max-old-space-size=16384'; npx hardhat test tests/r3/ovc-conformance-scalability.js --network localhost
-$env:NODE_OPTIONS='--max-old-space-size=16384'; npx hardhat test tests/r3/ovc-feature-scalability.js --network localhost
-
-# R3 — Scalability: segmented (chunked) adjudication
-$env:NODE_OPTIONS='--max-old-space-size=16384'; npx hardhat test tests/r3/ovc-identity-scalability-segmented.js --network localhost
-$env:NODE_OPTIONS='--max-old-space-size=16384'; npx hardhat test tests/r3/ovc-conformance-scalability-segmented.js --network localhost
-$env:NODE_OPTIONS='--max-old-space-size=16384'; npx hardhat test tests/r3/ovc-feature-scalability-segmented.js --network localhost
-```
-
-Each test writes a CSV to `experiments/raw-data/<group>/` and a summary to
-`experiments/reports/<group>/`. The focused 128 KB probe (`tests/run-128.ps1`) writes to
-the `*-128` subdirectories so it does not overwrite the full-spectrum results.
-
-End-to-end per-instance scenario checks (correctness, not scaling):
-
-```powershell
-npx hardhat test tests/scenarios/ovc-access.js      --network localhost
-npx hardhat test tests/scenarios/ovc-identity.js    --network localhost
-npx hardhat test tests/scenarios/ovc-conformance.js --network localhost
-npx hardhat test tests/scenarios/ovc-feature.js     --network localhost
-```
+`hardhat.config.js` sets `blockGasLimit: 0x1fffffffffffff` so that the harnesses measure raw
+EVM gas without any network-imposed per-transaction ceiling. Chain-specific block gas limits
+and their feasibility implications are applied only in the projections documented in
+`RESULTS.md`.
 
 ---
 
-## Mapping results to the paper
+## Archived version
 
-| Paper element | Measurement | Result files |
-|---|---|---|
-| Stage-level lifecycle gas (four outcomes) | R2 | `experiments/raw-data/r2/`, `experiments/reports/r2/` |
-| Binding-phase upload gas vs. chunk size | R1 | `experiments/raw-data/r1/`, `r1-128/` |
-| Monolithic adjudication baseline (Block Horizon) | R3 monolithic | `experiments/raw-data/r3/ovc-*-scalability-raw.csv` |
-| Segmented adjudication / forensic gradient | R3 segmented | `experiments/raw-data/r3/ovc-*-segmented-*.csv`, `r3-128/` |
-| Chain cost & dispute-duration projections | R4 (analytical) | derived in the paper from R1–R3 gas + chain parameters |
-
----
-
-## Reproducing R4 (chain projections)
-
-R4 executes no transactions. It maps the measured gas onto deployment chains using only
-the CSVs in `experiments/raw-data/` and the chain parameters in the paper.
-
-**1. Operating chunk.** For each chain, take the largest chunk whose heaviest per-chunk
-transaction consumes at most 95% of that chain's block gas limit. The heaviest transaction
-is `OVC-Feature processChunk` at every chunk size, so the semantic predicate sets the
-operating point. Per-chunk gas is in
-`experiments/raw-data/r3*/ovc-*-segmented-per-chunk-raw.csv`. Chunk sizes are sampled near
-each chain's ceiling (hence the `r3-812`, `r3-ceiling`, `r3-ceiling13` sweeps) rather than
-on a power-of-two grid, because total gas is nearly chunk-independent while transaction
-count is inversely proportional to chunk size.
-
-**2. Worst-case dispute gas** (all four instances contested), for artifact size `n` at
-operating chunk `s`, with `N = ceil(n / s)`:
-
-```
-gas = n * bind_rate                      OVC-Identity ciphertext upload at binding
-    + 2 * n * bind_rate                  on-chain deposit of G (Conformance + Feature)
-    + N * (id_chunk + conf_chunk + feat_chunk)   adjudication of the three scanning instances
-    + access_gas                         OVC-Access, O(1)
-```
-
-`bind_rate` is the per-byte gas of `depositChunk` from `experiments/raw-data/r1*/`; the
-`*_chunk` terms are the per-chunk values from the R3 files above. The optimistic path is
-the first term alone.
-
-**3. Cost and time.**
-
-```
-cost_usd = gas * gas_price_gwei * 1e-9 * token_usd
-t        = (6 * N + 20) * beta * block_time
-```
-
-`beta = 1.5` is the median inclusion factor. The `6N` term is the six size-proportional
-transaction sweeps (one upload, two deposits, three adjudications); `+20` covers the O(1)
-lifecycle transactions of the four instances. Ethereum is reported as a band over a
-congestion factor `delta` in [1, 4].
-
-For the 3DBenchy rows the `*_chunk` terms are replaced by the values measured directly on
-the real artifact, reported in `experiments/reports/benchy-showcase.md`.
-
----
-
-## Citation
-
-If you use this code or data, please cite the paper above and this archived software
-record:
-
-> Corn, M., Rožman, N., Podržaj, P. *Optimistic Verifiable Claims (OVC): Reproducibility
-> Package*. Zenodo. https://doi.org/10.5281/zenodo.20794987
-
-The DOI above is the *concept* DOI: it always resolves to the latest archived version.
-Each release also receives its own version DOI, listed on the Zenodo record.
-
-## License
-
-Released under the MIT License (see `package.json`). Confirm with the authors before
-redistribution if a different license is required.
+This package is archived on Zenodo under the concept DOI
+[10.5281/zenodo.20794987](https://doi.org/10.5281/zenodo.20794987), which resolves to the
+latest archived version.
