@@ -1,0 +1,5 @@
+# Preserve the exact bytes of measurements, inputs and generated outputs:
+# their SHA-256 values are recorded in the run metadata and in results/derived/paper/source-map.json.
+results/** -text whitespace=cr-at-eol
+data/** -text whitespace=cr-at-eol
+paper/** -text

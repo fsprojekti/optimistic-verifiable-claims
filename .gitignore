@@ -3,7 +3,16 @@ node_modules/
 artifacts/
 cache/
 
+# Python
+__pycache__/
+*.pyc
+
+# G-code inputs are restored from the OpenGCode MultiSlicer Corpus v1.0.0 release
+data/corpus/generated/gcode/
+
 # Logs and OS cruft
 *.log
+!results/**/*.log
 .DS_Store
 Thumbs.db
+.env

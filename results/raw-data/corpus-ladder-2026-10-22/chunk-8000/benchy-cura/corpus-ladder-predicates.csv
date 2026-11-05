@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+benchy:cura,Identity,10928873,8000,1367,0,41407887746,41408162879,30369320,Valid
+benchy:cura,Access,10928873,8000,0,0,431105,483435,431105,Valid
+benchy:cura,Conformance,10928873,8000,1367,7869063654,56370893,7925630033,396311,Valid
+benchy:cura,Feature,10928873,8000,1367,7869093728,18263210632,26132502131,13622593,Valid

@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+autodesk_fdm:cura,Identity,28090066,8000,3512,0,106428897612,106429172745,30369320,Valid
+autodesk_fdm:cura,Access,28090066,8000,0,0,431105,483435,431105,Valid
+autodesk_fdm:cura,Conformance,28090066,8000,3512,20225314213,144266558,20369776257,396311,Valid
+autodesk_fdm:cura,Feature,28090066,8000,3512,20225391477,46925737672,67151326920,13717879,Valid

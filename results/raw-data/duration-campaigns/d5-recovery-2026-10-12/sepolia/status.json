@@ -1,0 +1,69 @@
+{
+  "network": "sepolia",
+  "created_at_utc": "2026-10-12T06:51:57.033Z",
+  "settings": {
+    "chunk_bytes": 3072,
+    "pacing_ms": 1000,
+    "reserve_test_eth": "0.005",
+    "scope": "Identity disputes over a two-chunk excerpt and three complete paired slicer artifacts"
+  },
+  "completed_jobs": [
+    {
+      "id": "smoke-cura-6144",
+      "summary_path": "C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\testnets\\sepolia\\identity-representative-2026-10-09T13-44-36-252Z-summary.csv",
+      "completed_at_utc": "2026-10-09T13:57:02.429Z",
+      "launches": 3
+    },
+    {
+      "id": "full-cura",
+      "summary_path": "C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\testnets\\sepolia\\identity-representative-2026-10-09T13-57-03-442Z-summary.csv",
+      "completed_at_utc": "2026-10-12T09:35:26.890Z",
+      "launches": 11
+    },
+    {
+      "id": "full-orca",
+      "summary_path": "C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\testnets\\sepolia\\identity-representative-2026-10-12T09-35-27-762Z-summary.csv",
+      "completed_at_utc": "2026-10-12T10:55:03.822Z",
+      "launches": 5
+    },
+    {
+      "id": "full-prusa",
+      "summary_path": "C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\testnets\\sepolia\\identity-representative-2026-10-12T10-55-04-723Z-summary.csv",
+      "completed_at_utc": "2026-10-12T12:21:03.986Z",
+      "launches": 7
+    }
+  ],
+  "attempts": {
+    "full-cura": 10,
+    "full-orca": 5,
+    "full-prusa": 7
+  },
+  "deadline_utc": "2026-10-15T06:51:57.033Z",
+  "state": "complete",
+  "updated_at_utc": "2026-10-12T12:21:04.033Z",
+  "worker_pid": 52436,
+  "jobs": [
+    {
+      "id": "smoke-cura-6144",
+      "bytes": 6144
+    },
+    {
+      "id": "full-cura",
+      "bytes": 264386
+    },
+    {
+      "id": "full-orca",
+      "bytes": 280935
+    },
+    {
+      "id": "full-prusa",
+      "bytes": 316712
+    }
+  ],
+  "current_job": null,
+  "child_pid": null,
+  "last_exit_code": 3,
+  "retry_at_utc": "2026-10-12T12:01:00.852Z",
+  "pause_reason": "User explicitly approved dRPC. Automatic approval review still rejected the restart. No execution is active. Manual entry point: scripts/resume-stage03-sepolia.ps1",
+  "completed_at_utc": "2026-10-12T12:21:04.033Z"
+}

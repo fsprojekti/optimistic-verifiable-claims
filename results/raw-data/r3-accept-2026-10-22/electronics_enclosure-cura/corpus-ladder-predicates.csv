@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+electronics_enclosure:cura,Access,1571118,24960,0,0,0,0,0,Accepted
+electronics_enclosure:cura,Identity,1571118,24960,0,0,0,0,0,Accepted
+electronics_enclosure:cura,Conformance,1571118,24960,0,0,0,0,0,Accepted
+electronics_enclosure:cura,Feature,1571118,24960,0,0,0,0,0,Accepted

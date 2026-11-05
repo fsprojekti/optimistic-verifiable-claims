@@ -1,0 +1,40 @@
+{
+  "created_at_utc": "2026-11-02T10:02:59.281Z",
+  "network": "arbitrumSepolia",
+  "chain_id": "421614",
+  "client_version": "nitro/v3.12.3-rc.4+7116cfc-20261028T163253Z/linux-amd64/go1.25.12",
+  "chunk_bytes": 8000,
+  "consumer": "0x3fFAa6B60c24356123b1eEd5f4570400Ac4efCb5",
+  "provider": "0x16EEc4F232bEf544F4cB55B0e29bA9c342F9f577",
+  "artifacts": {
+    "rackstack_hinge:cura": {
+      "access_seed": "2226520657317d1f954577179c758c51460e457d6b46accfe68c20be003bc204",
+      "completed_at_utc": "2026-11-02T10:13:00.797Z",
+      "outcome": "4 Valid"
+    },
+    "rackstack_hinge:orca": {
+      "access_seed": "ddf1f336a46d6ce29fa9b25b12277a2cd6aeaa7857d7566b6d41cd6947d2ff7b",
+      "completed_at_utc": "2026-11-02T10:23:10.044Z",
+      "outcome": "4 Valid"
+    },
+    "rackstack_hinge:prusa": {
+      "access_seed": "7e1273a97c181973f23331ac77fd65d55f2a8f67428dc70279252964617e8591",
+      "completed_at_utc": "2026-11-02T10:34:43.058Z",
+      "outcome": "4 Valid"
+    }
+  },
+  "launches": [
+    "2026-11-02T10:02:59.281Z"
+  ],
+  "access_public_key": "30820122300d06092a864886f70d01010105000382010f003082010a0282010100b7beb1e1ab71ea83e8565f0a3c436b956d618dd68a40d170ae546e1307733344ca9cbdf184e90af5aa2ccfed6ab9bfb4edbdef9914bc87d244d1f934ddc1eb22dab8b43981d08cd8e2d361a83415a6d7411d1d495c60fe3fd8c474b5a3c832821a9ce060cc19bab241014b6f10106fc6360f893607eec99a8694dc15b3114194b291773849bdf001a9d9416ede8a34136f2791673f2878256f3e233cbe0fbe8e260b8b854ef77f4cf54cac7eefe873696e0684133524a5e76d7efde35f85973cef1cb56d62c51bf74c6c0483e657cb31d29f8aa7d1f355f638a9669ef2b151adb00d57eb55ddbd53e01e602ef23e09638d70b6a2c9fab89d3a300aa34dfeb6e10203010001",
+  "access_private_key_pem": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC3vrHhq3Hqg+hW\nXwo8Q2uVbWGN1opA0XCuVG4TB3MzRMqcvfGE6Qr1qizP7Wq5v7Ttve+ZFLyH0kTR\n+TTdwesi2ri0OYHQjNji02GoNBWm10EdHUlcYP4/2MR0taPIMoIanOBgzBm6skEB\nS28QEG/GNg+JNgfuyZqGlNwVsxFBlLKRdzhJvfABqdlBbt6KNBNvJ5FnPyh4JW8+\nIzy+D76OJguLhU73f0z1TKx+7+hzaW4GhBM1JKXnbX7941+FlzzvHLVtYsUb90xs\nBIPmV8sx0p+Kp9HzVfY4qWae8rFRrbANV+tV3b1T4B5gLvI+CWONcLaiyfq4nTow\nCqNN/rbhAgMBAAECggEARkNYuEgcPqaEYQrk2hiZ+kEijd+dbJ3qbe+BTCuMJO3I\nYNnNkpqfA0Q48KYEKtWhNUxtY+dnFLUWdgjK64XtCZ4EBX78IijKAyr77BtGsE8d\n6ik51WaNsxKMRWj0IWkXEWAt+TXzHM5vRzR2Wvk+FNi1Zi3QKMLVIWOpKW8ZSS8S\njxFz0T3TAfHyK2woa3uXcC6Yv/bckPO53Q56rfRkwNNUi+ajm8WnhGtaFDtZ9lVN\nDPupTwYqSPlhiZxV0DO9tjKtRgKOgTng/FiNne9Nuu4gUfOJ7hC/57qqT7lQtjxj\nwyDRyCRW60N72Z54Ku0+j8Kl8bvRGoN7IX1p3sTTZQKBgQDewy67J/ljogBbzVTA\nO//jfE2RntIcc2n1HnF0++zAnEz0DKP7CSicj28LYf8nZQ/lI4EnWn+GmnufuUud\nUN45cpWnuLnEVL2K9GHOJ77I7kRES+VJHgjCHbju/6vXL5SEqwUl+6LaT7VExMQK\nJfuAjGa5hBl8jI5TwtRmP7JtqwKBgQDTKSqkOmZkuJrusa90RN3+SQaMPAYS1XbV\naG64laOaTfy1PAVHm4B8drY0S82FNYrUKKPrCkNKEdVlwnwU5tZaKXb9mYfZkJTM\n78JlwWhbnN4x5MwTm+qjea2madh0DF6sQI56m/E+5QxTg0QSMkrled754LeNmox3\nqjNVb/epowKBgFm8BnceAzg/aiWQ8TL++HWK/TRL5hfP5j73pHybfyOX0uf8r5HQ\nfquSnAjZ0Q7thxmm08AmlHiEgog0/GDC0sIRhnep0itkd3YiO8Pv/sqyMI3ShOqP\nTrfjgTvFglOMtyc6PTivxUpsEXlCSjZMVqPR6w+QRzQE6tCTCzylLBtBAoGBAIOY\ntT1yM9vzfILjc5AHVz4hLpZ41eQo6o0nL1GT2EjS73nXNQcibxmiNf0zfJrW+nUr\n+rQBSlw/7vkjEodIMTAxhTmY1CQPydxKU6FsvmfRxFvd1h0mXz2QGFuMvVvdVacN\n+H2K7/cdcegd929LroeCwyaBGIOEXKQ7CxDk3bj3AoGAZlSlEaezSjLd8sRzn0x6\nI0mneG5Y3b4kTD9qSi5h0APYZfmvvYEqIWUUNJSUBXJBZAGHXGwzvzDP3gxsLio4\nLsOhXprO2Wc+9e5/0m8NTGYQ+V3fzxK8d3kG4scB3bC20rTKSt3iDmj2tWU1hWBV\nGzmQkA3iNy7+vsNsudtJBbM=\n-----END PRIVATE KEY-----\n",
+  "contracts": {
+    "Demand": "0xC4C269E17eE80Bd1ee094992281F7F43C19F8A87",
+    "OVCAccess": "0x6adF7F22aF24B2Ae2312140489657F49a61FD0d7",
+    "OVCIdentitySegmented": "0xC1c856dF52e3d22a3d294c815d8526DaA63850d4",
+    "OVCConformanceSegmented": "0x033eC06ada3059bdC7cCC0d764A8E4Eac237b900",
+    "OVCFeatureSegmented": "0x6C04ba3117FaC9FC1285ACAF4C63ABE4dFf7Cb12",
+    "BindingPhase": "0x7961d470d67aff395345aDd7285EC74EBeB8913E"
+  },
+  "completed_at_utc": "2026-11-02T10:34:43.059Z"
+}

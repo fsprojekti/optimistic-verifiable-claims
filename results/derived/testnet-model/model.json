@@ -1,0 +1,1423 @@
+{
+  "Ethereum": {
+    "testnet": "sepolia",
+    "chunk_size_bytes": 4160,
+    "paired_transactions": 1302,
+    "ratios": {
+      "postDemand": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 739839,
+        "local_gas": 739839
+      },
+      "prepareBinding": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 246399,
+        "local_gas": 246399
+      },
+      "depositCiphertextChunk": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 209,
+        "public_gas": 627126299,
+        "local_gas": 627126299
+      },
+      "sealCiphertext": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 130497,
+        "local_gas": 130497
+      },
+      "bindProvider": {
+        "ratio": 1.000012806522789,
+        "min": 1.0000065021020754,
+        "max": 1.0000195065598936,
+        "n": 3,
+        "public_gas": 5622207,
+        "local_gas": 5622135
+      },
+      "disputeClaim": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 290400,
+        "local_gas": 290400
+      },
+      "revealKey": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 226053,
+        "local_gas": 226053
+      },
+      "startAdjudication": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 116883,
+        "local_gas": 116883
+      },
+      "processChunk": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 209,
+        "public_gas": 3269826457,
+        "local_gas": 3269826457
+      },
+      "finalizeAdjudication": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 164703,
+        "local_gas": 164703
+      },
+      "accessDisputeClaim": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 156990,
+        "local_gas": 156990
+      },
+      "accessRevealWitness": {
+        "ratio": 1.063351743558934,
+        "min": 1.0633418772688787,
+        "max": 1.0633714766883249,
+        "n": 3,
+        "public_gas": 1375236,
+        "local_gas": 1293303
+      },
+      "conformanceDisputeClaim": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 242445,
+        "local_gas": 242445
+      },
+      "conformanceDepositChunk": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 209,
+        "public_gas": 629252195,
+        "local_gas": 629252195
+      },
+      "conformanceStartAdjudication": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 155901,
+        "local_gas": 155901
+      },
+      "conformanceProcessChunk": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 209,
+        "public_gas": 11334095,
+        "local_gas": 11334095
+      },
+      "conformanceFinalizeAdjudication": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 158712,
+        "local_gas": 158712
+      },
+      "featureDisputeClaim": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 242511,
+        "local_gas": 242511
+      },
+      "featureDepositChunk": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 209,
+        "public_gas": 629256793,
+        "local_gas": 629256793
+      },
+      "featureStartAdjudication": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 155640,
+        "local_gas": 155640
+      },
+      "featureProcessChunk": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 209,
+        "public_gas": 1364994301,
+        "local_gas": 1364994301
+      },
+      "featureFinalizeAdjudication": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 164822,
+        "local_gas": 164822
+      },
+      "acceptBinding": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 1,
+        "public_gas": 106227,
+        "local_gas": 106227
+      }
+    },
+    "steps": {
+      "chunk": {
+        "n": 3880,
+        "median_s": 12.17299997806549,
+        "mean_s": 14.961652577537851,
+        "p95_s": 25.13304990530014,
+        "max_s": 288.86100006103516
+      },
+      "fixed": {
+        "n": 66,
+        "median_s": 12.333499908447266,
+        "mean_s": 14.65157574595827,
+        "p95_s": 24.393249928951263,
+        "max_s": 49.4520001411438
+      },
+      "network_s": {
+        "n": 3946,
+        "median_s": 11.151000022888184,
+        "mean_s": 13.1987881391591,
+        "p95_s": 24.198250114917755,
+        "max_s": 286.09800004959106
+      },
+      "prep_s": {
+        "n": 3946,
+        "median_s": 0.7569999694824219,
+        "mean_s": 1.757678155843461,
+        "p95_s": 6.619500041007996,
+        "max_s": 75.23600006103516
+      }
+    },
+    "steps_by_operation": {
+      "conformanceDepositChunk": {
+        "n": 636,
+        "mean_s": 15.112150944253933,
+        "median_s": 12.198499917984009,
+        "p5_s": 10.744500041007996,
+        "p95_s": 34.18000012636185,
+        "max_s": 83.92400002479553
+      },
+      "conformanceProcessChunk": {
+        "n": 636,
+        "mean_s": 15.208493710688824,
+        "median_s": 12.212499976158142,
+        "p5_s": 11.031500041484833,
+        "p95_s": 24.89950007200241,
+        "max_s": 288.86100006103516
+      },
+      "depositCiphertextChunk": {
+        "n": 700,
+        "mean_s": 15.08198000056403,
+        "median_s": 12.126500129699707,
+        "p5_s": 10.943000066280366,
+        "p95_s": 25.64765011072155,
+        "max_s": 72.23399996757507
+      },
+      "featureDepositChunk": {
+        "n": 636,
+        "mean_s": 14.693828616127279,
+        "median_s": 12.132500052452087,
+        "p5_s": 10.885749995708466,
+        "p95_s": 25.000999987125397,
+        "max_s": 72.26999998092651
+      },
+      "featureProcessChunk": {
+        "n": 636,
+        "mean_s": 14.696562892985794,
+        "median_s": 12.170499920845032,
+        "p5_s": 10.982750117778778,
+        "p95_s": 24.767249941825867,
+        "max_s": 84.04299998283386
+      },
+      "fixed": {
+        "n": 66,
+        "mean_s": 14.65157574595827,
+        "median_s": 12.333499908447266,
+        "p5_s": 10.818999886512756,
+        "p95_s": 24.393249928951263,
+        "max_s": 49.4520001411438
+      },
+      "processChunk": {
+        "n": 636,
+        "mean_s": 14.964790880680084,
+        "median_s": 12.174000024795532,
+        "p5_s": 10.959999978542328,
+        "p95_s": 24.959500014781952,
+        "max_s": 139.59999990463257
+      }
+    },
+    "steps_by_run": {
+      "sepolia": {
+        "conformanceDepositChunk": {
+          "n": 209,
+          "mean_s": 15.101990432830519,
+          "median_s": 12.150000095367432,
+          "p5_s": 10.740000152587891,
+          "p95_s": 25.128399991989134,
+          "max_s": 83.92400002479553
+        },
+        "conformanceProcessChunk": {
+          "n": 209,
+          "mean_s": 14.302885167336349,
+          "median_s": 12.141000032424927,
+          "p5_s": 10.838599920272827,
+          "p95_s": 24.536399936676023,
+          "max_s": 60.20099997520447
+        },
+        "depositCiphertextChunk": {
+          "n": 209,
+          "mean_s": 15.779861244858736,
+          "median_s": 12.164999961853027,
+          "p5_s": 10.945799922943115,
+          "p95_s": 35.088600111007686,
+          "max_s": 72.23399996757507
+        },
+        "featureDepositChunk": {
+          "n": 209,
+          "mean_s": 15.20820574098797,
+          "median_s": 12.22000002861023,
+          "p5_s": 10.95779995918274,
+          "p95_s": 25.260799980163572,
+          "max_s": 72.26999998092651
+        },
+        "featureProcessChunk": {
+          "n": 209,
+          "mean_s": 13.660148325148953,
+          "median_s": 12.04200005531311,
+          "p5_s": 11.072200059890747,
+          "p95_s": 24.152799987792967,
+          "max_s": 36.81600022315979
+        },
+        "fixed": {
+          "n": 47,
+          "mean_s": 14.086680838402282,
+          "median_s": 12.214999914169312,
+          "p5_s": 10.833399844169616,
+          "p95_s": 24.065100002288816,
+          "max_s": 48.300999879837036
+        },
+        "processChunk": {
+          "n": 209,
+          "mean_s": 14.759124402224161,
+          "median_s": 12.218000173568726,
+          "p5_s": 11.039600038528443,
+          "p95_s": 24.50900001525879,
+          "max_s": 36.587000131607056
+        }
+      },
+      "sepolia-accept": {
+        "depositCiphertextChunk": {
+          "n": 64,
+          "mean_s": 14.06546875089407,
+          "median_s": 12.057500004768372,
+          "p5_s": 10.985599994659424,
+          "p95_s": 24.753099930286407,
+          "max_s": 35.60300016403198
+        },
+        "fixed": {
+          "n": 4,
+          "mean_s": 12.359000027179718,
+          "median_s": 12.332000017166138,
+          "p5_s": 11.783700001239776,
+          "p95_s": 12.972100067138673,
+          "max_s": 13.045000076293945
+        }
+      },
+      "sepolia-enclosure": {
+        "conformanceDepositChunk": {
+          "n": 427,
+          "mean_s": 15.117124121976401,
+          "median_s": 12.229999780654907,
+          "p5_s": 10.759000039100647,
+          "p95_s": 34.295200037956235,
+          "max_s": 60.34299993515015
+        },
+        "conformanceProcessChunk": {
+          "n": 427,
+          "mean_s": 15.651754098418724,
+          "median_s": 12.252000093460083,
+          "p5_s": 11.10920000076294,
+          "p95_s": 25.01170001029968,
+          "max_s": 288.86100006103516
+        },
+        "depositCiphertextChunk": {
+          "n": 427,
+          "mean_s": 14.892751756819964,
+          "median_s": 12.129999876022339,
+          "p5_s": 10.90730004310608,
+          "p95_s": 25.413700079917906,
+          "max_s": 60.33500003814697
+        },
+        "featureDepositChunk": {
+          "n": 427,
+          "mean_s": 14.442060889907408,
+          "median_s": 12.090999841690063,
+          "p5_s": 10.881699967384339,
+          "p95_s": 24.94020006656647,
+          "max_s": 60.842000007629395
+        },
+        "featureProcessChunk": {
+          "n": 427,
+          "mean_s": 15.203847775135442,
+          "median_s": 12.246999979019165,
+          "p5_s": 10.962199950218201,
+          "p95_s": 25.120499992370604,
+          "max_s": 84.04299998283386
+        },
+        "fixed": {
+          "n": 15,
+          "mean_s": 17.032933314641316,
+          "median_s": 12.408999919891357,
+          "p5_s": 10.522500014305114,
+          "p95_s": 32.74650013446805,
+          "max_s": 49.4520001411438
+        },
+        "processChunk": {
+          "n": 427,
+          "mean_s": 15.06545667458474,
+          "median_s": 12.164999961853027,
+          "p5_s": 10.945100045204162,
+          "p95_s": 25.23590009212494,
+          "max_s": 139.59999990463257
+        }
+      }
+    },
+    "timing_runs": [
+      "sepolia",
+      "sepolia-accept",
+      "sepolia-enclosure"
+    ],
+    "outages_excluded": [
+      {
+        "before": "rackstack_hinge:orca/featureProcessChunk[10]",
+        "gap_s": 87756.21700000763
+      }
+    ],
+    "outage_threshold_s": 120.0,
+    "bootstrap": {
+      "block": 10,
+      "reps": 2000,
+      "seed": 20261029
+    }
+  },
+  "Arbitrum": {
+    "testnet": "arbitrumSepolia",
+    "chunk_size_bytes": 8000,
+    "paired_transactions": 708,
+    "ratios": {
+      "postDemand": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 739827,
+        "local_gas": 739827
+      },
+      "prepareBinding": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 246399,
+        "local_gas": 246399
+      },
+      "depositCiphertextChunk": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 110,
+        "public_gas": 619907203,
+        "local_gas": 619907203
+      },
+      "sealCiphertext": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 130497,
+        "local_gas": 130497
+      },
+      "bindProvider": {
+        "ratio": 1.0000021344067977,
+        "min": 1.0,
+        "max": 1.0000065021020754,
+        "n": 3,
+        "public_gas": 5622183,
+        "local_gas": 5622171
+      },
+      "disputeClaim": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 290400,
+        "local_gas": 290400
+      },
+      "revealKey": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 226053,
+        "local_gas": 226053
+      },
+      "startAdjudication": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 116883,
+        "local_gas": 116883
+      },
+      "processChunk": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 110,
+        "public_gas": 3266716619,
+        "local_gas": 3266716619
+      },
+      "finalizeAdjudication": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 164703,
+        "local_gas": 164703
+      },
+      "accessDisputeClaim": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 156990,
+        "local_gas": 156990
+      },
+      "accessRevealWitness": {
+        "ratio": 1.0633418772688787,
+        "min": 1.0633418772688787,
+        "max": 1.0633418772688787,
+        "n": 3,
+        "public_gas": 1375236,
+        "local_gas": 1293315
+      },
+      "conformanceDisputeClaim": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 242445,
+        "local_gas": 242445
+      },
+      "conformanceDepositChunk": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 110,
+        "public_gas": 621069631,
+        "local_gas": 621069631
+      },
+      "conformanceStartAdjudication": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 155901,
+        "local_gas": 155901
+      },
+      "conformanceProcessChunk": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 110,
+        "public_gas": 7277372,
+        "local_gas": 7277372
+      },
+      "conformanceFinalizeAdjudication": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 158712,
+        "local_gas": 158712
+      },
+      "featureDisputeClaim": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 242511,
+        "local_gas": 242511
+      },
+      "featureDepositChunk": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 110,
+        "public_gas": 621072051,
+        "local_gas": 621072051
+      },
+      "featureStartAdjudication": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 155640,
+        "local_gas": 155640
+      },
+      "featureProcessChunk": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 110,
+        "public_gas": 1353638891,
+        "local_gas": 1353638891
+      },
+      "featureFinalizeAdjudication": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 3,
+        "public_gas": 164822,
+        "local_gas": 164822
+      },
+      "acceptBinding": {
+        "ratio": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 1,
+        "public_gas": 106227,
+        "local_gas": 106227
+      }
+    },
+    "steps": {
+      "chunk": {
+        "n": 2026,
+        "median_s": 2.6575000286102295,
+        "mean_s": 2.8340774927534684,
+        "p95_s": 4.22424989938736,
+        "max_s": 8.07099986076355
+      },
+      "fixed": {
+        "n": 66,
+        "median_s": 2.2960000038146973,
+        "mean_s": 2.37677272160848,
+        "p95_s": 2.7687498331069946,
+        "max_s": 3.0230000019073486
+      },
+      "network_s": {
+        "n": 2092,
+        "median_s": 1.2599999904632568,
+        "mean_s": 1.33321605699696,
+        "p95_s": 1.694000005722046,
+        "max_s": 4.6549999713897705
+      },
+      "prep_s": {
+        "n": 2092,
+        "median_s": 1.315500020980835,
+        "mean_s": 1.4864340385788941,
+        "p95_s": 2.7522499442100514,
+        "max_s": 6.330999851226807
+      }
+    },
+    "steps_by_operation": {
+      "conformanceDepositChunk": {
+        "n": 332,
+        "mean_s": 2.8360421686287385,
+        "median_s": 2.8205000162124634,
+        "p5_s": 2.3297499656677245,
+        "p95_s": 3.3096500277519225,
+        "max_s": 5.832000017166138
+      },
+      "conformanceProcessChunk": {
+        "n": 332,
+        "mean_s": 2.332015060516725,
+        "median_s": 2.2734999656677246,
+        "p5_s": 2.126000165939331,
+        "p95_s": 2.664450001716614,
+        "max_s": 3.1540000438690186
+      },
+      "depositCiphertextChunk": {
+        "n": 366,
+        "mean_s": 2.505549180051668,
+        "median_s": 2.4765000343322754,
+        "p5_s": 2.2464998960494995,
+        "p95_s": 2.9127500653266907,
+        "max_s": 3.1549999713897705
+      },
+      "featureDepositChunk": {
+        "n": 332,
+        "mean_s": 3.1031897592257303,
+        "median_s": 3.1665000915527344,
+        "p5_s": 2.4230999827384947,
+        "p95_s": 3.6570000648498535,
+        "max_s": 7.953999996185303
+      },
+      "featureProcessChunk": {
+        "n": 332,
+        "mean_s": 2.605722891997142,
+        "median_s": 2.5295000076293945,
+        "p5_s": 2.337550091743469,
+        "p95_s": 3.0199999809265137,
+        "max_s": 3.2319998741149902
+      },
+      "fixed": {
+        "n": 66,
+        "mean_s": 2.37677272160848,
+        "median_s": 2.2960000038146973,
+        "p5_s": 2.1112500429153442,
+        "p95_s": 2.7687498331069946,
+        "max_s": 3.0230000019073486
+      },
+      "processChunk": {
+        "n": 332,
+        "mean_s": 3.655590361859425,
+        "median_s": 3.419000029563904,
+        "p5_s": 2.7519500136375425,
+        "p95_s": 4.804699957370758,
+        "max_s": 8.07099986076355
+      }
+    },
+    "steps_by_run": {
+      "arbitrumSepolia": {
+        "conformanceDepositChunk": {
+          "n": 110,
+          "mean_s": 2.548618180101568,
+          "median_s": 2.496500015258789,
+          "p5_s": 2.2693501353263854,
+          "p95_s": 2.9134500145912168,
+          "max_s": 5.832000017166138
+        },
+        "conformanceProcessChunk": {
+          "n": 110,
+          "mean_s": 2.3533363645726983,
+          "median_s": 2.2804999351501465,
+          "p5_s": 2.134250020980835,
+          "p95_s": 2.667749893665314,
+          "max_s": 3.1540000438690186
+        },
+        "depositCiphertextChunk": {
+          "n": 110,
+          "mean_s": 2.5319272734902123,
+          "median_s": 2.4984999895095825,
+          "p5_s": 2.2682000398635864,
+          "p95_s": 2.950700044631958,
+          "max_s": 3.052999973297119
+        },
+        "featureDepositChunk": {
+          "n": 110,
+          "mean_s": 2.6071363644166428,
+          "median_s": 2.565500020980835,
+          "p5_s": 2.3330499172210692,
+          "p95_s": 2.9873000621795653,
+          "max_s": 4.0289998054504395
+        },
+        "featureProcessChunk": {
+          "n": 110,
+          "mean_s": 2.5961272738196635,
+          "median_s": 2.5160000324249268,
+          "p5_s": 2.3149000644683837,
+          "p95_s": 3.017300069332123,
+          "max_s": 3.1599998474121094
+        },
+        "fixed": {
+          "n": 47,
+          "mean_s": 2.400531900689957,
+          "median_s": 2.319000005722046,
+          "p5_s": 2.1113000392913817,
+          "p95_s": 2.7964998960494993,
+          "max_s": 3.0230000019073486
+        },
+        "processChunk": {
+          "n": 110,
+          "mean_s": 3.383309093388644,
+          "median_s": 3.379499912261963,
+          "p5_s": 2.746799898147583,
+          "p95_s": 4.630250108242035,
+          "max_s": 4.883999824523926
+        }
+      },
+      "arbitrumSepolia-accept": {
+        "depositCiphertextChunk": {
+          "n": 34,
+          "mean_s": 2.430411759544821,
+          "median_s": 2.3574999570846558,
+          "p5_s": 2.130300009250641,
+          "p95_s": 2.8063999891281126,
+          "max_s": 2.88700008392334
+        },
+        "fixed": {
+          "n": 4,
+          "mean_s": 2.205750048160553,
+          "median_s": 2.2174999713897705,
+          "p5_s": 2.122750127315521,
+          "p95_s": 2.2723000764846804,
+          "max_s": 2.2750000953674316
+        }
+      },
+      "arbitrumSepolia-enclosure": {
+        "conformanceDepositChunk": {
+          "n": 222,
+          "mean_s": 2.9784594602413006,
+          "median_s": 2.9195001125335693,
+          "p5_s": 2.6973000288009645,
+          "p95_s": 3.3529001593589784,
+          "max_s": 5.213000059127808
+        },
+        "conformanceProcessChunk": {
+          "n": 222,
+          "mean_s": 2.3214504503989004,
+          "median_s": 2.2710001468658447,
+          "p5_s": 2.126000165939331,
+          "p95_s": 2.663950037956238,
+          "max_s": 2.7839999198913574
+        },
+        "depositCiphertextChunk": {
+          "n": 222,
+          "mean_s": 2.5039864864435284,
+          "median_s": 2.4790000915527344,
+          "p5_s": 2.2622500896453857,
+          "p95_s": 2.855300176143646,
+          "max_s": 3.1549999713897705
+        },
+        "featureDepositChunk": {
+          "n": 222,
+          "mean_s": 3.348981981878882,
+          "median_s": 3.2825000286102295,
+          "p5_s": 3.032049834728241,
+          "p95_s": 3.692599844932556,
+          "max_s": 7.953999996185303
+        },
+        "featureProcessChunk": {
+          "n": 222,
+          "mean_s": 2.6104774775805772,
+          "median_s": 2.5320000648498535,
+          "p5_s": 2.3469998955726625,
+          "p95_s": 3.018749976158142,
+          "max_s": 3.2319998741149902
+        },
+        "fixed": {
+          "n": 15,
+          "mean_s": 2.3479333400726317,
+          "median_s": 2.2730000019073486,
+          "p5_s": 2.1299999952316284,
+          "p95_s": 2.6764000177383425,
+          "max_s": 2.696000099182129
+        },
+        "processChunk": {
+          "n": 222,
+          "mean_s": 3.7905045038944967,
+          "median_s": 3.529500126838684,
+          "p5_s": 2.7569000482559205,
+          "p95_s": 4.835849964618683,
+          "max_s": 8.07099986076355
+        }
+      }
+    },
+    "timing_runs": [
+      "arbitrumSepolia",
+      "arbitrumSepolia-accept",
+      "arbitrumSepolia-enclosure"
+    ],
+    "outages_excluded": [],
+    "outage_threshold_s": 120.0,
+    "bootstrap": {
+      "block": 10,
+      "reps": 2000,
+      "seed": 20261029
+    }
+  },
+  "MegaETH": {
+    "testnet": "megaethTestnet-31872",
+    "chunk_size_bytes": 31872,
+    "paired_transactions": 216,
+    "ratios": {
+      "postDemand": {
+        "ratio": 1.351035833471877,
+        "min": 1.3355257293237162,
+        "max": 1.3593413389895939,
+        "n": 3,
+        "public_gas": 999549,
+        "local_gas": 739839
+      },
+      "prepareBinding": {
+        "ratio": 1.7271133405573886,
+        "min": 1.7271133405573886,
+        "max": 1.7271133405573886,
+        "n": 3,
+        "public_gas": 425559,
+        "local_gas": 246399
+      },
+      "depositCiphertextChunk": {
+        "ratio": 1.2266266800593546,
+        "min": 1.2261978000972558,
+        "max": 1.2302163436724656,
+        "n": 28,
+        "public_gas": 753100818,
+        "local_gas": 613960898
+      },
+      "sealCiphertext": {
+        "ratio": 2.233591576817858,
+        "min": 2.233591576817858,
+        "max": 2.233591576817858,
+        "n": 3,
+        "public_gas": 291477,
+        "local_gas": 130497
+      },
+      "bindProvider": {
+        "ratio": 1.1420508724102363,
+        "min": 1.1378759640385714,
+        "max": 1.1442633680994858,
+        "n": 3,
+        "public_gas": 6420819,
+        "local_gas": 5622183
+      },
+      "disputeClaim": {
+        "ratio": 1.6441115702479339,
+        "min": 1.6441115702479339,
+        "max": 1.6441115702479339,
+        "n": 3,
+        "public_gas": 477450,
+        "local_gas": 290400
+      },
+      "revealKey": {
+        "ratio": 1.6125997000703376,
+        "min": 1.6125997000703376,
+        "max": 1.6125997000703376,
+        "n": 3,
+        "public_gas": 364533,
+        "local_gas": 226053
+      },
+      "startAdjudication": {
+        "ratio": 2.2458612458612457,
+        "min": 2.2458612458612457,
+        "max": 2.2458612458612457,
+        "n": 3,
+        "public_gas": 262503,
+        "local_gas": 116883
+      },
+      "processChunk": {
+        "ratio": 1.0003505990521726,
+        "min": 1.000338521999587,
+        "max": 1.0011451892661052,
+        "n": 28,
+        "public_gas": 3278739270,
+        "local_gas": 3277590150
+      },
+      "finalizeAdjudication": {
+        "ratio": 2.0825850166663633,
+        "min": 1.9639805688758376,
+        "max": 2.1580024234719213,
+        "n": 3,
+        "public_gas": 343008,
+        "local_gas": 164703
+      },
+      "accessDisputeClaim": {
+        "ratio": 1.9275750047773743,
+        "min": 1.9275750047773743,
+        "max": 1.9275750047773743,
+        "n": 3,
+        "public_gas": 302610,
+        "local_gas": 156990
+      },
+      "accessRevealWitness": {
+        "ratio": 1.2237204393361245,
+        "min": 1.2237204393361245,
+        "max": 1.2237204393361245,
+        "n": 3,
+        "public_gas": 1582656,
+        "local_gas": 1293315
+      },
+      "conformanceDisputeClaim": {
+        "ratio": 1.771515189011941,
+        "min": 1.771515189011941,
+        "max": 1.771515189011941,
+        "n": 3,
+        "public_gas": 429495,
+        "local_gas": 242445
+      },
+      "conformanceDepositChunk": {
+        "ratio": 1.2270365872053892,
+        "min": 1.2265401836754812,
+        "max": 1.2303209890232552,
+        "n": 28,
+        "public_gas": 753799622,
+        "local_gas": 614325302
+      },
+      "conformanceStartAdjudication": {
+        "ratio": 1.934054303692728,
+        "min": 1.934054303692728,
+        "max": 1.934054303692728,
+        "n": 3,
+        "public_gas": 301521,
+        "local_gas": 155901
+      },
+      "conformanceProcessChunk": {
+        "ratio": 1.293348051111262,
+        "min": 1.0326018310726273,
+        "max": 2.0015374478365913,
+        "n": 28,
+        "public_gas": 5066378,
+        "local_gas": 3917258
+      },
+      "conformanceFinalizeAdjudication": {
+        "ratio": 2.1966959020111902,
+        "min": 2.035181168665476,
+        "max": 2.3021831514040496,
+        "n": 3,
+        "public_gas": 348642,
+        "local_gas": 158712
+      },
+      "featureDisputeClaim": {
+        "ratio": 1.7713052191446985,
+        "min": 1.7713052191446985,
+        "max": 1.7713052191446985,
+        "n": 3,
+        "public_gas": 429561,
+        "local_gas": 242511
+      },
+      "featureDepositChunk": {
+        "ratio": 1.227036359550111,
+        "min": 1.226539964643851,
+        "max": 1.2303202418789412,
+        "n": 28,
+        "public_gas": 753800238,
+        "local_gas": 614325918
+      },
+      "featureStartAdjudication": {
+        "ratio": 1.93562066306862,
+        "min": 1.93562066306862,
+        "max": 1.93562066306862,
+        "n": 3,
+        "public_gas": 301260,
+        "local_gas": 155640
+      },
+      "featureProcessChunk": {
+        "ratio": 1.0008538282750676,
+        "min": 1.000785685574606,
+        "max": 1.002703903761055,
+        "n": 28,
+        "public_gas": 1346993517,
+        "local_gas": 1345844397
+      },
+      "featureFinalizeAdjudication": {
+        "ratio": 2.1580371552341315,
+        "min": 1.9977864543302488,
+        "max": 2.2625290674364527,
+        "n": 3,
+        "public_gas": 355692,
+        "local_gas": 164822
+      },
+      "acceptBinding": {
+        "ratio": 1.7393600497048773,
+        "min": 1.7393600497048773,
+        "max": 1.7393600497048773,
+        "n": 1,
+        "public_gas": 184767,
+        "local_gas": 106227
+      }
+    },
+    "steps": {
+      "chunk": {
+        "n": 4749,
+        "median_s": 2.562999963760376,
+        "mean_s": 6.241140450495473,
+        "p95_s": 27.716400098800655,
+        "max_s": 75.88899993896484
+      },
+      "fixed": {
+        "n": 81,
+        "median_s": 1.2199997901916504,
+        "mean_s": 1.7118024737746627,
+        "p95_s": 3.6529998779296875,
+        "max_s": 7.96399998664856
+      },
+      "network_s": {
+        "n": 4830,
+        "median_s": 0.6184999942779541,
+        "mean_s": 0.8452730851143784,
+        "p95_s": 2.376549994945526,
+        "max_s": 8.537999868392944
+      },
+      "prep_s": {
+        "n": 4830,
+        "median_s": 1.3420000076293945,
+        "mean_s": 5.319909523535466,
+        "p95_s": 26.66300014257432,
+        "max_s": 75.14800000190735
+      }
+    },
+    "steps_by_operation": {
+      "conformanceDepositChunk": {
+        "n": 790,
+        "mean_s": 4.80062531640258,
+        "median_s": 3.315999984741211,
+        "p5_s": 2.6139999508857725,
+        "p95_s": 8.744750070571897,
+        "max_s": 14.54099988937378
+      },
+      "conformanceProcessChunk": {
+        "n": 790,
+        "mean_s": 1.229689873321147,
+        "median_s": 1.1689999103546143,
+        "p5_s": 0.9287998914718628,
+        "p95_s": 1.505549943447113,
+        "max_s": 23.78600001335144
+      },
+      "depositCiphertextChunk": {
+        "n": 799,
+        "mean_s": 1.9390375470936074,
+        "median_s": 1.7349998950958252,
+        "p5_s": 1.3428999423980712,
+        "p95_s": 3.1994000911712615,
+        "max_s": 73.13100004196167
+      },
+      "featureDepositChunk": {
+        "n": 790,
+        "mean_s": 4.952820252768601,
+        "median_s": 4.528000116348267,
+        "p5_s": 3.7894501090049744,
+        "p95_s": 6.648349916934967,
+        "max_s": 9.256999969482422
+      },
+      "featureProcessChunk": {
+        "n": 790,
+        "mean_s": 5.106539240366296,
+        "median_s": 1.6494998931884766,
+        "p5_s": 1.3539998531341553,
+        "p95_s": 17.631999909877777,
+        "max_s": 23.439000129699707
+      },
+      "fixed": {
+        "n": 81,
+        "mean_s": 1.7118024737746627,
+        "median_s": 1.2199997901916504,
+        "p5_s": 0.9690001010894775,
+        "p95_s": 3.6529998779296875,
+        "max_s": 7.96399998664856
+      },
+      "processChunk": {
+        "n": 790,
+        "mean_s": 19.46714177192012,
+        "median_s": 20.119500041007996,
+        "p5_s": 1.9524501085281372,
+        "p95_s": 45.102249920368195,
+        "max_s": 75.88899993896484
+      }
+    },
+    "steps_by_run": {
+      "megaethTestnet-31872": {
+        "conformanceDepositChunk": {
+          "n": 28,
+          "mean_s": 2.2631785699299405,
+          "median_s": 1.7445000410079956,
+          "p5_s": 1.3510000348091125,
+          "p95_s": 4.1693501830101,
+          "max_s": 4.64300012588501
+        },
+        "conformanceProcessChunk": {
+          "n": 28,
+          "mean_s": 2.1675714254379272,
+          "median_s": 1.2644999027252197,
+          "p5_s": 0.9920998573303222,
+          "p95_s": 3.3330001115798917,
+          "max_s": 23.78600001335144
+        },
+        "depositCiphertextChunk": {
+          "n": 28,
+          "mean_s": 1.995071428162711,
+          "median_s": 1.6820000410079956,
+          "p5_s": 1.3020500659942627,
+          "p95_s": 3.434399890899658,
+          "max_s": 3.677000045776367
+        },
+        "featureDepositChunk": {
+          "n": 28,
+          "mean_s": 2.386964278561728,
+          "median_s": 2.0489999055862427,
+          "p5_s": 1.4190000891685486,
+          "p95_s": 3.9120500087738033,
+          "max_s": 4.038000106811523
+        },
+        "featureProcessChunk": {
+          "n": 28,
+          "mean_s": 1.8751785670007979,
+          "median_s": 1.5440000295639038,
+          "p5_s": 1.359249973297119,
+          "p95_s": 1.955700039863586,
+          "max_s": 10.974999904632568
+        },
+        "fixed": {
+          "n": 47,
+          "mean_s": 1.861617037590514,
+          "median_s": 1.2330000400543213,
+          "p5_s": 1.008400058746338,
+          "p95_s": 4.226299929618833,
+          "max_s": 7.96399998664856
+        },
+        "processChunk": {
+          "n": 28,
+          "mean_s": 14.09460713182177,
+          "median_s": 2.296999931335449,
+          "p5_s": 1.8813500165939332,
+          "p95_s": 43.60945004224777,
+          "max_s": 45.08200001716614
+        }
+      },
+      "megaethTestnet-31872-accept": {
+        "depositCiphertextChunk": {
+          "n": 9,
+          "mean_s": 2.1146666738722057,
+          "median_s": 1.437000036239624,
+          "p5_s": 1.161800003051758,
+          "p95_s": 4.453599929809569,
+          "max_s": 5.23799991607666
+        },
+        "fixed": {
+          "n": 4,
+          "mean_s": 1.2652499675750732,
+          "median_s": 1.278499960899353,
+          "p5_s": 1.07854984998703,
+          "p95_s": 1.4334000945091248,
+          "max_s": 1.4520001411437988
+        }
+      },
+      "megaethTestnet-31872-benchy-a": {
+        "conformanceDepositChunk": {
+          "n": 381,
+          "mean_s": 6.856343831915868,
+          "median_s": 6.803000211715698,
+          "p5_s": 4.503000020980835,
+          "p95_s": 9.248999834060669,
+          "max_s": 14.54099988937378
+        },
+        "conformanceProcessChunk": {
+          "n": 381,
+          "mean_s": 1.2989658789997651,
+          "median_s": 1.2639999389648438,
+          "p5_s": 1.133000135421753,
+          "p95_s": 1.5859999656677246,
+          "max_s": 2.1679999828338623
+        },
+        "depositCiphertextChunk": {
+          "n": 381,
+          "mean_s": 2.1600761157008295,
+          "median_s": 1.7829999923706055,
+          "p5_s": 1.3919999599456787,
+          "p95_s": 3.437999963760376,
+          "max_s": 73.13100004196167
+        },
+        "featureDepositChunk": {
+          "n": 381,
+          "mean_s": 5.917971128553856,
+          "median_s": 5.968000173568726,
+          "p5_s": 4.806999921798706,
+          "p95_s": 7.460999965667725,
+          "max_s": 9.256999969482422
+        },
+        "featureProcessChunk": {
+          "n": 381,
+          "mean_s": 3.0056115485864674,
+          "median_s": 1.7070000171661377,
+          "p5_s": 1.445000171661377,
+          "p95_s": 17.09500002861023,
+          "max_s": 23.439000129699707
+        },
+        "fixed": {
+          "n": 15,
+          "mean_s": 1.7182666619618734,
+          "median_s": 1.3320000171661377,
+          "p5_s": 1.026699924468994,
+          "p95_s": 3.608600068092346,
+          "max_s": 3.6100001335144043
+        },
+        "processChunk": {
+          "n": 381,
+          "mean_s": 19.883459317715463,
+          "median_s": 20.305999994277954,
+          "p5_s": 2.0239999294281006,
+          "p95_s": 45.64400005340576,
+          "max_s": 75.88899993896484
+        }
+      },
+      "megaethTestnet-31872-benchy-b": {
+        "conformanceDepositChunk": {
+          "n": 381,
+          "mean_s": 2.931385826876783,
+          "median_s": 2.9489998817443848,
+          "p5_s": 2.6089999675750732,
+          "p95_s": 3.2710001468658447,
+          "max_s": 4.077999830245972
+        },
+        "conformanceProcessChunk": {
+          "n": 381,
+          "mean_s": 1.0914881892717416,
+          "median_s": 1.1170001029968262,
+          "p5_s": 0.8960001468658447,
+          "p95_s": 1.2400000095367432,
+          "max_s": 1.7650001049041748
+        },
+        "depositCiphertextChunk": {
+          "n": 381,
+          "mean_s": 1.7097322834445423,
+          "median_s": 1.7059998512268066,
+          "p5_s": 1.3389999866485596,
+          "p95_s": 2.055000066757202,
+          "max_s": 2.562999963760376
+        },
+        "featureDepositChunk": {
+          "n": 381,
+          "mean_s": 4.176236220232145,
+          "median_s": 4.197999954223633,
+          "p5_s": 3.8339998722076416,
+          "p95_s": 4.504000186920166,
+          "max_s": 4.934000015258789
+        },
+        "featureProcessChunk": {
+          "n": 381,
+          "mean_s": 7.444942257222854,
+          "median_s": 1.4799997806549072,
+          "p5_s": 1.3420000076293945,
+          "p95_s": 18.81500005722046,
+          "max_s": 23.142000198364258
+        },
+        "fixed": {
+          "n": 15,
+          "mean_s": 1.3549999872843423,
+          "median_s": 1.0699999332427979,
+          "p5_s": 0.9360999822616577,
+          "p95_s": 3.3835999727249146,
+          "max_s": 3.440999984741211
+        },
+        "processChunk": {
+          "n": 381,
+          "mean_s": 19.445656168179248,
+          "median_s": 21.06500005722046,
+          "p5_s": 1.928999900817871,
+          "p95_s": 44.93299984931946,
+          "max_s": 75.4670000076294
+        }
+      }
+    },
+    "timing_runs": [
+      "megaethTestnet-31872",
+      "megaethTestnet-31872-accept",
+      "megaethTestnet-31872-benchy-a",
+      "megaethTestnet-31872-benchy-b"
+    ],
+    "outages_excluded": [],
+    "outage_threshold_s": 120.0,
+    "bootstrap": {
+      "block": 10,
+      "reps": 2000,
+      "seed": 20261029
+    }
+  },
+  "validation": [
+    {
+      "chain": "Ethereum",
+      "run": "sepolia-enclosure",
+      "model_runs": [
+        "sepolia",
+        "sepolia-accept"
+      ],
+      "steps": 2577,
+      "measured_active_s": 38844.763000011444,
+      "outages_excluded_s": [],
+      "predicted_median_s": 37822.63800084591,
+      "predicted_95_s": [
+        36881.95127735138,
+        38785.12137687206
+      ],
+      "time_error_percent": -2.6313070803527205,
+      "in_interval": false
+    },
+    {
+      "chain": "Arbitrum",
+      "run": "arbitrumSepolia-enclosure",
+      "model_runs": [
+        "arbitrumSepolia",
+        "arbitrumSepolia-accept"
+      ],
+      "steps": 1347,
+      "measured_active_s": 3932.1760001182556,
+      "outages_excluded_s": [],
+      "predicted_median_s": 3580.0915001630783,
+      "predicted_95_s": [
+        3546.404552614689,
+        3617.1669035971163
+      ],
+      "time_error_percent": -8.953935427727263,
+      "in_interval": false
+    },
+    {
+      "chain": "MegaETH",
+      "run": "megaethTestnet-31872-benchy-a",
+      "model_runs": [
+        "megaethTestnet-31872",
+        "megaethTestnet-31872-accept",
+        "megaethTestnet-31872-benchy-b"
+      ],
+      "steps": 2301,
+      "measured_active_s": 14931.418999910355,
+      "outages_excluded_s": [],
+      "predicted_median_s": 13797.777999281883,
+      "predicted_95_s": [
+        9263.389724683762,
+        14591.700249761343
+      ],
+      "time_error_percent": -7.592319260716463,
+      "in_interval": false
+    },
+    {
+      "chain": "MegaETH",
+      "run": "megaethTestnet-31872-benchy-b",
+      "model_runs": [
+        "megaethTestnet-31872",
+        "megaethTestnet-31872-accept",
+        "megaethTestnet-31872-benchy-a"
+      ],
+      "steps": 2301,
+      "measured_active_s": 14040.911999940872,
+      "outages_excluded_s": [],
+      "predicted_median_s": 14624.19400036335,
+      "predicted_95_s": [
+        9263.389724683762,
+        15532.815223890542
+      ],
+      "time_error_percent": 4.154160359561644,
+      "in_interval": true
+    }
+  ]
+}

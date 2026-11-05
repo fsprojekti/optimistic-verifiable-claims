@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+autodesk_fdm:prusa,Identity,20756315,8000,2595,0,78642467545,78642742666,30369320,Valid
+autodesk_fdm:prusa,Access,20756315,8000,0,0,431093,483423,431093,Valid
+autodesk_fdm:prusa,Conformance,20756315,8000,2595,14944894115,107543990,15052633591,1249652,Valid
+autodesk_fdm:prusa,Feature,20756315,8000,2595,14944951205,33684410413,48629559389,13441763,Valid

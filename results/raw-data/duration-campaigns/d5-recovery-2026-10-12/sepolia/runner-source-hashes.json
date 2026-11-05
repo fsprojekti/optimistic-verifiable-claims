@@ -1,0 +1,6 @@
+{
+  "run-testnet-identity.js": "b3e6d36c888d69b36765e381cbe18cb2f0407d1f64021ca1b7cb5d87e376d26c",
+  "transaction-journal.js": "96a0494dacb040731b4de5cca7041c98dd210326d7c9b8d6c7a28bdfbea55ac4",
+  "receipt-identifiers.js": "ecf8f2f42cbc0fa6007db73af5c738c96f7d435438d414e61d309194114b227b",
+  "run-testnet-campaign.js": "44f1b69418537f7da493811dd2d5d878350f57fce396367d9855f054dd6e60b6"
+}

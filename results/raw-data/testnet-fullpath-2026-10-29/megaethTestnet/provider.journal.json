@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "identity": {
+    "network": "megaethTestnet",
+    "chain_id": "6343",
+    "chunk_bytes": 24960,
+    "bytecodes": {
+      "Demand": "0xbe8bbb8c52bb19da6e1305135e72623b79030af7a07b7c181fadc99fca440310",
+      "OVCAccess": "0xe4f93f2454b7ba84354acfacfd711a444235766752481b38cd9275ce387f0c38",
+      "OVCIdentitySegmented": "0x1ad330ce03449285b6f54676b61438acd14fdc2530461aa5aba5d5f8c94e22aa",
+      "OVCConformanceSegmented": "0x565aabe29ba9eb5a2aa79a64b479fbec65b361d679157eaba657015f6b8fe17c",
+      "OVCFeatureSegmented": "0xb417ab972cd5afba4dc408c6025c6a7813eececc31fab50e13617abec8303e16",
+      "BindingPhase": "0x7063c43318fa8f8bd622e0d3ab4bccd7244c4ba189787922f60775de5f554458"
+    },
+    "signer": "0x16EEc4F232bEf544F4cB55B0e29bA9c342F9f577"
+  },
+  "created_at_utc": "2026-10-29T07:52:13.207Z",
+  "operations": {
+    "registerAccessPublicKey": {
+      "hash": "0xdd6b092cbc6ba7d42a315077a88cfc99cf873be104c04875c7db020515882232",
+      "nonce": 0,
+      "gas_limit": "491060",
+      "submitted_at_utc": "2026-10-29T07:52:50.198Z",
+      "receipt_at_utc": "2026-10-29T07:52:50.621Z",
+      "block_number": 33549915,
+      "gas_used": "382650",
+      "fee_wei": "382650000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:cura/disputeClaim": {
+      "hash": "0x06160c5b858a3d7216c0ad6c28da98f8aa4ea5d0ff48c6af391d8329451ad742",
+      "nonce": 1,
+      "gas_limit": "264012",
+      "submitted_at_utc": "2026-10-29T07:53:11.826Z",
+      "receipt_at_utc": "2026-10-29T07:53:12.295Z",
+      "block_number": 33549936,
+      "gas_used": "159150",
+      "fee_wei": "159150000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:cura/accessDisputeClaim": {
+      "hash": "0xfa2f7414b3f95bfa4de1f431f6758bedd1b42a2a497dd0b96b588c8ed02b1c10",
+      "nonce": 2,
+      "gas_limit": "204807",
+      "submitted_at_utc": "2026-10-29T07:58:13.957Z",
+      "receipt_at_utc": "2026-10-29T07:58:15.204Z",
+      "block_number": 33550239,
+      "gas_used": "100870",
+      "fee_wei": "100870000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:cura/conformanceDisputeClaim": {
+      "hash": "0x83f25fbf21a2bf5a16e2c6c84454c0ef51d04004a8859a06da624fe22e97f5d4",
+      "nonce": 3,
+      "gas_limit": "247773",
+      "submitted_at_utc": "2026-10-29T07:58:19.661Z",
+      "receipt_at_utc": "2026-10-29T07:58:20.130Z",
+      "block_number": 33550244,
+      "gas_used": "143165",
+      "fee_wei": "143165000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:cura/featureDisputeClaim": {
+      "hash": "0x7b4fb434bda8561b3eac061013ee1ea31847a5a643f7e220233934fe42b56c28",
+      "nonce": 4,
+      "gas_limit": "247796",
+      "submitted_at_utc": "2026-10-29T07:58:55.733Z",
+      "receipt_at_utc": "2026-10-29T07:58:56.286Z",
+      "block_number": 33550280,
+      "gas_used": "143187",
+      "fee_wei": "143187000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:orca/disputeClaim": {
+      "hash": "0x094feb077383f1105dcb74b6428e8150e0d71f1f76f10eb1f7a3a1898ed6d9c2",
+      "nonce": 5,
+      "gas_limit": "264012",
+      "submitted_at_utc": "2026-10-29T08:00:05.722Z",
+      "receipt_at_utc": "2026-10-29T08:00:06.185Z",
+      "block_number": 33550350,
+      "gas_used": "159150",
+      "fee_wei": "159150000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:orca/accessDisputeClaim": {
+      "hash": "0x364ad78b6211376d529e1d2e490500aafbd9c730e33c9abccfb8401834b17374",
+      "nonce": 6,
+      "gas_limit": "204807",
+      "submitted_at_utc": "2026-10-29T08:01:42.141Z",
+      "receipt_at_utc": "2026-10-29T08:01:42.604Z",
+      "block_number": 33550447,
+      "gas_used": "100870",
+      "fee_wei": "100870000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:orca/conformanceDisputeClaim": {
+      "hash": "0xdb30e73431c4c54c87175815cf4662bce256d6ad3c22cdcc48af97b3bad472f0",
+      "nonce": 7,
+      "gas_limit": "247773",
+      "submitted_at_utc": "2026-10-29T08:01:44.231Z",
+      "receipt_at_utc": "2026-10-29T08:01:44.787Z",
+      "block_number": 33550449,
+      "gas_used": "143165",
+      "fee_wei": "143165000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:orca/featureDisputeClaim": {
+      "hash": "0x8a1806384276759d4aba04719dfdb0d148da5e2b161f49bcae6304a8318dd715",
+      "nonce": 8,
+      "gas_limit": "247796",
+      "submitted_at_utc": "2026-10-29T08:02:19.058Z",
+      "receipt_at_utc": "2026-10-29T08:02:19.517Z",
+      "block_number": 33550483,
+      "gas_used": "143187",
+      "fee_wei": "143187000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:prusa/disputeClaim": {
+      "hash": "0x0a4523d5587a389cc32b86fe9e6a3c76ae21598db5396ff437ecb3b6df58c19e",
+      "nonce": 9,
+      "gas_limit": "264012",
+      "submitted_at_utc": "2026-10-29T08:03:33.351Z",
+      "receipt_at_utc": "2026-10-29T08:03:33.827Z",
+      "block_number": 33550558,
+      "gas_used": "159150",
+      "fee_wei": "159150000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:prusa/accessDisputeClaim": {
+      "hash": "0xc07f3d733a5c090eb7b1cefc41f351777eec37ec878aba2a363e53112018b03d",
+      "nonce": 10,
+      "gas_limit": "204807",
+      "submitted_at_utc": "2026-10-29T08:07:09.528Z",
+      "poll_ms": 250,
+      "receipt_at_utc": "2026-10-29T08:07:10.630Z",
+      "block_number": 33550775,
+      "gas_used": "100870",
+      "fee_wei": "100870000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:prusa/conformanceDisputeClaim": {
+      "hash": "0x71f7428b691ad0b11802842b1dca31aec2e2749aca5b323a7cf8f38db5b29e95",
+      "nonce": 11,
+      "gas_limit": "247773",
+      "submitted_at_utc": "2026-10-29T08:07:14.734Z",
+      "poll_ms": 250,
+      "receipt_at_utc": "2026-10-29T08:07:15.760Z",
+      "block_number": 33550780,
+      "gas_used": "143165",
+      "fee_wei": "143165000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:prusa/featureDisputeClaim": {
+      "hash": "0xa601adbe2cf3fafe461ebae1013fc7babe3afc7496c547c216f2c46c7de39f90",
+      "nonce": 12,
+      "gas_limit": "247796",
+      "submitted_at_utc": "2026-10-29T08:07:53.994Z",
+      "poll_ms": 250,
+      "receipt_at_utc": "2026-10-29T08:07:54.474Z",
+      "block_number": 33550818,
+      "gas_used": "143187",
+      "fee_wei": "143187000000",
+      "contract_address": null,
+      "status": 1
+    }
+  },
+  "launches": 4
+}

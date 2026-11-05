@@ -1,0 +1,115 @@
+{
+  "observed_at_utc": "2026-10-12T06:55:37.376Z",
+  "scope": "Read-only independent live claim checks; receipt availability reported separately",
+  "results": [
+    {
+      "network": "sepolia",
+      "rpc_url": "https://sepolia.drpc.org",
+      "job": "smoke-cura-6144",
+      "final_transaction": "0x3d72c4f4954f48b3988140092928c82ad279180e24e101c8aa41a162307dc3a9",
+      "claim_count": "1",
+      "claim_id": "1",
+      "live_outcome": 2,
+      "live_verdict_verified": true,
+      "final_receipt_available": true,
+      "receipt_status": 1
+    },
+    {
+      "network": "arbitrumSepolia",
+      "rpc_url": "https://sepolia-rollup.arbitrum.io/rpc",
+      "job": "full-cura",
+      "final_transaction": "0xdf5ea42145612422870de1b9585e4dfca68243b6849a800e1dcf9bbaf32a154e",
+      "claim_count": "1",
+      "claim_id": "1",
+      "live_outcome": 2,
+      "live_verdict_verified": true,
+      "final_receipt_available": true,
+      "receipt_status": 1
+    },
+    {
+      "network": "arbitrumSepolia",
+      "rpc_url": "https://sepolia-rollup.arbitrum.io/rpc",
+      "job": "full-orca",
+      "final_transaction": "0x0f022ae0851db9f9d5a06f0d2cb3de45f45d7701067c879f58f5879fb656c0be",
+      "claim_count": "1",
+      "claim_id": "1",
+      "live_outcome": 2,
+      "live_verdict_verified": true,
+      "final_receipt_available": true,
+      "receipt_status": 1
+    },
+    {
+      "network": "arbitrumSepolia",
+      "rpc_url": "https://sepolia-rollup.arbitrum.io/rpc",
+      "job": "full-prusa",
+      "final_transaction": "0x918a460daf3a3fa0c566df7daddb505b6332eed013209c9761609c37e333c404",
+      "claim_count": "1",
+      "claim_id": "1",
+      "live_outcome": 2,
+      "live_verdict_verified": true,
+      "final_receipt_available": true,
+      "receipt_status": 1
+    },
+    {
+      "network": "arbitrumSepolia",
+      "rpc_url": "https://sepolia-rollup.arbitrum.io/rpc",
+      "job": "smoke-cura-6144",
+      "final_transaction": "0x5b168902f867a88520a1ffa799129192b6e0d56d0bb55d85475c5f0a0cf73ea8",
+      "claim_count": "1",
+      "claim_id": "1",
+      "live_outcome": 2,
+      "live_verdict_verified": true,
+      "final_receipt_available": true,
+      "receipt_status": 1
+    },
+    {
+      "network": "megaethTestnet",
+      "rpc_url": "https://carrot.megaeth.com/rpc",
+      "job": "full-cura",
+      "final_transaction": "0xf1eb3ff7f08367e32782d7ca59976e33b7c8a83a8e8e0c31bdd8bbf1bd3d12f4",
+      "claim_count": "1",
+      "claim_id": "1",
+      "live_outcome": 2,
+      "live_verdict_verified": true,
+      "final_receipt_available": true,
+      "receipt_status": 1
+    },
+    {
+      "network": "megaethTestnet",
+      "rpc_url": "https://carrot.megaeth.com/rpc",
+      "job": "full-orca",
+      "final_transaction": "0x2a823eb35c0ec52da7edb8f120768c63c691efafde8d5ad5931863d389d9fc51",
+      "claim_count": "1",
+      "claim_id": "1",
+      "live_outcome": 2,
+      "live_verdict_verified": true,
+      "final_receipt_available": true,
+      "receipt_status": 1
+    },
+    {
+      "network": "megaethTestnet",
+      "rpc_url": "https://carrot.megaeth.com/rpc",
+      "job": "full-prusa",
+      "final_transaction": "0x3b8d04ffa735266b461c7970157c7fde02a8f97d1c9c6874ab71cdbfeb5dcf2b",
+      "claim_count": "1",
+      "claim_id": "1",
+      "live_outcome": 2,
+      "live_verdict_verified": true,
+      "final_receipt_available": true,
+      "receipt_status": 1
+    },
+    {
+      "network": "megaethTestnet",
+      "rpc_url": "https://carrot.megaeth.com/rpc",
+      "job": "smoke-cura-6144",
+      "final_transaction": "0x622bdf4605c630f5cc8f1077d1064c31f505a2b29890bc448ba9a1571708db91",
+      "claim_count": "1",
+      "claim_id": "1",
+      "live_outcome": 2,
+      "live_verdict_verified": true,
+      "final_receipt_available": true,
+      "receipt_status": 1
+    }
+  ],
+  "all_live_verdicts_verified": true
+}

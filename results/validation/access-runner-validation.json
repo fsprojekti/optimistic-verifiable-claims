@@ -1,0 +1,22 @@
+{
+  "observed_at_utc": "2026-10-14T15:24:22.591202+00:00",
+  "command": "node node_modules/hardhat/internal/cli/cli.js test tests/testnet-access-runner.test.js",
+  "passing": 3,
+  "failed": 0,
+  "scope": "Local Hardhat integration of public Access runner v2, receipt/nonce-safe resume, changed input guard and redacted exports. No public transactions are sent by these tests.",
+  "transcript_sha256": "ebcb1f68de87b1c6dc6f755963020b793277733ccfaea35200b26bb930bc2985",
+  "sources": [
+    {
+      "path": "code/scripts/run-testnet-access.js",
+      "sha256": "3d9c2736ca1b3c57d28ca18f7f1b7222d982b8fe1cbf458467e05dff2726aff1"
+    },
+    {
+      "path": "code/scripts/run-testnet-access-v2.js",
+      "sha256": "84318c71bf0154772b5fa9d58cc8e4ce46b2e182d45fe04e986ecce4b9e82fc7"
+    },
+    {
+      "path": "code/tests/testnet-access-runner.test.js",
+      "sha256": "8ac201a81e28012e2aa4cfeee40987e32373fbb3152c45b9bcbd808fdd00cdf9"
+    }
+  ]
+}

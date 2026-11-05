@@ -1,0 +1,2 @@
+artifact_key,model_id,slicer,slicer_version,output_sha256,size_bytes,line_count,chunk_size_bytes,chunk_count,upload_gas,identity_processing_gas,lifecycle_gas,upload_gas_per_byte,processing_gas_per_byte,lifecycle_gas_per_byte,local_elapsed_seconds_diagnostic_only,outcome,client_version,chain_id
+nasa_wrench:prusa,nasa_wrench,prusa,2.9.6,361a609ecf6f65e0baae7425842358e32cabb091f9241f87f55c4a76ae79c335,40031421,1318925,4160,9623,29109397223,151817723645,180929710703,727.164,3792.464,4519.692,1329.668,Valid,anvil/v1.7.1,31337

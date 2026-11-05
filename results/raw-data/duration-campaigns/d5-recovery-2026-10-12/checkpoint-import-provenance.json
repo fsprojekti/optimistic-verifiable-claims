@@ -1,0 +1,56 @@
+{
+  "created_at_utc": "2026-10-12T06:51:01.860924+00:00",
+  "reason": "Receipt-derived identifiers and accepted-transaction RPC error recovery. Original checkpoints, outputs and source guards preserved. Prior source snapshots reconstructed and verified byte-for-byte against prior SHA-256 guards. Contracts unchanged.",
+  "imports": [
+    {
+      "source": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-weekend-2026-10-09-v2\\sepolia\\full-cura.checkpoint.json",
+      "destination": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\sepolia\\full-cura.checkpoint.json",
+      "sha256": "a66d958b1754489c869f98b0d5a0d3ea3c0e2eb0f79bbb8fb30543d192dfc990"
+    },
+    {
+      "source": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-weekend-2026-10-09-v2\\sepolia\\smoke-cura-6144.checkpoint.json",
+      "destination": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\sepolia\\smoke-cura-6144.checkpoint.json",
+      "sha256": "e383a2dfc4e8077c22618243163274b784a8b951e13801af3cc7e7aceb1a2fdf"
+    },
+    {
+      "source": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-weekend-2026-10-09-v2\\arbitrumSepolia\\full-cura.checkpoint.json",
+      "destination": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\arbitrumSepolia\\full-cura.checkpoint.json",
+      "sha256": "b18a381bb27a122f6e47214cfd42e4ce7d96fbddb91001f6c6954f0925590101"
+    },
+    {
+      "source": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-weekend-2026-10-09-v2\\arbitrumSepolia\\full-orca.checkpoint.json",
+      "destination": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\arbitrumSepolia\\full-orca.checkpoint.json",
+      "sha256": "e19366f844c1f0c7f5eaa585244ef9af017664876b5268d0188044df5731b821"
+    },
+    {
+      "source": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-weekend-2026-10-09-v2\\arbitrumSepolia\\full-prusa.checkpoint.json",
+      "destination": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\arbitrumSepolia\\full-prusa.checkpoint.json",
+      "sha256": "9c543c2d0a4eccdb614be4b8d49e194a25f4fd550b7a2ccbaa61a8503ce09dee"
+    },
+    {
+      "source": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-weekend-2026-10-09-v2\\arbitrumSepolia\\smoke-cura-6144.checkpoint.json",
+      "destination": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\arbitrumSepolia\\smoke-cura-6144.checkpoint.json",
+      "sha256": "411809353076a77b4a050aff8c4bde7cb8d49f26cd407b49fcf9ef5d0a62674f"
+    },
+    {
+      "source": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-weekend-2026-10-09-v2\\megaethTestnet\\full-cura.checkpoint.json",
+      "destination": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\megaethTestnet\\full-cura.checkpoint.json",
+      "sha256": "4f28025aa00ba9f8af9749782662dfee0042aa326bf7176b2f5680d5b7426ce0"
+    },
+    {
+      "source": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-weekend-2026-10-09-v2\\megaethTestnet\\full-orca.checkpoint.json",
+      "destination": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\megaethTestnet\\full-orca.checkpoint.json",
+      "sha256": "b9faeba1034f3331fb767df3f667f9a9083e2b4b086385768273f5cd45016b8d"
+    },
+    {
+      "source": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-weekend-2026-10-09-v2\\megaethTestnet\\full-prusa.checkpoint.json",
+      "destination": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\megaethTestnet\\full-prusa.checkpoint.json",
+      "sha256": "ab3fff7df5d36ceb32da5966f7634e9ce3e485cc445fc7fccd422415d4d9f23b"
+    },
+    {
+      "source": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-weekend-2026-10-09-v2\\megaethTestnet\\smoke-cura-6144.checkpoint.json",
+      "destination": "\\\\?\\C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\megaethTestnet\\smoke-cura-6144.checkpoint.json",
+      "sha256": "ec1a3692c21997d792bb5e1601ac0d3632377e5b88fb53f2e6cbd76315359c8d"
+    }
+  ]
+}

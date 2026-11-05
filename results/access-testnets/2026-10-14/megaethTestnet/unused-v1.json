@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "identity": {
+    "profile": "stage04-access-rsa-oaep-v1",
+    "network": "megaethTestnet",
+    "chain_id": "6343",
+    "signer": "0x3fFAa6B60c24356123b1eEd5f4570400Ac4efCb5",
+    "provider": "0x3fFAa6B60c24356123b1eEd5f4570400Ac4efCb5",
+    "consumer_provider_same_account": true,
+    "slicer": "cura",
+    "artifact_sha256": "f1a51107fda5819a776de26b6068be1e577111bb2e84eb27341592842d582c33",
+    "artifact_bytes": 264386,
+    "source_demand": "0x4BB2f83e2FD588d01C923DDC192A279370F012e6",
+    "source_demand_id": "1",
+    "source_checkpoint_sha256": "4f28025aa00ba9f8af9749782662dfee0042aa326bf7176b2f5680d5b7426ce0",
+    "plaintext_commitment": "0x3723de293941ee6dbebc61d39c3dcfe8545ffe14b6bcc968505fc984740982f3",
+    "ciphertext_commitment": "0x8cacdf674456471846166bb6a21597ab6d0e92469260ea8b3a44fdc44defdde4",
+    "public_key_sha256": "925abefed8fa3a1ed84194d981b27a37fe6c79736e120b6b31407c485de7e546",
+    "envelope_hash": "0xbe917c8861ac0d1b79046673307988aba6512fac315120f2e879a1fd55519280",
+    "bytecodes": {
+      "Demand": "0xbe8bbb8c52bb19da6e1305135e72623b79030af7a07b7c181fadc99fca440310",
+      "OVCAccess": "0x8f0692d170e2346c9f39d1e50b10127d575d6535a61f89d4cfde19d316e58673",
+      "OVCIdentitySegmented": "0x1ad330ce03449285b6f54676b61438acd14fdc2530461aa5aba5d5f8c94e22aa",
+      "OVCConformanceSegmented": "0x565aabe29ba9eb5a2aa79a64b479fbec65b361d679157eaba657015f6b8fe17c",
+      "OVCFeatureSegmented": "0x9ef651de16d55929524c2f519be8e16629fb2cdbfacc343b6f576fb53d4cd0ae",
+      "BindingPhase": "0xbdc47ad49fd0a097536b1ecb125cb32c1e44ad316b349e5b34c79be1b1800b3c"
+    },
+    "runner_sources": [
+      [
+        "run-testnet-access.js",
+        "3d9c2736ca1b3c57d28ca18f7f1b7222d982b8fe1cbf458467e05dff2726aff1"
+      ],
+      [
+        "transaction-journal.js",
+        "96a0494dacb040731b4de5cca7041c98dd210326d7c9b8d6c7a28bdfbea55ac4"
+      ],
+      [
+        "receipt-identifiers.js",
+        "ecf8f2f42cbc0fa6007db73af5c738c96f7d435438d414e61d309194114b227b"
+      ],
+      [
+        "access-envelope.js",
+        "5c0bb1c873c7544aa8a77dde9a058065753d56543b0c661c738f04ede82e79e3"
+      ]
+    ],
+    "pacing_ms": 1000
+  },
+  "created_at_utc": "2026-10-14T15:17:35.648Z",
+  "operations": {},
+  "launches": 1
+}

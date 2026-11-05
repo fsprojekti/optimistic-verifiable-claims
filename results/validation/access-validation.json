@@ -1,0 +1,290 @@
+{
+  "profile": "Stage 04 Access: RSA-OAEP-SHA256 private handover and on-chain public re-encryption",
+  "network": "hardhat-local",
+  "chain_id": 31337,
+  "observed_at_utc": "2026-10-22T14:04:15.222Z",
+  "node_version": "v24.15.0",
+  "openssl_version": "3.5.5",
+  "hardhat_version": "2.29.1",
+  "tests": [
+    {
+      "title": "resolves an honest binding-created Access claim as Valid (zero-linkage regression)",
+      "state": "passed"
+    },
+    {
+      "title": "delivers a recoverable encrypted key only to the selected Provider on the accepted path",
+      "state": "passed"
+    },
+    {
+      "title": "rejects envelope replay across Provider or Demand context and corrupted ciphertext",
+      "state": "passed"
+    },
+    {
+      "title": "returns Inconsistent for a key different from the shared key commitment",
+      "state": "passed"
+    },
+    {
+      "title": "returns Incorrect for a correct key linked to the wrong Provider key",
+      "state": "passed"
+    },
+    {
+      "title": "returns Incorrect when the access commitment refers to another encrypted envelope",
+      "state": "passed"
+    },
+    {
+      "title": "rejects a self-consistent linkage whose RSA envelope encrypts the wrong key",
+      "state": "passed"
+    },
+    {
+      "title": "allows explicit refusal without publishing the key",
+      "state": "passed"
+    },
+    {
+      "title": "rejects wrong OAEP randomness even when the revealed key is correct",
+      "state": "passed"
+    },
+    {
+      "title": "rejects a self-consistent envelope encrypted for another Demand context",
+      "state": "passed"
+    },
+    {
+      "title": "rejects corrupted ciphertext despite a self-consistent key/link commitment",
+      "state": "passed"
+    },
+    {
+      "title": "requires a complete opening and restricts envelope configuration to the coordinator",
+      "state": "passed"
+    },
+    {
+      "title": "resolves Withheld after timeout and refuses late key revelation",
+      "state": "passed"
+    },
+    {
+      "title": "enforces claimant/provider roles and terminal state immutability",
+      "state": "passed"
+    },
+    {
+      "title": "requires a selected Provider's registered key, nonempty envelope and linkage",
+      "state": "passed"
+    },
+    {
+      "title": "pins the Provider key at binding despite subsequent key rotation",
+      "state": "passed"
+    },
+    {
+      "title": "uses the same handed-over key for a complete Identity dispute",
+      "state": "passed"
+    }
+  ],
+  "measured_transactions": [
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0x1ed4a7e7fa60411ce538da64951cb5d63b1c764278396adfa6fcefa6362735fb"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871297",
+      "status": 1,
+      "transaction_hash": "0x452c9e74ed1684fc8efbae92c93ec929fbfe8bb54494d0a30e125cf653cad0a9"
+    },
+    {
+      "operation": "disputeClaim",
+      "gas_used": "52330",
+      "status": 1,
+      "transaction_hash": "0x5411131ea1eb5e876128bbac3a382d052eca1626d6c30ba44965a4589ce6fbff"
+    },
+    {
+      "operation": "revealWitness",
+      "gas_used": "458412",
+      "status": 1,
+      "transaction_hash": "0x61d704cc82034db80f5dc10de37199c5ae896b77a85da760d435dca0a2f309c9"
+    },
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0xef5f4c4cc4423a5544b97d2aed5e2a8b6e06d0b5b16bbbcdfc1b7b80055de835"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871297",
+      "status": 1,
+      "transaction_hash": "0x27022b4467850a6028e6aab957b6a380cbc74fbf0a79d0a446ba2fbe7eb75052"
+    },
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0xe6d203e81267b4532722bd3b50620ebe316c40d411ff27425bbd282b6f6c9dc6"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871321",
+      "status": 1,
+      "transaction_hash": "0x68ce88cf915db14d60482fd3d9094646181a0d187250229af20c135e5b7d523e"
+    },
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0xce4ae5a88592bb55e1a91027bb2595f293db8cd0eca4fe53cd56a1a254ace4c6"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871333",
+      "status": 1,
+      "transaction_hash": "0x1befd2f3e5738d5ec5c904539e2c8d200043d5988a844171fd172a61a93b4af6"
+    },
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0xd5ccc444a042ba4e30d446f1b61900b39c50d49b849dee88fcf1d90f05d2904b"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871309",
+      "status": 1,
+      "transaction_hash": "0xcef118e54b3dfb485b4321341991eada0654ea6b811831b6aa5c23c427f506d5"
+    },
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0x076a3ddb215fa1bf46337d4333e33e47194f36eaa74e6bb9e6fc154cf98897f3"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871309",
+      "status": 1,
+      "transaction_hash": "0x4bb1f9a4eaffa00a608749039eadcb22d259d0ca9c0d1aa15ea5552777c3a2df"
+    },
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0xe4ae5822e9d07bb5f33bdbbc7e7f4929e2791df374991827564bbecd595b6661"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871321",
+      "status": 1,
+      "transaction_hash": "0xf78a7478d81491859d9fbe87c55f16b95c5e207e8b925158402a6027a4b24f7c"
+    },
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0x632b78cefda693495334ca2b8d67aeb1cfac6b384f5e4dbc9677fbd8387e4cd9"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871285",
+      "status": 1,
+      "transaction_hash": "0x339926e45c44854b9033cad5ccafd3cc47f6c447fb809e16156d742339d36345"
+    },
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0x867642a0a5ae8c90450c54320d91282fda844db26a665e0d0e236ed53f5fbe54"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871333",
+      "status": 1,
+      "transaction_hash": "0x0ad0d8ad5fcfba63a6d91050b69eb582e7760956e2744b2df63bee259f57e992"
+    },
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0x8ad14a6feb24f74823a118ac9d09d40b9bcc80e7d8fec3d5561cee31c6c533e9"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871321",
+      "status": 1,
+      "transaction_hash": "0x02b4a746d2b4de89c033bc3a7d0dfb92645b20e70eba69e4360cc7b086f98516"
+    },
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0x7874935f2ca1bfecf5f6ab8686e56883029f83c23a08bc71830c9f615f159c48"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871309",
+      "status": 1,
+      "transaction_hash": "0x1ff8473922d9f78313596f6398b9a6645aea63e3ec1b0ed012e108e5f786f433"
+    },
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0x03c7762e9e46ab17d614d55bee6b3c2709710b380ee5cd30840490a9ed307661"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871309",
+      "status": 1,
+      "transaction_hash": "0x64211ad5cd1bc4ee3ea75c91c634c352e7d14e9096040b26278a0613ad61fcee"
+    },
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0x5000aa69d752d8ae8a027356fdd74fc857668712166b00a6a26f4efeb2f2740d"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871321",
+      "status": 1,
+      "transaction_hash": "0xf4be4cb484d9a9180a3c35ab686616ca09b0b4bd13a91cf26d7d8857139ba07d"
+    },
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0xd37498790a3ee73169f7f24ae5a0d54a28d5c9a8be3ac8f38b7175ee5489b44b"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871333",
+      "status": 1,
+      "transaction_hash": "0x86c5bdd14a2286e69f49b7adc65b9f1c140e45ca39e068dc186db1999e45d3da"
+    },
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0x46336a3d7a06e69c96b34a26cc1c09e7ef2636ec1d7c93ae99b575a2ae1b95a8"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871321",
+      "status": 1,
+      "transaction_hash": "0xf704f4327ad85a3290da4953086db9a9156f11e46ee1b7174d9b4d9fd15afe71"
+    },
+    {
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "status": 1,
+      "transaction_hash": "0x3b7feae52f31dd5741ee8d9879ab17dde6a886581a3e614d3c17d00c9a9ed30d"
+    },
+    {
+      "operation": "bindProvider",
+      "gas_used": "1871321",
+      "status": 1,
+      "transaction_hash": "0x9c0637b65561c43651104294d16e66e85acca5f5420696c181e785498db3ea3b"
+    }
+  ],
+  "limitations": [
+    "Local RSA-OAEP validation is not a formal security proof or external cryptographic audit.",
+    "No public-testnet Access result is claimed; historical D5 Identity receipts use prior bytecode.",
+    "The fixed artifact key is a public test fixture; generated RSA private keys are never recorded."
+  ]
+}

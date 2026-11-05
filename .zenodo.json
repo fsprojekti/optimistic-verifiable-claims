@@ -1,12 +1,21 @@
 {
   "title": "Optimistic Verifiable Claims (OVC): Reproducibility Package",
-  "description": "Smart contracts, gas-measurement test suite, and raw measurement results for the paper \"Optimistic Verifiable Claims: A Blockchain Protocol for Conditionally Confidential Bidding in Decentralized Manufacturing\".",
+  "description": "Smart contracts, measurement runners, archived transaction receipts and table/figure generation code for the revised version of the paper \"Optimistic Verifiable Claims: A Blockchain Protocol for Conditionally Confidential Bidding in Decentralized Manufacturing\" (arXiv:2607.25517). Version 4.0.0 executes the protocol on eighteen G-code files of the OpenGCode MultiSlicer Corpus v1.0.0 and projects the measurements onto Ethereum, Arbitrum and MegaETH, with transaction timing measured on their public testnets. Versions 1.0.0-3.0.0 belong to the first version of the paper.",
   "upload_type": "software",
   "license": "MIT",
   "creators": [
-    { "name": "Corn, Marko", "affiliation": "Faculty of Mechanical Engineering, University of Ljubljana" },
-    { "name": "Rožman, Nejc", "affiliation": "Faculty of Mechanical Engineering, University of Ljubljana" },
-    { "name": "Podržaj, Primož", "affiliation": "Faculty of Mechanical Engineering, University of Ljubljana" }
+    {
+      "name": "Corn, Marko",
+      "affiliation": "Faculty of Mechanical Engineering, University of Ljubljana"
+    },
+    {
+      "name": "Rožman, Nejc",
+      "affiliation": "Faculty of Mechanical Engineering, University of Ljubljana"
+    },
+    {
+      "name": "Podržaj, Primož",
+      "affiliation": "Faculty of Mechanical Engineering, University of Ljubljana"
+    }
   ],
   "keywords": [
     "blockchain",
@@ -15,6 +24,24 @@
     "smart contracts",
     "confidential bidding",
     "G-code",
-    "dispute resolution"
+    "dispute resolution",
+    "additive manufacturing",
+    "layer-2 rollups"
+  ],
+  "version": "4.0.0",
+  "publication_date": "2026-11-05",
+  "related_identifiers": [
+    {
+      "identifier": "arXiv:2607.25517",
+      "relation": "isSupplementTo",
+      "scheme": "arxiv",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://github.com/fsprojekti/opengcode-multislicer-corpus/releases/tag/v1.0.0",
+      "relation": "references",
+      "scheme": "url",
+      "resource_type": "dataset"
+    }
   ]
 }

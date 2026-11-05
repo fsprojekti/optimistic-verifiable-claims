@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+autodesk_fdm:orca,Identity,26590797,26590797,1,0,645243670984,645243946117,645243670984,Valid
+autodesk_fdm:orca,Access,26590797,26590797,0,0,431105,483435,431105,Valid
+autodesk_fdm:orca,Conformance,26590797,26590797,1,20219133835,1276359,20220605680,1276359,Valid
+autodesk_fdm:orca,Feature,26590797,26590797,1,20219133857,43987911932,64207243560,43987911932,Valid

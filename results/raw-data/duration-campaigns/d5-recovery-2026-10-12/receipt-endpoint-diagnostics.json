@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-12T06:53:09.501Z",
+  "transaction": "0xd88ae81ac1672c92eecfd612bbc0e2aaf1b2513429378d2ffff076c81e5d5d83",
+  "results": [
+    {
+      "url": "https://rpc.sepolia.org",
+      "error": "server response 404 Not Found"
+    },
+    {
+      "url": "https://rpc2.sepolia.org",
+      "error": "request timeout"
+    },
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "receipt": null
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "recorded_at_utc": "2026-10-12T07:43:48.050766+00:00",
+  "user_authorization": "Explicitly approved continuing the same three Sepolia tests through https://sepolia.drpc.org using the existing test account.",
+  "attempt": "Restart via approved endpoint after user confirmation",
+  "result": "Automatic approval review rejected the command: blocked by policy; no detailed reason supplied.",
+  "transactions_submitted_by_attempt": 0,
+  "manual_entry_point": "scripts/resume-stage03-sepolia.ps1"
+}

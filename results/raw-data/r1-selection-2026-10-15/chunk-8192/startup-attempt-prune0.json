@@ -1,0 +1,5 @@
+{
+  "status": "aborted-before-measurement",
+  "observation": "First deployment stayed pending at block zero with Anvil --prune-history 0; no measurement receipts. Retried with one historical state retained.",
+  "measured_receipts": 0
+}

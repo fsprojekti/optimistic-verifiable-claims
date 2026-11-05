@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+electronics_enclosure:prusa,Identity,1773259,49728,36,0,6764801137,6765076270,189772011,Valid
+electronics_enclosure:prusa,Access,1773259,49728,0,0,431105,483435,431105,Valid
+electronics_enclosure:prusa,Conformance,1773259,49728,36,1261617359,2676674,1264489519,1242479,Valid
+electronics_enclosure:prusa,Feature,1773259,49728,36,1261618151,2729849614,3991665536,80267959,Valid

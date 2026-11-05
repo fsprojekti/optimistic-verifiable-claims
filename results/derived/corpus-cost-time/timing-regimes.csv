@@ -1,0 +1,7 @@
+network,regime,tx,median_submission_to_observed_receipt_s,p90_submission_to_observed_receipt_s
+sepolia,identity_9_to_12_October,596,18.955000042915344,45.62500011920929
+sepolia,access_14_October,9,22.98900008201599,37.29479990005493
+arbitrumSepolia,identity_9_to_12_October,596,137.30199992656708,153.7904999256134
+arbitrumSepolia,access_14_October,9,2.922999858856201,3.0042000293731688
+megaethTestnet,identity_9_to_12_October,596,0.4779999256134033,0.5120000839233398
+megaethTestnet,access_14_October,9,0.4289999008178711,0.5208000659942628

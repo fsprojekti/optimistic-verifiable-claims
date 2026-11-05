@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-10-26T14:08:30.528Z",
+  "client_version": "anvil/v1.7.1",
+  "chain_id": "31337",
+  "hardfork": "cancun",
+  "block_gas_limit": "2000000000000",
+  "kernel_gas_limit": 1900000000000,
+  "mode": "whole-file-single-chunk",
+  "chunk_size_bytes": null,
+  "consumer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "provider": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+  "artifacts": [
+    {
+      "artifact": "moveo_articulation:orca",
+      "bytes": 43745864,
+      "sha256": "eac7e688578c3f00a2b4f37a6b94aebc948ce38d1aebc99a81efeb73b1561cfd"
+    }
+  ],
+  "completed_at": "2026-10-26T14:13:51.437Z",
+  "successful_receipts": 27
+}

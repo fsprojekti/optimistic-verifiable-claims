@@ -1,0 +1,134 @@
+{
+  "inputs": [
+    {
+      "path": "data/corpus/generated/gcode-manifest.csv",
+      "sha256": "0d05cbf13a9d8af864cd5da86e085452b5e750adcc36b6ce8e4274a4656b0f7d"
+    },
+    {
+      "path": "code/scripts/model-corpus-cost-time.py",
+      "sha256": "77cb1a55356b780067bb7c630d0c4c4c38d0e03bfeeda7cc1daac41307188600"
+    },
+    {
+      "path": "results/raw-data/duration-campaigns/d5-recovery-2026-10-12/analysis/final-measurements.json",
+      "sha256": "7a57f4d2fef2b0c79aae2daa12753566de4cbeca6be53185a0c5ff039f527b15"
+    },
+    {
+      "path": "results/access-testnets/2026-10-14/rpc-audit.json",
+      "sha256": "add3b650772242e7c058a0b0ee0b18ac004d334ad87d8eb60115a59d2c202107"
+    },
+    {
+      "path": "results/raw-data/duration-campaigns/d5-recovery-2026-10-12/sepolia/smoke-cura-6144.checkpoint.json",
+      "sha256": "e383a2dfc4e8077c22618243163274b784a8b951e13801af3cc7e7aceb1a2fdf"
+    },
+    {
+      "path": "results/raw-data/duration-campaigns/d5-recovery-2026-10-12/sepolia/full-cura.checkpoint.json",
+      "sha256": "328740304d49fe8b92c03c2337dc343227264a36cd07d5d03fd8593d817c6463"
+    },
+    {
+      "path": "results/raw-data/duration-campaigns/d5-recovery-2026-10-12/sepolia/full-orca.checkpoint.json",
+      "sha256": "0fb59216a795542888dbfb4cbbf832b79dc5c9856d88826db974003bdf8456d3"
+    },
+    {
+      "path": "results/raw-data/duration-campaigns/d5-recovery-2026-10-12/sepolia/full-prusa.checkpoint.json",
+      "sha256": "a7ce2ef12ba636c71b2a4861d77b28156253c6af427aecdd81b5b348dee6f157"
+    },
+    {
+      "path": "results/access-testnets/2026-10-14/sepolia/cura.json",
+      "sha256": "8e9bec606dd3cff3ceb0a27140338309880d355196947a02ce6fb91bb9c9f7a4"
+    },
+    {
+      "path": "results/access-testnets/2026-10-14/sepolia/orca.json",
+      "sha256": "e4044797cff2275a16b78f66f7a1b494fa3a6afbcf935756c2d0ec63855f9408"
+    },
+    {
+      "path": "results/access-testnets/2026-10-14/sepolia/prusa.json",
+      "sha256": "0a33cc65e7f8734c6b93c66a1e16f2bdc0d2a2d10710dc33ab28051a25b117c3"
+    },
+    {
+      "path": "results/raw-data/duration-campaigns/d5-recovery-2026-10-12/arbitrumSepolia/smoke-cura-6144.checkpoint.json",
+      "sha256": "411809353076a77b4a050aff8c4bde7cb8d49f26cd407b49fcf9ef5d0a62674f"
+    },
+    {
+      "path": "results/raw-data/duration-campaigns/d5-recovery-2026-10-12/arbitrumSepolia/full-cura.checkpoint.json",
+      "sha256": "b18a381bb27a122f6e47214cfd42e4ce7d96fbddb91001f6c6954f0925590101"
+    },
+    {
+      "path": "results/raw-data/duration-campaigns/d5-recovery-2026-10-12/arbitrumSepolia/full-orca.checkpoint.json",
+      "sha256": "e19366f844c1f0c7f5eaa585244ef9af017664876b5268d0188044df5731b821"
+    },
+    {
+      "path": "results/raw-data/duration-campaigns/d5-recovery-2026-10-12/arbitrumSepolia/full-prusa.checkpoint.json",
+      "sha256": "9c543c2d0a4eccdb614be4b8d49e194a25f4fd550b7a2ccbaa61a8503ce09dee"
+    },
+    {
+      "path": "results/access-testnets/2026-10-14/arbitrumSepolia/cura.json",
+      "sha256": "ca1e5822ac23f6dfc0120bb18577731e0fa79359b5e7689d1fab6767a4bfb564"
+    },
+    {
+      "path": "results/access-testnets/2026-10-14/arbitrumSepolia/orca.json",
+      "sha256": "bf50f737bbc1ab59ff656e217c8a5e5380df060693603deed224f7f1858c2e87"
+    },
+    {
+      "path": "results/access-testnets/2026-10-14/arbitrumSepolia/prusa.json",
+      "sha256": "35965ccd0273d0664f10fb6289e55c9b8ae6ea27c8aa25df80688165bce277bf"
+    },
+    {
+      "path": "results/raw-data/duration-campaigns/d5-recovery-2026-10-12/megaethTestnet/smoke-cura-6144.checkpoint.json",
+      "sha256": "ec1a3692c21997d792bb5e1601ac0d3632377e5b88fb53f2e6cbd76315359c8d"
+    },
+    {
+      "path": "results/raw-data/duration-campaigns/d5-recovery-2026-10-12/megaethTestnet/full-cura.checkpoint.json",
+      "sha256": "4f28025aa00ba9f8af9749782662dfee0042aa326bf7176b2f5680d5b7426ce0"
+    },
+    {
+      "path": "results/raw-data/duration-campaigns/d5-recovery-2026-10-12/megaethTestnet/full-orca.checkpoint.json",
+      "sha256": "b9faeba1034f3331fb767df3f667f9a9083e2b4b086385768273f5cd45016b8d"
+    },
+    {
+      "path": "results/raw-data/duration-campaigns/d5-recovery-2026-10-12/megaethTestnet/full-prusa.checkpoint.json",
+      "sha256": "ab3fff7df5d36ceb32da5966f7634e9ce3e485cc445fc7fccd422415d4d9f23b"
+    },
+    {
+      "path": "results/access-testnets/2026-10-14/megaethTestnet/cura.json",
+      "sha256": "0dca0d9d1e92d6f180c8e6f3cc1de7ae794f0370ac9c01450d8eb6e517a6379b"
+    },
+    {
+      "path": "results/access-testnets/2026-10-14/megaethTestnet/orca.json",
+      "sha256": "f0514dab74277f6257a42e9ea5aea898ff0caad6629683fa87bc345f7948ec90"
+    },
+    {
+      "path": "results/access-testnets/2026-10-14/megaethTestnet/prusa.json",
+      "sha256": "b26087aa71ffa1c78a4d9fb97567b85ec2115c8bdcc1e5f4ab57f09ea242d49b"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/derived/corpus-cost-time/corpus-predictions.csv",
+      "sha256": "70ebf3f40fa2e28c878e6a5ff3d5d004e4a016ba3924ffd9c2387d6d582042d0"
+    },
+    {
+      "path": "results/derived/corpus-cost-time/exploratory-size-cost-time.png",
+      "sha256": "d9a08abdcccf8d9df30d17577bb53bef5e73c366460a090a097c1aa6d1109cea"
+    },
+    {
+      "path": "results/derived/corpus-cost-time/leave-one-job-out.csv",
+      "sha256": "34bea0c57e1e4c23a0f7b2b532251960887715258ab1dc16c07f5f62448b9f90"
+    },
+    {
+      "path": "results/derived/corpus-cost-time/model.json",
+      "sha256": "6d5416ef4ccfdd22590da7d4d3f5458c1b9c2d75e3b7afb4e2069585ae3debb5"
+    },
+    {
+      "path": "results/derived/corpus-cost-time/observed-access-operations.csv",
+      "sha256": "a63df126f009630d01b88948b074426f39e816e849bf0553e001277fa7d8b296"
+    },
+    {
+      "path": "results/derived/corpus-cost-time/observed-identity-phases.csv",
+      "sha256": "79ab1259f1073814612ee9e7ba9535d60c4d71b3aa919d542fa4f396a9f68191"
+    },
+    {
+      "path": "results/derived/corpus-cost-time/timing-regimes.csv",
+      "sha256": "90308209ca3ccdce12e54e4d2fb45d8b9bc2fdedce5b0aa2ae65f51ee1910c8f"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "started_at": "2026-10-22T14:04:29.599978+00:00",
+  "status": "complete",
+  "source_sha256": {
+    "code/contracts/BindingPhase.sol": "416aa91485bd2859cb90963dd44e8eeb5c81a7df5a823209785da7c80beacf86",
+    "code/contracts/ChaCha20.sol": "d90e3b5cd2075b483aa4bf6cd4ee69e1b484b99d7c3e2eb136b82271c30c2c8c",
+    "code/contracts/ChaCha20Harness.sol": "1ed7e8ab184ecade2773863ae74372464999ab80ac0dd8b3d9bc87484a1effff",
+    "code/contracts/Demand.sol": "ca22e2dcf5fb924f290eedfe178c99caa34efde934c2d0f5343a29f8a096f9f6",
+    "code/contracts/OVCAccess.sol": "0ec7332de1f1b6cd3cab0505b30062d193bbf0c99d34b06da0e13e02cc6cf0f6",
+    "code/contracts/OVCBase.sol": "2478ab06681d122e68da24ed8852fc62c545c02860674b4d791c539f527e39aa",
+    "code/contracts/OVCBaseSegmented.sol": "756478e905f9b16b31ebe3ebd2f83962cbe863e9f7e99d3f9f72521f2a009652",
+    "code/contracts/OVCConformanceSegmented.sol": "47986c7ff46ca9b6ed4a02e5c9b24173f2864359899fdc6e618f059fb05485a1",
+    "code/contracts/OVCFeatureSegmented.sol": "2f2b5c95da42ce4132a21436c7a6ebb4c7be93b1655677520b78158bc7832bdc",
+    "code/contracts/OVCIdentitySegmented.sol": "1262a9f2d3b0b5ed2d1a6654526a2dd3d0ed7ede1616b83d51e638d86e8a1ecc",
+    "code/contracts/RSAOAEP.sol": "ac0cdfa7f488841e4cfef844e89e9228f5325239dece1a45bb3d215a7f0ab53a",
+    "code/contracts/RSAOAEPHarness.sol": "97148e043b6d63499dc8ae7c67c4e1ff1ef5b70bb018f0590127678ab76d19d1",
+    "code/contracts/SegmentedCommitment.sol": "947f3cec186131cc5363a09c567e84935ccb053e909828bbfbb74c9165e59274",
+    "code/hardhat.config.js": "8e5c5bd1e9ef7abc108f13ee37c0caeeb9d156bade027e6c65da3d2c3cddf26f",
+    "code/tests/pilot/corpus-ladder.js": "703e50759238d759b776222169ae3dbf4ad1d3f6c98e66516f297160fbc3fbdb",
+    "code/scripts/run-corpus-ladder.py": "c20b81797da48807f5214abdc04a1637877f1868e59c7ac9d923306bfd731b42",
+    "code/tests/lib/chacha20.js": "9a4cccd6d21065f9ded36c30b4237b54cb137b28d76c98b1d5f628318ee26df0",
+    "code/tests/lib/segmented-commitment.js": "94c32d76c4abb6f7455e116cc4607ea37bc03e858cfeee4581e47ff144412545",
+    "code/tests/lib/gcode-reference.js": "d9062d7d58627356ad8d55f5977f6231a79a4889639a5633bf1d93254740c7ec",
+    "code/tests/lib/access-envelope.js": "5c0bb1c873c7544aa8a77dde9a058065753d56543b0c661c738f04ede82e79e3",
+    "data/corpus/generated/gcode-manifest.csv": "0d05cbf13a9d8af864cd5da86e085452b5e750adcc36b6ce8e4274a4656b0f7d"
+  },
+  "build_info": [
+    {
+      "sha256": "c9076cbbacb2b35ba3ba5539f32a28ad289061ba22fa3b998f7a2a7c89365b6f",
+      "solc_version": "0.8.20",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "evmVersion": "paris",
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "sha256": "66f9f09ad09b44b595235433ec9e5efa58b005fc67920e095110d0d1aadbfb18",
+      "solc_version": "0.8.20",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "evmVersion": "paris",
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "anvil_sha256": "5c2217d266135a6fbe5faaccccb1e9eb2ddc1d06f8aabeef5fdb16d9846e4880",
+  "node": {
+    "client": "Anvil 1.7.1",
+    "hardfork": "cancun",
+    "block_gas_limit": 10000000000,
+    "prune_history": 1,
+    "fresh_instance_per_case": true
+  },
+  "reference_budget": 16777216,
+  "fill_factor": 0.95,
+  "settings": {
+    "outcome": "Accepted",
+    "env": {
+      "OVC_ACCEPT_PATH": "1"
+    }
+  },
+  "planned_cases": [
+    {
+      "name": "rackstack_hinge-cura",
+      "chunk": 24960,
+      "artifacts": [
+        "rackstack_hinge:cura"
+      ]
+    },
+    {
+      "name": "rackstack_hinge-orca",
+      "chunk": 24960,
+      "artifacts": [
+        "rackstack_hinge:orca"
+      ]
+    },
+    {
+      "name": "rackstack_hinge-prusa",
+      "chunk": 24960,
+      "artifacts": [
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "electronics_enclosure-cura",
+      "chunk": 24960,
+      "artifacts": [
+        "electronics_enclosure:cura"
+      ]
+    },
+    {
+      "name": "electronics_enclosure-orca",
+      "chunk": 24960,
+      "artifacts": [
+        "electronics_enclosure:orca"
+      ]
+    },
+    {
+      "name": "electronics_enclosure-prusa",
+      "chunk": 24960,
+      "artifacts": [
+        "electronics_enclosure:prusa"
+      ]
+    },
+    {
+      "name": "amazing_distal_shell-cura",
+      "chunk": 24960,
+      "artifacts": [
+        "amazing_distal_shell:cura"
+      ]
+    },
+    {
+      "name": "amazing_distal_shell-orca",
+      "chunk": 24960,
+      "artifacts": [
+        "amazing_distal_shell:orca"
+      ]
+    },
+    {
+      "name": "amazing_distal_shell-prusa",
+      "chunk": 24960,
+      "artifacts": [
+        "amazing_distal_shell:prusa"
+      ]
+    }
+  ],
+  "cases": {
+    "rackstack_hinge-cura": {
+      "status": "complete",
+      "started_at": "2026-10-22T14:04:29.622978+00:00",
+      "completed_at": "2026-10-22T14:04:31.575Z",
+      "receipts": 21,
+      "rpc_audited": true
+    },
+    "rackstack_hinge-orca": {
+      "status": "complete",
+      "started_at": "2026-10-22T14:05:00.212178+00:00",
+      "completed_at": "2026-10-22T14:05:02.135Z",
+      "receipts": 22,
+      "rpc_audited": true
+    },
+    "rackstack_hinge-prusa": {
+      "status": "complete",
+      "started_at": "2026-10-22T14:05:30.757984+00:00",
+      "completed_at": "2026-10-22T14:05:32.763Z",
+      "receipts": 23,
+      "rpc_audited": true
+    },
+    "electronics_enclosure-cura": {
+      "status": "complete",
+      "started_at": "2026-10-22T14:06:01.300062+00:00",
+      "completed_at": "2026-10-22T14:06:06.727Z",
+      "receipts": 73,
+      "rpc_audited": true
+    },
+    "electronics_enclosure-orca": {
+      "status": "complete",
+      "started_at": "2026-10-22T14:06:31.850660+00:00",
+      "completed_at": "2026-10-22T14:06:38.652Z",
+      "receipts": 83,
+      "rpc_audited": true
+    },
+    "electronics_enclosure-prusa": {
+      "status": "complete",
+      "started_at": "2026-10-22T14:07:02.396828+00:00",
+      "completed_at": "2026-10-22T14:07:08.822Z",
+      "receipts": 82,
+      "rpc_audited": true
+    },
+    "amazing_distal_shell-cura": {
+      "status": "complete",
+      "started_at": "2026-10-22T14:07:32.935056+00:00",
+      "completed_at": "2026-10-22T14:07:49.246Z",
+      "receipts": 173,
+      "rpc_audited": true
+    },
+    "amazing_distal_shell-orca": {
+      "status": "complete",
+      "started_at": "2026-10-22T14:08:03.519238+00:00",
+      "completed_at": "2026-10-22T14:08:22.766Z",
+      "receipts": 188,
+      "rpc_audited": true
+    },
+    "amazing_distal_shell-prusa": {
+      "status": "complete",
+      "started_at": "2026-10-22T14:08:34.110541+00:00",
+      "completed_at": "2026-10-22T14:08:49.179Z",
+      "receipts": 160,
+      "rpc_audited": true
+    }
+  },
+  "completed_at": "2026-10-22T14:09:04.687779+00:00"
+}

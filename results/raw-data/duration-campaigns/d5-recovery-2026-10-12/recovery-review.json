@@ -1,0 +1,23 @@
+{
+  "local_tests": {
+    "passed": 26,
+    "skipped": 1,
+    "skipped_scope": "separate Anvil integration"
+  },
+  "contracts_changed": false,
+  "independent_weekend_verdicts_verified": 9,
+  "remaining_jobs": [
+    "sepolia/full-cura",
+    "sepolia/full-orca",
+    "sepolia/full-prusa"
+  ],
+  "resume_rpc_candidate": "https://sepolia.drpc.org",
+  "resume_state": "User approved; automatic approval review still blocks agent launch. Manual entry point prepared and syntax checked.",
+  "diagnostic_files": [
+    "receipt-endpoint-diagnostics.json",
+    "receipt-alternative-diagnostics.json",
+    "block-receipt-diagnostics.json",
+    "weekend-verdict-rpc-audit.json"
+  ],
+  "manual_entry_point": "scripts/resume-stage03-sepolia.ps1"
+}

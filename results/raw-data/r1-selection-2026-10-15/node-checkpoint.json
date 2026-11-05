@@ -1,0 +1,18 @@
+{
+  "verified_receipts": 3915,
+  "rpc_receipt_archive_sha256": "e33558fb335fd2cb293f84c5591b070fcaf83f318b1f76bb1c39f8b3af35ef65",
+  "purpose": "Preserve independently refetched receipts before replacing the local node; each subsequent configuration deploys independent contracts.",
+  "node_epoch_1_cases": [
+    "chunk-4096",
+    "chunk-4160",
+    "chunk-4224"
+  ],
+  "node_epoch_2": "These two cases ran on one fresh Anvil instance with --prune-history 32. Their receipts were archived before shutdown.",
+  "transaction_identity": "node epoch plus transaction hash",
+  "state_import_succeeded": false,
+  "node_epoch_2_cases": [
+    "chunk-5120",
+    "chunk-6144"
+  ],
+  "subsequent_nodes": "Each remaining configuration used a fresh Anvil instance with --prune-history 1; per-case RPC archives identify its node instance."
+}

@@ -1,0 +1,2 @@
+artifact_key,model_id,slicer,slicer_version,output_sha256,size_bytes,line_count,chunk_size_bytes,chunk_count,upload_gas,identity_processing_gas,lifecycle_gas,upload_gas_per_byte,processing_gas_per_byte,lifecycle_gas_per_byte,local_elapsed_seconds_diagnostic_only,outcome,client_version,chain_id
+autodesk_fdm:cura,autodesk_fdm,cura,5.13.0,41feaf28aa0e35e1c502177b281c2a2949b05f7f236ad89466bcedcc5bfe008a,28090066,875260,28090066,1,21438115659,714076372705,735517078235,763.192,25420.957,26184.242,196.425,Valid,anvil/v1.7.1,31337

@@ -1,0 +1,10 @@
+network,slicer,artifact_bytes,access_dispute_gas,binding_gas,successful_receipts,outcome
+sepolia,cura,264386,601050,8443721,13,Valid
+sepolia,orca,280935,601062,8443721,13,Valid
+sepolia,prusa,316712,601062,8443709,13,Valid
+arbitrumSepolia,cura,264386,510742,1851397,13,Valid
+arbitrumSepolia,orca,280935,510742,1851421,13,Valid
+arbitrumSepolia,prusa,316712,510742,1851421,13,Valid
+megaethTestnet,cura,264386,628422,2117189,13,Valid
+megaethTestnet,orca,280935,628422,2117189,13,Valid
+megaethTestnet,prusa,316712,628422,2117321,13,Valid

@@ -1,0 +1,2624 @@
+{
+  "pre_registered": [
+    {
+      "chain": "Ethereum",
+      "run": "sepolia-enclosure",
+      "artifact": "electronics_enclosure:prusa",
+      "model_run": "sepolia",
+      "transactions": 2578,
+      "steps_kept": 2577,
+      "model_steps_retried_excluded": 0,
+      "measured_active_s": 38844.763000011444,
+      "outages_excluded_s": [],
+      "predicted_median_s": 38193.24850034714,
+      "predicted_95_s": [
+        37524.086599695685,
+        38912.89857511521
+      ],
+      "time_error_percent": -1.6772260900758094,
+      "criterion_1_duration_in_interval": true,
+      "criterion_2_regime_same": false,
+      "regime_failures": [
+        "conformanceDepositChunk.sign",
+        "conformanceDepositChunk.save",
+        "conformanceProcessChunk.estimate",
+        "conformanceProcessChunk.nonce",
+        "conformanceProcessChunk.populate",
+        "conformanceProcessChunk.balance",
+        "conformanceProcessChunk.sign",
+        "conformanceProcessChunk.broadcast",
+        "depositCiphertextChunk.sign",
+        "depositCiphertextChunk.save",
+        "featureDepositChunk.estimate",
+        "featureDepositChunk.nonce",
+        "featureDepositChunk.populate",
+        "featureDepositChunk.balance",
+        "featureDepositChunk.sign",
+        "featureDepositChunk.broadcast",
+        "featureProcessChunk.estimate",
+        "featureProcessChunk.nonce",
+        "featureProcessChunk.populate",
+        "featureProcessChunk.balance",
+        "featureProcessChunk.sign",
+        "featureProcessChunk.save",
+        "featureProcessChunk.broadcast",
+        "processChunk.sign",
+        "processChunk.save"
+      ],
+      "measured_gas": 28172268259,
+      "predicted_gas": 28199950178.639427,
+      "gas_error_percent": 0.09825946347285627,
+      "criterion_3_gas": true,
+      "regime": {
+        "conformanceDepositChunk": {
+          "step": {
+            "validation": 12.229999780654907,
+            "model": 12.150000095367432,
+            "ratio": 1.0065843361859708
+          },
+          "network": {
+            "validation": 11.052000045776367,
+            "model": 10.539999961853027,
+            "ratio": 1.048576858233055
+          },
+          "estimate": {
+            "validation": 73.9,
+            "model": 73.9,
+            "ratio": 1.0
+          },
+          "nonce": {
+            "validation": 75.3,
+            "model": 76.9,
+            "ratio": 0.9791937581274381
+          },
+          "populate": {
+            "validation": 181.4,
+            "model": 206.8,
+            "ratio": 0.8771760154738878
+          },
+          "balance": {
+            "validation": 45.0,
+            "model": 51.2,
+            "ratio": 0.87890625
+          },
+          "sign": {
+            "validation": 2.1,
+            "model": 3.8,
+            "ratio": 0.5526315789473685
+          },
+          "save": {
+            "validation": 3.9,
+            "model": 5.0,
+            "ratio": 0.78
+          },
+          "broadcast": {
+            "validation": 53.6,
+            "model": 61.6,
+            "ratio": 0.8701298701298701
+          }
+        },
+        "conformanceProcessChunk": {
+          "step": {
+            "validation": 12.252000093460083,
+            "model": 12.141000032424927,
+            "ratio": 1.0091425797495024
+          },
+          "network": {
+            "validation": 11.502000093460083,
+            "model": 10.684999942779541,
+            "ratio": 1.0764623448812123
+          },
+          "estimate": {
+            "validation": 48.2,
+            "model": 64.0,
+            "ratio": 0.753125
+          },
+          "nonce": {
+            "validation": 54.1,
+            "model": 74.9,
+            "ratio": 0.7222963951935915
+          },
+          "populate": {
+            "validation": 158.7,
+            "model": 201.5,
+            "ratio": 0.7875930521091811
+          },
+          "balance": {
+            "validation": 39.0,
+            "model": 50.1,
+            "ratio": 0.7784431137724551
+          },
+          "sign": {
+            "validation": 0.4,
+            "model": 0.8,
+            "ratio": 0.5
+          },
+          "save": {
+            "validation": 4.9,
+            "model": 5.3,
+            "ratio": 0.9245283018867926
+          },
+          "broadcast": {
+            "validation": 41.6,
+            "model": 55.1,
+            "ratio": 0.7549909255898367
+          }
+        },
+        "depositCiphertextChunk": {
+          "step": {
+            "validation": 12.129999876022339,
+            "model": 12.164999961853027,
+            "ratio": 0.9971228864824956
+          },
+          "network": {
+            "validation": 11.103999853134155,
+            "model": 10.901000022888184,
+            "ratio": 1.0186221291459265
+          },
+          "estimate": {
+            "validation": 71.3,
+            "model": 70.1,
+            "ratio": 1.0171184022824538
+          },
+          "nonce": {
+            "validation": 73.0,
+            "model": 71.9,
+            "ratio": 1.015299026425591
+          },
+          "populate": {
+            "validation": 185.3,
+            "model": 177.8,
+            "ratio": 1.0421822272215973
+          },
+          "balance": {
+            "validation": 45.3,
+            "model": 45.2,
+            "ratio": 1.0022123893805308
+          },
+          "sign": {
+            "validation": 2.4,
+            "model": 3.6,
+            "ratio": 0.6666666666666666
+          },
+          "save": {
+            "validation": 1.9,
+            "model": 4.3,
+            "ratio": 0.4418604651162791
+          },
+          "broadcast": {
+            "validation": 53.9,
+            "model": 56.2,
+            "ratio": 0.9590747330960854
+          }
+        },
+        "featureDepositChunk": {
+          "step": {
+            "validation": 12.090999841690063,
+            "model": 12.22000002861023,
+            "ratio": 0.9894435199166822
+          },
+          "network": {
+            "validation": 11.066999912261963,
+            "model": 10.758000135421753,
+            "ratio": 1.0287227898262241
+          },
+          "estimate": {
+            "validation": 43.0,
+            "model": 74.3,
+            "ratio": 0.5787348586810229
+          },
+          "nonce": {
+            "validation": 44.0,
+            "model": 76.0,
+            "ratio": 0.5789473684210527
+          },
+          "populate": {
+            "validation": 137.3,
+            "model": 201.7,
+            "ratio": 0.6807139315815569
+          },
+          "balance": {
+            "validation": 33.1,
+            "model": 50.5,
+            "ratio": 0.6554455445544555
+          },
+          "sign": {
+            "validation": 2.1,
+            "model": 3.8,
+            "ratio": 0.5526315789473685
+          },
+          "save": {
+            "validation": 6.5,
+            "model": 5.9,
+            "ratio": 1.1016949152542372
+          },
+          "broadcast": {
+            "validation": 39.1,
+            "model": 62.7,
+            "ratio": 0.6236044657097288
+          }
+        },
+        "featureProcessChunk": {
+          "step": {
+            "validation": 12.246999979019165,
+            "model": 12.04200005531311,
+            "ratio": 1.0170237437937568
+          },
+          "network": {
+            "validation": 11.399999856948853,
+            "model": 10.736000061035156,
+            "ratio": 1.0618479687163558
+          },
+          "estimate": {
+            "validation": 53.4,
+            "model": 78.3,
+            "ratio": 0.6819923371647509
+          },
+          "nonce": {
+            "validation": 42.9,
+            "model": 73.6,
+            "ratio": 0.5828804347826088
+          },
+          "populate": {
+            "validation": 132.9,
+            "model": 192.2,
+            "ratio": 0.6914672216441208
+          },
+          "balance": {
+            "validation": 32.1,
+            "model": 48.6,
+            "ratio": 0.6604938271604939
+          },
+          "sign": {
+            "validation": 0.4,
+            "model": 0.8,
+            "ratio": 0.5
+          },
+          "save": {
+            "validation": 7.5,
+            "model": 4.0,
+            "ratio": 1.875
+          },
+          "broadcast": {
+            "validation": 33.2,
+            "model": 53.2,
+            "ratio": 0.6240601503759399
+          }
+        },
+        "processChunk": {
+          "step": {
+            "validation": 12.164999961853027,
+            "model": 12.218000173568726,
+            "ratio": 0.9956621205628763
+          },
+          "network": {
+            "validation": 11.41100001335144,
+            "model": 11.134999990463257,
+            "ratio": 1.0247867106533066
+          },
+          "estimate": {
+            "validation": 113.6,
+            "model": 104.7,
+            "ratio": 1.085004775549188
+          },
+          "nonce": {
+            "validation": 76.6,
+            "model": 75.1,
+            "ratio": 1.0199733688415447
+          },
+          "populate": {
+            "validation": 178.0,
+            "model": 195.8,
+            "ratio": 0.9090909090909091
+          },
+          "balance": {
+            "validation": 44.0,
+            "model": 48.9,
+            "ratio": 0.899795501022495
+          },
+          "sign": {
+            "validation": 0.4,
+            "model": 0.8,
+            "ratio": 0.5
+          },
+          "save": {
+            "validation": 2.8,
+            "model": 4.4,
+            "ratio": 0.6363636363636362
+          },
+          "broadcast": {
+            "validation": 48.2,
+            "model": 52.7,
+            "ratio": 0.9146110056925997
+          }
+        }
+      }
+    },
+    {
+      "chain": "Arbitrum",
+      "run": "arbitrumSepolia-enclosure",
+      "artifact": "electronics_enclosure:prusa",
+      "model_run": "arbitrumSepolia",
+      "transactions": 1348,
+      "steps_kept": 1347,
+      "model_steps_retried_excluded": 0,
+      "measured_active_s": 3932.1760001182556,
+      "outages_excluded_s": [],
+      "predicted_median_s": 3596.890500187874,
+      "predicted_95_s": [
+        3572.99780151248,
+        3623.5036247074604
+      ],
+      "time_error_percent": -8.526716503032887,
+      "criterion_1_duration_in_interval": false,
+      "criterion_2_regime_same": false,
+      "regime_failures": [
+        "conformanceDepositChunk.sign",
+        "conformanceDepositChunk.save",
+        "conformanceProcessChunk.sign",
+        "conformanceProcessChunk.save",
+        "depositCiphertextChunk.sign",
+        "depositCiphertextChunk.save",
+        "featureDepositChunk.step",
+        "featureDepositChunk.sign",
+        "featureDepositChunk.save",
+        "featureProcessChunk.sign",
+        "featureProcessChunk.save",
+        "processChunk.sign",
+        "processChunk.save"
+      ],
+      "measured_gas": 13304353934,
+      "predicted_gas": 13304353945.391565,
+      "gas_error_percent": 8.562283730113503e-08,
+      "criterion_3_gas": true,
+      "regime": {
+        "conformanceDepositChunk": {
+          "step": {
+            "validation": 2.9195001125335693,
+            "model": 2.496500015258789,
+            "ratio": 1.1694372500257852
+          },
+          "network": {
+            "validation": 1.2664999961853027,
+            "model": 1.251499891281128,
+            "ratio": 1.0119857021232495
+          },
+          "estimate": {
+            "validation": 176.7,
+            "model": 175.5,
+            "ratio": 1.0068376068376068
+          },
+          "nonce": {
+            "validation": 151.64999999999998,
+            "model": 150.05,
+            "ratio": 1.0106631122959011
+          },
+          "populate": {
+            "validation": 584.8,
+            "model": 589.15,
+            "ratio": 0.9926164813714673
+          },
+          "balance": {
+            "validation": 146.25,
+            "model": 145.8,
+            "ratio": 1.0030864197530864
+          },
+          "sign": {
+            "validation": 5.7,
+            "model": 3.0,
+            "ratio": 1.9000000000000001
+          },
+          "save": {
+            "validation": 4.9,
+            "model": 2.1,
+            "ratio": 2.3333333333333335
+          },
+          "broadcast": {
+            "validation": 354.9,
+            "model": 346.04999999999995,
+            "ratio": 1.0255743389683571
+          }
+        },
+        "conformanceProcessChunk": {
+          "step": {
+            "validation": 2.2710001468658447,
+            "model": 2.2804999351501465,
+            "ratio": 0.9958343395946309
+          },
+          "network": {
+            "validation": 1.1985000371932983,
+            "model": 1.2274999618530273,
+            "ratio": 0.9763748060603188
+          },
+          "estimate": {
+            "validation": 148.6,
+            "model": 150.45,
+            "ratio": 0.9877035559986707
+          },
+          "nonce": {
+            "validation": 150.65,
+            "model": 149.0,
+            "ratio": 1.0110738255033558
+          },
+          "populate": {
+            "validation": 585.8499999999999,
+            "model": 587.9,
+            "ratio": 0.9965130124170776
+          },
+          "balance": {
+            "validation": 147.3,
+            "model": 146.55,
+            "ratio": 1.0051177072671442
+          },
+          "sign": {
+            "validation": 1.0,
+            "model": 0.4,
+            "ratio": 2.5
+          },
+          "save": {
+            "validation": 7.15,
+            "model": 2.1,
+            "ratio": 3.4047619047619047
+          },
+          "broadcast": {
+            "validation": 314.29999999999995,
+            "model": 321.6,
+            "ratio": 0.9773009950248754
+          }
+        },
+        "depositCiphertextChunk": {
+          "step": {
+            "validation": 2.4790000915527344,
+            "model": 2.4984999895095825,
+            "ratio": 0.9921953579993108
+          },
+          "network": {
+            "validation": 1.25,
+            "model": 1.2589999437332153,
+            "ratio": 0.9928515137923449
+          },
+          "estimate": {
+            "validation": 179.0,
+            "model": 175.75,
+            "ratio": 1.0184921763869133
+          },
+          "nonce": {
+            "validation": 149.55,
+            "model": 148.45,
+            "ratio": 1.007409902324015
+          },
+          "populate": {
+            "validation": 590.05,
+            "model": 589.2,
+            "ratio": 1.0014426340801084
+          },
+          "balance": {
+            "validation": 147.5,
+            "model": 145.5,
+            "ratio": 1.013745704467354
+          },
+          "sign": {
+            "validation": 6.0,
+            "model": 3.4,
+            "ratio": 1.7647058823529411
+          },
+          "save": {
+            "validation": 2.8,
+            "model": 2.0,
+            "ratio": 1.4
+          },
+          "broadcast": {
+            "validation": 338.65,
+            "model": 346.75,
+            "ratio": 0.9766402307137707
+          }
+        },
+        "featureDepositChunk": {
+          "step": {
+            "validation": 3.2825000286102295,
+            "model": 2.565500020980835,
+            "ratio": 1.2794776853501146
+          },
+          "network": {
+            "validation": 1.253999948501587,
+            "model": 1.2715001106262207,
+            "ratio": 0.9862366019645764
+          },
+          "estimate": {
+            "validation": 176.4,
+            "model": 175.8,
+            "ratio": 1.0034129692832765
+          },
+          "nonce": {
+            "validation": 149.25,
+            "model": 149.85000000000002,
+            "ratio": 0.9959959959959959
+          },
+          "populate": {
+            "validation": 588.8,
+            "model": 589.8,
+            "ratio": 0.9983045100033909
+          },
+          "balance": {
+            "validation": 146.75,
+            "model": 147.0,
+            "ratio": 0.9982993197278912
+          },
+          "sign": {
+            "validation": 5.3,
+            "model": 3.0,
+            "ratio": 1.7666666666666666
+          },
+          "save": {
+            "validation": 7.2,
+            "model": 2.3,
+            "ratio": 3.130434782608696
+          },
+          "broadcast": {
+            "validation": 338.35,
+            "model": 365.55,
+            "ratio": 0.9255915743400356
+          }
+        },
+        "featureProcessChunk": {
+          "step": {
+            "validation": 2.5320000648498535,
+            "model": 2.5160000324249268,
+            "ratio": 1.0063593132824826
+          },
+          "network": {
+            "validation": 1.219499945640564,
+            "model": 1.2000000476837158,
+            "ratio": 1.0162499143183266
+          },
+          "estimate": {
+            "validation": 387.04999999999995,
+            "model": 403.05,
+            "ratio": 0.9603026919737004
+          },
+          "nonce": {
+            "validation": 148.8,
+            "model": 148.7,
+            "ratio": 1.000672494956288
+          },
+          "populate": {
+            "validation": 587.8499999999999,
+            "model": 588.0999999999999,
+            "ratio": 0.9995749022275123
+          },
+          "balance": {
+            "validation": 147.1,
+            "model": 145.95,
+            "ratio": 1.0078794107571087
+          },
+          "sign": {
+            "validation": 0.9,
+            "model": 0.4,
+            "ratio": 2.25
+          },
+          "save": {
+            "validation": 8.2,
+            "model": 2.3,
+            "ratio": 3.5652173913043477
+          },
+          "broadcast": {
+            "validation": 326.4,
+            "model": 315.55,
+            "ratio": 1.0343844081762001
+          }
+        },
+        "processChunk": {
+          "step": {
+            "validation": 3.529500126838684,
+            "model": 3.379499912261963,
+            "ratio": 1.0443853287382758
+          },
+          "network": {
+            "validation": 1.6010000705718994,
+            "model": 1.6110000610351562,
+            "ratio": 0.9937926815118608
+          },
+          "estimate": {
+            "validation": 876.45,
+            "model": 891.95,
+            "ratio": 0.9826223443018106
+          },
+          "nonce": {
+            "validation": 163.7,
+            "model": 152.7,
+            "ratio": 1.0720366732154551
+          },
+          "populate": {
+            "validation": 593.75,
+            "model": 586.25,
+            "ratio": 1.0127931769722816
+          },
+          "balance": {
+            "validation": 148.25,
+            "model": 146.45,
+            "ratio": 1.01229088426084
+          },
+          "sign": {
+            "validation": 0.8,
+            "model": 0.4,
+            "ratio": 2.0
+          },
+          "save": {
+            "validation": 3.8,
+            "model": 1.95,
+            "ratio": 1.9487179487179487
+          },
+          "broadcast": {
+            "validation": 372.1,
+            "model": 357.54999999999995,
+            "ratio": 1.0406936092854149
+          }
+        }
+      }
+    },
+    {
+      "chain": "MegaETH",
+      "run": "megaethTestnet-31872-benchy-a",
+      "artifact": "benchy:prusa",
+      "model_run": "megaethTestnet-31872",
+      "transactions": 2302,
+      "steps_kept": 2301,
+      "model_steps_retried_excluded": 0,
+      "measured_active_s": 14931.418999910355,
+      "outages_excluded_s": [],
+      "predicted_median_s": 9515.79549920559,
+      "predicted_95_s": [
+        9157.636773890257,
+        9848.887421756983
+      ],
+      "time_error_percent": -36.269985463118275,
+      "criterion_1_duration_in_interval": false,
+      "criterion_2_regime_same": false,
+      "regime_failures": [
+        "conformanceDepositChunk.step",
+        "conformanceDepositChunk.network",
+        "conformanceDepositChunk.sign",
+        "conformanceDepositChunk.save",
+        "conformanceDepositChunk.broadcast",
+        "conformanceProcessChunk.sign",
+        "conformanceProcessChunk.save",
+        "conformanceProcessChunk.broadcast",
+        "featureDepositChunk.step",
+        "featureDepositChunk.network",
+        "featureDepositChunk.sign",
+        "featureDepositChunk.save",
+        "featureDepositChunk.broadcast",
+        "featureProcessChunk.sign",
+        "featureProcessChunk.save",
+        "featureProcessChunk.broadcast",
+        "processChunk.step",
+        "processChunk.sign",
+        "processChunk.save"
+      ],
+      "measured_gas": 97357060442,
+      "predicted_gas": 97347666305.16203,
+      "gas_error_percent": -0.009649158258597414,
+      "criterion_3_gas": true,
+      "regime": {
+        "conformanceDepositChunk": {
+          "step": {
+            "validation": 6.803000211715698,
+            "model": 1.7445000410079956,
+            "ratio": 3.899684753108308
+          },
+          "network": {
+            "validation": 2.184000015258789,
+            "model": 0.781499981880188,
+            "ratio": 2.7946258040907015
+          },
+          "estimate": {
+            "validation": 201.5,
+            "model": 190.5,
+            "ratio": 1.057742782152231
+          },
+          "nonce": {
+            "validation": 146.3,
+            "model": 141.45,
+            "ratio": 1.0342877341816898
+          },
+          "populate": {
+            "validation": 223.8,
+            "model": 202.6,
+            "ratio": 1.1046396841066142
+          },
+          "balance": {
+            "validation": 141.9,
+            "model": 135.45,
+            "ratio": 1.0476190476190477
+          },
+          "sign": {
+            "validation": 20.7,
+            "model": 10.850000000000001,
+            "ratio": 1.9078341013824882
+          },
+          "save": {
+            "validation": 7.3,
+            "model": 1.7,
+            "ratio": 4.294117647058823
+          },
+          "broadcast": {
+            "validation": 2036.4,
+            "model": 621.6,
+            "ratio": 3.276061776061776
+          }
+        },
+        "conformanceProcessChunk": {
+          "step": {
+            "validation": 1.2639999389648438,
+            "model": 1.2644999027252197,
+            "ratio": 0.9996046154220348
+          },
+          "network": {
+            "validation": 0.5120000839233398,
+            "model": 0.625999927520752,
+            "ratio": 0.8178916025615147
+          },
+          "estimate": {
+            "validation": 146.8,
+            "model": 139.5,
+            "ratio": 1.0523297491039427
+          },
+          "nonce": {
+            "validation": 150.1,
+            "model": 142.35,
+            "ratio": 1.0544432736213558
+          },
+          "populate": {
+            "validation": 227.1,
+            "model": 204.3,
+            "ratio": 1.1116005873715125
+          },
+          "balance": {
+            "validation": 141.1,
+            "model": 138.75,
+            "ratio": 1.016936936936937
+          },
+          "sign": {
+            "validation": 0.9,
+            "model": 0.5,
+            "ratio": 1.8
+          },
+          "save": {
+            "validation": 9.8,
+            "model": 1.5,
+            "ratio": 6.533333333333334
+          },
+          "broadcast": {
+            "validation": 355.5,
+            "model": 490.29999999999995,
+            "ratio": 0.7250662859473792
+          }
+        },
+        "depositCiphertextChunk": {
+          "step": {
+            "validation": 1.7829999923706055,
+            "model": 1.6820000410079956,
+            "ratio": 1.0600475320452918
+          },
+          "network": {
+            "validation": 0.6760001182556152,
+            "model": 0.7445000410079956,
+            "ratio": 0.9079920497255625
+          },
+          "estimate": {
+            "validation": 190.7,
+            "model": 189.3,
+            "ratio": 1.0073956682514527
+          },
+          "nonce": {
+            "validation": 135.6,
+            "model": 138.6,
+            "ratio": 0.9783549783549783
+          },
+          "populate": {
+            "validation": 192.1,
+            "model": 200.55,
+            "ratio": 0.9578658688606332
+          },
+          "balance": {
+            "validation": 134.1,
+            "model": 139.95,
+            "ratio": 0.9581993569131834
+          },
+          "sign": {
+            "validation": 12.4,
+            "model": 12.4,
+            "ratio": 1.0
+          },
+          "save": {
+            "validation": 1.6,
+            "model": 1.5,
+            "ratio": 1.0666666666666667
+          },
+          "broadcast": {
+            "validation": 534.3,
+            "model": 601.85,
+            "ratio": 0.8877627315776355
+          }
+        },
+        "featureDepositChunk": {
+          "step": {
+            "validation": 5.968000173568726,
+            "model": 2.0489999055862427,
+            "ratio": 2.9126405312650374
+          },
+          "network": {
+            "validation": 0.6540000438690186,
+            "model": 1.1430000066757202,
+            "ratio": 0.5721785127290594
+          },
+          "estimate": {
+            "validation": 198.4,
+            "model": 190.1,
+            "ratio": 1.0436612309310889
+          },
+          "nonce": {
+            "validation": 142.5,
+            "model": 142.95,
+            "ratio": 0.9968520461699896
+          },
+          "populate": {
+            "validation": 207.3,
+            "model": 211.05,
+            "ratio": 0.9822316986496091
+          },
+          "balance": {
+            "validation": 136.7,
+            "model": 136.95,
+            "ratio": 0.9981745162468054
+          },
+          "sign": {
+            "validation": 15.0,
+            "model": 10.7,
+            "ratio": 1.4018691588785048
+          },
+          "save": {
+            "validation": 9.4,
+            "model": 1.7,
+            "ratio": 5.529411764705883
+          },
+          "broadcast": {
+            "validation": 492.7,
+            "model": 996.25,
+            "ratio": 0.49455457967377664
+          }
+        },
+        "featureProcessChunk": {
+          "step": {
+            "validation": 1.7070000171661377,
+            "model": 1.5440000295639038,
+            "ratio": 1.1055699381354755
+          },
+          "network": {
+            "validation": 0.6979999542236328,
+            "model": 0.7124999761581421,
+            "ratio": 0.9796490913407541
+          },
+          "estimate": {
+            "validation": 364.0,
+            "model": 358.6,
+            "ratio": 1.015058561070831
+          },
+          "nonce": {
+            "validation": 157.4,
+            "model": 140.25,
+            "ratio": 1.1222816399286988
+          },
+          "populate": {
+            "validation": 248.4,
+            "model": 202.4,
+            "ratio": 1.2272727272727273
+          },
+          "balance": {
+            "validation": 146.1,
+            "model": 138.3,
+            "ratio": 1.056399132321041
+          },
+          "sign": {
+            "validation": 0.7,
+            "model": 0.5,
+            "ratio": 1.4
+          },
+          "save": {
+            "validation": 8.4,
+            "model": 1.5,
+            "ratio": 5.6000000000000005
+          },
+          "broadcast": {
+            "validation": 459.9,
+            "model": 579.05,
+            "ratio": 0.7942319316121234
+          }
+        },
+        "processChunk": {
+          "step": {
+            "validation": 20.305999994277954,
+            "model": 2.296999931335449,
+            "ratio": 8.840226644008771
+          },
+          "network": {
+            "validation": 0.9690001010894775,
+            "model": 0.8269999027252197,
+            "ratio": 1.1717052177350002
+          },
+          "estimate": {
+            "validation": 723.5,
+            "model": 711.1500000000001,
+            "ratio": 1.017366237783871
+          },
+          "nonce": {
+            "validation": 175.2,
+            "model": 147.64999999999998,
+            "ratio": 1.1865899085675584
+          },
+          "populate": {
+            "validation": 221.6,
+            "model": 220.7,
+            "ratio": 1.0040779338468508
+          },
+          "balance": {
+            "validation": 139.2,
+            "model": 137.7,
+            "ratio": 1.0108932461873639
+          },
+          "sign": {
+            "validation": 0.9,
+            "model": 0.5,
+            "ratio": 1.8
+          },
+          "save": {
+            "validation": 4.9,
+            "model": 1.4,
+            "ratio": 3.5000000000000004
+          },
+          "broadcast": {
+            "validation": 810.3499999999999,
+            "model": 666.3,
+            "ratio": 1.2161939066486567
+          }
+        }
+      }
+    },
+    {
+      "chain": "MegaETH",
+      "run": "megaethTestnet-31872-benchy-b",
+      "artifact": "benchy:prusa",
+      "model_run": "megaethTestnet-31872",
+      "transactions": 2302,
+      "steps_kept": 2301,
+      "model_steps_retried_excluded": 0,
+      "measured_active_s": 14040.911999940872,
+      "outages_excluded_s": [],
+      "predicted_median_s": 9515.79549920559,
+      "predicted_95_s": [
+        9157.636773890257,
+        9848.887421756983
+      ],
+      "time_error_percent": -32.22808105879688,
+      "criterion_1_duration_in_interval": false,
+      "criterion_2_regime_same": false,
+      "regime_failures": [
+        "conformanceDepositChunk.step",
+        "conformanceDepositChunk.network",
+        "conformanceDepositChunk.save",
+        "conformanceDepositChunk.broadcast",
+        "conformanceProcessChunk.network",
+        "conformanceProcessChunk.save",
+        "conformanceProcessChunk.broadcast",
+        "depositCiphertextChunk.network",
+        "depositCiphertextChunk.broadcast",
+        "featureDepositChunk.step",
+        "featureDepositChunk.network",
+        "featureDepositChunk.save",
+        "featureDepositChunk.broadcast",
+        "featureProcessChunk.network",
+        "featureProcessChunk.save",
+        "featureProcessChunk.broadcast",
+        "processChunk.step",
+        "processChunk.save"
+      ],
+      "measured_gas": 97357060574,
+      "predicted_gas": 97347666305.16203,
+      "gas_error_percent": -0.009649293828901543,
+      "criterion_3_gas": true,
+      "regime": {
+        "conformanceDepositChunk": {
+          "step": {
+            "validation": 2.9489998817443848,
+            "model": 1.7445000410079956,
+            "ratio": 1.690455610445508
+          },
+          "network": {
+            "validation": 0.5729999542236328,
+            "model": 0.781499981880188,
+            "ratio": 0.7332053327052791
+          },
+          "estimate": {
+            "validation": 190.7,
+            "model": 190.5,
+            "ratio": 1.0010498687664042
+          },
+          "nonce": {
+            "validation": 139.6,
+            "model": 141.45,
+            "ratio": 0.9869211735595618
+          },
+          "populate": {
+            "validation": 209.4,
+            "model": 202.6,
+            "ratio": 1.033563672260612
+          },
+          "balance": {
+            "validation": 138.5,
+            "model": 135.45,
+            "ratio": 1.022517534145441
+          },
+          "sign": {
+            "validation": 10.8,
+            "model": 10.850000000000001,
+            "ratio": 0.9953917050691243
+          },
+          "save": {
+            "validation": 4.0,
+            "model": 1.7,
+            "ratio": 2.3529411764705883
+          },
+          "broadcast": {
+            "validation": 425.9,
+            "model": 621.6,
+            "ratio": 0.6851673101673101
+          }
+        },
+        "conformanceProcessChunk": {
+          "step": {
+            "validation": 1.1170001029968262,
+            "model": 1.2644999027252197,
+            "ratio": 0.883353253400411
+          },
+          "network": {
+            "validation": 0.4549999237060547,
+            "model": 0.625999927520752,
+            "ratio": 0.7268370229818779
+          },
+          "estimate": {
+            "validation": 140.9,
+            "model": 139.5,
+            "ratio": 1.0100358422939069
+          },
+          "nonce": {
+            "validation": 139.8,
+            "model": 142.35,
+            "ratio": 0.9820864067439411
+          },
+          "populate": {
+            "validation": 211.2,
+            "model": 204.3,
+            "ratio": 1.0337738619676944
+          },
+          "balance": {
+            "validation": 139.1,
+            "model": 138.75,
+            "ratio": 1.0025225225225225
+          },
+          "sign": {
+            "validation": 0.4,
+            "model": 0.5,
+            "ratio": 0.8
+          },
+          "save": {
+            "validation": 4.7,
+            "model": 1.5,
+            "ratio": 3.1333333333333333
+          },
+          "broadcast": {
+            "validation": 307.3,
+            "model": 490.29999999999995,
+            "ratio": 0.6267591270650623
+          }
+        },
+        "depositCiphertextChunk": {
+          "step": {
+            "validation": 1.7059998512268066,
+            "model": 1.6820000410079956,
+            "ratio": 1.0142686145265658
+          },
+          "network": {
+            "validation": 0.5750000476837158,
+            "model": 0.7445000410079956,
+            "ratio": 0.7723304446097949
+          },
+          "estimate": {
+            "validation": 185.1,
+            "model": 189.3,
+            "ratio": 0.9778129952456418
+          },
+          "nonce": {
+            "validation": 142.9,
+            "model": 138.6,
+            "ratio": 1.0310245310245312
+          },
+          "populate": {
+            "validation": 203.3,
+            "model": 200.55,
+            "ratio": 1.0137122911992023
+          },
+          "balance": {
+            "validation": 138.6,
+            "model": 139.95,
+            "ratio": 0.9903536977491961
+          },
+          "sign": {
+            "validation": 12.4,
+            "model": 12.4,
+            "ratio": 1.0
+          },
+          "save": {
+            "validation": 1.6,
+            "model": 1.5,
+            "ratio": 1.0666666666666667
+          },
+          "broadcast": {
+            "validation": 432.6,
+            "model": 601.85,
+            "ratio": 0.7187837501038464
+          }
+        },
+        "featureDepositChunk": {
+          "step": {
+            "validation": 4.197999954223633,
+            "model": 2.0489999055862427,
+            "ratio": 2.0488043668418503
+          },
+          "network": {
+            "validation": 0.5580000877380371,
+            "model": 1.1430000066757202,
+            "ratio": 0.48818905028785964
+          },
+          "estimate": {
+            "validation": 186.8,
+            "model": 190.1,
+            "ratio": 0.9826407154129406
+          },
+          "nonce": {
+            "validation": 135.5,
+            "model": 142.95,
+            "ratio": 0.9478838754809374
+          },
+          "populate": {
+            "validation": 190.7,
+            "model": 211.05,
+            "ratio": 0.9035773513385452
+          },
+          "balance": {
+            "validation": 133.1,
+            "model": 136.95,
+            "ratio": 0.9718875502008033
+          },
+          "sign": {
+            "validation": 10.7,
+            "model": 10.7,
+            "ratio": 1.0
+          },
+          "save": {
+            "validation": 6.3,
+            "model": 1.7,
+            "ratio": 3.7058823529411766
+          },
+          "broadcast": {
+            "validation": 415.2,
+            "model": 996.25,
+            "ratio": 0.41676286072772895
+          }
+        },
+        "featureProcessChunk": {
+          "step": {
+            "validation": 1.4799997806549072,
+            "model": 1.5440000295639038,
+            "ratio": 0.9585490623811237
+          },
+          "network": {
+            "validation": 0.5380001068115234,
+            "model": 0.7124999761581421,
+            "ratio": 0.7550878944761007
+          },
+          "estimate": {
+            "validation": 356.5,
+            "model": 358.6,
+            "ratio": 0.994143892916899
+          },
+          "nonce": {
+            "validation": 140.7,
+            "model": 140.25,
+            "ratio": 1.0032085561497326
+          },
+          "populate": {
+            "validation": 180.8,
+            "model": 202.4,
+            "ratio": 0.8932806324110673
+          },
+          "balance": {
+            "validation": 130.6,
+            "model": 138.3,
+            "ratio": 0.9443239334779464
+          },
+          "sign": {
+            "validation": 0.4,
+            "model": 0.5,
+            "ratio": 0.8
+          },
+          "save": {
+            "validation": 7.1,
+            "model": 1.5,
+            "ratio": 4.733333333333333
+          },
+          "broadcast": {
+            "validation": 397.3,
+            "model": 579.05,
+            "ratio": 0.6861238235040152
+          }
+        },
+        "processChunk": {
+          "step": {
+            "validation": 21.06500005722046,
+            "model": 2.296999931335449,
+            "ratio": 9.170657678240987
+          },
+          "network": {
+            "validation": 0.7719998359680176,
+            "model": 0.8269999027252197,
+            "ratio": 0.9334944701009517
+          },
+          "estimate": {
+            "validation": 725.5,
+            "model": 711.1500000000001,
+            "ratio": 1.0201785839836883
+          },
+          "nonce": {
+            "validation": 173.1,
+            "model": 147.64999999999998,
+            "ratio": 1.1723670843210297
+          },
+          "populate": {
+            "validation": 224.8,
+            "model": 220.7,
+            "ratio": 1.01857725419121
+          },
+          "balance": {
+            "validation": 141.2,
+            "model": 137.7,
+            "ratio": 1.0254175744371823
+          },
+          "sign": {
+            "validation": 0.4,
+            "model": 0.5,
+            "ratio": 0.8
+          },
+          "save": {
+            "validation": 2.8,
+            "model": 1.4,
+            "ratio": 2.0
+          },
+          "broadcast": {
+            "validation": 614.4,
+            "model": 666.3,
+            "ratio": 0.9221071589374156
+          }
+        }
+      }
+    }
+  ],
+  "regular_steps": [
+    {
+      "chain": "Ethereum",
+      "run": "sepolia-enclosure",
+      "artifact": "electronics_enclosure:prusa",
+      "model_run": "sepolia",
+      "transactions": 2578,
+      "steps_kept": 1328,
+      "model_steps_retried_excluded": 839,
+      "measured_active_s": 19744.676996707916,
+      "outages_excluded_s": [],
+      "predicted_median_s": 19418.394493818283,
+      "predicted_95_s": [
+        18883.45361507535,
+        19981.023401111364
+      ],
+      "time_error_percent": -1.6525086885140494,
+      "criterion_1_duration_in_interval": true,
+      "criterion_2_regime_same": false,
+      "regime_failures": [
+        "conformanceDepositChunk.sign",
+        "conformanceDepositChunk.save",
+        "conformanceProcessChunk.estimate",
+        "conformanceProcessChunk.nonce",
+        "conformanceProcessChunk.balance",
+        "conformanceProcessChunk.sign",
+        "conformanceProcessChunk.broadcast",
+        "depositCiphertextChunk.sign",
+        "depositCiphertextChunk.save",
+        "featureDepositChunk.estimate",
+        "featureDepositChunk.nonce",
+        "featureDepositChunk.populate",
+        "featureDepositChunk.balance",
+        "featureDepositChunk.sign",
+        "featureDepositChunk.broadcast",
+        "featureProcessChunk.estimate",
+        "featureProcessChunk.nonce",
+        "featureProcessChunk.populate",
+        "featureProcessChunk.balance",
+        "featureProcessChunk.sign",
+        "featureProcessChunk.save",
+        "featureProcessChunk.broadcast",
+        "processChunk.sign",
+        "processChunk.save"
+      ],
+      "measured_gas": 28172268259,
+      "predicted_gas": 28199950178.639427,
+      "gas_error_percent": 0.09825946347285627,
+      "criterion_3_gas": true,
+      "regime": {
+        "conformanceDepositChunk": {
+          "step": {
+            "validation": 12.169000029563904,
+            "model": 11.927500009536743,
+            "ratio": 1.0202473292671614
+          },
+          "network": {
+            "validation": 11.509999990463257,
+            "model": 11.212999939918518,
+            "ratio": 1.0264871178218251
+          },
+          "estimate": {
+            "validation": 81.9,
+            "model": 86.2,
+            "ratio": 0.9501160092807425
+          },
+          "nonce": {
+            "validation": 81.15,
+            "model": 82.2,
+            "ratio": 0.9872262773722628
+          },
+          "populate": {
+            "validation": 183.6,
+            "model": 207.6,
+            "ratio": 0.884393063583815
+          },
+          "balance": {
+            "validation": 45.1,
+            "model": 50.5,
+            "ratio": 0.8930693069306931
+          },
+          "sign": {
+            "validation": 2.1,
+            "model": 3.8,
+            "ratio": 0.5526315789473685
+          },
+          "save": {
+            "validation": 3.9,
+            "model": 5.0,
+            "ratio": 0.78
+          },
+          "broadcast": {
+            "validation": 54.0,
+            "model": 61.6,
+            "ratio": 0.8766233766233766
+          }
+        },
+        "conformanceProcessChunk": {
+          "step": {
+            "validation": 12.162000179290771,
+            "model": 12.131999969482422,
+            "ratio": 1.002472816508722
+          },
+          "network": {
+            "validation": 11.766999959945679,
+            "model": 11.631999969482422,
+            "ratio": 1.0116059139285971
+          },
+          "estimate": {
+            "validation": 55.8,
+            "model": 83.1,
+            "ratio": 0.6714801444043321
+          },
+          "nonce": {
+            "validation": 56.4,
+            "model": 86.6,
+            "ratio": 0.651270207852194
+          },
+          "populate": {
+            "validation": 160.2,
+            "model": 199.7,
+            "ratio": 0.8022033049574362
+          },
+          "balance": {
+            "validation": 39.0,
+            "model": 50.6,
+            "ratio": 0.7707509881422925
+          },
+          "sign": {
+            "validation": 0.4,
+            "model": 0.8,
+            "ratio": 0.5
+          },
+          "save": {
+            "validation": 4.9,
+            "model": 5.4,
+            "ratio": 0.9074074074074074
+          },
+          "broadcast": {
+            "validation": 41.2,
+            "model": 54.5,
+            "ratio": 0.7559633027522936
+          }
+        },
+        "depositCiphertextChunk": {
+          "step": {
+            "validation": 12.049499988555908,
+            "model": 12.123999953269958,
+            "ratio": 0.9938551661991754
+          },
+          "network": {
+            "validation": 11.534499883651733,
+            "model": 11.59500002861023,
+            "ratio": 0.9947822212324955
+          },
+          "estimate": {
+            "validation": 78.95,
+            "model": 79.80000000000001,
+            "ratio": 0.9893483709273182
+          },
+          "nonce": {
+            "validation": 78.6,
+            "model": 78.8,
+            "ratio": 0.9974619289340101
+          },
+          "populate": {
+            "validation": 184.75,
+            "model": 184.05,
+            "ratio": 1.0038033143167617
+          },
+          "balance": {
+            "validation": 44.849999999999994,
+            "model": 46.45,
+            "ratio": 0.9655543595263723
+          },
+          "sign": {
+            "validation": 2.4,
+            "model": 3.9,
+            "ratio": 0.6153846153846154
+          },
+          "save": {
+            "validation": 1.9,
+            "model": 5.4,
+            "ratio": 0.3518518518518518
+          },
+          "broadcast": {
+            "validation": 54.3,
+            "model": 55.95,
+            "ratio": 0.970509383378016
+          }
+        },
+        "featureDepositChunk": {
+          "step": {
+            "validation": 12.062000036239624,
+            "model": 12.279000043869019,
+            "ratio": 0.9823275505453114
+          },
+          "network": {
+            "validation": 11.308000087738037,
+            "model": 11.437999963760376,
+            "ratio": 0.9886343874423654
+          },
+          "estimate": {
+            "validation": 45.3,
+            "model": 84.6,
+            "ratio": 0.5354609929078015
+          },
+          "nonce": {
+            "validation": 45.5,
+            "model": 84.3,
+            "ratio": 0.5397390272835113
+          },
+          "populate": {
+            "validation": 138.1,
+            "model": 203.1,
+            "ratio": 0.6799606105366814
+          },
+          "balance": {
+            "validation": 33.4,
+            "model": 50.4,
+            "ratio": 0.6626984126984127
+          },
+          "sign": {
+            "validation": 2.1,
+            "model": 3.8,
+            "ratio": 0.5526315789473685
+          },
+          "save": {
+            "validation": 6.4,
+            "model": 6.2,
+            "ratio": 1.032258064516129
+          },
+          "broadcast": {
+            "validation": 39.7,
+            "model": 63.5,
+            "ratio": 0.6251968503937009
+          }
+        },
+        "featureProcessChunk": {
+          "step": {
+            "validation": 12.062999963760376,
+            "model": 12.093999981880188,
+            "ratio": 0.9974367439915448
+          },
+          "network": {
+            "validation": 11.749000072479248,
+            "model": 11.630500078201294,
+            "ratio": 1.010188727353182
+          },
+          "estimate": {
+            "validation": 56.8,
+            "model": 92.6,
+            "ratio": 0.613390928725702
+          },
+          "nonce": {
+            "validation": 43.5,
+            "model": 81.15,
+            "ratio": 0.5360443622920518
+          },
+          "populate": {
+            "validation": 135.4,
+            "model": 193.85,
+            "ratio": 0.6984782047975239
+          },
+          "balance": {
+            "validation": 32.3,
+            "model": 49.0,
+            "ratio": 0.6591836734693877
+          },
+          "sign": {
+            "validation": 0.4,
+            "model": 0.8,
+            "ratio": 0.5
+          },
+          "save": {
+            "validation": 7.5,
+            "model": 3.9,
+            "ratio": 1.9230769230769231
+          },
+          "broadcast": {
+            "validation": 33.2,
+            "model": 52.8,
+            "ratio": 0.6287878787878789
+          }
+        },
+        "processChunk": {
+          "step": {
+            "validation": 12.089999914169312,
+            "model": 12.075999975204468,
+            "ratio": 1.0011593192276904
+          },
+          "network": {
+            "validation": 11.632999897003174,
+            "model": 11.587000012397766,
+            "ratio": 1.0039699563783713
+          },
+          "estimate": {
+            "validation": 119.0,
+            "model": 120.44999999999999,
+            "ratio": 0.9879618098796182
+          },
+          "nonce": {
+            "validation": 79.1,
+            "model": 81.35,
+            "ratio": 0.972341733251383
+          },
+          "populate": {
+            "validation": 179.4,
+            "model": 197.8,
+            "ratio": 0.9069767441860465
+          },
+          "balance": {
+            "validation": 43.9,
+            "model": 48.9,
+            "ratio": 0.8977505112474438
+          },
+          "sign": {
+            "validation": 0.4,
+            "model": 0.8,
+            "ratio": 0.5
+          },
+          "save": {
+            "validation": 2.8,
+            "model": 4.35,
+            "ratio": 0.6436781609195402
+          },
+          "broadcast": {
+            "validation": 48.25,
+            "model": 52.9,
+            "ratio": 0.9120982986767486
+          }
+        }
+      }
+    },
+    {
+      "chain": "Arbitrum",
+      "run": "arbitrumSepolia-enclosure",
+      "artifact": "electronics_enclosure:prusa",
+      "model_run": "arbitrumSepolia",
+      "transactions": 1348,
+      "steps_kept": 1347,
+      "model_steps_retried_excluded": 0,
+      "measured_active_s": 3932.1760001182556,
+      "outages_excluded_s": [],
+      "predicted_median_s": 3595.1195002794266,
+      "predicted_95_s": [
+        3569.129024231434,
+        3620.693475651741
+      ],
+      "time_error_percent": -8.571755176489873,
+      "criterion_1_duration_in_interval": false,
+      "criterion_2_regime_same": false,
+      "regime_failures": [
+        "conformanceDepositChunk.sign",
+        "conformanceDepositChunk.save",
+        "conformanceProcessChunk.sign",
+        "conformanceProcessChunk.save",
+        "depositCiphertextChunk.sign",
+        "depositCiphertextChunk.save",
+        "featureDepositChunk.step",
+        "featureDepositChunk.sign",
+        "featureDepositChunk.save",
+        "featureProcessChunk.sign",
+        "featureProcessChunk.save",
+        "processChunk.sign",
+        "processChunk.save"
+      ],
+      "measured_gas": 13304353934,
+      "predicted_gas": 13304353945.391565,
+      "gas_error_percent": 8.562283730113503e-08,
+      "criterion_3_gas": true,
+      "regime": {
+        "conformanceDepositChunk": {
+          "step": {
+            "validation": 2.9195001125335693,
+            "model": 2.496500015258789,
+            "ratio": 1.1694372500257852
+          },
+          "network": {
+            "validation": 1.2664999961853027,
+            "model": 1.251499891281128,
+            "ratio": 1.0119857021232495
+          },
+          "estimate": {
+            "validation": 176.7,
+            "model": 175.5,
+            "ratio": 1.0068376068376068
+          },
+          "nonce": {
+            "validation": 151.64999999999998,
+            "model": 150.05,
+            "ratio": 1.0106631122959011
+          },
+          "populate": {
+            "validation": 584.8,
+            "model": 589.15,
+            "ratio": 0.9926164813714673
+          },
+          "balance": {
+            "validation": 146.25,
+            "model": 145.8,
+            "ratio": 1.0030864197530864
+          },
+          "sign": {
+            "validation": 5.7,
+            "model": 3.0,
+            "ratio": 1.9000000000000001
+          },
+          "save": {
+            "validation": 4.9,
+            "model": 2.1,
+            "ratio": 2.3333333333333335
+          },
+          "broadcast": {
+            "validation": 354.9,
+            "model": 346.04999999999995,
+            "ratio": 1.0255743389683571
+          }
+        },
+        "conformanceProcessChunk": {
+          "step": {
+            "validation": 2.2710001468658447,
+            "model": 2.2804999351501465,
+            "ratio": 0.9958343395946309
+          },
+          "network": {
+            "validation": 1.1985000371932983,
+            "model": 1.2274999618530273,
+            "ratio": 0.9763748060603188
+          },
+          "estimate": {
+            "validation": 148.6,
+            "model": 150.45,
+            "ratio": 0.9877035559986707
+          },
+          "nonce": {
+            "validation": 150.65,
+            "model": 149.0,
+            "ratio": 1.0110738255033558
+          },
+          "populate": {
+            "validation": 585.8499999999999,
+            "model": 587.9,
+            "ratio": 0.9965130124170776
+          },
+          "balance": {
+            "validation": 147.3,
+            "model": 146.55,
+            "ratio": 1.0051177072671442
+          },
+          "sign": {
+            "validation": 1.0,
+            "model": 0.4,
+            "ratio": 2.5
+          },
+          "save": {
+            "validation": 7.15,
+            "model": 2.1,
+            "ratio": 3.4047619047619047
+          },
+          "broadcast": {
+            "validation": 314.29999999999995,
+            "model": 321.6,
+            "ratio": 0.9773009950248754
+          }
+        },
+        "depositCiphertextChunk": {
+          "step": {
+            "validation": 2.4790000915527344,
+            "model": 2.4984999895095825,
+            "ratio": 0.9921953579993108
+          },
+          "network": {
+            "validation": 1.25,
+            "model": 1.2589999437332153,
+            "ratio": 0.9928515137923449
+          },
+          "estimate": {
+            "validation": 179.0,
+            "model": 175.75,
+            "ratio": 1.0184921763869133
+          },
+          "nonce": {
+            "validation": 149.55,
+            "model": 148.45,
+            "ratio": 1.007409902324015
+          },
+          "populate": {
+            "validation": 590.05,
+            "model": 589.2,
+            "ratio": 1.0014426340801084
+          },
+          "balance": {
+            "validation": 147.5,
+            "model": 145.5,
+            "ratio": 1.013745704467354
+          },
+          "sign": {
+            "validation": 6.0,
+            "model": 3.4,
+            "ratio": 1.7647058823529411
+          },
+          "save": {
+            "validation": 2.8,
+            "model": 2.0,
+            "ratio": 1.4
+          },
+          "broadcast": {
+            "validation": 338.65,
+            "model": 346.75,
+            "ratio": 0.9766402307137707
+          }
+        },
+        "featureDepositChunk": {
+          "step": {
+            "validation": 3.2825000286102295,
+            "model": 2.565500020980835,
+            "ratio": 1.2794776853501146
+          },
+          "network": {
+            "validation": 1.253999948501587,
+            "model": 1.2715001106262207,
+            "ratio": 0.9862366019645764
+          },
+          "estimate": {
+            "validation": 176.4,
+            "model": 175.8,
+            "ratio": 1.0034129692832765
+          },
+          "nonce": {
+            "validation": 149.25,
+            "model": 149.85000000000002,
+            "ratio": 0.9959959959959959
+          },
+          "populate": {
+            "validation": 588.8,
+            "model": 589.8,
+            "ratio": 0.9983045100033909
+          },
+          "balance": {
+            "validation": 146.75,
+            "model": 147.0,
+            "ratio": 0.9982993197278912
+          },
+          "sign": {
+            "validation": 5.3,
+            "model": 3.0,
+            "ratio": 1.7666666666666666
+          },
+          "save": {
+            "validation": 7.2,
+            "model": 2.3,
+            "ratio": 3.130434782608696
+          },
+          "broadcast": {
+            "validation": 338.35,
+            "model": 365.55,
+            "ratio": 0.9255915743400356
+          }
+        },
+        "featureProcessChunk": {
+          "step": {
+            "validation": 2.5320000648498535,
+            "model": 2.5160000324249268,
+            "ratio": 1.0063593132824826
+          },
+          "network": {
+            "validation": 1.219499945640564,
+            "model": 1.2000000476837158,
+            "ratio": 1.0162499143183266
+          },
+          "estimate": {
+            "validation": 387.04999999999995,
+            "model": 403.05,
+            "ratio": 0.9603026919737004
+          },
+          "nonce": {
+            "validation": 148.8,
+            "model": 148.7,
+            "ratio": 1.000672494956288
+          },
+          "populate": {
+            "validation": 587.8499999999999,
+            "model": 588.0999999999999,
+            "ratio": 0.9995749022275123
+          },
+          "balance": {
+            "validation": 147.1,
+            "model": 145.95,
+            "ratio": 1.0078794107571087
+          },
+          "sign": {
+            "validation": 0.9,
+            "model": 0.4,
+            "ratio": 2.25
+          },
+          "save": {
+            "validation": 8.2,
+            "model": 2.3,
+            "ratio": 3.5652173913043477
+          },
+          "broadcast": {
+            "validation": 326.4,
+            "model": 315.55,
+            "ratio": 1.0343844081762001
+          }
+        },
+        "processChunk": {
+          "step": {
+            "validation": 3.529500126838684,
+            "model": 3.379499912261963,
+            "ratio": 1.0443853287382758
+          },
+          "network": {
+            "validation": 1.6010000705718994,
+            "model": 1.6110000610351562,
+            "ratio": 0.9937926815118608
+          },
+          "estimate": {
+            "validation": 876.45,
+            "model": 891.95,
+            "ratio": 0.9826223443018106
+          },
+          "nonce": {
+            "validation": 163.7,
+            "model": 152.7,
+            "ratio": 1.0720366732154551
+          },
+          "populate": {
+            "validation": 593.75,
+            "model": 586.25,
+            "ratio": 1.0127931769722816
+          },
+          "balance": {
+            "validation": 148.25,
+            "model": 146.45,
+            "ratio": 1.01229088426084
+          },
+          "sign": {
+            "validation": 0.8,
+            "model": 0.4,
+            "ratio": 2.0
+          },
+          "save": {
+            "validation": 3.8,
+            "model": 1.95,
+            "ratio": 1.9487179487179487
+          },
+          "broadcast": {
+            "validation": 372.1,
+            "model": 357.54999999999995,
+            "ratio": 1.0406936092854149
+          }
+        }
+      }
+    },
+    {
+      "chain": "MegaETH",
+      "run": "megaethTestnet-31872-benchy-a",
+      "artifact": "benchy:prusa",
+      "model_run": "megaethTestnet-31872",
+      "transactions": 2302,
+      "steps_kept": 1968,
+      "model_steps_retried_excluded": 12,
+      "measured_active_s": 7022.3070023059845,
+      "outages_excluded_s": [],
+      "predicted_median_s": 4208.194496512413,
+      "predicted_95_s": [
+        4076.68734357357,
+        4355.207171410322
+      ],
+      "time_error_percent": -40.073903132823354,
+      "criterion_1_duration_in_interval": false,
+      "criterion_2_regime_same": false,
+      "regime_failures": [
+        "conformanceDepositChunk.step",
+        "conformanceDepositChunk.network",
+        "conformanceDepositChunk.sign",
+        "conformanceDepositChunk.save",
+        "conformanceDepositChunk.broadcast",
+        "conformanceProcessChunk.sign",
+        "conformanceProcessChunk.save",
+        "conformanceProcessChunk.broadcast",
+        "featureDepositChunk.step",
+        "featureDepositChunk.network",
+        "featureDepositChunk.sign",
+        "featureDepositChunk.save",
+        "featureDepositChunk.broadcast",
+        "featureProcessChunk.sign",
+        "featureProcessChunk.save",
+        "processChunk.sign",
+        "processChunk.save"
+      ],
+      "measured_gas": 97357060442,
+      "predicted_gas": 97347666305.16203,
+      "gas_error_percent": -0.009649158258597414,
+      "criterion_3_gas": true,
+      "regime": {
+        "conformanceDepositChunk": {
+          "step": {
+            "validation": 6.803000211715698,
+            "model": 1.7445000410079956,
+            "ratio": 3.899684753108308
+          },
+          "network": {
+            "validation": 2.184000015258789,
+            "model": 0.781499981880188,
+            "ratio": 2.7946258040907015
+          },
+          "estimate": {
+            "validation": 201.5,
+            "model": 190.5,
+            "ratio": 1.057742782152231
+          },
+          "nonce": {
+            "validation": 146.3,
+            "model": 141.45,
+            "ratio": 1.0342877341816898
+          },
+          "populate": {
+            "validation": 223.8,
+            "model": 202.6,
+            "ratio": 1.1046396841066142
+          },
+          "balance": {
+            "validation": 141.9,
+            "model": 135.45,
+            "ratio": 1.0476190476190477
+          },
+          "sign": {
+            "validation": 20.7,
+            "model": 10.850000000000001,
+            "ratio": 1.9078341013824882
+          },
+          "save": {
+            "validation": 7.3,
+            "model": 1.7,
+            "ratio": 4.294117647058823
+          },
+          "broadcast": {
+            "validation": 2036.4,
+            "model": 621.6,
+            "ratio": 3.276061776061776
+          }
+        },
+        "conformanceProcessChunk": {
+          "step": {
+            "validation": 1.2639999389648438,
+            "model": 1.2644999027252197,
+            "ratio": 0.9996046154220348
+          },
+          "network": {
+            "validation": 0.5120000839233398,
+            "model": 0.625999927520752,
+            "ratio": 0.8178916025615147
+          },
+          "estimate": {
+            "validation": 146.8,
+            "model": 139.5,
+            "ratio": 1.0523297491039427
+          },
+          "nonce": {
+            "validation": 150.1,
+            "model": 142.35,
+            "ratio": 1.0544432736213558
+          },
+          "populate": {
+            "validation": 227.1,
+            "model": 204.3,
+            "ratio": 1.1116005873715125
+          },
+          "balance": {
+            "validation": 141.1,
+            "model": 138.75,
+            "ratio": 1.016936936936937
+          },
+          "sign": {
+            "validation": 0.9,
+            "model": 0.5,
+            "ratio": 1.8
+          },
+          "save": {
+            "validation": 9.8,
+            "model": 1.5,
+            "ratio": 6.533333333333334
+          },
+          "broadcast": {
+            "validation": 355.5,
+            "model": 490.29999999999995,
+            "ratio": 0.7250662859473792
+          }
+        },
+        "depositCiphertextChunk": {
+          "step": {
+            "validation": 1.7829999923706055,
+            "model": 1.6820000410079956,
+            "ratio": 1.0600475320452918
+          },
+          "network": {
+            "validation": 0.6760001182556152,
+            "model": 0.7445000410079956,
+            "ratio": 0.9079920497255625
+          },
+          "estimate": {
+            "validation": 190.7,
+            "model": 189.3,
+            "ratio": 1.0073956682514527
+          },
+          "nonce": {
+            "validation": 135.6,
+            "model": 138.6,
+            "ratio": 0.9783549783549783
+          },
+          "populate": {
+            "validation": 192.1,
+            "model": 200.55,
+            "ratio": 0.9578658688606332
+          },
+          "balance": {
+            "validation": 134.1,
+            "model": 139.95,
+            "ratio": 0.9581993569131834
+          },
+          "sign": {
+            "validation": 12.4,
+            "model": 12.4,
+            "ratio": 1.0
+          },
+          "save": {
+            "validation": 1.6,
+            "model": 1.5,
+            "ratio": 1.0666666666666667
+          },
+          "broadcast": {
+            "validation": 534.3,
+            "model": 601.85,
+            "ratio": 0.8877627315776355
+          }
+        },
+        "featureDepositChunk": {
+          "step": {
+            "validation": 5.968000173568726,
+            "model": 2.0489999055862427,
+            "ratio": 2.9126405312650374
+          },
+          "network": {
+            "validation": 0.6540000438690186,
+            "model": 1.1430000066757202,
+            "ratio": 0.5721785127290594
+          },
+          "estimate": {
+            "validation": 198.4,
+            "model": 190.1,
+            "ratio": 1.0436612309310889
+          },
+          "nonce": {
+            "validation": 142.5,
+            "model": 142.95,
+            "ratio": 0.9968520461699896
+          },
+          "populate": {
+            "validation": 207.3,
+            "model": 211.05,
+            "ratio": 0.9822316986496091
+          },
+          "balance": {
+            "validation": 136.7,
+            "model": 136.95,
+            "ratio": 0.9981745162468054
+          },
+          "sign": {
+            "validation": 15.0,
+            "model": 10.7,
+            "ratio": 1.4018691588785048
+          },
+          "save": {
+            "validation": 9.4,
+            "model": 1.7,
+            "ratio": 5.529411764705883
+          },
+          "broadcast": {
+            "validation": 492.7,
+            "model": 996.25,
+            "ratio": 0.49455457967377664
+          }
+        },
+        "featureProcessChunk": {
+          "step": {
+            "validation": 1.6349998712539673,
+            "model": 1.5320000648498535,
+            "ratio": 1.0672322467650863
+          },
+          "network": {
+            "validation": 0.6375000476837158,
+            "model": 0.7090001106262207,
+            "ratio": 0.8991536646174105
+          },
+          "estimate": {
+            "validation": 363.4,
+            "model": 358.5,
+            "ratio": 1.013668061366806
+          },
+          "nonce": {
+            "validation": 151.2,
+            "model": 140.1,
+            "ratio": 1.0792291220556745
+          },
+          "populate": {
+            "validation": 220.2,
+            "model": 202.3,
+            "ratio": 1.088482451804251
+          },
+          "balance": {
+            "validation": 142.14999999999998,
+            "model": 137.5,
+            "ratio": 1.0338181818181817
+          },
+          "sign": {
+            "validation": 0.7,
+            "model": 0.5,
+            "ratio": 1.4
+          },
+          "save": {
+            "validation": 8.4,
+            "model": 1.5,
+            "ratio": 5.6000000000000005
+          },
+          "broadcast": {
+            "validation": 470.55,
+            "model": 576.0,
+            "ratio": 0.8169270833333333
+          }
+        },
+        "processChunk": {
+          "step": {
+            "validation": 2.2119998931884766,
+            "model": 2.0950000286102295,
+            "ratio": 1.0558471899668
+          },
+          "network": {
+            "validation": 0.945000171661377,
+            "model": 0.8539998531341553,
+            "ratio": 1.1065577683570473
+          },
+          "estimate": {
+            "validation": 701.5,
+            "model": 701.2,
+            "ratio": 1.0004278379920137
+          },
+          "nonce": {
+            "validation": 145.1,
+            "model": 143.6,
+            "ratio": 1.0104456824512535
+          },
+          "populate": {
+            "validation": 231.5,
+            "model": 211.6,
+            "ratio": 1.0940453686200378
+          },
+          "balance": {
+            "validation": 144.0,
+            "model": 139.2,
+            "ratio": 1.0344827586206897
+          },
+          "sign": {
+            "validation": 0.8,
+            "model": 0.5,
+            "ratio": 1.6
+          },
+          "save": {
+            "validation": 4.9,
+            "model": 1.4,
+            "ratio": 3.5000000000000004
+          },
+          "broadcast": {
+            "validation": 787.3,
+            "model": 685.2,
+            "ratio": 1.149007589025102
+          }
+        }
+      }
+    },
+    {
+      "chain": "MegaETH",
+      "run": "megaethTestnet-31872-benchy-b",
+      "artifact": "benchy:prusa",
+      "model_run": "megaethTestnet-31872",
+      "transactions": 2302,
+      "steps_kept": 1903,
+      "model_steps_retried_excluded": 12,
+      "measured_active_s": 4410.655999183655,
+      "outages_excluded_s": [],
+      "predicted_median_s": 4112.28399515152,
+      "predicted_95_s": [
+        3972.509642893076,
+        4254.134172457457
+      ],
+      "time_error_percent": -6.764798798350157,
+      "criterion_1_duration_in_interval": false,
+      "criterion_2_regime_same": false,
+      "regime_failures": [
+        "conformanceDepositChunk.step",
+        "conformanceDepositChunk.network",
+        "conformanceDepositChunk.save",
+        "conformanceDepositChunk.broadcast",
+        "conformanceProcessChunk.network",
+        "conformanceProcessChunk.save",
+        "conformanceProcessChunk.broadcast",
+        "depositCiphertextChunk.network",
+        "depositCiphertextChunk.broadcast",
+        "featureDepositChunk.step",
+        "featureDepositChunk.network",
+        "featureDepositChunk.save",
+        "featureDepositChunk.broadcast",
+        "featureProcessChunk.network",
+        "featureProcessChunk.save",
+        "featureProcessChunk.broadcast",
+        "processChunk.save"
+      ],
+      "measured_gas": 97357060574,
+      "predicted_gas": 97347666305.16203,
+      "gas_error_percent": -0.009649293828901543,
+      "criterion_3_gas": true,
+      "regime": {
+        "conformanceDepositChunk": {
+          "step": {
+            "validation": 2.9489998817443848,
+            "model": 1.7445000410079956,
+            "ratio": 1.690455610445508
+          },
+          "network": {
+            "validation": 0.5729999542236328,
+            "model": 0.781499981880188,
+            "ratio": 0.7332053327052791
+          },
+          "estimate": {
+            "validation": 190.7,
+            "model": 190.5,
+            "ratio": 1.0010498687664042
+          },
+          "nonce": {
+            "validation": 139.6,
+            "model": 141.45,
+            "ratio": 0.9869211735595618
+          },
+          "populate": {
+            "validation": 209.4,
+            "model": 202.6,
+            "ratio": 1.033563672260612
+          },
+          "balance": {
+            "validation": 138.5,
+            "model": 135.45,
+            "ratio": 1.022517534145441
+          },
+          "sign": {
+            "validation": 10.8,
+            "model": 10.850000000000001,
+            "ratio": 0.9953917050691243
+          },
+          "save": {
+            "validation": 4.0,
+            "model": 1.7,
+            "ratio": 2.3529411764705883
+          },
+          "broadcast": {
+            "validation": 425.9,
+            "model": 621.6,
+            "ratio": 0.6851673101673101
+          }
+        },
+        "conformanceProcessChunk": {
+          "step": {
+            "validation": 1.1170001029968262,
+            "model": 1.2644999027252197,
+            "ratio": 0.883353253400411
+          },
+          "network": {
+            "validation": 0.4549999237060547,
+            "model": 0.625999927520752,
+            "ratio": 0.7268370229818779
+          },
+          "estimate": {
+            "validation": 140.9,
+            "model": 139.5,
+            "ratio": 1.0100358422939069
+          },
+          "nonce": {
+            "validation": 139.8,
+            "model": 142.35,
+            "ratio": 0.9820864067439411
+          },
+          "populate": {
+            "validation": 211.2,
+            "model": 204.3,
+            "ratio": 1.0337738619676944
+          },
+          "balance": {
+            "validation": 139.1,
+            "model": 138.75,
+            "ratio": 1.0025225225225225
+          },
+          "sign": {
+            "validation": 0.4,
+            "model": 0.5,
+            "ratio": 0.8
+          },
+          "save": {
+            "validation": 4.7,
+            "model": 1.5,
+            "ratio": 3.1333333333333333
+          },
+          "broadcast": {
+            "validation": 307.3,
+            "model": 490.29999999999995,
+            "ratio": 0.6267591270650623
+          }
+        },
+        "depositCiphertextChunk": {
+          "step": {
+            "validation": 1.7059998512268066,
+            "model": 1.6820000410079956,
+            "ratio": 1.0142686145265658
+          },
+          "network": {
+            "validation": 0.5750000476837158,
+            "model": 0.7445000410079956,
+            "ratio": 0.7723304446097949
+          },
+          "estimate": {
+            "validation": 185.1,
+            "model": 189.3,
+            "ratio": 0.9778129952456418
+          },
+          "nonce": {
+            "validation": 142.9,
+            "model": 138.6,
+            "ratio": 1.0310245310245312
+          },
+          "populate": {
+            "validation": 203.3,
+            "model": 200.55,
+            "ratio": 1.0137122911992023
+          },
+          "balance": {
+            "validation": 138.6,
+            "model": 139.95,
+            "ratio": 0.9903536977491961
+          },
+          "sign": {
+            "validation": 12.4,
+            "model": 12.4,
+            "ratio": 1.0
+          },
+          "save": {
+            "validation": 1.6,
+            "model": 1.5,
+            "ratio": 1.0666666666666667
+          },
+          "broadcast": {
+            "validation": 432.6,
+            "model": 601.85,
+            "ratio": 0.7187837501038464
+          }
+        },
+        "featureDepositChunk": {
+          "step": {
+            "validation": 4.197999954223633,
+            "model": 2.0489999055862427,
+            "ratio": 2.0488043668418503
+          },
+          "network": {
+            "validation": 0.5580000877380371,
+            "model": 1.1430000066757202,
+            "ratio": 0.48818905028785964
+          },
+          "estimate": {
+            "validation": 186.8,
+            "model": 190.1,
+            "ratio": 0.9826407154129406
+          },
+          "nonce": {
+            "validation": 135.5,
+            "model": 142.95,
+            "ratio": 0.9478838754809374
+          },
+          "populate": {
+            "validation": 190.7,
+            "model": 211.05,
+            "ratio": 0.9035773513385452
+          },
+          "balance": {
+            "validation": 133.1,
+            "model": 136.95,
+            "ratio": 0.9718875502008033
+          },
+          "sign": {
+            "validation": 10.7,
+            "model": 10.7,
+            "ratio": 1.0
+          },
+          "save": {
+            "validation": 6.3,
+            "model": 1.7,
+            "ratio": 3.7058823529411766
+          },
+          "broadcast": {
+            "validation": 415.2,
+            "model": 996.25,
+            "ratio": 0.41676286072772895
+          }
+        },
+        "featureProcessChunk": {
+          "step": {
+            "validation": 1.3930001258850098,
+            "model": 1.5320000648498535,
+            "ratio": 0.9092689731847585
+          },
+          "network": {
+            "validation": 0.5400002002716064,
+            "model": 0.7090001106262207,
+            "ratio": 0.7616362708246323
+          },
+          "estimate": {
+            "validation": 350.5,
+            "model": 358.5,
+            "ratio": 0.9776847977684798
+          },
+          "nonce": {
+            "validation": 133.5,
+            "model": 140.1,
+            "ratio": 0.9528907922912206
+          },
+          "populate": {
+            "validation": 181.3,
+            "model": 202.3,
+            "ratio": 0.8961937716262975
+          },
+          "balance": {
+            "validation": 130.4,
+            "model": 137.5,
+            "ratio": 0.9483636363636364
+          },
+          "sign": {
+            "validation": 0.4,
+            "model": 0.5,
+            "ratio": 0.8
+          },
+          "save": {
+            "validation": 7.0,
+            "model": 1.5,
+            "ratio": 4.666666666666667
+          },
+          "broadcast": {
+            "validation": 398.8,
+            "model": 576.0,
+            "ratio": 0.6923611111111111
+          }
+        },
+        "processChunk": {
+          "step": {
+            "validation": 2.0510001182556152,
+            "model": 2.0950000286102295,
+            "ratio": 0.9789976564421325
+          },
+          "network": {
+            "validation": 0.7740001678466797,
+            "model": 0.8539998531341553,
+            "ratio": 0.9063235374176248
+          },
+          "estimate": {
+            "validation": 706.0,
+            "model": 701.2,
+            "ratio": 1.0068454078722189
+          },
+          "nonce": {
+            "validation": 143.7,
+            "model": 143.6,
+            "ratio": 1.0006963788300836
+          },
+          "populate": {
+            "validation": 231.5,
+            "model": 211.6,
+            "ratio": 1.0940453686200378
+          },
+          "balance": {
+            "validation": 142.4,
+            "model": 139.2,
+            "ratio": 1.0229885057471266
+          },
+          "sign": {
+            "validation": 0.4,
+            "model": 0.5,
+            "ratio": 0.8
+          },
+          "save": {
+            "validation": 2.7,
+            "model": 1.4,
+            "ratio": 1.9285714285714288
+          },
+          "broadcast": {
+            "validation": 619.6,
+            "model": 685.2,
+            "ratio": 0.9042615294804437
+          }
+        }
+      }
+    }
+  ]
+}

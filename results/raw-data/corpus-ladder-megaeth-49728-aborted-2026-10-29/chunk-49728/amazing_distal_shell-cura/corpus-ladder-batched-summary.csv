@@ -1,0 +1,2 @@
+artifact_key,model_id,slicer,slicer_version,output_sha256,size_bytes,line_count,chunk_size_bytes,chunk_count,upload_gas,identity_processing_gas,lifecycle_gas,upload_gas_per_byte,processing_gas_per_byte,lifecycle_gas_per_byte,local_elapsed_seconds_diagnostic_only,outcome,client_version,chain_id
+amazing_distal_shell:cura,amazing_distal_shell,cura,5.13.0,63de61009b7e2d68aa9e7439ee25b4560e5b96ea84b43e5443288d5d44039e00,4061669,125540,49728,82,2888624382,15495031314,18386245531,711.191,3814.942,4526.771,69.600,Valid,anvil/v1.7.1,31337

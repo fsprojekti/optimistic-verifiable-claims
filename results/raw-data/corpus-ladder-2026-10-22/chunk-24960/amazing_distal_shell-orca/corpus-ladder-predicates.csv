@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+amazing_distal_shell:orca,Identity,4434414,24960,178,0,16837753782,16838028915,94833535,Valid
+amazing_distal_shell:orca,Access,4434414,24960,0,0,431105,483435,431105,Valid
+amazing_distal_shell:orca,Conformance,4434414,24960,178,3161912878,8529288,3170637652,1276359,Valid
+amazing_distal_shell:orca,Feature,4434414,24960,178,3161916794,6959781323,10121895888,40565963,Valid

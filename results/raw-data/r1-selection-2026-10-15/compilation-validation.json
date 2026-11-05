@@ -1,0 +1,107 @@
+[
+  {
+    "contract": "Demand",
+    "artifact_sha256": "c1f2ff6fc7abc42fe93544dfd756b50cc213895d7035f6e96c6f5a35abd3cfa1",
+    "build_info_sha256": "5fc5290a2198b704e4a347ab2cc9c0456495be22542463348a6f93b4298c0d70",
+    "verified_dependency_sources": [
+      "contracts/Demand.sol",
+      "contracts/SegmentedCommitment.sol"
+    ],
+    "solc": "0.8.20",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "paris"
+  },
+  {
+    "contract": "OVCAccess",
+    "artifact_sha256": "eda563153010645bf4e0d6c2d6555d281bc2791c21e39db40b6fecf9745abf61",
+    "build_info_sha256": "18afffce422e6fc3bffb3ded05c8447ab531a8c6bce05d825ee5bbc99558f338",
+    "verified_dependency_sources": [
+      "contracts/OVCAccess.sol",
+      "contracts/OVCBase.sol",
+      "contracts/RSAOAEP.sol"
+    ],
+    "solc": "0.8.20",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "paris"
+  },
+  {
+    "contract": "OVCIdentitySegmented",
+    "artifact_sha256": "c17aa031dc9944c8fb7e6f9e01649c44ab8b65171292ccc1bf58b0cabbc24c1a",
+    "build_info_sha256": "5fc5290a2198b704e4a347ab2cc9c0456495be22542463348a6f93b4298c0d70",
+    "verified_dependency_sources": [
+      "contracts/ChaCha20.sol",
+      "contracts/Demand.sol",
+      "contracts/OVCBaseSegmented.sol",
+      "contracts/OVCIdentitySegmented.sol",
+      "contracts/SegmentedCommitment.sol"
+    ],
+    "solc": "0.8.20",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "paris"
+  },
+  {
+    "contract": "OVCConformanceSegmented",
+    "artifact_sha256": "3c8978ba9215817d153b832cb6cabf093e26e9e92b0a2b9fa25cf7f821a3f4ef",
+    "build_info_sha256": "5fc5290a2198b704e4a347ab2cc9c0456495be22542463348a6f93b4298c0d70",
+    "verified_dependency_sources": [
+      "contracts/OVCBaseSegmented.sol",
+      "contracts/OVCConformanceSegmented.sol",
+      "contracts/SegmentedCommitment.sol"
+    ],
+    "solc": "0.8.20",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "paris"
+  },
+  {
+    "contract": "OVCFeatureSegmented",
+    "artifact_sha256": "91f6b3732cdaa155bafef7d5513a40c634e6cbff3ab98a2fcccbdf2e88333207",
+    "build_info_sha256": "5fc5290a2198b704e4a347ab2cc9c0456495be22542463348a6f93b4298c0d70",
+    "verified_dependency_sources": [
+      "contracts/OVCBaseSegmented.sol",
+      "contracts/OVCFeatureSegmented.sol",
+      "contracts/SegmentedCommitment.sol"
+    ],
+    "solc": "0.8.20",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "paris"
+  },
+  {
+    "contract": "BindingPhase",
+    "artifact_sha256": "f6def7ac524a96cb8c545148701bfbfb2f9c34198ee725fa8ece1017b63a3f24",
+    "build_info_sha256": "18afffce422e6fc3bffb3ded05c8447ab531a8c6bce05d825ee5bbc99558f338",
+    "verified_dependency_sources": [
+      "contracts/BindingPhase.sol",
+      "contracts/ChaCha20.sol",
+      "contracts/Demand.sol",
+      "contracts/OVCAccess.sol",
+      "contracts/OVCBase.sol",
+      "contracts/OVCBaseSegmented.sol",
+      "contracts/OVCConformanceSegmented.sol",
+      "contracts/OVCFeatureSegmented.sol",
+      "contracts/OVCIdentitySegmented.sol",
+      "contracts/RSAOAEP.sol",
+      "contracts/SegmentedCommitment.sol"
+    ],
+    "solc": "0.8.20",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "paris"
+  }
+]

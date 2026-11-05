@@ -1,0 +1,1150 @@
+{
+  "observed_at_utc": "2026-10-14T15:31:08.120Z",
+  "completed_jobs": 9,
+  "verified_unique_successful_receipts": 117,
+  "fees_native_test_eth_including_deployment_and_setup": {
+    "sepolia": "0.000305374685462658",
+    "arbitrumSepolia": "0.000945311065224",
+    "megaethTestnet": "0.001822378662"
+  },
+  "networks": [
+    {
+      "network": "sepolia",
+      "jobs": [
+        {
+          "network": "sepolia",
+          "slicer": "cura",
+          "artifact_bytes": 264386,
+          "outcome": "Valid",
+          "journal_sha256": "8e9bec606dd3cff3ceb0a27140338309880d355196947a02ce6fb91bb9c9f7a4",
+          "access_address": "0xa0da8D129E82b1D63316d684A754d259143561Af",
+          "binding_address": "0x70C400fb94DE9BaC3674526D3d81fa89ec0d31ee",
+          "access_runtime_code_hash": "0xd5331b03566a8dabffb6fe1d3eb347b85fc44bc71def58e14e1c6899349d25fa",
+          "source_demand": "0x83867C1AF46C1075134Ef2Cc254A8C2baBCeb9f7",
+          "source_demand_id": "1",
+          "access_dispute_gas": "601050",
+          "binding_gas": "8443721",
+          "complete_artifact_recovered": true,
+          "reused_ciphertext": true,
+          "public_reencryption_verified": true,
+          "successful_receipts": 13,
+          "receipts": [
+            {
+              "operation": "deployOVCAccess",
+              "hash": "0xb9e1289e633f9da4520abb2cf878b028fe652644037b0ff11c708e765166d79d",
+              "block_number": 11914098,
+              "gas_used": "12086137",
+              "fee_wei": "12086378722740",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCIdentitySegmented",
+              "hash": "0x7d862ba4cdb417df9965b08abd30c8acfaf40648a670a0be6a38830e86465487",
+              "block_number": 11914099,
+              "gas_used": "25480746",
+              "fee_wei": "25481281095666",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCConformanceSegmented",
+              "hash": "0x02575a7c8671bb492e20810c9577038522ed290ee1e8051fa89a8fafe212ab5a",
+              "block_number": 11914100,
+              "gas_used": "17607232",
+              "fee_wei": "17607601751872",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCFeatureSegmented",
+              "hash": "0x5601e7ed73a0293bde8109b7baaff7f855ae5e4fc2f9a223388fd45ab919c3dd",
+              "block_number": 11914101,
+              "gas_used": "22420829",
+              "fee_wei": "22421299837409",
+              "status": 1
+            },
+            {
+              "operation": "deployBindingPhase",
+              "hash": "0x83c652d2bdd0d9eb774f858eeeaca7c8df83fa90bfe2f524f75e4e7b171d7f6b",
+              "block_number": 11914104,
+              "gas_used": "13401286",
+              "fee_wei": "13401567427006",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorAccess",
+              "hash": "0xc37cf485c3de9f14d39f9772b13a92fac8051dfd2753e741a41d0ab1695b9e3e",
+              "block_number": 11914105,
+              "gas_used": "126173",
+              "fee_wei": "126175649633",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorIdentity",
+              "hash": "0x73beb92611962b0338aac543b09a5c83180f6ea900f3b0b6dd680dc8bbd7da3a",
+              "block_number": 11914106,
+              "gas_used": "126156",
+              "fee_wei": "126158649276",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorConformance",
+              "hash": "0xcc41317561c2cdc01cbb4265d18e8390ca2beabc113d8f08e5c85257461a2a05",
+              "block_number": 11914107,
+              "gas_used": "126199",
+              "fee_wei": "126201523980",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorFeature",
+              "hash": "0xb296a5632eb8b3a771e2878d13a9449f264679f66040446d20307a3e6d99c27d",
+              "block_number": 11914109,
+              "gas_used": "126221",
+              "fee_wei": "126223524420",
+              "status": 1
+            },
+            {
+              "operation": "registerAccessPublicKey",
+              "hash": "0xb87f17c34b387787e2834cb20729acd96938e2bc5b3c5d5470de0459c9867714",
+              "block_number": 11914111,
+              "gas_used": "1243770",
+              "fee_wei": "1243794875400",
+              "status": 1
+            },
+            {
+              "operation": "bindProvider",
+              "hash": "0x7ffdd7c3416237897b2464dbbebf4f5014d78b8b1c453ba07f6df8d0041f38b7",
+              "block_number": 11914113,
+              "gas_used": "8443721",
+              "fee_wei": "8443889874420",
+              "status": 1
+            },
+            {
+              "operation": "disputeClaim",
+              "hash": "0xb8baf784fc66161066155670548afae7167e6e6bbf014e8bc48ac0cab5c89788",
+              "block_number": 11914115,
+              "gas_used": "141450",
+              "fee_wei": "141452829000",
+              "status": 1
+            },
+            {
+              "operation": "revealWitness",
+              "hash": "0xef1aee934a6b9f9e67f3f47f38b4cf46e18f211832b10cf897f62c16c60ea640",
+              "block_number": 11914117,
+              "gas_used": "459600",
+              "fee_wei": "459609192000",
+              "status": 1
+            }
+          ]
+        },
+        {
+          "network": "sepolia",
+          "slicer": "orca",
+          "artifact_bytes": 280935,
+          "outcome": "Valid",
+          "journal_sha256": "e4044797cff2275a16b78f66f7a1b494fa3a6afbcf935756c2d0ec63855f9408",
+          "access_address": "0x5e88854516Ae58C894279FD2eAd5e00a28071762",
+          "binding_address": "0xE4C0120B76Dd9DB1d19a917CC8BD988c8A1e3E16",
+          "access_runtime_code_hash": "0xd5331b03566a8dabffb6fe1d3eb347b85fc44bc71def58e14e1c6899349d25fa",
+          "source_demand": "0xf2e09606459163a41651c1101Ce019d7996f4B13",
+          "source_demand_id": "1",
+          "access_dispute_gas": "601062",
+          "binding_gas": "8443721",
+          "complete_artifact_recovered": true,
+          "reused_ciphertext": true,
+          "public_reencryption_verified": true,
+          "successful_receipts": 13,
+          "receipts": [
+            {
+              "operation": "deployOVCAccess",
+              "hash": "0x45266291285c3197f79c35744ce14feeedaa1a8ac11c6eaf1113467841f688e2",
+              "block_number": 11914119,
+              "gas_used": "12086137",
+              "fee_wei": "12086378722740",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCIdentitySegmented",
+              "hash": "0xeecdc201908e1158367bc8b6114a88421b46dd17bd66699d8e3b8991d89df066",
+              "block_number": 11914121,
+              "gas_used": "25480746",
+              "fee_wei": "25481230134174",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCConformanceSegmented",
+              "hash": "0x2dbac427c58460bbbd222b7e1a3d4b016b88a7f592ae19c080c3e65ef58f6ddb",
+              "block_number": 11914123,
+              "gas_used": "17607232",
+              "fee_wei": "17607566537408",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCFeatureSegmented",
+              "hash": "0xec6f5d2363ca142e98b194031ca11d5b5e8bbfb83830bb5d71575112ab28003d",
+              "block_number": 11914124,
+              "gas_used": "22420829",
+              "fee_wei": "22421254995751",
+              "status": 1
+            },
+            {
+              "operation": "deployBindingPhase",
+              "hash": "0x75eb5dcaaeb0f98ed67f04695f5f43bedb73cd0ec674160333c86a0135fe6c21",
+              "block_number": 11914125,
+              "gas_used": "13401286",
+              "fee_wei": "13401540624434",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorAccess",
+              "hash": "0xeb292d515530e3112b4ee1db4bfe1242c53ddfe6e4e42a51d73ada4ad1cdfaa9",
+              "block_number": 11914126,
+              "gas_used": "126185",
+              "fee_wei": "126187523700",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorIdentity",
+              "hash": "0x59eada02da2cbee74cfefb7b0cc730a753369f8fcc2827436a7c6ff204093e47",
+              "block_number": 11914128,
+              "gas_used": "126168",
+              "fee_wei": "126170523360",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorConformance",
+              "hash": "0x99918599f089845aaef6c487bb4f0b0fd7666dbe8a12fe9c98b0915824a9ee01",
+              "block_number": 11914129,
+              "gas_used": "126211",
+              "fee_wei": "126213524220",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorFeature",
+              "hash": "0x44b03fa7e02c8ed47a2e3ad873f38c6f5e4198598c3b508e55a7877a703d489c",
+              "block_number": 11914130,
+              "gas_used": "126233",
+              "fee_wei": "126235524660",
+              "status": 1
+            },
+            {
+              "operation": "registerAccessPublicKey",
+              "hash": "0xb44daebf4f9096c9bb229b2923a28d65126cd5fa83d536ba16b25d6bba561b7d",
+              "block_number": 11914131,
+              "gas_used": "1243782",
+              "fee_wei": "1243806875640",
+              "status": 1
+            },
+            {
+              "operation": "bindProvider",
+              "hash": "0x177821cb19f14a7be66856d717bfe9114e1481a8357a973396722ac51984952f",
+              "block_number": 11914133,
+              "gas_used": "8443721",
+              "fee_wei": "8443889874420",
+              "status": 1
+            },
+            {
+              "operation": "disputeClaim",
+              "hash": "0x690a0a23effeed687846619fcc61dd8a23ea57c24f0f0e0e65a94e41f627f9cc",
+              "block_number": 11914134,
+              "gas_used": "141450",
+              "fee_wei": "141452829000",
+              "status": 1
+            },
+            {
+              "operation": "revealWitness",
+              "hash": "0xe79cd08c830acd373bdcfcf37add56c92377e4e32691cd304c29a0217c0fe5a4",
+              "block_number": 11914137,
+              "gas_used": "459612",
+              "fee_wei": "459621192240",
+              "status": 1
+            }
+          ]
+        },
+        {
+          "network": "sepolia",
+          "slicer": "prusa",
+          "artifact_bytes": 316712,
+          "outcome": "Valid",
+          "journal_sha256": "0a33cc65e7f8734c6b93c66a1e16f2bdc0d2a2d10710dc33ab28051a25b117c3",
+          "access_address": "0x934e49A83cA1B12564e93830Ca8c901545eAa682",
+          "binding_address": "0xe5a0fD2F9ea5a1b63b93888C9F3885175dfC8945",
+          "access_runtime_code_hash": "0xd5331b03566a8dabffb6fe1d3eb347b85fc44bc71def58e14e1c6899349d25fa",
+          "source_demand": "0xA75a513032e7664940285e891B51775278E21376",
+          "source_demand_id": "1",
+          "access_dispute_gas": "601062",
+          "binding_gas": "8443709",
+          "complete_artifact_recovered": true,
+          "reused_ciphertext": true,
+          "public_reencryption_verified": true,
+          "successful_receipts": 13,
+          "receipts": [
+            {
+              "operation": "deployOVCAccess",
+              "hash": "0xabfe635acf206a3b0be183561fa7dd450336916bd4d12bf80e47ae7a0a552953",
+              "block_number": 11914138,
+              "gas_used": "12086137",
+              "fee_wei": "12086378722740",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCIdentitySegmented",
+              "hash": "0x2e48d51ed37b4ad20707b69b15660c02f61b9fa4eba5ab8edf432de3ffe48834",
+              "block_number": 11914141,
+              "gas_used": "25480746",
+              "fee_wei": "25481230134174",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCConformanceSegmented",
+              "hash": "0x10e21a04a3ce0ddeadf7535638302aa2ed548218be2a8dac1585107e57ee69bd",
+              "block_number": 11914142,
+              "gas_used": "17607232",
+              "fee_wei": "17607566537408",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCFeatureSegmented",
+              "hash": "0xfb53fa30b2c664d15683125704b4250f39c0e67864263f7e66a32fb44fc96786",
+              "block_number": 11914144,
+              "gas_used": "22420829",
+              "fee_wei": "22421254995751",
+              "status": 1
+            },
+            {
+              "operation": "deployBindingPhase",
+              "hash": "0xdf9cc915b381639549f0ab82716cc77ef06cb65d90755d71edf673d3dbe922c4",
+              "block_number": 11914146,
+              "gas_used": "13401274",
+              "fee_wei": "13401528624206",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorAccess",
+              "hash": "0xea8adb4527c8921fcdcf7d80b4917503024041113e1dc91d8d43afc9aca84827",
+              "block_number": 11914147,
+              "gas_used": "126185",
+              "fee_wei": "126187397515",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorIdentity",
+              "hash": "0x302453b1f7355372a6b8fe9eeef5525ade609dc0b040ba61c9c5c15497075edb",
+              "block_number": 11914150,
+              "gas_used": "126168",
+              "fee_wei": "126170397192",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorConformance",
+              "hash": "0xebcb89daeac5583503b8854475eec1d7f79ba9235bb8e8abe3c3357ebeed9c80",
+              "block_number": 11914151,
+              "gas_used": "126211",
+              "fee_wei": "126213398009",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorFeature",
+              "hash": "0xe0738ebe1e563d886dd62c2bc9593aab685cd0e23d360debb30024fa66e1a9fd",
+              "block_number": 11914152,
+              "gas_used": "126233",
+              "fee_wei": "126235398427",
+              "status": 1
+            },
+            {
+              "operation": "registerAccessPublicKey",
+              "hash": "0xb0152b407cc68446f1f71abe030192701b349d48bc4eb6fe2750bbe052bd7081",
+              "block_number": 11914154,
+              "gas_used": "1243770",
+              "fee_wei": "1243793631630",
+              "status": 1
+            },
+            {
+              "operation": "bindProvider",
+              "hash": "0x99b012ac9a8a95bb340e3631642e0320426d796ed6d6db39696a782a629dba08",
+              "block_number": 11914156,
+              "gas_used": "8443709",
+              "fee_wei": "8443869430471",
+              "status": 1
+            },
+            {
+              "operation": "disputeClaim",
+              "hash": "0xcea6650c376fa47bce00b9a6ac8e8d83abdffe04e2faeb156e5d31fff7185d0d",
+              "block_number": 11914159,
+              "gas_used": "141450",
+              "fee_wei": "141452687550",
+              "status": 1
+            },
+            {
+              "operation": "revealWitness",
+              "hash": "0xaa64b7aa47a055dc808645c07b172c12c223b8bd34ad6019d3aedd4b49c00f69",
+              "block_number": 11914161,
+              "gas_used": "459612",
+              "fee_wei": "459620273016",
+              "status": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "network": "arbitrumSepolia",
+      "jobs": [
+        {
+          "network": "arbitrumSepolia",
+          "slicer": "cura",
+          "artifact_bytes": 264386,
+          "outcome": "Valid",
+          "journal_sha256": "ca1e5822ac23f6dfc0120bb18577731e0fa79359b5e7689d1fab6767a4bfb564",
+          "access_address": "0xD2e6097fb0e3Bcf57BA7012ABCc7d4460aeA871c",
+          "binding_address": "0x68Dd7B0f34bFB7803be7Fd900c2a838619Ee5dd4",
+          "access_runtime_code_hash": "0xd5331b03566a8dabffb6fe1d3eb347b85fc44bc71def58e14e1c6899349d25fa",
+          "source_demand": "0xC49db094032fc71704532778Bd7a9F43CC1D23a6",
+          "source_demand_id": "1",
+          "access_dispute_gas": "510742",
+          "binding_gas": "1851397",
+          "complete_artifact_recovered": true,
+          "reused_ciphertext": true,
+          "public_reencryption_verified": true,
+          "successful_receipts": 13,
+          "receipts": [
+            {
+              "operation": "deployOVCAccess",
+              "hash": "0x379594351c39ebdaafdf2d59feca120997bfcb984e1f492acfbb0f3676d8f1a6",
+              "block_number": 319126217,
+              "gas_used": "1714361",
+              "fee_wei": "34942105902000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCIdentitySegmented",
+              "hash": "0x70e45457a1bbd252c91132ed6be3d217b5428c957a3b16d4c6af1750ef2631d5",
+              "block_number": 319126235,
+              "gas_used": "3584230",
+              "fee_wei": "71913990720000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCConformanceSegmented",
+              "hash": "0x8cc881d305030ef27d589181864030871630ce0f3003dce4f271fde5b742b1cc",
+              "block_number": 319126253,
+              "gas_used": "2485360",
+              "fee_wei": "50263920640000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCFeatureSegmented",
+              "hash": "0xeb86006704599b6385f1f496a48a3d97eeaae78dd673e5f5529c1342289dccfe",
+              "block_number": 319126272,
+              "gas_used": "3158085",
+              "fee_wei": "63496457010000",
+              "status": 1
+            },
+            {
+              "operation": "deployBindingPhase",
+              "hash": "0x5ca0d4a0c719676337b6f93246a87afcebc5581a62a013122bb3ce68cb703c27",
+              "block_number": 319126291,
+              "gas_used": "1894864",
+              "fee_wei": "37995812928000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorAccess",
+              "hash": "0xf38dbc1ebcf17278c8d00f138540ba80df6446401bff8a90cf1b24ed41da3343",
+              "block_number": 319126310,
+              "gas_used": "44165",
+              "fee_wei": "883300000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorIdentity",
+              "hash": "0x4618b4c28c42ff0aa04538010127a04244ece3ff3accd6eb1073158ac3904a09",
+              "block_number": 319126329,
+              "gas_used": "44148",
+              "fee_wei": "882960000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorConformance",
+              "hash": "0x9ac7f491539e6d4a45e9159774405a2e561860c3b109c1b44cf54133de81559f",
+              "block_number": 319126349,
+              "gas_used": "44191",
+              "fee_wei": "883820000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorFeature",
+              "hash": "0x7730f00a00385b187db7124816c22cf54600b05237724f8a77e0d33dd3d08be0",
+              "block_number": 319126368,
+              "gas_used": "44213",
+              "fee_wei": "884260000000",
+              "status": 1
+            },
+            {
+              "operation": "registerAccessPublicKey",
+              "hash": "0xcb4b89478320c49c5f9e6ab4904002c6cd7ae3957f7bca5120bb8735037e2b26",
+              "block_number": 319126388,
+              "gas_used": "282514",
+              "fee_wei": "5650280000000",
+              "status": 1
+            },
+            {
+              "operation": "bindProvider",
+              "hash": "0x085e52d22d290881acd9febeb667936e8aa38b86994aae37a5a4881ef1035c0f",
+              "block_number": 319126407,
+              "gas_used": "1851397",
+              "fee_wei": "37027940000000",
+              "status": 1
+            },
+            {
+              "operation": "disputeClaim",
+              "hash": "0x2766b8ea941802b73c6b3f1bab10bcc448bc048c4afd427195c3cc2a47c9ef4e",
+              "block_number": 319126478,
+              "gas_used": "52330",
+              "fee_wei": "1050158440000",
+              "status": 1
+            },
+            {
+              "operation": "revealWitness",
+              "hash": "0x72a418f5d99e098adf3d34fa0312bfffbec8a23f0377921486cc8424d5e2ac98",
+              "block_number": 319126497,
+              "gas_used": "458412",
+              "fee_wei": "9255338280000",
+              "status": 1
+            }
+          ]
+        },
+        {
+          "network": "arbitrumSepolia",
+          "slicer": "orca",
+          "artifact_bytes": 280935,
+          "outcome": "Valid",
+          "journal_sha256": "bf50f737bbc1ab59ff656e217c8a5e5380df060693603deed224f7f1858c2e87",
+          "access_address": "0x268F727d25047a6D77161a030963F1f83502d345",
+          "binding_address": "0xfF5327CE7f230b6806A4cE6F42054596108846D6",
+          "access_runtime_code_hash": "0xd5331b03566a8dabffb6fe1d3eb347b85fc44bc71def58e14e1c6899349d25fa",
+          "source_demand": "0x3b80D2613eF85b58Fbf3F012Ff4A3AfDa0ABE801",
+          "source_demand_id": "1",
+          "access_dispute_gas": "510742",
+          "binding_gas": "1851421",
+          "complete_artifact_recovered": true,
+          "reused_ciphertext": true,
+          "public_reencryption_verified": true,
+          "successful_receipts": 13,
+          "receipts": [
+            {
+              "operation": "deployOVCAccess",
+              "hash": "0xef6a96875b11100e848024a94549a95bd888b02453f4e14851e1d648ece36b16",
+              "block_number": 319126516,
+              "gas_used": "1714361",
+              "fee_wei": "34348936996000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCIdentitySegmented",
+              "hash": "0x8bedde99a5bbb0ff9dadf463c7583cbc94e559f3a3cb9f7df661881413fcc19b",
+              "block_number": 319126536,
+              "gas_used": "3584230",
+              "fee_wei": "71985675320000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCConformanceSegmented",
+              "hash": "0xdc3bea10b7eef6d04f99589e313f1ff005db0d5b94fa4bdbd5d2c4d9f791df3c",
+              "block_number": 319126556,
+              "gas_used": "2485360",
+              "fee_wei": "49965677440000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCFeatureSegmented",
+              "hash": "0x74a1552c2d7746e8d0df60a6df6a55fb2e6ee4a44d1b4c4738a6545e0e3cd43a",
+              "block_number": 319126576,
+              "gas_used": "3158085",
+              "fee_wei": "63666993600000",
+              "status": 1
+            },
+            {
+              "operation": "deployBindingPhase",
+              "hash": "0xfeec61f32090d618000e07373c1fd9ddf618533b7285952d28431d0ed2a43fd7",
+              "block_number": 319126596,
+              "gas_used": "1894864",
+              "fee_wei": "38181509600000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorAccess",
+              "hash": "0xcb85ac56c67f0fc4f4545cf518222afdb730418831f8415ae262aa5322b5a585",
+              "block_number": 319126615,
+              "gas_used": "44165",
+              "fee_wei": "888158150000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorIdentity",
+              "hash": "0x278500473d702cf8509646468a53b03f16ffa18aaa53e757819b0308ccd5b3e7",
+              "block_number": 319126634,
+              "gas_used": "44148",
+              "fee_wei": "891259824000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorConformance",
+              "hash": "0x36cad9a6aa7e020f9150eaa89e5a8277a62fe463446040238afcdb763cec77c7",
+              "block_number": 319126652,
+              "gas_used": "44191",
+              "fee_wei": "889829976000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorFeature",
+              "hash": "0x63722590282d155ccb4b6b2ab33118245a642d91da60069c8b8a2c56e751d5ef",
+              "block_number": 319126669,
+              "gas_used": "44213",
+              "fee_wei": "899027142000",
+              "status": 1
+            },
+            {
+              "operation": "registerAccessPublicKey",
+              "hash": "0xd48b90f168d4df34dcbc5ab13fc21e8871d9d2f624fa07aa99e8f95e09acf314",
+              "block_number": 319126688,
+              "gas_used": "282562",
+              "fee_wei": "5730357360000",
+              "status": 1
+            },
+            {
+              "operation": "bindProvider",
+              "hash": "0x42f2bef39248071c36b304074412744378c440858d429fd7644fd45177319ee0",
+              "block_number": 319126708,
+              "gas_used": "1851421",
+              "fee_wei": "37287618940000",
+              "status": 1
+            },
+            {
+              "operation": "disputeClaim",
+              "hash": "0x26401a81ee39151ebac28f5e42a56784296f3c6f672571e33ae66f8bbe7f58eb",
+              "block_number": 319126777,
+              "gas_used": "52330",
+              "fee_wei": "1050995720000",
+              "status": 1
+            },
+            {
+              "operation": "revealWitness",
+              "hash": "0xb13b51980ad774b4edf05c2deb1e05b4ca2b13b45e8cc74385a769171997505e",
+              "block_number": 319126795,
+              "gas_used": "458412",
+              "fee_wei": "9240669096000",
+              "status": 1
+            }
+          ]
+        },
+        {
+          "network": "arbitrumSepolia",
+          "slicer": "prusa",
+          "artifact_bytes": 316712,
+          "outcome": "Valid",
+          "journal_sha256": "35965ccd0273d0664f10fb6289e55c9b8ae6ea27c8aa25df80688165bce277bf",
+          "access_address": "0xD607af46E2D444AB29Fee36a2E8669520Af8D4f8",
+          "binding_address": "0x8c7f7bd9d42c9B2F387735c6cb80414Bc6B53762",
+          "access_runtime_code_hash": "0xd5331b03566a8dabffb6fe1d3eb347b85fc44bc71def58e14e1c6899349d25fa",
+          "source_demand": "0xc7490E4BE916F45B29Ff5772524fC47e5522cf3B",
+          "source_demand_id": "1",
+          "access_dispute_gas": "510742",
+          "binding_gas": "1851421",
+          "complete_artifact_recovered": true,
+          "reused_ciphertext": true,
+          "public_reencryption_verified": true,
+          "successful_receipts": 13,
+          "receipts": [
+            {
+              "operation": "deployOVCAccess",
+              "hash": "0xf9c2edd6c30e3bea5735473cc73b0c855dfcfd2057e621a32a1bb2bdbad6e047",
+              "block_number": 319126818,
+              "gas_used": "1714361",
+              "fee_wei": "34551231594000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCIdentitySegmented",
+              "hash": "0x4a04ae11c7c9b3f6a6e441b7a065ef83de01475ecb0c250ce0714911553659b7",
+              "block_number": 319126835,
+              "gas_used": "3584230",
+              "fee_wei": "71684600000000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCConformanceSegmented",
+              "hash": "0x2a07dd3c3ccae428b2899a01a7229e46979475aa02a96eeee2b171320a051325",
+              "block_number": 319126854,
+              "gas_used": "2485360",
+              "fee_wei": "50119769760000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCFeatureSegmented",
+              "hash": "0x5392047395afa27853b608a93b03617a17b4b8d7eb54683d79a17eb176c8b9db",
+              "block_number": 319126874,
+              "gas_used": "3158085",
+              "fee_wei": "63540670200000",
+              "status": 1
+            },
+            {
+              "operation": "deployBindingPhase",
+              "hash": "0x02e4b1691bfcffbccb68427a7965c46f5ce8f1fe70b1fe3b7aa07a3f599a7bf7",
+              "block_number": 319126893,
+              "gas_used": "1894864",
+              "fee_wei": "38552902944000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorAccess",
+              "hash": "0x782ceb5232594f082d4b7f84733357e6078cd9da8015cc94247d92a015ffc0bc",
+              "block_number": 319126913,
+              "gas_used": "44165",
+              "fee_wei": "899729380000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorIdentity",
+              "hash": "0xae73ec69770e8b5659d5bf15412821cc32eb99e2e382818e91f54766a8ac82fd",
+              "block_number": 319126931,
+              "gas_used": "44148",
+              "fee_wei": "882960000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorConformance",
+              "hash": "0xb687e5e588f243d73846557e663b543ea1a472f24a43e8575a4f2d39e03ab85e",
+              "block_number": 319126950,
+              "gas_used": "44191",
+              "fee_wei": "883820000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorFeature",
+              "hash": "0xd0ce208d261b68458d374705e70459d7013cfb071e6eb767e08af26e6bd344f2",
+              "block_number": 319126969,
+              "gas_used": "44213",
+              "fee_wei": "893279452000",
+              "status": 1
+            },
+            {
+              "operation": "registerAccessPublicKey",
+              "hash": "0xe79182f2fa869ac3469eb850f79d893a6ac80a19ced65b89091e9d92b22e1a30",
+              "block_number": 319126988,
+              "gas_used": "282538",
+              "fee_wei": "5683534408000",
+              "status": 1
+            },
+            {
+              "operation": "bindProvider",
+              "hash": "0x93a87b58d3f0cb08332d548f72ebb9207b6be504f559271b7a0db27f21c56ed8",
+              "block_number": 319127008,
+              "gas_used": "1851421",
+              "fee_wei": "37224670626000",
+              "status": 1
+            },
+            {
+              "operation": "disputeClaim",
+              "hash": "0xb33e9752666943ddd14d6fbcb2d196604510ccf1dca464990a21ee4db481db4b",
+              "block_number": 319127081,
+              "gas_used": "52330",
+              "fee_wei": "1046600000000",
+              "status": 1
+            },
+            {
+              "operation": "revealWitness",
+              "hash": "0xd54b65624aaa3ae7490d4cb88b1d643b75b33cb16c06a17b26e3f8a84d42d9e1",
+              "block_number": 319127099,
+              "gas_used": "458412",
+              "fee_wei": "9190243776000",
+              "status": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "network": "megaethTestnet",
+      "jobs": [
+        {
+          "network": "megaethTestnet",
+          "slicer": "cura",
+          "artifact_bytes": 264386,
+          "outcome": "Valid",
+          "journal_sha256": "0dca0d9d1e92d6f180c8e6f3cc1de7ae794f0370ac9c01450d8eb6e517a6379b",
+          "access_address": "0x8E75D21bBA5fBB79BB2e6e1192DF44a3d4089FEc",
+          "binding_address": "0x54030A450009FBAb65f60c9803fF2949a6C514BC",
+          "access_runtime_code_hash": "0xd5331b03566a8dabffb6fe1d3eb347b85fc44bc71def58e14e1c6899349d25fa",
+          "source_demand": "0x4BB2f83e2FD588d01C923DDC192A279370F012e6",
+          "source_demand_id": "1",
+          "access_dispute_gas": "628422",
+          "binding_gas": "2117189",
+          "complete_artifact_recovered": true,
+          "reused_ciphertext": true,
+          "public_reencryption_verified": true,
+          "successful_receipts": 13,
+          "receipts": [
+            {
+              "operation": "deployOVCAccess",
+              "hash": "0x9b9ccc8ca239b2535b2f04b29ed814e4bae7e32a29ad3af520d499d012dc244e",
+              "block_number": 32280700,
+              "gas_used": "79791921",
+              "fee_wei": "79791921000000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCIdentitySegmented",
+              "hash": "0x2af51535f0f6b9a7825f3f7aec506241971ecf93499cd3641f047cf0ada4f422",
+              "block_number": 32280703,
+              "gas_used": "169643870",
+              "fee_wei": "169643870000000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCConformanceSegmented",
+              "hash": "0xe8b71f339819f259935f622e99cdbe0cecd0a10c6029f16ec17c3eb15f518a30",
+              "block_number": 32280705,
+              "gas_used": "116830720",
+              "fee_wei": "116830720000000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCFeatureSegmented",
+              "hash": "0x49b454028010d4fc7e362d7e38f18923c635b626771c09d28eb65f86f3857eae",
+              "block_number": 32280707,
+              "gas_used": "149125405",
+              "fee_wei": "149125405000000",
+              "status": 1
+            },
+            {
+              "operation": "deployBindingPhase",
+              "hash": "0x04c26e06174e8822edd3373a85a1c0f09e2964fd8fd0a8696a0c9da0893a20c2",
+              "block_number": 32280709,
+              "gas_used": "88589424",
+              "fee_wei": "88589424000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorAccess",
+              "hash": "0x0f9906aee9be9b6f5c9faa9975fb05a47d4eba0900e331ecfce44242f12f659c",
+              "block_number": 32280711,
+              "gas_used": "87353",
+              "fee_wei": "87353000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorIdentity",
+              "hash": "0x24600b3ac451db6d3ed575e8ed286345573b762cce72f2f8265f9f2353271375",
+              "block_number": 32280713,
+              "gas_used": "87336",
+              "fee_wei": "87336000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorConformance",
+              "hash": "0xbe71c16c5ce1b1e70ae22e498eeebf465212c92db9d97496eaf7f0c7c316414a",
+              "block_number": 32280715,
+              "gas_used": "87379",
+              "fee_wei": "87379000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorFeature",
+              "hash": "0x75201168779b4f256a225486219829c1c58e4108a1d1cab867826095340c0765",
+              "block_number": 32280717,
+              "gas_used": "87401",
+              "fee_wei": "87401000000",
+              "status": 1
+            },
+            {
+              "operation": "registerAccessPublicKey",
+              "hash": "0x1f373b381297be13eca87902f9147a2c850c979cdddc2a9000c3f434844de890",
+              "block_number": 32280719,
+              "gas_used": "382650",
+              "fee_wei": "382650000000",
+              "status": 1
+            },
+            {
+              "operation": "bindProvider",
+              "hash": "0xd9e62962947ecf7b5c45d4bf90e1f3740eb6e21b274031bf544a9f14ad091a89",
+              "block_number": 32280721,
+              "gas_used": "2117189",
+              "fee_wei": "2117189000000",
+              "status": 1
+            },
+            {
+              "operation": "disputeClaim",
+              "hash": "0x506316bf4607b293ab2465a5b9f0fe9ead48ae0bfda8f2008bd4ff177ddfb893",
+              "block_number": 32280734,
+              "gas_used": "100870",
+              "fee_wei": "100870000000",
+              "status": 1
+            },
+            {
+              "operation": "revealWitness",
+              "hash": "0xff9ba54f8b39b4940d36d8f01be3b2ad8e5642d06ccedb156c2728e69fbd21a0",
+              "block_number": 32280736,
+              "gas_used": "527552",
+              "fee_wei": "527552000000",
+              "status": 1
+            }
+          ]
+        },
+        {
+          "network": "megaethTestnet",
+          "slicer": "orca",
+          "artifact_bytes": 280935,
+          "outcome": "Valid",
+          "journal_sha256": "f0514dab74277f6257a42e9ea5aea898ff0caad6629683fa87bc345f7948ec90",
+          "access_address": "0xc2Ece559b2021408E7eC8266AEf586595a33202C",
+          "binding_address": "0x5bDBBb8d5b70D996ab36f45F4FFc336Ed7DA953c",
+          "access_runtime_code_hash": "0xd5331b03566a8dabffb6fe1d3eb347b85fc44bc71def58e14e1c6899349d25fa",
+          "source_demand": "0xf5CdF73A1A9cf1Bf0da7988dcE881B58C4feb118",
+          "source_demand_id": "1",
+          "access_dispute_gas": "628422",
+          "binding_gas": "2117189",
+          "complete_artifact_recovered": true,
+          "reused_ciphertext": true,
+          "public_reencryption_verified": true,
+          "successful_receipts": 13,
+          "receipts": [
+            {
+              "operation": "deployOVCAccess",
+              "hash": "0x00a34d7747015fbeca6d7b95c3bda5232764b6187d35ad19f8f14539d3467eec",
+              "block_number": 32280739,
+              "gas_used": "79791921",
+              "fee_wei": "79791921000000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCIdentitySegmented",
+              "hash": "0x7a94c454d0241f9809d593db66152639a71be451d1b9ba941f856b824a69ecf7",
+              "block_number": 32280741,
+              "gas_used": "169643870",
+              "fee_wei": "169643870000000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCConformanceSegmented",
+              "hash": "0x66ca0c7ccf4e74283f0554aa8ed2c47277782cd055e154cc2ed79014e4bc6732",
+              "block_number": 32280743,
+              "gas_used": "116830720",
+              "fee_wei": "116830720000000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCFeatureSegmented",
+              "hash": "0x92153fddba33f72e87d19a70f7435057ac5ced03a0544a3f2c22e8aa0b718c58",
+              "block_number": 32280745,
+              "gas_used": "149125405",
+              "fee_wei": "149125405000000",
+              "status": 1
+            },
+            {
+              "operation": "deployBindingPhase",
+              "hash": "0x39c608085f35afa0fdb6ba290c8d17e7a08a4e3a2a666a00e0f75be5aa93ad94",
+              "block_number": 32280747,
+              "gas_used": "88589424",
+              "fee_wei": "88589424000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorAccess",
+              "hash": "0x33b36db37abb0e07794a234319a492d28b9abbe1be11e0d53048e4d9100c26e4",
+              "block_number": 32280749,
+              "gas_used": "87485",
+              "fee_wei": "87485000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorIdentity",
+              "hash": "0x396010b637ddc78475efd401d497844e029e0ec36f10704f84d6f6026e6b99d7",
+              "block_number": 32280751,
+              "gas_used": "87468",
+              "fee_wei": "87468000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorConformance",
+              "hash": "0xeb23256b4a24016e07969edbcd216e18bec0afc9ddfd4fca2b4a727c645ca30e",
+              "block_number": 32280753,
+              "gas_used": "87511",
+              "fee_wei": "87511000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorFeature",
+              "hash": "0x1c434a36e0663ba87ed284a700293b9a1ba8ac4d2e98c0829ebea4ec0d808228",
+              "block_number": 32280755,
+              "gas_used": "87533",
+              "fee_wei": "87533000000",
+              "status": 1
+            },
+            {
+              "operation": "registerAccessPublicKey",
+              "hash": "0x0a4631b4fe0440b2765d036e56ff1f972e084ea67508a429675323f17b869ce1",
+              "block_number": 32280758,
+              "gas_used": "382782",
+              "fee_wei": "382782000000",
+              "status": 1
+            },
+            {
+              "operation": "bindProvider",
+              "hash": "0xd7e8d7e7742c1eabc26d6c57dd5cb2ff55dd5c08afcd10a930b430f360bf9e78",
+              "block_number": 32280760,
+              "gas_used": "2117189",
+              "fee_wei": "2117189000000",
+              "status": 1
+            },
+            {
+              "operation": "disputeClaim",
+              "hash": "0x38c22d5cf4f06fdf34b0d866889d9c3a73d4fa15ceb0bc427665f105a221c003",
+              "block_number": 32280774,
+              "gas_used": "100870",
+              "fee_wei": "100870000000",
+              "status": 1
+            },
+            {
+              "operation": "revealWitness",
+              "hash": "0x4417911bd1684faee60e77a20150dd0485568c7d2bb98e60842a9175382a1f42",
+              "block_number": 32280776,
+              "gas_used": "527552",
+              "fee_wei": "527552000000",
+              "status": 1
+            }
+          ]
+        },
+        {
+          "network": "megaethTestnet",
+          "slicer": "prusa",
+          "artifact_bytes": 316712,
+          "outcome": "Valid",
+          "journal_sha256": "b26087aa71ffa1c78a4d9fb97567b85ec2115c8bdcc1e5f4ab57f09ea242d49b",
+          "access_address": "0x1A777E3378E13c0C5FB3e4a0e9349c8d1b8E8770",
+          "binding_address": "0xEa10a5994C27b092702BEa591360d836F89c74a4",
+          "access_runtime_code_hash": "0xd5331b03566a8dabffb6fe1d3eb347b85fc44bc71def58e14e1c6899349d25fa",
+          "source_demand": "0x9721F798E7859582904b37F6A97c0a78418966DA",
+          "source_demand_id": "1",
+          "access_dispute_gas": "628422",
+          "binding_gas": "2117321",
+          "complete_artifact_recovered": true,
+          "reused_ciphertext": true,
+          "public_reencryption_verified": true,
+          "successful_receipts": 13,
+          "receipts": [
+            {
+              "operation": "deployOVCAccess",
+              "hash": "0xdcef65b74b23bfd2f084cdce8dc7b856317d6248f5c24fd1863d761a7b1781d8",
+              "block_number": 32280778,
+              "gas_used": "79791921",
+              "fee_wei": "79791921000000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCIdentitySegmented",
+              "hash": "0x396cd276e4a75667ac702f53c7473680d2375810ffd1d826387feca29c85158f",
+              "block_number": 32280781,
+              "gas_used": "169643870",
+              "fee_wei": "169643870000000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCConformanceSegmented",
+              "hash": "0x069d446a42242b5fe9e3c60e12e31a3124f69a1470e378792bd9a9ac49b49f11",
+              "block_number": 32280783,
+              "gas_used": "116830720",
+              "fee_wei": "116830720000000",
+              "status": 1
+            },
+            {
+              "operation": "deployOVCFeatureSegmented",
+              "hash": "0xd84ec42c59e36ac2d42395d4dbfa05fc2075ff8a436daf4069d808e4ae95a2be",
+              "block_number": 32280785,
+              "gas_used": "149125405",
+              "fee_wei": "149125405000000",
+              "status": 1
+            },
+            {
+              "operation": "deployBindingPhase",
+              "hash": "0x53cebb500bcb4b2c88c50f1e9563662943290bd51c8eda3003ea6a74ab10ea24",
+              "block_number": 32280787,
+              "gas_used": "88589424",
+              "fee_wei": "88589424000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorAccess",
+              "hash": "0xc19932a0f88bccfc08ee775a39e977ab48c24b56bd32ac42e3f50c3b5ef57c4d",
+              "block_number": 32280789,
+              "gas_used": "87485",
+              "fee_wei": "87485000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorIdentity",
+              "hash": "0x14482ea37818439be00a550d61ca75c9bdef28cc6d6b631adb8cef06fbf6148b",
+              "block_number": 32280791,
+              "gas_used": "87468",
+              "fee_wei": "87468000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorConformance",
+              "hash": "0x414df83740d8e8829b722ae1b5d00a1e14ca0c82484d4115bfa9212e6d98e649",
+              "block_number": 32280793,
+              "gas_used": "87511",
+              "fee_wei": "87511000000",
+              "status": 1
+            },
+            {
+              "operation": "setCoordinatorFeature",
+              "hash": "0x3c06b71feafa2dd4ee604f814390d8e11781202d176b06bab7d6d53cd668b2b7",
+              "block_number": 32280795,
+              "gas_used": "87533",
+              "fee_wei": "87533000000",
+              "status": 1
+            },
+            {
+              "operation": "registerAccessPublicKey",
+              "hash": "0x692e1eda6090b302042e777b387d2763282fda463a15902a6a7403d51a0a75b2",
+              "block_number": 32280797,
+              "gas_used": "382782",
+              "fee_wei": "382782000000",
+              "status": 1
+            },
+            {
+              "operation": "bindProvider",
+              "hash": "0xce87106dc4ffe7d5c2c1f90b8b9f94c1f1f21e5d57e152a52eb026e3a520bebe",
+              "block_number": 32280799,
+              "gas_used": "2117321",
+              "fee_wei": "2117321000000",
+              "status": 1
+            },
+            {
+              "operation": "disputeClaim",
+              "hash": "0x17dcf0643aa6eb11b6c8c9d3755f159275934a7a2a5c557b19be01f94a5bc8e7",
+              "block_number": 32280814,
+              "gas_used": "100870",
+              "fee_wei": "100870000000",
+              "status": 1
+            },
+            {
+              "operation": "revealWitness",
+              "hash": "0x7aa687567cbc19f682e547adb5b4a9022cfb14e38affb4d321d55b78fe139ae9",
+              "block_number": 32280816,
+              "gas_used": "527552",
+              "fee_wei": "527552000000",
+              "status": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Existing sealed Demand ciphertext is reused; this campaign does not pay for or measure new full-file uploads.",
+    "Consumer and Provider use the same test EOA, with separate RSA keys; multi-account authorization is covered locally.",
+    "Artifact keys are already public Identity fixtures; functional key handover is not a confidentiality proof.",
+    "Only Access adjudication is executed by this campaign; other claim contracts are instantiated but not disputed.",
+    "One run per slicer/network; timings include deliberate pacing and readback, and resumed runs include interruptions."
+  ]
+}

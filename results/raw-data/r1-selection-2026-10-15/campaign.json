@@ -1,0 +1,228 @@
+{
+  "started_at": "2026-10-15T13:20:47.771765+00:00",
+  "status": "complete",
+  "source_sha256": {
+    "code/contracts/BindingPhase.sol": "416aa91485bd2859cb90963dd44e8eeb5c81a7df5a823209785da7c80beacf86",
+    "code/contracts/ChaCha20.sol": "d90e3b5cd2075b483aa4bf6cd4ee69e1b484b99d7c3e2eb136b82271c30c2c8c",
+    "code/contracts/ChaCha20Harness.sol": "1ed7e8ab184ecade2773863ae74372464999ab80ac0dd8b3d9bc87484a1effff",
+    "code/contracts/Demand.sol": "ca22e2dcf5fb924f290eedfe178c99caa34efde934c2d0f5343a29f8a096f9f6",
+    "code/contracts/OVCAccess.sol": "0ec7332de1f1b6cd3cab0505b30062d193bbf0c99d34b06da0e13e02cc6cf0f6",
+    "code/contracts/OVCBase.sol": "547b454bd7ce9f8bec3cdd314e86bbe95a3b068db5a7d1902b528052c0dd5d6b",
+    "code/contracts/OVCBaseSegmented.sol": "756478e905f9b16b31ebe3ebd2f83962cbe863e9f7e99d3f9f72521f2a009652",
+    "code/contracts/OVCConformanceSegmented.sol": "47986c7ff46ca9b6ed4a02e5c9b24173f2864359899fdc6e618f059fb05485a1",
+    "code/contracts/OVCFeatureSegmented.sol": "d8a903a3f54272f4f301aac5348430b7752ef85d5624bd85ae2681ca4a9d910d",
+    "code/contracts/OVCIdentitySegmented.sol": "1262a9f2d3b0b5ed2d1a6654526a2dd3d0ed7ede1616b83d51e638d86e8a1ecc",
+    "code/contracts/RSAOAEP.sol": "ac0cdfa7f488841e4cfef844e89e9228f5325239dece1a45bb3d215a7f0ab53a",
+    "code/contracts/RSAOAEPHarness.sol": "97148e043b6d63499dc8ae7c67c4e1ff1ef5b70bb018f0590127678ab76d19d1",
+    "code/contracts/SegmentedCommitment.sol": "947f3cec186131cc5363a09c567e84935ccb053e909828bbfbb74c9165e59274",
+    "code/hardhat.config.js": "8e5c5bd1e9ef7abc108f13ee37c0caeeb9d156bade027e6c65da3d2c3cddf26f",
+    "code/tests/pilot/r1-chunk-selection.js": "1b5206220aa732b96dd1de3328cdd79c70e3c13f291f6c534178559c81d9c6b8",
+    "code/scripts/run-r1-local.py": "730d7400e0964a25fabb2266d83b3a11083e3a94d0634044f4f1a7962b40b4be",
+    "code/tests/lib/chacha20.js": "9a4cccd6d21065f9ded36c30b4237b54cb137b28d76c98b1d5f628318ee26df0",
+    "code/tests/lib/segmented-commitment.js": "94c32d76c4abb6f7455e116cc4607ea37bc03e858cfeee4581e47ff144412545",
+    "code/tests/lib/gcode-reference.js": "3b6c0041b1fd8fa6b0e48c02f05795b18eb5b581e23a171ae8cb084e87f2655b",
+    "code/tests/lib/access-envelope.js": "5c0bb1c873c7544aa8a77dde9a058065753d56543b0c661c738f04ede82e79e3"
+  },
+  "build_info": [
+    {
+      "sha256": "fa862724c709b6a340efc1c7f1d1e572c19a5a19c4bda97870ee0c4a5a92bde3",
+      "solc_version": "0.8.20",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "evmVersion": "paris",
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "sha256": "5fc5290a2198b704e4a347ab2cc9c0456495be22542463348a6f93b4298c0d70",
+      "solc_version": "0.8.20",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "evmVersion": "paris",
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "sha256": "18afffce422e6fc3bffb3ded05c8447ab531a8c6bce05d825ee5bbc99558f338",
+      "solc_version": "0.8.20",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "evmVersion": "paris",
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "candidate_chunk_bytes": [
+    4096,
+    4160,
+    4224,
+    5120,
+    6144,
+    8192,
+    16384,
+    32768,
+    65536,
+    131072,
+    "whole",
+    3072,
+    2048,
+    1024
+  ],
+  "reference_budget": 16777216,
+  "fill_factor": 0.95,
+  "boundary_grid_bytes": 64,
+  "cases": {
+    "chunk-4096": {
+      "status": "complete",
+      "completed_at": "2026-10-15T13:19:42.754Z",
+      "receipts": 1325
+    },
+    "chunk-4160": {
+      "status": "complete",
+      "completed_at": "2026-10-15T13:24:13.979Z",
+      "receipts": 1307
+    },
+    "chunk-4224": {
+      "status": "complete",
+      "completed_at": "2026-10-15T13:29:24.165Z",
+      "receipts": 1283
+    },
+    "chunk-5120": {
+      "status": "complete",
+      "completed_at": "2026-10-15T13:31:04.879Z",
+      "receipts": 1067
+    },
+    "chunk-6144": {
+      "status": "complete",
+      "completed_at": "2026-10-15T13:32:58.752Z",
+      "receipts": 905
+    },
+    "chunk-8192": {
+      "status": "complete",
+      "started_at": "2026-10-15T13:36:47.306625+00:00",
+      "node_instance": "chunk-8192",
+      "completed_at": "2026-10-15T13:37:34.667Z",
+      "receipts": 695,
+      "rpc_audited": true
+    },
+    "chunk-16384": {
+      "status": "complete",
+      "started_at": "2026-10-15T13:37:37.973055+00:00",
+      "node_instance": "chunk-16384",
+      "completed_at": "2026-10-15T13:38:06.324Z",
+      "receipts": 383,
+      "rpc_audited": true
+    },
+    "chunk-32768": {
+      "status": "complete",
+      "started_at": "2026-10-15T13:38:08.581086+00:00",
+      "node_instance": "chunk-32768",
+      "completed_at": "2026-10-15T13:38:26.670Z",
+      "receipts": 221,
+      "rpc_audited": true
+    },
+    "chunk-65536": {
+      "status": "complete",
+      "started_at": "2026-10-15T13:38:29.131124+00:00",
+      "node_instance": "chunk-65536",
+      "completed_at": "2026-10-15T13:38:42.541Z",
+      "receipts": 143,
+      "rpc_audited": true
+    },
+    "chunk-131072": {
+      "status": "complete",
+      "started_at": "2026-10-15T13:38:49.668315+00:00",
+      "node_instance": "chunk-131072",
+      "completed_at": "2026-10-15T13:39:01.166Z",
+      "receipts": 107,
+      "rpc_audited": true
+    },
+    "whole-file": {
+      "status": "complete",
+      "started_at": "2026-10-15T13:39:10.249556+00:00",
+      "node_instance": "whole-file",
+      "completed_at": "2026-10-15T13:39:19.238Z",
+      "receipts": 71,
+      "rpc_audited": true
+    },
+    "chunk-3072": {
+      "status": "complete",
+      "started_at": "2026-10-15T13:39:20.801925+00:00",
+      "node_instance": "chunk-3072",
+      "completed_at": "2026-10-15T13:41:12.006Z",
+      "receipts": 1751,
+      "rpc_audited": true
+    },
+    "chunk-2048": {
+      "status": "complete",
+      "started_at": "2026-10-15T13:41:21.668412+00:00",
+      "node_instance": "chunk-2048",
+      "completed_at": "2026-10-15T13:44:05.928Z",
+      "receipts": 2591,
+      "rpc_audited": true
+    },
+    "chunk-1024": {
+      "status": "complete",
+      "started_at": "2026-10-15T13:44:12.634663+00:00",
+      "node_instance": "chunk-1024",
+      "completed_at": "2026-10-15T13:49:38.529Z",
+      "receipts": 5117,
+      "rpc_audited": true
+    }
+  },
+  "isolated_driver": {
+    "path": "code/scripts/run-r1-isolated.py",
+    "sha256": "32210590fe49ad124e85e1963d29a7ebf1f758cf30861288027d1f826d4e82b6",
+    "anvil_sha256": "5c2217d266135a6fbe5faaccccb1e9eb2ddc1d06f8aabeef5fdb16d9846e4880",
+    "reason": "Fresh node per independent case avoids increasing state-management overhead; per-case receipts audited before shutdown."
+  },
+  "completed_at": "2026-10-15T13:49:44.011267+00:00"
+}

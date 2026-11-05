@@ -1,0 +1,173 @@
+{
+  "scope": "Local 15 October current four-claim coordinator, 3,072 bytes per chunk; deployments and shared initialization excluded.",
+  "artifacts": {
+    "cura": {
+      "bytes": 264386,
+      "chunks": 87,
+      "claims": {
+        "Access": {
+          "gas": 483435,
+          "transactions": 2,
+          "deposit_gas": 0,
+          "processing_gas": 431105,
+          "fixed_gas": 52330
+        },
+        "Identity": {
+          "gas": 1004306466,
+          "transactions": 91,
+          "deposit_gas": 0,
+          "processing_gas": 1004031333,
+          "fixed_gas": 275133
+        },
+        "Conformance": {
+          "gas": 199008558,
+          "transactions": 177,
+          "deposit_gas": 194892739,
+          "processing_gas": 3920333,
+          "fixed_gas": 195486
+        },
+        "Feature": {
+          "gas": 632789589,
+          "transactions": 177,
+          "deposit_gas": 194894653,
+          "processing_gas": 437697165,
+          "fixed_gas": 197771
+        }
+      },
+      "phases": {
+        "posting": {
+          "gas": 258001,
+          "transactions": 1
+        },
+        "publication": {
+          "gas": 194141771,
+          "transactions": 89
+        },
+        "binding": {
+          "gas": 1931045,
+          "transactions": 1
+        },
+        "dispute": {
+          "gas": 1836588048,
+          "transactions": 447
+        }
+      },
+      "total": {
+        "gas": 2032918865,
+        "transactions": 538
+      }
+    },
+    "orca": {
+      "bytes": 280935,
+      "chunks": 92,
+      "claims": {
+        "Access": {
+          "gas": 483435,
+          "transactions": 2,
+          "deposit_gas": 0,
+          "processing_gas": 431105,
+          "fixed_gas": 52330
+        },
+        "Identity": {
+          "gas": 1066989132,
+          "transactions": 96,
+          "deposit_gas": 0,
+          "processing_gas": 1066727679,
+          "fixed_gas": 261453
+        },
+        "Conformance": {
+          "gas": 212215517,
+          "transactions": 187,
+          "deposit_gas": 207046999,
+          "processing_gas": 4987732,
+          "fixed_gas": 180786
+        },
+        "Feature": {
+          "gas": 641012738,
+          "transactions": 187,
+          "deposit_gas": 207049023,
+          "processing_gas": 433781114,
+          "fixed_gas": 182601
+        }
+      },
+      "phases": {
+        "posting": {
+          "gas": 240877,
+          "transactions": 1
+        },
+        "publication": {
+          "gas": 206247119,
+          "transactions": 94
+        },
+        "binding": {
+          "gas": 1845557,
+          "transactions": 1
+        },
+        "dispute": {
+          "gas": 1920700822,
+          "transactions": 472
+        }
+      },
+      "total": {
+        "gas": 2129034375,
+        "transactions": 568
+      }
+    },
+    "prusa": {
+      "bytes": 316712,
+      "chunks": 104,
+      "claims": {
+        "Access": {
+          "gas": 483435,
+          "transactions": 2,
+          "deposit_gas": 0,
+          "processing_gas": 431105,
+          "fixed_gas": 52330
+        },
+        "Identity": {
+          "gas": 1202834211,
+          "transactions": 108,
+          "deposit_gas": 0,
+          "processing_gas": 1202572758,
+          "fixed_gas": 261453
+        },
+        "Conformance": {
+          "gas": 239067494,
+          "transactions": 211,
+          "deposit_gas": 233428380,
+          "processing_gas": 5458328,
+          "fixed_gas": 180786
+        },
+        "Feature": {
+          "gas": 730891187,
+          "transactions": 211,
+          "deposit_gas": 233430668,
+          "processing_gas": 497277918,
+          "fixed_gas": 182601
+        }
+      },
+      "phases": {
+        "posting": {
+          "gas": 240901,
+          "transactions": 1
+        },
+        "publication": {
+          "gas": 232510060,
+          "transactions": 106
+        },
+        "binding": {
+          "gas": 1845533,
+          "transactions": 1
+        },
+        "dispute": {
+          "gas": 2173276327,
+          "transactions": 532
+        }
+      },
+      "total": {
+        "gas": 2407872821,
+        "transactions": 640
+      }
+    }
+  }
+}

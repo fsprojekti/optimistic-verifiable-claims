@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-10-29T08:09:02.226Z",
+  "client_version": "anvil/v1.7.1",
+  "chain_id": "31337",
+  "hardfork": "cancun",
+  "block_gas_limit": "1000000000000",
+  "kernel_gas_limit": 3000000000,
+  "mode": "segmented",
+  "chunk_size_bytes": 49728,
+  "consumer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "provider": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+  "artifacts": [
+    {
+      "artifact": "amazing_distal_shell:cura",
+      "bytes": 4061669,
+      "sha256": "63de61009b7e2d68aa9e7439ee25b4560e5b96ea84b43e5443288d5d44039e00"
+    }
+  ],
+  "completed_at": "2026-10-29T08:10:12.902Z",
+  "successful_receipts": 513
+}

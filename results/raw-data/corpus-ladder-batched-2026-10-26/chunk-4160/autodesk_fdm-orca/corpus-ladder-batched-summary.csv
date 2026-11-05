@@ -1,0 +1,2 @@
+artifact_key,model_id,slicer,slicer_version,output_sha256,size_bytes,line_count,chunk_size_bytes,chunk_count,upload_gas,identity_processing_gas,lifecycle_gas,upload_gas_per_byte,processing_gas_per_byte,lifecycle_gas_per_byte,local_elapsed_seconds_diagnostic_only,outcome,client_version,chain_id
+autodesk_fdm:orca,autodesk_fdm,orca,2.4.2,18b9779742f9d8e070fbc5c21fd6a474d33fb86dd5a1d4bab40af8573107d30d,26590797,978484,4160,6393,19335956087,100844858467,120183404401,727.167,3792.472,4519.737,668.498,Valid,anvil/v1.7.1,31337

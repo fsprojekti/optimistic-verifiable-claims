@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-10-26T14:01:00.098Z",
+  "client_version": "anvil/v1.7.1",
+  "chain_id": "31337",
+  "hardfork": "cancun",
+  "block_gas_limit": "2000000000000",
+  "kernel_gas_limit": 1900000000000,
+  "mode": "whole-file-single-chunk",
+  "chunk_size_bytes": null,
+  "consumer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "provider": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+  "artifacts": [
+    {
+      "artifact": "aloha_under_arm:cura",
+      "bytes": 42353976,
+      "sha256": "f56d1a3712382457f34a52db70611633af1f0ba851912f7d6359dc1fec9dafa1"
+    }
+  ],
+  "completed_at": "2026-10-26T14:08:05.475Z",
+  "successful_receipts": 27
+}

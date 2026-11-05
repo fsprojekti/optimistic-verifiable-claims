@@ -1,0 +1,6 @@
+{
+  "node_instance": "pruned-shared-node",
+  "verified_receipts": 905,
+  "receipt_archive_sha256": "69ab0d8888bcd635a959fb675965197d9cace5fd22dcaef4577ca7a281962a87",
+  "prune_history": 32
+}

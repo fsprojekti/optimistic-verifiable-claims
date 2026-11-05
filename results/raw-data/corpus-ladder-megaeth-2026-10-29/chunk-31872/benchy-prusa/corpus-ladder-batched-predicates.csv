@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+benchy:prusa,Identity,12115055,31872,381,0,46060170685,46060445818,121232889,Valid
+benchy:prusa,Access,12115055,31872,0,0,431105,483435,431105,Valid
+benchy:prusa,Conformance,12115055,31872,381,8629852418,16806566,8646854470,1235306,Valid
+benchy:prusa,Feature,12115055,31872,381,8629860800,19469663540,28099722111,52817032,Valid

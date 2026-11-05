@@ -1,0 +1,187 @@
+{
+  "testnet_csv": "results/raw-data/mainnet-fork-2026-10-30/full-path/journal-transactions.csv",
+  "local_csv": [
+    "results/raw-data/r1-chunk-sweep-2026-10-22/chunk-4160/corpus-ladder-transactions.csv"
+  ],
+  "chunk_size_bytes": 4160,
+  "paired": 1302,
+  "unpaired": 0,
+  "operations": {
+    "postDemand": {
+      "transactions": 3,
+      "public_gas": 739839,
+      "local_gas": 739839,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "prepareBinding": {
+      "transactions": 3,
+      "public_gas": 246399,
+      "local_gas": 246399,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "depositCiphertextChunk": {
+      "transactions": 209,
+      "public_gas": 627126299,
+      "local_gas": 627126299,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "sealCiphertext": {
+      "transactions": 3,
+      "public_gas": 130497,
+      "local_gas": 130497,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "bindProvider": {
+      "transactions": 3,
+      "public_gas": 5622207,
+      "local_gas": 5622135,
+      "ratio": 1.000012806522789,
+      "min_ratio": 1.0000065021020754,
+      "max_ratio": 1.0000195065598936
+    },
+    "disputeClaim": {
+      "transactions": 3,
+      "public_gas": 290400,
+      "local_gas": 290400,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "revealKey": {
+      "transactions": 3,
+      "public_gas": 226053,
+      "local_gas": 226053,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "startAdjudication": {
+      "transactions": 3,
+      "public_gas": 116883,
+      "local_gas": 116883,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "processChunk": {
+      "transactions": 209,
+      "public_gas": 3269826457,
+      "local_gas": 3269826457,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "finalizeAdjudication": {
+      "transactions": 3,
+      "public_gas": 164703,
+      "local_gas": 164703,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "accessDisputeClaim": {
+      "transactions": 3,
+      "public_gas": 156990,
+      "local_gas": 156990,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "accessRevealWitness": {
+      "transactions": 3,
+      "public_gas": 1375236,
+      "local_gas": 1293303,
+      "ratio": 1.063351743558934,
+      "min_ratio": 1.0633418772688787,
+      "max_ratio": 1.0633714766883249
+    },
+    "conformanceDisputeClaim": {
+      "transactions": 3,
+      "public_gas": 242445,
+      "local_gas": 242445,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "conformanceDepositChunk": {
+      "transactions": 209,
+      "public_gas": 629252195,
+      "local_gas": 629252195,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "conformanceStartAdjudication": {
+      "transactions": 3,
+      "public_gas": 155901,
+      "local_gas": 155901,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "conformanceProcessChunk": {
+      "transactions": 209,
+      "public_gas": 11334095,
+      "local_gas": 11334095,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "conformanceFinalizeAdjudication": {
+      "transactions": 3,
+      "public_gas": 158712,
+      "local_gas": 158712,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "featureDisputeClaim": {
+      "transactions": 3,
+      "public_gas": 242511,
+      "local_gas": 242511,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "featureDepositChunk": {
+      "transactions": 209,
+      "public_gas": 629256793,
+      "local_gas": 629256793,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "featureStartAdjudication": {
+      "transactions": 3,
+      "public_gas": 155640,
+      "local_gas": 155640,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "featureProcessChunk": {
+      "transactions": 209,
+      "public_gas": 1364994301,
+      "local_gas": 1364994301,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    },
+    "featureFinalizeAdjudication": {
+      "transactions": 3,
+      "public_gas": 164822,
+      "local_gas": 164822,
+      "ratio": 1.0,
+      "min_ratio": 1.0,
+      "max_ratio": 1.0
+    }
+  }
+}

@@ -1,0 +1,2 @@
+artifact_key,model_id,slicer,slicer_version,output_sha256,size_bytes,line_count,chunk_size_bytes,chunk_count,upload_gas,identity_processing_gas,lifecycle_gas,upload_gas_per_byte,processing_gas_per_byte,lifecycle_gas_per_byte,local_elapsed_seconds_diagnostic_only,outcome,client_version,chain_id
+benchy:cura,benchy,cura,5.13.0,de49782ba51264b923161542e3b554ae929cf958a504413d8ba1d93d15023435,10928873,338246,4160,2628,7947184275,41447513658,49397287792,727.173,3792.478,4519.889,284.803,Valid,anvil/v1.7.1,31337

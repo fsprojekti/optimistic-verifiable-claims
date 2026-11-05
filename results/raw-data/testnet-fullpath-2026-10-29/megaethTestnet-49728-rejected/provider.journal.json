@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "identity": {
+    "network": "megaethTestnet",
+    "chain_id": "6343",
+    "chunk_bytes": 49728,
+    "bytecodes": {
+      "Demand": "0xbe8bbb8c52bb19da6e1305135e72623b79030af7a07b7c181fadc99fca440310",
+      "OVCAccess": "0xe4f93f2454b7ba84354acfacfd711a444235766752481b38cd9275ce387f0c38",
+      "OVCIdentitySegmented": "0x1ad330ce03449285b6f54676b61438acd14fdc2530461aa5aba5d5f8c94e22aa",
+      "OVCConformanceSegmented": "0x565aabe29ba9eb5a2aa79a64b479fbec65b361d679157eaba657015f6b8fe17c",
+      "OVCFeatureSegmented": "0xb417ab972cd5afba4dc408c6025c6a7813eececc31fab50e13617abec8303e16",
+      "BindingPhase": "0x7063c43318fa8f8bd622e0d3ab4bccd7244c4ba189787922f60775de5f554458"
+    },
+    "signer": "0x16EEc4F232bEf544F4cB55B0e29bA9c342F9f577"
+  },
+  "created_at_utc": "2026-10-29T08:09:45.344Z",
+  "operations": {
+    "registerAccessPublicKey": {
+      "hash": "0x4014950e53ef338cbca43751428fe6949fa3de85de3409901e309f8d94b95b89",
+      "nonce": 13,
+      "gas_limit": "491060",
+      "submitted_at_utc": "2026-10-29T08:09:53.286Z",
+      "poll_ms": 250,
+      "receipt_at_utc": "2026-10-29T08:09:53.761Z",
+      "block_number": 33550938,
+      "gas_used": "382650",
+      "fee_wei": "382650000000",
+      "contract_address": null,
+      "status": 1
+    }
+  },
+  "launches": 1
+}

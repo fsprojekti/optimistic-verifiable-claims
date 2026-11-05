@@ -1,0 +1,2 @@
+artifact_key,model_id,slicer,slicer_version,output_sha256,size_bytes,line_count,chunk_size_bytes,chunk_count,upload_gas,identity_processing_gas,lifecycle_gas,upload_gas_per_byte,processing_gas_per_byte,lifecycle_gas_per_byte,local_elapsed_seconds_diagnostic_only,outcome,client_version,chain_id
+amazing_distal_shell:orca,amazing_distal_shell,orca,2.4.2,303f576debc357c10fedf1be288dcdaf42d190ad308180f33334f5221a86926b,4434414,172237,8000,555,3187326314,16801412127,19991328276,718.771,3788.869,4508.223,701.171,Valid,anvil/v1.7.1,31337

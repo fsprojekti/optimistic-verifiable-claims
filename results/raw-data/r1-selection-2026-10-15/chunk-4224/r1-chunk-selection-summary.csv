@@ -1,0 +1,4 @@
+artifact_key,model_id,slicer,slicer_version,output_sha256,size_bytes,line_count,chunk_size_bytes,chunk_count,upload_gas,identity_processing_gas,lifecycle_gas,upload_gas_per_byte,processing_gas_per_byte,lifecycle_gas_per_byte,local_elapsed_seconds_diagnostic_only,outcome,client_version,chain_id
+rackstack_hinge:cura,rackstack_hinge,cura,5.13.0,f1a51107fda5819a776de26b6068be1e577111bb2e84eb27341592842d582c33,264386,8321,4224,63,192266108,1002893729,1197749672,727.217,3793.294,4530.307,75.406,Valid,anvil/v1.7.1,31337
+rackstack_hinge:orca,rackstack_hinge,orca,2.4.2,d9c608650aa0a780a6a6d283107329ce9a47ee7f08b985ad4ee81ad6f53e879b,280935,11566,4224,67,204298557,1065548787,1272320899,727.209,3792.866,4528.880,102.387,Valid,anvil/v1.7.1,31337
+rackstack_hinge:prusa,rackstack_hinge,prusa,2.9.6,3961ee85ee32938b17151ddd37e2ed800b89801b185b5ace76f48ff3b18e8761,316712,14037,4224,75,230269785,1201199456,1433942796,727.064,3792.718,4527.592,125.896,Valid,anvil/v1.7.1,31337

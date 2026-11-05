@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+aloha_under_arm:cura,Identity,42353976,24960,1697,0,160820556685,160820831818,94833535,Valid
+aloha_under_arm:cura,Access,42353976,24960,0,0,431105,483435,431105,Valid
+aloha_under_arm:cura,Conformance,42353976,24960,1697,30199253174,69893303,30269341963,396311,Valid
+aloha_under_arm:cura,Feature,42353976,24960,1697,30199290508,71125531336,101325019615,42250453,Valid

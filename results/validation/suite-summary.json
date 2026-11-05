@@ -1,0 +1,126 @@
+{
+  "observed_at_utc": "2026-10-13T13:41:05.956Z",
+  "command": "npm test (code/)",
+  "passing": 49,
+  "pending": 1,
+  "pending_reason": "Optional external Anvil pilot; all new Access/RSA/corpus tests executed.",
+  "access_integration_tests": 17,
+  "rsa_reference_tests": 3,
+  "rsa_randomized_cases": 12,
+  "real_corpus_access_cases": 3,
+  "node_version": "v24.15.0",
+  "hardhat_version": "2.29.1",
+  "openssl_version": "3.5.5",
+  "solidity": "0.8.20",
+  "optimizer": {
+    "enabled": true,
+    "runs": 200
+  },
+  "evm_target": "paris",
+  "sources": [
+    {
+      "path": "code/contracts/BindingPhase.sol",
+      "sha256": "416aa91485bd2859cb90963dd44e8eeb5c81a7df5a823209785da7c80beacf86"
+    },
+    {
+      "path": "code/contracts/ChaCha20.sol",
+      "sha256": "d90e3b5cd2075b483aa4bf6cd4ee69e1b484b99d7c3e2eb136b82271c30c2c8c"
+    },
+    {
+      "path": "code/contracts/ChaCha20Harness.sol",
+      "sha256": "1ed7e8ab184ecade2773863ae74372464999ab80ac0dd8b3d9bc87484a1effff"
+    },
+    {
+      "path": "code/contracts/Demand.sol",
+      "sha256": "ca22e2dcf5fb924f290eedfe178c99caa34efde934c2d0f5343a29f8a096f9f6"
+    },
+    {
+      "path": "code/contracts/OVCAccess.sol",
+      "sha256": "0ec7332de1f1b6cd3cab0505b30062d193bbf0c99d34b06da0e13e02cc6cf0f6"
+    },
+    {
+      "path": "code/contracts/OVCBase.sol",
+      "sha256": "547b454bd7ce9f8bec3cdd314e86bbe95a3b068db5a7d1902b528052c0dd5d6b"
+    },
+    {
+      "path": "code/contracts/OVCBaseSegmented.sol",
+      "sha256": "756478e905f9b16b31ebe3ebd2f83962cbe863e9f7e99d3f9f72521f2a009652"
+    },
+    {
+      "path": "code/contracts/OVCConformanceSegmented.sol",
+      "sha256": "47986c7ff46ca9b6ed4a02e5c9b24173f2864359899fdc6e618f059fb05485a1"
+    },
+    {
+      "path": "code/contracts/OVCFeatureSegmented.sol",
+      "sha256": "d8a903a3f54272f4f301aac5348430b7752ef85d5624bd85ae2681ca4a9d910d"
+    },
+    {
+      "path": "code/contracts/OVCIdentitySegmented.sol",
+      "sha256": "1262a9f2d3b0b5ed2d1a6654526a2dd3d0ed7ede1616b83d51e638d86e8a1ecc"
+    },
+    {
+      "path": "code/contracts/RSAOAEP.sol",
+      "sha256": "ac0cdfa7f488841e4cfef844e89e9228f5325239dece1a45bb3d215a7f0ab53a"
+    },
+    {
+      "path": "code/contracts/RSAOAEPHarness.sol",
+      "sha256": "97148e043b6d63499dc8ae7c67c4e1ff1ef5b70bb018f0590127678ab76d19d1"
+    },
+    {
+      "path": "code/contracts/SegmentedCommitment.sol",
+      "sha256": "947f3cec186131cc5363a09c567e84935ccb053e909828bbfbb74c9165e59274"
+    },
+    {
+      "path": "code/tests/access-binding.test.js",
+      "sha256": "5a64ec9de37a7324b143803577a8b8acc6a59e09311e17d7fb35fda94ad51659"
+    },
+    {
+      "path": "code/tests/access-real-corpus.test.js",
+      "sha256": "9c673d2ba4b48e469e9a389caa12c18453365afbca88b05fc1a85f2eaa30a11b"
+    },
+    {
+      "path": "code/tests/chacha20.test.js",
+      "sha256": "d56661931a4b7025bc42a6839f491e1c1bc1aff4ec48ce0253e2f13d6eaf27ea"
+    },
+    {
+      "path": "code/tests/deferred-ciphertext.test.js",
+      "sha256": "0629b3db96dd31dc9a507c85b0c0c1a518eb893bcbf920c6c18823fdde56aa12"
+    },
+    {
+      "path": "code/tests/lib/access-envelope.js",
+      "sha256": "5c0bb1c873c7544aa8a77dde9a058065753d56543b0c661c738f04ede82e79e3"
+    },
+    {
+      "path": "code/tests/lib/chacha20.js",
+      "sha256": "9a4cccd6d21065f9ded36c30b4237b54cb137b28d76c98b1d5f628318ee26df0"
+    },
+    {
+      "path": "code/tests/lib/gcode-reference.js",
+      "sha256": "3b6c0041b1fd8fa6b0e48c02f05795b18eb5b581e23a171ae8cb084e87f2655b"
+    },
+    {
+      "path": "code/tests/lib/segmented-commitment.js",
+      "sha256": "94c32d76c4abb6f7455e116cc4607ea37bc03e858cfeee4581e47ff144412545"
+    },
+    {
+      "path": "code/tests/pilot/real-corpus-anvil.js",
+      "sha256": "dd3b6eb5576c9c51403c62647ab92e1e96d8e5ac854fea328cd6ca05042b62a3"
+    },
+    {
+      "path": "code/tests/receipt-identifiers.test.js",
+      "sha256": "b6e9766ef964be47f8e14baff5c9e1aefaeebcc00bb1d677d6bf9fd2326f8cc8"
+    },
+    {
+      "path": "code/tests/reimbursement-protocol.test.js",
+      "sha256": "910f958dfa1b7f6692a3e71e58f3dc124d58ad9627040b9f04eeda5b923d2b53"
+    },
+    {
+      "path": "code/tests/rsa-oaep.test.js",
+      "sha256": "bc6164a2c861974b4f11005f2b4e3a37e0be3af11f6f0982cce0c91a81b58775"
+    },
+    {
+      "path": "code/tests/transaction-journal.test.js",
+      "sha256": "5c7f8f053c105a96dd46c43c89e25d4c69c1efc380fd07715df0f91f848f4079"
+    }
+  ]
+}

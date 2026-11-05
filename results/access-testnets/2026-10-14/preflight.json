@@ -1,0 +1,32 @@
+{
+  "observed_at_utc": "2026-10-14T15:14:13.003Z",
+  "results": [
+    {
+      "network": "sepolia",
+      "chain_id": 11155111,
+      "signer": "0x3fFAa6B60c24356123b1eEd5f4570400Ac4efCb5",
+      "balance_test_eth": "7.065315327626963338",
+      "block": 11914080,
+      "gas_price_wei": "1000017",
+      "ready": true
+    },
+    {
+      "network": "arbitrumSepolia",
+      "chain_id": 421614,
+      "signer": "0x3fFAa6B60c24356123b1eEd5f4570400Ac4efCb5",
+      "balance_test_eth": "0.804249518425677148",
+      "block": 319125427,
+      "gas_price_wei": "20000000",
+      "ready": true
+    },
+    {
+      "network": "megaethTestnet",
+      "chain_id": 6343,
+      "signer": "0x3fFAa6B60c24356123b1eEd5f4570400Ac4efCb5",
+      "balance_test_eth": "0.991292512556168905",
+      "block": 32280395,
+      "gas_price_wei": "1000000",
+      "ready": true
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+artifact_key,model_id,slicer,slicer_version,output_sha256,size_bytes,line_count,chunk_size_bytes,chunk_count,upload_gas,identity_processing_gas,lifecycle_gas,upload_gas_per_byte,processing_gas_per_byte,lifecycle_gas_per_byte,local_elapsed_seconds_diagnostic_only,outcome,client_version,chain_id
+amazing_distal_shell:prusa,amazing_distal_shell,prusa,2.9.6,5191904bcbdc1f03590a19547499ba38cd98a290bd9072f8a52b227ba9549f05,3733031,169516,31872,118,2657886830,14192666132,16853142809,711.992,3801.915,4514.600,38.188,Valid,anvil/v1.7.1,31337

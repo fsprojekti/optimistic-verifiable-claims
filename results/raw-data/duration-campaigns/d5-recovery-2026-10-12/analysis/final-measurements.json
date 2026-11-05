@@ -1,0 +1,369 @@
+{
+  "analyzed_at_utc": "2026-10-12T13:05:43.666153+00:00",
+  "completed_jobs": 12,
+  "unique_successful_transactions": 1866,
+  "counts_per_network": {
+    "sepolia": 622,
+    "arbitrumSepolia": 622,
+    "megaethTestnet": 622
+  },
+  "fees_native_test_eth_including_smoke_and_setup": {
+    "sepolia": "0.00650375282718318",
+    "arbitrumSepolia": "0.194130651588174",
+    "megaethTestnet": "0.005009229216"
+  },
+  "full_artifact_comparisons": [
+    {
+      "network": "sepolia",
+      "slicer": "cura",
+      "bytes": 264386,
+      "chunks": 87,
+      "transactions_including_setup": 187,
+      "protocol_gas": 1938362076,
+      "protocol_gas_per_byte": 7331.560960111352,
+      "post_demand_gas": 1023345,
+      "ciphertext_upload_gas": 929676279,
+      "identity_processing_gas": 1005665693,
+      "upload_share_protocol_percent": 47.961951511065365,
+      "upload_vs_anvil_ratio": 4.791747139138771,
+      "processing_vs_anvil_ratio": 1.0016277978049914,
+      "max_processing_transaction_gas": 11979685,
+      "fee_native_test_eth_including_setup": "0.001972521282928174",
+      "wall_clock_minutes": 4057.7785833333332,
+      "scheduled_pacing_seconds": 183.0,
+      "launches": 11,
+      "timing_interrupted": true,
+      "outcome": "Valid"
+    },
+    {
+      "network": "sepolia",
+      "slicer": "orca",
+      "bytes": 280935,
+      "chunks": 92,
+      "transactions_including_setup": 197,
+      "protocol_gas": 2059215370,
+      "protocol_gas_per_byte": 7329.864096677167,
+      "post_demand_gas": 1023333,
+      "ciphertext_upload_gas": 987753251,
+      "identity_processing_gas": 1068442039,
+      "upload_share_protocol_percent": 47.96745718734607,
+      "upload_vs_anvil_ratio": 4.792092592462231,
+      "processing_vs_anvil_ratio": 1.0016071205742099,
+      "max_processing_transaction_gas": 11979685,
+      "fee_native_test_eth_including_setup": "0.002093381687685479",
+      "wall_clock_minutes": 78.39705,
+      "scheduled_pacing_seconds": 193.0,
+      "launches": 5,
+      "timing_interrupted": true,
+      "outcome": "Valid"
+    },
+    {
+      "network": "sepolia",
+      "slicer": "prusa",
+      "bytes": 316712,
+      "chunks": 104,
+      "transactions_including_setup": 221,
+      "protocol_gas": 2321053918,
+      "protocol_gas_per_byte": 7328.594805375231,
+      "post_demand_gas": 1023345,
+      "ciphertext_upload_gas": 1113554696,
+      "identity_processing_gas": 1204479118,
+      "upload_share_protocol_percent": 47.97625282912536,
+      "upload_vs_anvil_ratio": 4.7918645220066125,
+      "processing_vs_anvil_ratio": 1.0015852346457361,
+      "max_processing_transaction_gas": 11979685,
+      "fee_native_test_eth_including_setup": "0.002355238596572796",
+      "wall_clock_minutes": 85.18926666666667,
+      "scheduled_pacing_seconds": 217.0,
+      "launches": 7,
+      "timing_interrupted": true,
+      "outcome": "Valid"
+    },
+    {
+      "network": "arbitrumSepolia",
+      "slicer": "cura",
+      "bytes": 264386,
+      "chunks": 87,
+      "transactions_including_setup": 187,
+      "protocol_gas": 1198963936,
+      "protocol_gas_per_byte": 4534.899487870009,
+      "post_demand_gas": 238065,
+      "ciphertext_upload_gas": 194016739,
+      "identity_processing_gas": 1004031333,
+      "upload_share_protocol_percent": 16.18203293480881,
+      "upload_vs_anvil_ratio": 1.0000030925262358,
+      "processing_vs_anvil_ratio": 1.0,
+      "max_processing_transaction_gas": 11721325,
+      "fee_native_test_eth_including_setup": "0.069121139042286",
+      "wall_clock_minutes": 448.1919,
+      "scheduled_pacing_seconds": 183.0,
+      "launches": 202,
+      "timing_interrupted": true,
+      "outcome": "Valid"
+    },
+    {
+      "network": "arbitrumSepolia",
+      "slicer": "orca",
+      "bytes": 280935,
+      "chunks": 92,
+      "transactions_including_setup": 197,
+      "protocol_gas": 1273764490,
+      "protocol_gas_per_byte": 4534.018509619663,
+      "post_demand_gas": 238053,
+      "ciphertext_upload_gas": 206120971,
+      "identity_processing_gas": 1066727679,
+      "upload_share_protocol_percent": 16.182031499402218,
+      "upload_vs_anvil_ratio": 0.99999749662198,
+      "processing_vs_anvil_ratio": 1.0,
+      "max_processing_transaction_gas": 11721325,
+      "fee_native_test_eth_including_setup": "0.062328666251204",
+      "wall_clock_minutes": 496.94696666666664,
+      "scheduled_pacing_seconds": 193.0,
+      "launches": 225,
+      "timing_interrupted": true,
+      "outcome": "Valid"
+    },
+    {
+      "network": "arbitrumSepolia",
+      "slicer": "prusa",
+      "bytes": 316712,
+      "chunks": 104,
+      "transactions_including_setup": 221,
+      "protocol_gas": 1435873038,
+      "protocol_gas_per_byte": 4533.686876405062,
+      "post_demand_gas": 238065,
+      "ciphertext_upload_gas": 232384416,
+      "identity_processing_gas": 1202572758,
+      "upload_share_protocol_percent": 16.18418967763917,
+      "upload_vs_anvil_ratio": 0.999999948361428,
+      "processing_vs_anvil_ratio": 1.0,
+      "max_processing_transaction_gas": 11721325,
+      "fee_native_test_eth_including_setup": "0.060544550307302",
+      "wall_clock_minutes": 562.4325333333334,
+      "scheduled_pacing_seconds": 217.0,
+      "launches": 247,
+      "timing_interrupted": true,
+      "outcome": "Valid"
+    },
+    {
+      "network": "megaethTestnet",
+      "slicer": "cura",
+      "bytes": 264386,
+      "chunks": 87,
+      "transactions_including_setup": 187,
+      "protocol_gas": 1250322641,
+      "protocol_gas_per_byte": 4729.156010530059,
+      "post_demand_gas": 324155,
+      "ciphertext_upload_gas": 241213089,
+      "identity_processing_gas": 1007601813,
+      "upload_share_protocol_percent": 19.292067590416448,
+      "upload_vs_anvil_ratio": 1.2432630101973114,
+      "processing_vs_anvil_ratio": 1.0035561439993428,
+      "max_processing_transaction_gas": 11762365,
+      "fee_native_test_eth_including_setup": "0.001476020171",
+      "wall_clock_minutes": 10.831283333333333,
+      "scheduled_pacing_seconds": 183.0,
+      "launches": 2,
+      "timing_interrupted": true,
+      "outcome": "Valid"
+    },
+    {
+      "network": "megaethTestnet",
+      "slicer": "orca",
+      "bytes": 280935,
+      "chunks": 92,
+      "transactions_including_setup": 197,
+      "protocol_gas": 1328250485,
+      "protocol_gas_per_byte": 4727.963710466834,
+      "post_demand_gas": 324023,
+      "ciphertext_upload_gas": 256239651,
+      "identity_processing_gas": 1070503359,
+      "upload_share_protocol_percent": 19.291515711360724,
+      "upload_vs_anvil_ratio": 1.2431486630988646,
+      "processing_vs_anvil_ratio": 1.0035394975440588,
+      "max_processing_transaction_gas": 11762365,
+      "fee_native_test_eth_including_setup": "0.001553948015",
+      "wall_clock_minutes": 6.871216666666666,
+      "scheduled_pacing_seconds": 193.0,
+      "launches": 1,
+      "timing_interrupted": false,
+      "outcome": "Valid"
+    },
+    {
+      "network": "megaethTestnet",
+      "slicer": "prusa",
+      "bytes": 316712,
+      "chunks": 104,
+      "transactions_including_setup": 221,
+      "protocol_gas": 1497256313,
+      "protocol_gas_per_byte": 4727.501051428427,
+      "post_demand_gas": 324155,
+      "ciphertext_upload_gas": 288907656,
+      "identity_processing_gas": 1206840918,
+      "upload_share_protocol_percent": 19.295804832582462,
+      "upload_vs_anvil_ratio": 1.2432315645521652,
+      "processing_vs_anvil_ratio": 1.0035491906594478,
+      "max_processing_transaction_gas": 11762365,
+      "fee_native_test_eth_including_setup": "0.001722953843",
+      "wall_clock_minutes": 7.6540333333333335,
+      "scheduled_pacing_seconds": 217.0,
+      "launches": 1,
+      "timing_interrupted": false,
+      "outcome": "Valid"
+    }
+  ],
+  "evidence_sha256": [
+    {
+      "path": "results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\sepolia\\smoke-cura-6144.checkpoint.json",
+      "sha256": "e383a2dfc4e8077c22618243163274b784a8b951e13801af3cc7e7aceb1a2fdf"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\sepolia\\identity-representative-2026-10-09T13-44-36-252Z.csv",
+      "sha256": "e866e3db98a1127871c77d5219114ce609660238b3c77807f91d7545b1276a29"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\sepolia\\identity-representative-2026-10-09T13-44-36-252Z-summary.csv",
+      "sha256": "553b1c6349e4af6757bb30bfbaec3043a41839ce17ced650cd5862b72e1467f5"
+    },
+    {
+      "path": "results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\sepolia\\full-cura.checkpoint.json",
+      "sha256": "328740304d49fe8b92c03c2337dc343227264a36cd07d5d03fd8593d817c6463"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\sepolia\\identity-representative-2026-10-09T13-57-03-442Z.csv",
+      "sha256": "b3b886e208960e5fbf7c23dae85d0ac6dba3eb07b3da7d25ed155147bf73f98a"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\sepolia\\identity-representative-2026-10-09T13-57-03-442Z-summary.csv",
+      "sha256": "c5469db02d0de1a184c9c137c8c0223035f61a0d475350e49ffaa37c2ed595f9"
+    },
+    {
+      "path": "results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\sepolia\\full-orca.checkpoint.json",
+      "sha256": "0fb59216a795542888dbfb4cbbf832b79dc5c9856d88826db974003bdf8456d3"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\sepolia\\identity-representative-2026-10-12T09-35-27-762Z.csv",
+      "sha256": "a058ba78baf59f077e613bec1961a64216f2c30c1f61b00bcec8deebd131b5f9"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\sepolia\\identity-representative-2026-10-12T09-35-27-762Z-summary.csv",
+      "sha256": "dac706bc1a6c172554ec2079d35a025a233a02f9f7d090647f6417a7c2e8496f"
+    },
+    {
+      "path": "results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\sepolia\\full-prusa.checkpoint.json",
+      "sha256": "a7ce2ef12ba636c71b2a4861d77b28156253c6af427aecdd81b5b348dee6f157"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\sepolia\\identity-representative-2026-10-12T10-55-04-723Z.csv",
+      "sha256": "bc0545abf4a4c63d3ecbdee633cd1f9f5324d9d5d6163839c2be7e7661b48782"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\sepolia\\identity-representative-2026-10-12T10-55-04-723Z-summary.csv",
+      "sha256": "c45ef170e32025460c0c372f3644aaf1555aac6857de51e77e9fe3f453d2c8ad"
+    },
+    {
+      "path": "results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\arbitrumSepolia\\smoke-cura-6144.checkpoint.json",
+      "sha256": "411809353076a77b4a050aff8c4bde7cb8d49f26cd407b49fcf9ef5d0a62674f"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\arbitrumSepolia\\identity-representative-2026-10-09T13-44-36-466Z.csv",
+      "sha256": "981ee143d9ed7a5e55e1d7d94a37889f1fed8641da7244108a3dc1cd89778ba7"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\arbitrumSepolia\\identity-representative-2026-10-09T13-44-36-466Z-summary.csv",
+      "sha256": "e74d1c98052f0b0c43bd4dbcfe44bfe171e6dd0458a1aa522421b70afb17bf8d"
+    },
+    {
+      "path": "results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\arbitrumSepolia\\full-cura.checkpoint.json",
+      "sha256": "b18a381bb27a122f6e47214cfd42e4ce7d96fbddb91001f6c6954f0925590101"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\arbitrumSepolia\\identity-representative-2026-10-09T14-22-39-370Z.csv",
+      "sha256": "baa5457fd9ee742f7ee049b4ae7d43900c020b16610e71342ac43ef78e8bbc18"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\arbitrumSepolia\\identity-representative-2026-10-09T14-22-39-370Z-summary.csv",
+      "sha256": "dca8ca1236845eae447b0cc2449495f68e8fff45758b98368b9a114dc7553065"
+    },
+    {
+      "path": "results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\arbitrumSepolia\\full-orca.checkpoint.json",
+      "sha256": "e19366f844c1f0c7f5eaa585244ef9af017664876b5268d0188044df5731b821"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\arbitrumSepolia\\identity-representative-2026-10-09T21-57-03-305Z.csv",
+      "sha256": "f402ccbf5d9df0484c4e85c2cc9603542b2dcbc2dc6be2848a985ab5181e64d1"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\arbitrumSepolia\\identity-representative-2026-10-09T21-57-03-305Z-summary.csv",
+      "sha256": "ae117a56f0deba56af5ac2db9991e9e1c957b8dd1a3d9066ed83c9f233051040"
+    },
+    {
+      "path": "results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\arbitrumSepolia\\full-prusa.checkpoint.json",
+      "sha256": "9c543c2d0a4eccdb614be4b8d49e194a25f4fd550b7a2ccbaa61a8503ce09dee"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\arbitrumSepolia\\identity-representative-2026-10-10T06-22-39-912Z.csv",
+      "sha256": "0acc63ed04a8d2a12ecca4f5f908da63ef150872cb7db315bbe0fa07779088c9"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\arbitrumSepolia\\identity-representative-2026-10-10T06-22-39-912Z-summary.csv",
+      "sha256": "b29d803581ca5ccea6c7718c78fdfe8b34d98d0bb7c68a82a139de12f4713faf"
+    },
+    {
+      "path": "results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\megaethTestnet\\smoke-cura-6144.checkpoint.json",
+      "sha256": "ec1a3692c21997d792bb5e1601ac0d3632377e5b88fb53f2e6cbd76315359c8d"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\megaethTestnet\\identity-representative-2026-10-09T13-44-36-386Z.csv",
+      "sha256": "a73885f683e01d34e494741c65625969c6009f2a66466b3c4c6385f470b7c1bd"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\megaethTestnet\\identity-representative-2026-10-09T13-44-36-386Z-summary.csv",
+      "sha256": "858fc28fd870b3161487fc5f425efeb307ed029a2a71ac7d477d0926220c9afc"
+    },
+    {
+      "path": "results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\megaethTestnet\\full-cura.checkpoint.json",
+      "sha256": "4f28025aa00ba9f8af9749782662dfee0042aa326bf7176b2f5680d5b7426ce0"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\megaethTestnet\\identity-representative-2026-10-09T13-45-15-872Z.csv",
+      "sha256": "7facac7cdabb5457d21ea8718d37fd9265180911a249cdb8a59a16dcf33b237b"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\megaethTestnet\\identity-representative-2026-10-09T13-45-15-872Z-summary.csv",
+      "sha256": "07fd9dc793053266bc3db9130791e1da0ac667264adc7c516940e28cfdbc09c5"
+    },
+    {
+      "path": "results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\megaethTestnet\\full-orca.checkpoint.json",
+      "sha256": "b9faeba1034f3331fb767df3f667f9a9083e2b4b086385768273f5cd45016b8d"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\megaethTestnet\\identity-representative-2026-10-09T13-56-15-462Z.csv",
+      "sha256": "e58fd3883ef04127a1a1f6db165a28507240081452f89ac77901e6e2ecaeaf7f"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\megaethTestnet\\identity-representative-2026-10-09T13-56-15-462Z-summary.csv",
+      "sha256": "0c35e6d3ef5d86f2b959785bb4ffb5e77c6ffdcf62e34df69d6339deca0a9be9"
+    },
+    {
+      "path": "results\\raw-data\\duration-campaigns\\d5-recovery-2026-10-12\\megaethTestnet\\full-prusa.checkpoint.json",
+      "sha256": "ab3fff7df5d36ceb32da5966f7634e9ce3e485cc445fc7fccd422415d4d9f23b"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\megaethTestnet\\identity-representative-2026-10-09T14-03-17-146Z.csv",
+      "sha256": "f9e9f4a665a96998a98a5faad1b9631f1861c2bf817857666ccee0c1a7602b87"
+    },
+    {
+      "path": "results\\raw-data\\testnets\\megaethTestnet\\identity-representative-2026-10-09T14-03-17-146Z-summary.csv",
+      "sha256": "5d5494f45aded24961fdf5a05a8c6c0ef726840bc17a61114f17c48159afc693"
+    }
+  ],
+  "limitations": [
+    "Three slicer outputs of one geometry, one run per network/workload; smoke jobs are excerpts.",
+    "Public runner is Identity only and uses zero witness reimbursement.",
+    "Local bindProvider coordinates multiple predicates; public Identity uses direct claim setup. Compare matching upload and process phases, not total lifecycle gas as identical experiments.",
+    "Interrupted durations include RPC retries and downtime; Sepolia Cura spans the weekend.",
+    "Native test-token fees are observed testnet fees, not mainnet cost predictions.",
+    "Deterministic fixture key is revealed in adjudication; this is not a confidentiality proof or a private key-delivery test."
+  ]
+}

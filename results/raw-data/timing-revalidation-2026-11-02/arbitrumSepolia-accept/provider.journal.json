@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "identity": {
+    "network": "arbitrumSepolia",
+    "chain_id": "421614",
+    "chunk_bytes": 8000,
+    "bytecodes": {
+      "Demand": "0xbe8bbb8c52bb19da6e1305135e72623b79030af7a07b7c181fadc99fca440310",
+      "OVCAccess": "0xe4f93f2454b7ba84354acfacfd711a444235766752481b38cd9275ce387f0c38",
+      "OVCIdentitySegmented": "0x1ad330ce03449285b6f54676b61438acd14fdc2530461aa5aba5d5f8c94e22aa",
+      "OVCConformanceSegmented": "0x565aabe29ba9eb5a2aa79a64b479fbec65b361d679157eaba657015f6b8fe17c",
+      "OVCFeatureSegmented": "0xb417ab972cd5afba4dc408c6025c6a7813eececc31fab50e13617abec8303e16",
+      "BindingPhase": "0x7063c43318fa8f8bd622e0d3ab4bccd7244c4ba189787922f60775de5f554458"
+    },
+    "signer": "0x16EEc4F232bEf544F4cB55B0e29bA9c342F9f577"
+  },
+  "created_at_utc": "2026-11-02T10:34:44.681Z",
+  "operations": {
+    "registerAccessPublicKey": {
+      "hash": "0xd00da421a03bc8720cbf36721abfd7e108a44a3376c6d96b6f8a34f65a3f97fc",
+      "nonce": 28,
+      "gas_limit": "385936",
+      "submitted_at_utc": "2026-11-02T10:35:00.117Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 147.7,
+        "nonce": 146.5,
+        "populate": 590.1,
+        "balance": 140,
+        "sign": 1.7,
+        "save": 1.4,
+        "broadcast": 350.6
+      },
+      "receipt_at_utc": "2026-11-02T10:35:01.310Z",
+      "block_number": 325289668,
+      "gas_used": "282526",
+      "fee_wei": "5659560832000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:cura/acceptBinding": {
+      "hash": "0x7628de400141defcf9f236c60bda42af6eb89116895abb9016918a7bceca6e7a",
+      "nonce": 29,
+      "gas_limit": "207231",
+      "submitted_at_utc": "2026-11-02T10:36:42.515Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 158.2,
+        "nonce": 138.5,
+        "populate": 577.3,
+        "balance": 150.6,
+        "sign": 0.8,
+        "save": 1.4,
+        "broadcast": 385
+      },
+      "receipt_at_utc": "2026-11-02T10:36:43.743Z",
+      "block_number": 325290067,
+      "gas_used": "106227",
+      "fee_wei": "2134525338000",
+      "contract_address": null,
+      "status": 1
+    }
+  },
+  "launches": 1
+}

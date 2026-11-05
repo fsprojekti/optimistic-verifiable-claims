@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+electronics_enclosure:orca,Identity,1819119,8000,228,0,6892477301,6892752434,30369320,Valid
+electronics_enclosure:orca,Access,1819119,8000,0,0,431105,483435,431105,Valid
+electronics_enclosure:orca,Conformance,1819119,8000,228,1309901754,10570965,1320668205,1269186,Valid
+electronics_enclosure:orca,Feature,1819119,8000,228,1309906770,2789975753,4100080294,13284010,Valid

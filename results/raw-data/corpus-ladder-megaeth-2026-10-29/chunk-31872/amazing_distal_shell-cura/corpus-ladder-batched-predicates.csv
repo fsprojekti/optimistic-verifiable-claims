@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+amazing_distal_shell:cura,Identity,4061669,31872,128,0,15441993332,15442268465,121232889,Valid
+amazing_distal_shell:cura,Access,4061669,31872,0,0,431105,483435,431105,Valid
+amazing_distal_shell:cura,Conformance,4061669,31872,128,2893297725,5600390,2899093601,396311,Valid
+amazing_distal_shell:cura,Feature,4061669,31872,128,2893300541,6714335842,9607834154,53304961,Valid

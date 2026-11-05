@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+nasa_wrench:prusa,Identity,40031421,40031421,1,0,1385989146126,1385989421259,1385989146126,Valid
+nasa_wrench:prusa,Access,40031421,40031421,0,0,431105,483435,431105,Valid
+nasa_wrench:prusa,Conformance,40031421,40031421,1,31465283031,1242479,31466720996,1242479,Valid
+nasa_wrench:prusa,Feature,40031421,40031421,1,31465283053,68422397682,99887878506,68422397682,Valid

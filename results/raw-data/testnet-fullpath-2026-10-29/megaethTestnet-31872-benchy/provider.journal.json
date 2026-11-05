@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "identity": {
+    "network": "megaethTestnet",
+    "chain_id": "6343",
+    "chunk_bytes": 31872,
+    "bytecodes": {
+      "Demand": "0xbe8bbb8c52bb19da6e1305135e72623b79030af7a07b7c181fadc99fca440310",
+      "OVCAccess": "0xe4f93f2454b7ba84354acfacfd711a444235766752481b38cd9275ce387f0c38",
+      "OVCIdentitySegmented": "0x1ad330ce03449285b6f54676b61438acd14fdc2530461aa5aba5d5f8c94e22aa",
+      "OVCConformanceSegmented": "0x565aabe29ba9eb5a2aa79a64b479fbec65b361d679157eaba657015f6b8fe17c",
+      "OVCFeatureSegmented": "0xb417ab972cd5afba4dc408c6025c6a7813eececc31fab50e13617abec8303e16",
+      "BindingPhase": "0x7063c43318fa8f8bd622e0d3ab4bccd7244c4ba189787922f60775de5f554458"
+    },
+    "signer": "0x16EEc4F232bEf544F4cB55B0e29bA9c342F9f577"
+  },
+  "created_at_utc": "2026-10-29T08:28:54.475Z",
+  "operations": {
+    "registerAccessPublicKey": {
+      "hash": "0x91bcbda797f8880d8e741013d3f54ddb0e6218505c663c4fde9ca753b39ef7b3",
+      "nonce": 29,
+      "gas_limit": "491194",
+      "submitted_at_utc": "2026-10-29T08:29:01.684Z",
+      "poll_ms": 250,
+      "receipt_at_utc": "2026-10-29T08:29:02.157Z",
+      "block_number": 33552086,
+      "gas_used": "382782",
+      "fee_wei": "382782000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "benchy:prusa/disputeClaim": {
+      "hash": "0x118155ef7f40e6b73cc16a8e11b0336cdb5429c570e3e8a6319295180278f418",
+      "nonce": 30,
+      "gas_limit": "264012",
+      "submitted_at_utc": "2026-10-29T08:38:42.509Z",
+      "poll_ms": 250,
+      "receipt_at_utc": "2026-10-29T08:38:42.913Z",
+      "block_number": 33552667,
+      "gas_used": "159150",
+      "fee_wei": "159150000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "benchy:prusa/accessDisputeClaim": {
+      "hash": "0x53c1a31a993cfba8139f5dc5157f9354080a529b0614565e9393e1c46e059a43",
+      "nonce": 31,
+      "gas_limit": "204807",
+      "submitted_at_utc": "2026-10-29T10:57:31.079Z",
+      "poll_ms": 250,
+      "receipt_at_utc": "2026-10-29T10:57:31.600Z",
+      "block_number": 33560996,
+      "gas_used": "100870",
+      "fee_wei": "100870000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "benchy:prusa/conformanceDisputeClaim": {
+      "hash": "0x56651de127edc3c2c7e64e3ee0e6c3f5b622fc7c2853ae041aae57e1ee9bd6ae",
+      "nonce": 32,
+      "gas_limit": "247773",
+      "submitted_at_utc": "2026-10-29T10:57:35.694Z",
+      "poll_ms": 250,
+      "receipt_at_utc": "2026-10-29T10:57:36.144Z",
+      "block_number": 33561000,
+      "gas_used": "143165",
+      "fee_wei": "143165000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "benchy:prusa/featureDisputeClaim": {
+      "hash": "0xd0ea0330230d09f12d8b5ca576c2829bf5eaf5b3ef407b1d79402224d963da62",
+      "nonce": 33,
+      "gas_limit": "247796",
+      "submitted_at_utc": "2026-10-29T11:24:06.827Z",
+      "poll_ms": 250,
+      "receipt_at_utc": "2026-10-29T11:24:07.267Z",
+      "block_number": 33562591,
+      "gas_used": "143187",
+      "fee_wei": "143187000000",
+      "contract_address": null,
+      "status": 1
+    }
+  },
+  "launches": 3
+}

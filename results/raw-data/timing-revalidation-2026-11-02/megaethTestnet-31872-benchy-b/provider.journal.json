@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "identity": {
+    "network": "megaethTestnet",
+    "chain_id": "6343",
+    "chunk_bytes": 31872,
+    "bytecodes": {
+      "Demand": "0xbe8bbb8c52bb19da6e1305135e72623b79030af7a07b7c181fadc99fca440310",
+      "OVCAccess": "0xe4f93f2454b7ba84354acfacfd711a444235766752481b38cd9275ce387f0c38",
+      "OVCIdentitySegmented": "0x1ad330ce03449285b6f54676b61438acd14fdc2530461aa5aba5d5f8c94e22aa",
+      "OVCConformanceSegmented": "0x565aabe29ba9eb5a2aa79a64b479fbec65b361d679157eaba657015f6b8fe17c",
+      "OVCFeatureSegmented": "0xb417ab972cd5afba4dc408c6025c6a7813eececc31fab50e13617abec8303e16",
+      "BindingPhase": "0x7063c43318fa8f8bd622e0d3ab4bccd7244c4ba189787922f60775de5f554458"
+    },
+    "signer": "0x16EEc4F232bEf544F4cB55B0e29bA9c342F9f577"
+  },
+  "created_at_utc": "2026-11-02T18:21:29.008Z",
+  "operations": {
+    "registerAccessPublicKey": {
+      "hash": "0x5403c2aab46c37c96fa7dc4e590dce41256694c84bc618998e5726b54a1c3850",
+      "nonce": 54,
+      "gas_limit": "491194",
+      "submitted_at_utc": "2026-11-02T18:21:36.547Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 132.9,
+        "nonce": 138.6,
+        "populate": 73.1,
+        "balance": 136.8,
+        "sign": 0.9,
+        "save": 1.4,
+        "broadcast": 406.2
+      },
+      "receipt_at_utc": "2026-11-02T18:21:37.097Z",
+      "block_number": 33933241,
+      "gas_used": "382782",
+      "fee_wei": "382782000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "benchy:prusa/disputeClaim": {
+      "hash": "0x6e24dbf81e0910b4c1cadbaf172215f8fc5a42644bc3564dbdb55a09094c5059",
+      "nonce": 55,
+      "gas_limit": "264012",
+      "submitted_at_utc": "2026-11-02T18:32:40.151Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 133,
+        "nonce": 135.6,
+        "populate": 205.5,
+        "balance": 130.1,
+        "sign": 0.5,
+        "save": 0.8,
+        "broadcast": 300.4
+      },
+      "receipt_at_utc": "2026-11-02T18:32:40.586Z",
+      "block_number": 33933905,
+      "gas_used": "159150",
+      "fee_wei": "159150000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "benchy:prusa/accessDisputeClaim": {
+      "hash": "0x2efb93969dd3083f3997a6fb2c3a514e979b9b94a4b3c1b41143efa32fbd016a",
+      "nonce": 56,
+      "gas_limit": "204807",
+      "submitted_at_utc": "2026-11-02T20:36:15.456Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 130.4,
+        "nonce": 145.2,
+        "populate": 216,
+        "balance": 142,
+        "sign": 0.5,
+        "save": 1.2,
+        "broadcast": 318.8
+      },
+      "receipt_at_utc": "2026-11-02T20:36:15.908Z",
+      "block_number": 33941320,
+      "gas_used": "100870",
+      "fee_wei": "100870000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "benchy:prusa/conformanceDisputeClaim": {
+      "hash": "0x4d7fd2f6d9667ea93267784db9021375719cc04defc58a965199a76deabc2e43",
+      "nonce": 57,
+      "gas_limit": "247773",
+      "submitted_at_utc": "2026-11-02T20:36:19.866Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 139.7,
+        "nonce": 150,
+        "populate": 197.3,
+        "balance": 132.2,
+        "sign": 0.4,
+        "save": 1.1,
+        "broadcast": 322.1
+      },
+      "receipt_at_utc": "2026-11-02T20:36:20.318Z",
+      "block_number": 33941325,
+      "gas_used": "143165",
+      "fee_wei": "143165000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "benchy:prusa/featureDisputeClaim": {
+      "hash": "0x663f9836df0dcfcd7e07ebe84b4d88ee713b8d1a6db4d480855ac0ff910670ab",
+      "nonce": 58,
+      "gas_limit": "247796",
+      "submitted_at_utc": "2026-11-02T21:01:55.888Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 130,
+        "nonce": 129.6,
+        "populate": 161.3,
+        "balance": 134.6,
+        "sign": 0.4,
+        "save": 1.1,
+        "broadcast": 275.7
+      },
+      "receipt_at_utc": "2026-11-02T21:01:56.296Z",
+      "block_number": 33942861,
+      "gas_used": "143187",
+      "fee_wei": "143187000000",
+      "contract_address": null,
+      "status": 1
+    }
+  },
+  "launches": 1
+}

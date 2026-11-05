@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software, please cite both the paper and this archived software record."
 title: "Optimistic Verifiable Claims (OVC): Reproducibility Package"
 type: software
-version: 3.0.0
-date-released: 2026-07-27
+version: 4.0.0
+date-released: 2026-11-05
 license: MIT
 repository-code: "https://github.com/fsprojekti/optimistic-verifiable-claims"
 doi: "10.5281/zenodo.20794987"

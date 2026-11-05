@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+amazing_distal_shell:prusa,Identity,3733031,31872,118,0,14192666132,14192941265,121232889,Valid
+amazing_distal_shell:prusa,Access,3733031,31872,0,0,431105,483435,431105,Valid
+amazing_distal_shell:prusa,Conformance,3733031,31872,118,2659229078,6043164,2665467728,1248855,Valid
+amazing_distal_shell:prusa,Feature,3733031,31872,118,2659231674,5840594186,8500023631,51815790,Valid

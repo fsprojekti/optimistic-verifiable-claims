@@ -1,0 +1,63 @@
+{
+  "observed_at_utc": "2026-10-29T08:11:37.479Z",
+  "chain_id": "6343",
+  "client_version": "mega-reth/v2.2.2-e9a78bb@tnet-ash-rpc-0",
+  "signer": "0x3fFAa6B60c24356123b1eEd5f4570400Ac4efCb5",
+  "grid_bytes": 64,
+  "largest_fitting_chunk_bytes": 31872,
+  "smallest_failing_chunk_bytes": 31936,
+  "probes": [
+    {
+      "chunk_bytes": 37312,
+      "demand": "0x119c19599F06DC99d3Ff19cc65e94d45dC39e71d",
+      "fits": false,
+      "error": "execution reverted"
+    },
+    {
+      "chunk_bytes": 31104,
+      "demand": "0x2bb6cCb399e1dc908C89D405E4f3C5AF624C9A0A",
+      "fits": true,
+      "estimate_gas": "27637692",
+      "gas_used": "27203554",
+      "tx_hash": "0x1ddcc997e7c730ca73c3907f78c4b44a7b971b66573b8e2854ee2bec65fc7600"
+    },
+    {
+      "chunk_bytes": 34176,
+      "demand": "0x3D6Dc0F8dbfd7e4FE6dF6C3366441ac16d5Cddb0",
+      "fits": false,
+      "error": "execution reverted"
+    },
+    {
+      "chunk_bytes": 32640,
+      "demand": "0x5E4496907291D183506896A19A61329615Cf9019",
+      "fits": false,
+      "error": "execution reverted"
+    },
+    {
+      "chunk_bytes": 31872,
+      "demand": "0x345a2542d371C0C8deb8914b24b271a6475DE586",
+      "fits": true,
+      "estimate_gas": "28312664",
+      "gas_used": "27867979",
+      "tx_hash": "0xfb3e390bb934e7fa697163828300370618b52d9b2a64eb04295c8e590e312459"
+    },
+    {
+      "chunk_bytes": 32256,
+      "demand": "0xa23319692da7b01E45d1BfE42ae2EFf158728fbf",
+      "fits": false,
+      "error": "execution reverted"
+    },
+    {
+      "chunk_bytes": 32064,
+      "demand": "0x4f2513710cFa6C19d56B02F1182a351A6B6d94FA",
+      "fits": false,
+      "error": "execution reverted"
+    },
+    {
+      "chunk_bytes": 31936,
+      "demand": "0x4D5db01755eBAeD6dF98587A9Ad78F31cc009A2f",
+      "fits": false,
+      "error": "execution reverted"
+    }
+  ]
+}

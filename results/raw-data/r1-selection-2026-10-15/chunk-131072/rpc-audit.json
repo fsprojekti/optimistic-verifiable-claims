@@ -1,0 +1,10 @@
+{
+  "verified_at": "2026-10-15T13:39:10.240357+00:00",
+  "node_instance": "chunk-131072",
+  "verified_receipts": 107,
+  "receipt_archive_sha256": "485c1740e788806d79e0bc1429b80994be81fdd28a832e3d09193d8aa224e990",
+  "client_version": "Anvil 1.7.1",
+  "hardfork": "cancun",
+  "block_gas_limit": 10000000000,
+  "prune_history": 1
+}

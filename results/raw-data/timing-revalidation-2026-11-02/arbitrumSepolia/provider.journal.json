@@ -1,0 +1,307 @@
+{
+  "version": 1,
+  "identity": {
+    "network": "arbitrumSepolia",
+    "chain_id": "421614",
+    "chunk_bytes": 8000,
+    "bytecodes": {
+      "Demand": "0xbe8bbb8c52bb19da6e1305135e72623b79030af7a07b7c181fadc99fca440310",
+      "OVCAccess": "0xe4f93f2454b7ba84354acfacfd711a444235766752481b38cd9275ce387f0c38",
+      "OVCIdentitySegmented": "0x1ad330ce03449285b6f54676b61438acd14fdc2530461aa5aba5d5f8c94e22aa",
+      "OVCConformanceSegmented": "0x565aabe29ba9eb5a2aa79a64b479fbec65b361d679157eaba657015f6b8fe17c",
+      "OVCFeatureSegmented": "0xb417ab972cd5afba4dc408c6025c6a7813eececc31fab50e13617abec8303e16",
+      "BindingPhase": "0x7063c43318fa8f8bd622e0d3ab4bccd7244c4ba189787922f60775de5f554458"
+    },
+    "signer": "0x16EEc4F232bEf544F4cB55B0e29bA9c342F9f577"
+  },
+  "created_at_utc": "2026-11-02T10:02:59.318Z",
+  "operations": {
+    "registerAccessPublicKey": {
+      "hash": "0xfb4bf5f18420562deabec5355d25522002c1c488dc46599460e070e6715ae833",
+      "nonce": 15,
+      "gas_limit": "385972",
+      "submitted_at_utc": "2026-11-02T10:03:14.895Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 152.9,
+        "nonce": 155.8,
+        "populate": 575.2,
+        "balance": 157.6,
+        "sign": 1.6,
+        "save": 0.8,
+        "broadcast": 226.7
+      },
+      "receipt_at_utc": "2026-11-02T10:03:15.979Z",
+      "block_number": 325282322,
+      "gas_used": "282562",
+      "fee_wei": "5700970912000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:cura/disputeClaim": {
+      "hash": "0x0134b36814829857121c94ce9db4cb4c177a28407db0a51c57fb358c93266324",
+      "nonce": 16,
+      "gas_limit": "197767",
+      "submitted_at_utc": "2026-11-02T10:04:59.433Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 146.4,
+        "nonce": 143.8,
+        "populate": 602.6,
+        "balance": 141.3,
+        "sign": 0.5,
+        "save": 1.6,
+        "broadcast": 375.3
+      },
+      "receipt_at_utc": "2026-11-02T10:05:01.048Z",
+      "block_number": 325282728,
+      "gas_used": "96800",
+      "fee_wei": "1936000000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:cura/accessDisputeClaim": {
+      "hash": "0x4f8ff34fbfb700b5ebb5eb75bffe312a9922d876c861be636e3669ca4d73e174",
+      "nonce": 17,
+      "gas_limit": "153121",
+      "submitted_at_utc": "2026-11-02T10:07:02.351Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 154.4,
+        "nonce": 160.1,
+        "populate": 575.3,
+        "balance": 143.3,
+        "sign": 0.4,
+        "save": 1.1,
+        "broadcast": 184.8
+      },
+      "receipt_at_utc": "2026-11-02T10:07:03.391Z",
+      "block_number": 325283200,
+      "gas_used": "52330",
+      "fee_wei": "1048797860000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:cura/conformanceDisputeClaim": {
+      "hash": "0xf9b377d8c6016bdf15dcfb6540b11d3e267086dfdc5cfb664fced0327c76680a",
+      "nonce": 18,
+      "gas_limit": "181719",
+      "submitted_at_utc": "2026-11-02T10:07:06.869Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 146.2,
+        "nonce": 146.6,
+        "populate": 590.1,
+        "balance": 160.8,
+        "sign": 0.4,
+        "save": 1.1,
+        "broadcast": 213.1
+      },
+      "receipt_at_utc": "2026-11-02T10:07:07.937Z",
+      "block_number": 325283218,
+      "gas_used": "80815",
+      "fee_wei": "1636827010000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:cura/featureDisputeClaim": {
+      "hash": "0x3b81042742b45cedd5dc206e7da53498b4d4664fd917ee273724697a4d0ec73c",
+      "nonce": 19,
+      "gas_limit": "181741",
+      "submitted_at_utc": "2026-11-02T10:10:00.615Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 150.3,
+        "nonce": 147.8,
+        "populate": 607.8,
+        "balance": 138.2,
+        "sign": 0.4,
+        "save": 1.1,
+        "broadcast": 182.3
+      },
+      "receipt_at_utc": "2026-11-02T10:10:02.079Z",
+      "block_number": 325283882,
+      "gas_used": "80837",
+      "fee_wei": "1618680088000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:orca/disputeClaim": {
+      "hash": "0x1fb4b046c6c35cc1beaf3ebb12da8e65a510c2e7298fec82e62e0f6108f3a5a8",
+      "nonce": 20,
+      "gas_limit": "197767",
+      "submitted_at_utc": "2026-11-02T10:14:41.101Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 157.8,
+        "nonce": 158.8,
+        "populate": 574.3,
+        "balance": 160.3,
+        "sign": 0.4,
+        "save": 1.1,
+        "broadcast": 248.7
+      },
+      "receipt_at_utc": "2026-11-02T10:14:42.605Z",
+      "block_number": 325284970,
+      "gas_used": "96800",
+      "fee_wei": "1968912000000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:orca/accessDisputeClaim": {
+      "hash": "0x8e8519f2a5ff7740f569f6d3ad63d492f9b97f7843d9371064d447596dfdcd35",
+      "nonce": 21,
+      "gas_limit": "153121",
+      "submitted_at_utc": "2026-11-02T10:16:53.510Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 381.3,
+        "nonce": 152.9,
+        "populate": 588.8,
+        "balance": 157.8,
+        "sign": 0.4,
+        "save": 1.1,
+        "broadcast": 289.1
+      },
+      "receipt_at_utc": "2026-11-02T10:16:55.084Z",
+      "block_number": 325285488,
+      "gas_used": "52330",
+      "fee_wei": "1057693960000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:orca/conformanceDisputeClaim": {
+      "hash": "0x7629529aba204e4b4e1be7ee58d15669ed5ee32ef6d23d2ec9a8f825c5ea5a98",
+      "nonce": 22,
+      "gas_limit": "181719",
+      "submitted_at_utc": "2026-11-02T10:16:58.488Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 146.1,
+        "nonce": 141.2,
+        "populate": 604,
+        "balance": 149.7,
+        "sign": 0.4,
+        "save": 1,
+        "broadcast": 303.9
+      },
+      "receipt_at_utc": "2026-11-02T10:17:00.070Z",
+      "block_number": 325285507,
+      "gas_used": "80815",
+      "fee_wei": "1619855860000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:orca/featureDisputeClaim": {
+      "hash": "0x2007e2da29e96ace7fac86ddbf412b323b8468277a34e998f594c24ced2d8a44",
+      "nonce": 23,
+      "gas_limit": "181741",
+      "submitted_at_utc": "2026-11-02T10:20:00.564Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 148.3,
+        "nonce": 150.3,
+        "populate": 596.7,
+        "balance": 148,
+        "sign": 0.4,
+        "save": 1.3,
+        "broadcast": 343
+      },
+      "receipt_at_utc": "2026-11-02T10:20:01.780Z",
+      "block_number": 325286213,
+      "gas_used": "80837",
+      "fee_wei": "1619811806000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:prusa/disputeClaim": {
+      "hash": "0x7aa771105482ddd6b72663ec4e0a3f16dc97393b4f2e021e6f1ff5ad8df5315c",
+      "nonce": 24,
+      "gas_limit": "197767",
+      "submitted_at_utc": "2026-11-02T10:25:05.240Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 143.4,
+        "nonce": 147.6,
+        "populate": 587.8,
+        "balance": 156.4,
+        "sign": 0.4,
+        "save": 1.2,
+        "broadcast": 216.8
+      },
+      "receipt_at_utc": "2026-11-02T10:25:06.311Z",
+      "block_number": 325287388,
+      "gas_used": "96800",
+      "fee_wei": "1938129600000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:prusa/accessDisputeClaim": {
+      "hash": "0x7b00d81d9a7a31a88546eec9c799b345b00534b7cc97e67241d06a12ac9fad7a",
+      "nonce": 25,
+      "gas_limit": "153121",
+      "submitted_at_utc": "2026-11-02T10:27:32.154Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 148.4,
+        "nonce": 145.8,
+        "populate": 601,
+        "balance": 157.7,
+        "sign": 0.4,
+        "save": 1.1,
+        "broadcast": 404.7
+      },
+      "receipt_at_utc": "2026-11-02T10:27:33.407Z",
+      "block_number": 325287951,
+      "gas_used": "52330",
+      "fee_wei": "1050472420000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:prusa/conformanceDisputeClaim": {
+      "hash": "0x13d1f3d242c1973c2825df4a22c6c13999f265a47c9eb2db0ebc3f36fc9e59b3",
+      "nonce": 26,
+      "gas_limit": "181719",
+      "submitted_at_utc": "2026-11-02T10:27:36.890Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 150,
+        "nonce": 155.3,
+        "populate": 585.2,
+        "balance": 147,
+        "sign": 0.4,
+        "save": 1,
+        "broadcast": 357.7
+      },
+      "receipt_at_utc": "2026-11-02T10:27:38.511Z",
+      "block_number": 325287969,
+      "gas_used": "80815",
+      "fee_wei": "1634564190000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:prusa/featureDisputeClaim": {
+      "hash": "0x024b6ee1773f859917efd4138114f68dcbc7c1b29e12a24f762c012eeec03d6d",
+      "nonce": 27,
+      "gas_limit": "181741",
+      "submitted_at_utc": "2026-11-02T10:31:01.861Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 159.2,
+        "nonce": 142,
+        "populate": 616.5,
+        "balance": 143.1,
+        "sign": 0.4,
+        "save": 1.1,
+        "broadcast": 192.8
+      },
+      "receipt_at_utc": "2026-11-02T10:31:02.909Z",
+      "block_number": 325288756,
+      "gas_used": "80837",
+      "fee_wei": "1628057180000",
+      "contract_address": null,
+      "status": 1
+    }
+  },
+  "launches": 1
+}

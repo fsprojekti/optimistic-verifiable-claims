@@ -1,0 +1,62 @@
+{
+  "network": "arbitrumSepolia",
+  "created_at_utc": "2026-10-12T06:51:57.049Z",
+  "settings": {
+    "chunk_bytes": 3072,
+    "pacing_ms": 1000,
+    "reserve_test_eth": "0.005",
+    "scope": "Identity disputes over a two-chunk excerpt and three complete paired slicer artifacts"
+  },
+  "completed_jobs": [
+    {
+      "id": "smoke-cura-6144",
+      "summary_path": "C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\testnets\\arbitrumSepolia\\identity-representative-2026-10-09T13-44-36-466Z-summary.csv",
+      "completed_at_utc": "2026-10-09T14:22:38.177Z",
+      "launches": 18
+    },
+    {
+      "id": "full-cura",
+      "summary_path": "C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\testnets\\arbitrumSepolia\\identity-representative-2026-10-09T14-22-39-370Z-summary.csv",
+      "completed_at_utc": "2026-10-09T21:57:02.306Z",
+      "launches": 202
+    },
+    {
+      "id": "full-orca",
+      "summary_path": "C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\testnets\\arbitrumSepolia\\identity-representative-2026-10-09T21-57-03-305Z-summary.csv",
+      "completed_at_utc": "2026-10-10T06:22:38.874Z",
+      "launches": 225
+    },
+    {
+      "id": "full-prusa",
+      "summary_path": "C:\\Users\\marko\\OneDrive\\Documents\\Projects\\Manufacturing_ConfidentialBiddingProtocol\\research\\stage-03-costly-verification-equilibrium\\results\\raw-data\\testnets\\arbitrumSepolia\\identity-representative-2026-10-10T06-22-39-912Z-summary.csv",
+      "completed_at_utc": "2026-10-10T15:51:16.225Z",
+      "launches": 247
+    }
+  ],
+  "attempts": {},
+  "deadline_utc": "2026-10-15T06:51:57.049Z",
+  "state": "complete",
+  "updated_at_utc": "2026-10-12T06:51:57.070Z",
+  "worker_pid": 55728,
+  "jobs": [
+    {
+      "id": "smoke-cura-6144",
+      "bytes": 6144
+    },
+    {
+      "id": "full-cura",
+      "bytes": 264386
+    },
+    {
+      "id": "full-orca",
+      "bytes": 280935
+    },
+    {
+      "id": "full-prusa",
+      "bytes": 316712
+    }
+  ],
+  "current_job": null,
+  "child_pid": null,
+  "completed_at_utc": "2026-10-12T06:51:57.070Z"
+}

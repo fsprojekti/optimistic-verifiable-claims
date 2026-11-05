@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-10-22T14:04:30.555Z",
+  "client_version": "anvil/v1.7.1",
+  "chain_id": "31337",
+  "hardfork": "cancun",
+  "block_gas_limit": "10000000000",
+  "kernel_gas_limit": 3000000000,
+  "mode": "segmented",
+  "chunk_size_bytes": 24960,
+  "consumer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "provider": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+  "artifacts": [
+    {
+      "artifact": "rackstack_hinge:cura",
+      "bytes": 264386,
+      "sha256": "f1a51107fda5819a776de26b6068be1e577111bb2e84eb27341592842d582c33"
+    }
+  ],
+  "completed_at": "2026-10-22T14:04:31.575Z",
+  "successful_receipts": 21
+}

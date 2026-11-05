@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+rackstack_hinge:orca,Access,280935,24960,0,0,0,0,0,Accepted
+rackstack_hinge:orca,Identity,280935,24960,0,0,0,0,0,Accepted
+rackstack_hinge:orca,Conformance,280935,24960,0,0,0,0,0,Accepted
+rackstack_hinge:orca,Feature,280935,24960,0,0,0,0,0,Accepted

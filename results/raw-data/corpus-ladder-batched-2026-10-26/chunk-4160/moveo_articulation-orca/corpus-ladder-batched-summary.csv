@@ -1,0 +1,2 @@
+artifact_key,model_id,slicer,slicer_version,output_sha256,size_bytes,line_count,chunk_size_bytes,chunk_count,upload_gas,identity_processing_gas,lifecycle_gas,upload_gas_per_byte,processing_gas_per_byte,lifecycle_gas_per_byte,local_elapsed_seconds_diagnostic_only,outcome,client_version,chain_id
+moveo_articulation:orca,moveo_articulation,orca,2.4.2,eac7e688578c3f00a2b4f37a6b94aebc948ce38d1aebc99a81efeb73b1561cfd,43745864,1420044,4160,10516,31810421180,165904769752,197717780755,727.164,3792.468,4519.691,1569.355,Valid,anvil/v1.7.1,31337

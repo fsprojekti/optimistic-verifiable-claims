@@ -1,0 +1,2 @@
+artifact_key,model_id,slicer,slicer_version,output_sha256,size_bytes,line_count,chunk_size_bytes,chunk_count,upload_gas,identity_processing_gas,lifecycle_gas,upload_gas_per_byte,processing_gas_per_byte,lifecycle_gas_per_byte,local_elapsed_seconds_diagnostic_only,outcome,client_version,chain_id
+autodesk_fdm:prusa,autodesk_fdm,prusa,2.9.6,2562e8a8b908f0c6594d6c30f338ec32df5d41b9143eafa63cb30b8067433baa,20756315,821406,4160,4990,15093293147,78717733415,93813616409,727.166,3792.472,4519.763,439.134,Valid,anvil/v1.7.1,31337

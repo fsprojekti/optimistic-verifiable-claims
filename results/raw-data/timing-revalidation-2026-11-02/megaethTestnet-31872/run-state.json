@@ -1,0 +1,40 @@
+{
+  "created_at_utc": "2026-11-02T10:02:59.083Z",
+  "network": "megaethTestnet",
+  "chain_id": "6343",
+  "client_version": "mega-reth/v2.2.2-e9a78bb@tnet-ash-rpc-0",
+  "chunk_bytes": 31872,
+  "consumer": "0x3fFAa6B60c24356123b1eEd5f4570400Ac4efCb5",
+  "provider": "0x16EEc4F232bEf544F4cB55B0e29bA9c342F9f577",
+  "artifacts": {
+    "rackstack_hinge:cura": {
+      "access_seed": "e1a8ab0717df0e98651e78c7ddde7527fe378ea791cfa0e7417fc22432c5e447",
+      "completed_at_utc": "2026-11-02T10:07:23.920Z",
+      "outcome": "4 Valid"
+    },
+    "rackstack_hinge:orca": {
+      "access_seed": "4765ba0d2b486a02b9b72d5c9cb982819edc879df107e255b49b5f87e55a942f",
+      "completed_at_utc": "2026-11-02T10:11:17.117Z",
+      "outcome": "4 Valid"
+    },
+    "rackstack_hinge:prusa": {
+      "access_seed": "95d7ae7b16bb48dfe76808fc031e8bccca052dfb530c05bd91ff4b08bb36ae8d",
+      "completed_at_utc": "2026-11-02T10:16:16.559Z",
+      "outcome": "4 Valid"
+    }
+  },
+  "launches": [
+    "2026-11-02T10:02:59.083Z"
+  ],
+  "access_public_key": "30820122300d06092a864886f70d01010105000382010f003082010a0282010100b1ee089250cb73b631a118249fd20423a5e6cd9b30398255f231a4f998f7dc149c46574d039dbd8b41236c713045358a05dfdbfe5fbc446708d78fff72172950d251f89efe9d210c4504c7eebe888501851838f69779af73717e18d6bc96d8d74ace1c860ed72e2057d8fa460b837c0ec283c29dc15ac9ddbdde1894f56b5e3fd77a2f26cf435dcf856355581fb6cc3f5a02d80a881597378ae8d1764bdc2f0b7c033907d6ff93ba90bc6da3da980fe9c23be42a84bf836c52a4234a22cc68ad777aa7f740c4cd51904f9e741b2cc8e2db92ff29fd3389ce1952f3f831fed6e3d098ba656eceac3c86d9c0d03c2a235b046605bd1a3a50d2fb288f1a29b7ed1d0203010001",
+  "access_private_key_pem": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCx7giSUMtztjGh\nGCSf0gQjpebNmzA5glXyMaT5mPfcFJxGV00Dnb2LQSNscTBFNYoF39v+X7xEZwjX\nj/9yFylQ0lH4nv6dIQxFBMfuvoiFAYUYOPaXea9zcX4Y1ryW2NdKzhyGDtcuIFfY\n+kYLg3wOwoPCncFayd293hiU9WteP9d6LybPQ13PhWNVWB+2zD9aAtgKiBWXN4ro\n0XZL3C8LfAM5B9b/k7qQvG2j2pgP6cI75CqEv4NsUqQjSiLMaK13eqf3QMTNUZBP\nnnQbLMji25L/Kf0zic4ZUvP4Mf7W49CYumVuzqw8htnA0DwqI1sEZgW9GjpQ0vso\njxopt+0dAgMBAAECggEACa//fXl/dxLBy8ouheXl92VOYxfPXcI2TCDeoTK7HZtt\nqsX3QBQnJsOdwLpYIELuLqwY8TxkwFPcmMf5TRmGIViVWydk9RWNWN10X6mC2CMH\npeFfShedyt5KBeL8xgXGXjp8nEi6KuonfkozsbRiw8PDCSYuFqa/aozPr9FXTpYT\ndDyCQZuMjxuDnpjR5XNQCkr2mjqOD+k9S98pAwIFdyv1ep7KvHJVb5Qt+ygptivh\n+ONOqOIZ1T1YD6iclxYKmxD5lBnR2xlW3KAeg01MYUcjoWbgdGKRhl5Ouo0/WiLc\nqbUuQp+eYPDc6PvwQs0mCTq2mh9W45JBKxgxNgDKDQKBgQDwPjsApDgJiGYbJpnh\n7Vo2z30UA/9KEg69dvmsZnQoAO+xWdCeXs3jAoavuTnITg74a0cpGHqsGbgeyQz7\n1ZIXa7t1EQsvT6oRo5iRy60y5g3sLubD1Ub35V54OR+0EmefXimdltK9gfMSq5XL\nPszB5Lc28Sdw/iaOidXGP9KwDwKBgQC9mYpVSCTCCxwLWW2xoqyDZYfW6MrALgLD\nSsCUk9+FPav4Uk3AkUGunBzrx8dOD8UccDm+PeGqwk/ezcWFdaNILj5BeO17xNqu\nLxZ9fj8cLkjNEnYHnarjONTSlQQt+GYQ9cmtNjGcpClC9/Pw/Pj0Pca5rCQTBpIV\ne3xWS8FkEwKBgQDGcUDfeMZo6WgeCTaW7i3UlHMms16OWngefEYj58UOvic/gYbX\nKkw6tX13bTKTiBbJkCOJiJTbz6rMkxnMc09nVS/UtS1d+Rnr1AxUcb8xCeJ6Mwue\nu28RmT79Y4IShhleBLOvXkPZEZws0dq7tbYAeuHz2iLQLL7Ago44YcOwdQKBgBnH\nmb6Uy6KyvgJxC3A+zTQkhv7ask7FMsz5Cgxpute0FgDyt+26EnM6eNg6Vsgvbr66\nJ6/NXDTKrO9/jR7jausylnZyid/tWUqbznQLyWr8hBuWKgRJFOZGYPGtH19cygv+\nT4jEuKQy0gVwD3QyAWu8RpwSYulPWGehXbuiG06PAoGBAMmkU3Q9y9J8BKMM1brT\nAjMwLm+Kr5vaTyNje2yafAjeYctEeSivYJ4vMaIE3eZFIUuA9mCVoQuiWTkAcW8O\nsGk0MaqqX8JuM7b8w6XhsvkPURIUIhg+aQrp1kD8sCkNjNYLEyQ2F6DyOe93zwaz\nNL6kAp1FG3v7q+poDN8lu3TL\n-----END PRIVATE KEY-----\n",
+  "contracts": {
+    "Demand": "0x27BD49b99E3182326c4D124BfB21f4b4D49CfbaE",
+    "OVCAccess": "0x75cccd4E14fbBC615670Ba12EC09eEC0b7eA0aaE",
+    "OVCIdentitySegmented": "0xA88B705736f8317eFe4935649c5F36f8561Ec65A",
+    "OVCConformanceSegmented": "0x0379f549A30982A5D9755226becC0da0489dba8c",
+    "OVCFeatureSegmented": "0x2Cc9a6A5B8ef2eB8a29C4282FF9D8C89E4eE0C50",
+    "BindingPhase": "0x198611a4bcfE56546d8E49894DBaF24355CaCFA1"
+  },
+  "completed_at_utc": "2026-11-02T10:16:16.560Z"
+}

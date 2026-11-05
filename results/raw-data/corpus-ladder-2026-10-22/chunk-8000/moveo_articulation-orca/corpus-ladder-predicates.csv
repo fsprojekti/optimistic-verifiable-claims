@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+moveo_articulation:orca,Identity,43745864,8000,5469,0,165746190455,165746465588,30369320,Valid
+moveo_articulation:orca,Access,43745864,8000,0,0,431105,483435,431105,Valid
+moveo_articulation:orca,Conformance,43745864,8000,5469,31497689624,225337798,31723222908,1275562,Valid
+moveo_articulation:orca,Feature,43745864,8000,5469,31497809942,71031577006,102529584719,13418169,Valid

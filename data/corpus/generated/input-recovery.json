@@ -1,0 +1,23 @@
+[
+  {
+    "artifact": "rackstack_hinge:cura",
+    "original_sha256": "f1a51107fda5819a776de26b6068be1e577111bb2e84eb27341592842d582c33",
+    "canonical_sha256": "f1a51107fda5819a776de26b6068be1e577111bb2e84eb27341592842d582c33",
+    "canonical_bytes": 264386,
+    "action": "byte-for-byte copy"
+  },
+  {
+    "artifact": "rackstack_hinge:orca",
+    "original_sha256": "955f8b2d7bb7f75de97eb5ab9665b1b33a253118f6473dabffe3e1fe02068e8c",
+    "canonical_sha256": "d9c608650aa0a780a6a6d283107329ce9a47ee7f08b985ad4ee81ad6f53e879b",
+    "canonical_bytes": 280935,
+    "action": "CRLF to LF; exact frozen SHA-256 verified"
+  },
+  {
+    "artifact": "rackstack_hinge:prusa",
+    "original_sha256": "a857da5195aa49a94c934ae69d3fc93d9578d29003eb65bf4262f84ebf6340ca",
+    "canonical_sha256": "3961ee85ee32938b17151ddd37e2ed800b89801b185b5ace76f48ff3b18e8761",
+    "canonical_bytes": 316712,
+    "action": "CRLF to LF; exact frozen SHA-256 verified"
+  }
+]

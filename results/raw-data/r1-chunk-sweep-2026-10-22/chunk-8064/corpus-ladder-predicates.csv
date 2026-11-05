@@ -1,0 +1,13 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+rackstack_hinge:cura,Identity,264386,8064,33,0,1001959344,1002234477,30611748,Valid
+rackstack_hinge:cura,Access,264386,8064,0,0,431105,483435,431105,Valid
+rackstack_hinge:cura,Conformance,264386,8064,33,190429599,1707575,192332660,396311,Valid
+rackstack_hinge:cura,Feature,264386,8064,33,190430325,433113680,623741776,13382234,Valid
+rackstack_hinge:orca,Identity,280935,8064,35,0,1064550833,1064812286,30611748,Valid
+rackstack_hinge:orca,Access,280935,8064,0,0,431105,483435,431105,Valid
+rackstack_hinge:orca,Conformance,280935,8064,35,202335923,2652043,205168752,1258825,Valid
+rackstack_hinge:orca,Feature,280935,8064,35,202336693,427579138,630098432,12761316,Valid
+rackstack_hinge:prusa,Identity,316712,8064,40,0,1200129574,1200391027,30611748,Valid
+rackstack_hinge:prusa,Access,316712,8064,0,0,431105,483435,431105,Valid
+rackstack_hinge:prusa,Conformance,316712,8064,40,228138764,2835800,231155350,1237697,Valid
+rackstack_hinge:prusa,Feature,316712,8064,40,228139644,490567248,718889493,12919008,Valid

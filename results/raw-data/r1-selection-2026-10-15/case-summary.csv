@@ -1,0 +1,15 @@
+case,mode,chunk_bytes,artifacts,valid_outcomes,successful_recorded_transactions,maximum_chunk_transaction_gas,within_reference_95_percent
+chunk-4096,segmented,4096,3,12,1325,15593153,True
+chunk-4160,segmented,4160,3,12,1307,15835195,True
+chunk-4224,segmented,4224,3,12,1283,16077244,False
+chunk-5120,segmented,5120,3,12,1067,19466596,False
+chunk-6144,segmented,6144,3,12,905,23341656,False
+chunk-8192,segmented,8192,3,12,695,31096623,False
+chunk-16384,segmented,16384,3,12,383,62181131,False
+chunk-32768,segmented,32768,3,12,221,124660419,False
+chunk-65536,segmented,65536,3,12,143,250860083,False
+chunk-131072,segmented,131072,3,12,107,508223763,False
+whole-file,whole-file-single-chunk,,3,12,71,1273256608,False
+chunk-3072,segmented,3072,3,12,1751,11721325,True
+chunk-2048,segmented,2048,3,12,2591,7851114,True
+chunk-1024,segmented,1024,3,12,5117,3982518,True

@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "identity": {
+    "network": "arbitrumSepolia",
+    "chain_id": "421614",
+    "chunk_bytes": 8000,
+    "bytecodes": {
+      "Demand": "0xbe8bbb8c52bb19da6e1305135e72623b79030af7a07b7c181fadc99fca440310",
+      "OVCAccess": "0xe4f93f2454b7ba84354acfacfd711a444235766752481b38cd9275ce387f0c38",
+      "OVCIdentitySegmented": "0x1ad330ce03449285b6f54676b61438acd14fdc2530461aa5aba5d5f8c94e22aa",
+      "OVCConformanceSegmented": "0x565aabe29ba9eb5a2aa79a64b479fbec65b361d679157eaba657015f6b8fe17c",
+      "OVCFeatureSegmented": "0xb417ab972cd5afba4dc408c6025c6a7813eececc31fab50e13617abec8303e16",
+      "BindingPhase": "0x7063c43318fa8f8bd622e0d3ab4bccd7244c4ba189787922f60775de5f554458"
+    },
+    "signer": "0x16EEc4F232bEf544F4cB55B0e29bA9c342F9f577"
+  },
+  "created_at_utc": "2026-10-29T08:40:04.637Z",
+  "operations": {
+    "registerAccessPublicKey": {
+      "hash": "0xe7706ccea0b408200c31a6603041ae9e92c4618373dda51e3f2d7373b130d9e6",
+      "nonce": 13,
+      "gas_limit": "385948",
+      "submitted_at_utc": "2026-10-29T08:40:19.815Z",
+      "poll_ms": 250,
+      "receipt_at_utc": "2026-10-29T08:40:21.414Z",
+      "block_number": 323958434,
+      "gas_used": "282538",
+      "fee_wei": "5734391248000",
+      "contract_address": null,
+      "status": 1
+    },
+    "rackstack_hinge:cura/acceptBinding": {
+      "hash": "0x729ff6ad044d0ae3bac1feb7a9b7a43a64d93c76684d31c973e1c9178af6de17",
+      "nonce": 14,
+      "gas_limit": "207231",
+      "submitted_at_utc": "2026-10-29T08:42:01.476Z",
+      "poll_ms": 250,
+      "receipt_at_utc": "2026-10-29T08:42:02.685Z",
+      "block_number": 323958835,
+      "gas_used": "106227",
+      "fee_wei": "2128576626000",
+      "contract_address": null,
+      "status": 1
+    }
+  },
+  "launches": 1
+}

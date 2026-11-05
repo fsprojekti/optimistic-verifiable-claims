@@ -1,0 +1,5549 @@
+[
+  {
+    "observed_at_utc": "2026-10-29T08:04:47.919Z",
+    "network": "Ethereum",
+    "chain_id": "1",
+    "rpc": "https://eth.drpc.org",
+    "block_number": 26297063,
+    "block_gas_limit": "60000000",
+    "per_tx_gas_limit": 16777216,
+    "per_tx_limit_basis": "EIP-7825 per-transaction cap",
+    "window_blocks": 1024,
+    "mean_block_time_s": 12.0703125,
+    "eth_gasPrice_wei": "55377541",
+    "median_base_fee_wei": "42125315",
+    "median_priority_fee_p50_wei": "2429365",
+    "effective_gas_price_gwei": 0.04455468,
+    "daily_window_days": 365,
+    "daily_samples": 365,
+    "daily_valid_samples": 365,
+    "daily_median_gwei": 0.122481769,
+    "daily_min_gwei": 0.028613446,
+    "daily_max_gwei": 2.404247959,
+    "daily": [
+      {
+        "day": 0,
+        "samples": 4,
+        "gwei": 0.211043127
+      },
+      {
+        "day": 1,
+        "samples": 4,
+        "gwei": 0.11801555
+      },
+      {
+        "day": 2,
+        "samples": 4,
+        "gwei": 0.049889067
+      },
+      {
+        "day": 3,
+        "samples": 4,
+        "gwei": 0.046137246
+      },
+      {
+        "day": 4,
+        "samples": 4,
+        "gwei": 0.045606901
+      },
+      {
+        "day": 5,
+        "samples": 4,
+        "gwei": 0.10636602
+      },
+      {
+        "day": 6,
+        "samples": 4,
+        "gwei": 0.121604217
+      },
+      {
+        "day": 7,
+        "samples": 4,
+        "gwei": 0.216235039
+      },
+      {
+        "day": 8,
+        "samples": 4,
+        "gwei": 0.117426446
+      },
+      {
+        "day": 9,
+        "samples": 4,
+        "gwei": 0.13848259
+      },
+      {
+        "day": 10,
+        "samples": 4,
+        "gwei": 0.047384927
+      },
+      {
+        "day": 11,
+        "samples": 4,
+        "gwei": 0.047189208
+      },
+      {
+        "day": 12,
+        "samples": 4,
+        "gwei": 0.159570091
+      },
+      {
+        "day": 13,
+        "samples": 4,
+        "gwei": 0.258341888
+      },
+      {
+        "day": 14,
+        "samples": 4,
+        "gwei": 0.338751345
+      },
+      {
+        "day": 15,
+        "samples": 4,
+        "gwei": 0.264124258
+      },
+      {
+        "day": 16,
+        "samples": 4,
+        "gwei": 0.08407704
+      },
+      {
+        "day": 17,
+        "samples": 4,
+        "gwei": 0.069049272
+      },
+      {
+        "day": 18,
+        "samples": 4,
+        "gwei": 0.074963649
+      },
+      {
+        "day": 19,
+        "samples": 4,
+        "gwei": 0.107543958
+      },
+      {
+        "day": 20,
+        "samples": 4,
+        "gwei": 0.170761264
+      },
+      {
+        "day": 21,
+        "samples": 4,
+        "gwei": 0.243562819
+      },
+      {
+        "day": 22,
+        "samples": 4,
+        "gwei": 0.227978509
+      },
+      {
+        "day": 23,
+        "samples": 4,
+        "gwei": 0.454270068
+      },
+      {
+        "day": 24,
+        "samples": 4,
+        "gwei": 0.1210507
+      },
+      {
+        "day": 25,
+        "samples": 4,
+        "gwei": 0.098041024
+      },
+      {
+        "day": 26,
+        "samples": 4,
+        "gwei": 0.10386704
+      },
+      {
+        "day": 27,
+        "samples": 4,
+        "gwei": 0.432631947
+      },
+      {
+        "day": 28,
+        "samples": 4,
+        "gwei": 0.131132973
+      },
+      {
+        "day": 29,
+        "samples": 4,
+        "gwei": 0.314247843
+      },
+      {
+        "day": 30,
+        "samples": 4,
+        "gwei": 1.094593232
+      },
+      {
+        "day": 31,
+        "samples": 4,
+        "gwei": 1.315822003
+      },
+      {
+        "day": 32,
+        "samples": 4,
+        "gwei": 0.076418608
+      },
+      {
+        "day": 33,
+        "samples": 4,
+        "gwei": 0.131058425
+      },
+      {
+        "day": 34,
+        "samples": 4,
+        "gwei": 0.243407623
+      },
+      {
+        "day": 35,
+        "samples": 4,
+        "gwei": 0.437559816
+      },
+      {
+        "day": 36,
+        "samples": 4,
+        "gwei": 0.288740345
+      },
+      {
+        "day": 37,
+        "samples": 4,
+        "gwei": 0.171180274
+      },
+      {
+        "day": 38,
+        "samples": 4,
+        "gwei": 0.064576381
+      },
+      {
+        "day": 39,
+        "samples": 4,
+        "gwei": 0.069699805
+      },
+      {
+        "day": 40,
+        "samples": 4,
+        "gwei": 0.339920105
+      },
+      {
+        "day": 41,
+        "samples": 4,
+        "gwei": 0.143635888
+      },
+      {
+        "day": 42,
+        "samples": 4,
+        "gwei": 0.170818367
+      },
+      {
+        "day": 43,
+        "samples": 4,
+        "gwei": 0.123871857
+      },
+      {
+        "day": 44,
+        "samples": 4,
+        "gwei": 0.087649877
+      },
+      {
+        "day": 45,
+        "samples": 4,
+        "gwei": 0.060273701
+      },
+      {
+        "day": 46,
+        "samples": 4,
+        "gwei": 0.054225645
+      },
+      {
+        "day": 47,
+        "samples": 4,
+        "gwei": 0.056849613
+      },
+      {
+        "day": 48,
+        "samples": 4,
+        "gwei": 0.08199011
+      },
+      {
+        "day": 49,
+        "samples": 4,
+        "gwei": 0.161139756
+      },
+      {
+        "day": 50,
+        "samples": 4,
+        "gwei": 0.105013744
+      },
+      {
+        "day": 51,
+        "samples": 4,
+        "gwei": 0.068408585
+      },
+      {
+        "day": 52,
+        "samples": 4,
+        "gwei": 0.201288048
+      },
+      {
+        "day": 53,
+        "samples": 4,
+        "gwei": 0.062088661
+      },
+      {
+        "day": 54,
+        "samples": 4,
+        "gwei": 0.062896663
+      },
+      {
+        "day": 55,
+        "samples": 4,
+        "gwei": 0.116388188
+      },
+      {
+        "day": 56,
+        "samples": 4,
+        "gwei": 0.073829301
+      },
+      {
+        "day": 57,
+        "samples": 4,
+        "gwei": 0.201575404
+      },
+      {
+        "day": 58,
+        "samples": 4,
+        "gwei": 0.123166528
+      },
+      {
+        "day": 59,
+        "samples": 4,
+        "gwei": 0.167768091
+      },
+      {
+        "day": 60,
+        "samples": 4,
+        "gwei": 0.047744503
+      },
+      {
+        "day": 61,
+        "samples": 4,
+        "gwei": 0.048483382
+      },
+      {
+        "day": 62,
+        "samples": 4,
+        "gwei": 0.106918942
+      },
+      {
+        "day": 63,
+        "samples": 4,
+        "gwei": 0.06887865
+      },
+      {
+        "day": 64,
+        "samples": 4,
+        "gwei": 0.094056279
+      },
+      {
+        "day": 65,
+        "samples": 4,
+        "gwei": 0.116555462
+      },
+      {
+        "day": 66,
+        "samples": 4,
+        "gwei": 0.145163031
+      },
+      {
+        "day": 67,
+        "samples": 4,
+        "gwei": 0.094279836
+      },
+      {
+        "day": 68,
+        "samples": 4,
+        "gwei": 0.342676462
+      },
+      {
+        "day": 69,
+        "samples": 4,
+        "gwei": 0.483485133
+      },
+      {
+        "day": 70,
+        "samples": 4,
+        "gwei": 0.147289926
+      },
+      {
+        "day": 71,
+        "samples": 4,
+        "gwei": 0.098138274
+      },
+      {
+        "day": 72,
+        "samples": 4,
+        "gwei": 0.067164102
+      },
+      {
+        "day": 73,
+        "samples": 4,
+        "gwei": 0.052396376
+      },
+      {
+        "day": 74,
+        "samples": 4,
+        "gwei": 0.057263357
+      },
+      {
+        "day": 75,
+        "samples": 4,
+        "gwei": 0.07551101
+      },
+      {
+        "day": 76,
+        "samples": 4,
+        "gwei": 0.097001713
+      },
+      {
+        "day": 77,
+        "samples": 4,
+        "gwei": 0.0849341
+      },
+      {
+        "day": 78,
+        "samples": 4,
+        "gwei": 0.076182102
+      },
+      {
+        "day": 79,
+        "samples": 4,
+        "gwei": 0.146263479
+      },
+      {
+        "day": 80,
+        "samples": 4,
+        "gwei": 0.094074505
+      },
+      {
+        "day": 81,
+        "samples": 4,
+        "gwei": 0.069660589
+      },
+      {
+        "day": 82,
+        "samples": 4,
+        "gwei": 0.076554259
+      },
+      {
+        "day": 83,
+        "samples": 4,
+        "gwei": 0.131712585
+      },
+      {
+        "day": 84,
+        "samples": 4,
+        "gwei": 0.177044382
+      },
+      {
+        "day": 85,
+        "samples": 4,
+        "gwei": 0.160082455
+      },
+      {
+        "day": 86,
+        "samples": 4,
+        "gwei": 0.160656142
+      },
+      {
+        "day": 87,
+        "samples": 4,
+        "gwei": 0.09204864
+      },
+      {
+        "day": 88,
+        "samples": 4,
+        "gwei": 0.046016426
+      },
+      {
+        "day": 89,
+        "samples": 4,
+        "gwei": 0.053953996
+      },
+      {
+        "day": 90,
+        "samples": 4,
+        "gwei": 0.171041922
+      },
+      {
+        "day": 91,
+        "samples": 4,
+        "gwei": 0.545410895
+      },
+      {
+        "day": 92,
+        "samples": 4,
+        "gwei": 0.074443702
+      },
+      {
+        "day": 93,
+        "samples": 4,
+        "gwei": 0.086722424
+      },
+      {
+        "day": 94,
+        "samples": 4,
+        "gwei": 0.077429892
+      },
+      {
+        "day": 95,
+        "samples": 4,
+        "gwei": 0.061731749
+      },
+      {
+        "day": 96,
+        "samples": 4,
+        "gwei": 0.108147342
+      },
+      {
+        "day": 97,
+        "samples": 4,
+        "gwei": 0.122481769
+      },
+      {
+        "day": 98,
+        "samples": 4,
+        "gwei": 0.119635353
+      },
+      {
+        "day": 99,
+        "samples": 4,
+        "gwei": 0.11930173
+      },
+      {
+        "day": 100,
+        "samples": 4,
+        "gwei": 0.172123609
+      },
+      {
+        "day": 101,
+        "samples": 4,
+        "gwei": 0.055355684
+      },
+      {
+        "day": 102,
+        "samples": 4,
+        "gwei": 0.050634821
+      },
+      {
+        "day": 103,
+        "samples": 4,
+        "gwei": 0.08218579
+      },
+      {
+        "day": 104,
+        "samples": 4,
+        "gwei": 0.188018517
+      },
+      {
+        "day": 105,
+        "samples": 4,
+        "gwei": 0.110393268
+      },
+      {
+        "day": 106,
+        "samples": 4,
+        "gwei": 0.185658687
+      },
+      {
+        "day": 107,
+        "samples": 4,
+        "gwei": 0.151938565
+      },
+      {
+        "day": 108,
+        "samples": 4,
+        "gwei": 0.105517495
+      },
+      {
+        "day": 109,
+        "samples": 4,
+        "gwei": 0.096215018
+      },
+      {
+        "day": 110,
+        "samples": 4,
+        "gwei": 0.136219191
+      },
+      {
+        "day": 111,
+        "samples": 4,
+        "gwei": 0.068003581
+      },
+      {
+        "day": 112,
+        "samples": 4,
+        "gwei": 0.078488987
+      },
+      {
+        "day": 113,
+        "samples": 4,
+        "gwei": 0.181390566
+      },
+      {
+        "day": 114,
+        "samples": 4,
+        "gwei": 0.20955176
+      },
+      {
+        "day": 115,
+        "samples": 4,
+        "gwei": 0.098773631
+      },
+      {
+        "day": 116,
+        "samples": 4,
+        "gwei": 0.093627609
+      },
+      {
+        "day": 117,
+        "samples": 4,
+        "gwei": 0.076140618
+      },
+      {
+        "day": 118,
+        "samples": 4,
+        "gwei": 0.159903744
+      },
+      {
+        "day": 119,
+        "samples": 4,
+        "gwei": 0.177668082
+      },
+      {
+        "day": 120,
+        "samples": 4,
+        "gwei": 0.147410605
+      },
+      {
+        "day": 121,
+        "samples": 4,
+        "gwei": 0.129604708
+      },
+      {
+        "day": 122,
+        "samples": 4,
+        "gwei": 0.069950151
+      },
+      {
+        "day": 123,
+        "samples": 4,
+        "gwei": 0.077891793
+      },
+      {
+        "day": 124,
+        "samples": 4,
+        "gwei": 0.137024679
+      },
+      {
+        "day": 125,
+        "samples": 4,
+        "gwei": 0.242906993
+      },
+      {
+        "day": 126,
+        "samples": 4,
+        "gwei": 0.485928899
+      },
+      {
+        "day": 127,
+        "samples": 4,
+        "gwei": 0.286590104
+      },
+      {
+        "day": 128,
+        "samples": 4,
+        "gwei": 0.193137921
+      },
+      {
+        "day": 129,
+        "samples": 4,
+        "gwei": 0.115115337
+      },
+      {
+        "day": 130,
+        "samples": 4,
+        "gwei": 0.12340605
+      },
+      {
+        "day": 131,
+        "samples": 4,
+        "gwei": 0.158042432
+      },
+      {
+        "day": 132,
+        "samples": 4,
+        "gwei": 0.183588982
+      },
+      {
+        "day": 133,
+        "samples": 4,
+        "gwei": 0.13709468
+      },
+      {
+        "day": 134,
+        "samples": 4,
+        "gwei": 0.16246849
+      },
+      {
+        "day": 135,
+        "samples": 4,
+        "gwei": 0.139200061
+      },
+      {
+        "day": 136,
+        "samples": 4,
+        "gwei": 0.084939594
+      },
+      {
+        "day": 137,
+        "samples": 4,
+        "gwei": 0.131040162
+      },
+      {
+        "day": 138,
+        "samples": 4,
+        "gwei": 0.142468583
+      },
+      {
+        "day": 139,
+        "samples": 4,
+        "gwei": 0.162481669
+      },
+      {
+        "day": 140,
+        "samples": 4,
+        "gwei": 0.158250476
+      },
+      {
+        "day": 141,
+        "samples": 4,
+        "gwei": 0.155045084
+      },
+      {
+        "day": 142,
+        "samples": 4,
+        "gwei": 0.393715924
+      },
+      {
+        "day": 143,
+        "samples": 4,
+        "gwei": 0.166845944
+      },
+      {
+        "day": 144,
+        "samples": 4,
+        "gwei": 0.136726312
+      },
+      {
+        "day": 145,
+        "samples": 4,
+        "gwei": 0.216837745
+      },
+      {
+        "day": 146,
+        "samples": 4,
+        "gwei": 0.403668415
+      },
+      {
+        "day": 147,
+        "samples": 4,
+        "gwei": 1.011515606
+      },
+      {
+        "day": 148,
+        "samples": 4,
+        "gwei": 0.27115531
+      },
+      {
+        "day": 149,
+        "samples": 4,
+        "gwei": 0.20334823
+      },
+      {
+        "day": 150,
+        "samples": 4,
+        "gwei": 0.153869959
+      },
+      {
+        "day": 151,
+        "samples": 4,
+        "gwei": 0.165657179
+      },
+      {
+        "day": 152,
+        "samples": 4,
+        "gwei": 0.210679945
+      },
+      {
+        "day": 153,
+        "samples": 4,
+        "gwei": 0.384706336
+      },
+      {
+        "day": 154,
+        "samples": 4,
+        "gwei": 0.371368159
+      },
+      {
+        "day": 155,
+        "samples": 4,
+        "gwei": 0.156144921
+      },
+      {
+        "day": 156,
+        "samples": 4,
+        "gwei": 0.117005082
+      },
+      {
+        "day": 157,
+        "samples": 4,
+        "gwei": 0.134645551
+      },
+      {
+        "day": 158,
+        "samples": 4,
+        "gwei": 0.109222347
+      },
+      {
+        "day": 159,
+        "samples": 4,
+        "gwei": 0.110050677
+      },
+      {
+        "day": 160,
+        "samples": 4,
+        "gwei": 0.109080074
+      },
+      {
+        "day": 161,
+        "samples": 4,
+        "gwei": 0.115866845
+      },
+      {
+        "day": 162,
+        "samples": 4,
+        "gwei": 0.166550793
+      },
+      {
+        "day": 163,
+        "samples": 4,
+        "gwei": 0.155638517
+      },
+      {
+        "day": 164,
+        "samples": 4,
+        "gwei": 0.220422832
+      },
+      {
+        "day": 165,
+        "samples": 4,
+        "gwei": 0.163228282
+      },
+      {
+        "day": 166,
+        "samples": 4,
+        "gwei": 0.157399685
+      },
+      {
+        "day": 167,
+        "samples": 4,
+        "gwei": 0.195283557
+      },
+      {
+        "day": 168,
+        "samples": 4,
+        "gwei": 0.452760319
+      },
+      {
+        "day": 169,
+        "samples": 4,
+        "gwei": 0.111293739
+      },
+      {
+        "day": 170,
+        "samples": 4,
+        "gwei": 0.374361396
+      },
+      {
+        "day": 171,
+        "samples": 4,
+        "gwei": 0.838898411
+      },
+      {
+        "day": 172,
+        "samples": 4,
+        "gwei": 0.282321743
+      },
+      {
+        "day": 173,
+        "samples": 4,
+        "gwei": 0.147710388
+      },
+      {
+        "day": 174,
+        "samples": 4,
+        "gwei": 0.688288909
+      },
+      {
+        "day": 175,
+        "samples": 4,
+        "gwei": 0.384825007
+      },
+      {
+        "day": 176,
+        "samples": 4,
+        "gwei": 0.171609805
+      },
+      {
+        "day": 177,
+        "samples": 4,
+        "gwei": 0.228273629
+      },
+      {
+        "day": 178,
+        "samples": 4,
+        "gwei": 0.88908461
+      },
+      {
+        "day": 179,
+        "samples": 4,
+        "gwei": 0.200819695
+      },
+      {
+        "day": 180,
+        "samples": 4,
+        "gwei": 0.317772962
+      },
+      {
+        "day": 181,
+        "samples": 4,
+        "gwei": 0.23881277
+      },
+      {
+        "day": 182,
+        "samples": 4,
+        "gwei": 0.397350812
+      },
+      {
+        "day": 183,
+        "samples": 4,
+        "gwei": 1.29322654
+      },
+      {
+        "day": 184,
+        "samples": 4,
+        "gwei": 0.524814792
+      },
+      {
+        "day": 185,
+        "samples": 4,
+        "gwei": 1.078620519
+      },
+      {
+        "day": 186,
+        "samples": 4,
+        "gwei": 0.192453946
+      },
+      {
+        "day": 187,
+        "samples": 4,
+        "gwei": 0.229308131
+      },
+      {
+        "day": 188,
+        "samples": 4,
+        "gwei": 0.652905564
+      },
+      {
+        "day": 189,
+        "samples": 4,
+        "gwei": 0.363454836
+      },
+      {
+        "day": 190,
+        "samples": 4,
+        "gwei": 2.404247959
+      },
+      {
+        "day": 191,
+        "samples": 4,
+        "gwei": 0.396871515
+      },
+      {
+        "day": 192,
+        "samples": 4,
+        "gwei": 1.13330827
+      },
+      {
+        "day": 193,
+        "samples": 4,
+        "gwei": 0.668662675
+      },
+      {
+        "day": 194,
+        "samples": 4,
+        "gwei": 0.156676904
+      },
+      {
+        "day": 195,
+        "samples": 4,
+        "gwei": 0.319931521
+      },
+      {
+        "day": 196,
+        "samples": 4,
+        "gwei": 0.110562028
+      },
+      {
+        "day": 197,
+        "samples": 4,
+        "gwei": 0.095098431
+      },
+      {
+        "day": 198,
+        "samples": 4,
+        "gwei": 0.165387045
+      },
+      {
+        "day": 199,
+        "samples": 4,
+        "gwei": 0.110840837
+      },
+      {
+        "day": 200,
+        "samples": 4,
+        "gwei": 0.144024122
+      },
+      {
+        "day": 201,
+        "samples": 4,
+        "gwei": 0.055910326
+      },
+      {
+        "day": 202,
+        "samples": 4,
+        "gwei": 0.144947013
+      },
+      {
+        "day": 203,
+        "samples": 4,
+        "gwei": 0.081808228
+      },
+      {
+        "day": 204,
+        "samples": 4,
+        "gwei": 0.347412802
+      },
+      {
+        "day": 205,
+        "samples": 4,
+        "gwei": 0.167512499
+      },
+      {
+        "day": 206,
+        "samples": 4,
+        "gwei": 0.158347689
+      },
+      {
+        "day": 207,
+        "samples": 4,
+        "gwei": 0.108568764
+      },
+      {
+        "day": 208,
+        "samples": 4,
+        "gwei": 0.105625439
+      },
+      {
+        "day": 209,
+        "samples": 4,
+        "gwei": 0.124562849
+      },
+      {
+        "day": 210,
+        "samples": 4,
+        "gwei": 0.186670215
+      },
+      {
+        "day": 211,
+        "samples": 4,
+        "gwei": 0.249445475
+      },
+      {
+        "day": 212,
+        "samples": 4,
+        "gwei": 0.309671915
+      },
+      {
+        "day": 213,
+        "samples": 4,
+        "gwei": 0.141309429
+      },
+      {
+        "day": 214,
+        "samples": 4,
+        "gwei": 0.114359153
+      },
+      {
+        "day": 215,
+        "samples": 4,
+        "gwei": 0.060338624
+      },
+      {
+        "day": 216,
+        "samples": 4,
+        "gwei": 0.148148373
+      },
+      {
+        "day": 217,
+        "samples": 4,
+        "gwei": 0.086583397
+      },
+      {
+        "day": 218,
+        "samples": 4,
+        "gwei": 0.076953307
+      },
+      {
+        "day": 219,
+        "samples": 4,
+        "gwei": 0.086272637
+      },
+      {
+        "day": 220,
+        "samples": 4,
+        "gwei": 0.14132293
+      },
+      {
+        "day": 221,
+        "samples": 4,
+        "gwei": 0.104812548
+      },
+      {
+        "day": 222,
+        "samples": 4,
+        "gwei": 0.043169142
+      },
+      {
+        "day": 223,
+        "samples": 4,
+        "gwei": 0.066926236
+      },
+      {
+        "day": 224,
+        "samples": 4,
+        "gwei": 0.123927728
+      },
+      {
+        "day": 225,
+        "samples": 4,
+        "gwei": 0.230627205
+      },
+      {
+        "day": 226,
+        "samples": 4,
+        "gwei": 0.128124938
+      },
+      {
+        "day": 227,
+        "samples": 4,
+        "gwei": 0.183473245
+      },
+      {
+        "day": 228,
+        "samples": 4,
+        "gwei": 0.037632752
+      },
+      {
+        "day": 229,
+        "samples": 4,
+        "gwei": 0.040920566
+      },
+      {
+        "day": 230,
+        "samples": 4,
+        "gwei": 0.133495916
+      },
+      {
+        "day": 231,
+        "samples": 4,
+        "gwei": 0.090915684
+      },
+      {
+        "day": 232,
+        "samples": 4,
+        "gwei": 0.102205118
+      },
+      {
+        "day": 233,
+        "samples": 4,
+        "gwei": 0.086952954
+      },
+      {
+        "day": 234,
+        "samples": 4,
+        "gwei": 0.248075979
+      },
+      {
+        "day": 235,
+        "samples": 4,
+        "gwei": 0.035459048
+      },
+      {
+        "day": 236,
+        "samples": 4,
+        "gwei": 0.038032108
+      },
+      {
+        "day": 237,
+        "samples": 4,
+        "gwei": 0.058449184
+      },
+      {
+        "day": 238,
+        "samples": 4,
+        "gwei": 0.068717239
+      },
+      {
+        "day": 239,
+        "samples": 4,
+        "gwei": 0.196605649
+      },
+      {
+        "day": 240,
+        "samples": 4,
+        "gwei": 0.121862138
+      },
+      {
+        "day": 241,
+        "samples": 4,
+        "gwei": 0.147677764
+      },
+      {
+        "day": 242,
+        "samples": 4,
+        "gwei": 0.083655398
+      },
+      {
+        "day": 243,
+        "samples": 4,
+        "gwei": 0.109234499
+      },
+      {
+        "day": 244,
+        "samples": 4,
+        "gwei": 0.049830808
+      },
+      {
+        "day": 245,
+        "samples": 4,
+        "gwei": 0.096048023
+      },
+      {
+        "day": 246,
+        "samples": 4,
+        "gwei": 0.152483438
+      },
+      {
+        "day": 247,
+        "samples": 4,
+        "gwei": 0.058558982
+      },
+      {
+        "day": 248,
+        "samples": 4,
+        "gwei": 0.0952882
+      },
+      {
+        "day": 249,
+        "samples": 4,
+        "gwei": 0.041516401
+      },
+      {
+        "day": 250,
+        "samples": 4,
+        "gwei": 0.043455881
+      },
+      {
+        "day": 251,
+        "samples": 4,
+        "gwei": 0.046202522
+      },
+      {
+        "day": 252,
+        "samples": 4,
+        "gwei": 0.072091073
+      },
+      {
+        "day": 253,
+        "samples": 4,
+        "gwei": 0.127378995
+      },
+      {
+        "day": 254,
+        "samples": 4,
+        "gwei": 0.106087231
+      },
+      {
+        "day": 255,
+        "samples": 4,
+        "gwei": 0.040107244
+      },
+      {
+        "day": 256,
+        "samples": 4,
+        "gwei": 0.042297599
+      },
+      {
+        "day": 257,
+        "samples": 4,
+        "gwei": 0.046501422
+      },
+      {
+        "day": 258,
+        "samples": 4,
+        "gwei": 0.059917641
+      },
+      {
+        "day": 259,
+        "samples": 4,
+        "gwei": 0.063779735
+      },
+      {
+        "day": 260,
+        "samples": 4,
+        "gwei": 0.170135667
+      },
+      {
+        "day": 261,
+        "samples": 4,
+        "gwei": 0.089315906
+      },
+      {
+        "day": 262,
+        "samples": 4,
+        "gwei": 0.124252591
+      },
+      {
+        "day": 263,
+        "samples": 4,
+        "gwei": 0.068212987
+      },
+      {
+        "day": 264,
+        "samples": 4,
+        "gwei": 0.152938203
+      },
+      {
+        "day": 265,
+        "samples": 4,
+        "gwei": 0.294753236
+      },
+      {
+        "day": 266,
+        "samples": 4,
+        "gwei": 0.831619809
+      },
+      {
+        "day": 267,
+        "samples": 4,
+        "gwei": 0.321575226
+      },
+      {
+        "day": 268,
+        "samples": 4,
+        "gwei": 0.198472922
+      },
+      {
+        "day": 269,
+        "samples": 4,
+        "gwei": 0.208710873
+      },
+      {
+        "day": 270,
+        "samples": 4,
+        "gwei": 0.138265121
+      },
+      {
+        "day": 271,
+        "samples": 4,
+        "gwei": 1.230573754
+      },
+      {
+        "day": 272,
+        "samples": 4,
+        "gwei": 0.499842602
+      },
+      {
+        "day": 273,
+        "samples": 4,
+        "gwei": 0.119392441
+      },
+      {
+        "day": 274,
+        "samples": 4,
+        "gwei": 0.141931921
+      },
+      {
+        "day": 275,
+        "samples": 4,
+        "gwei": 0.128896938
+      },
+      {
+        "day": 276,
+        "samples": 4,
+        "gwei": 0.066971662
+      },
+      {
+        "day": 277,
+        "samples": 4,
+        "gwei": 0.053840515
+      },
+      {
+        "day": 278,
+        "samples": 4,
+        "gwei": 0.042757138
+      },
+      {
+        "day": 279,
+        "samples": 4,
+        "gwei": 0.14373177
+      },
+      {
+        "day": 280,
+        "samples": 4,
+        "gwei": 0.05876469
+      },
+      {
+        "day": 281,
+        "samples": 4,
+        "gwei": 0.131758331
+      },
+      {
+        "day": 282,
+        "samples": 4,
+        "gwei": 0.100595411
+      },
+      {
+        "day": 283,
+        "samples": 4,
+        "gwei": 0.048405119
+      },
+      {
+        "day": 284,
+        "samples": 4,
+        "gwei": 0.034576746
+      },
+      {
+        "day": 285,
+        "samples": 4,
+        "gwei": 0.036829026
+      },
+      {
+        "day": 286,
+        "samples": 4,
+        "gwei": 0.071896696
+      },
+      {
+        "day": 287,
+        "samples": 4,
+        "gwei": 0.204252652
+      },
+      {
+        "day": 288,
+        "samples": 4,
+        "gwei": 0.107197178
+      },
+      {
+        "day": 289,
+        "samples": 4,
+        "gwei": 0.095099867
+      },
+      {
+        "day": 290,
+        "samples": 4,
+        "gwei": 0.066248203
+      },
+      {
+        "day": 291,
+        "samples": 4,
+        "gwei": 0.035619398
+      },
+      {
+        "day": 292,
+        "samples": 4,
+        "gwei": 0.036442043
+      },
+      {
+        "day": 293,
+        "samples": 4,
+        "gwei": 0.049396609
+      },
+      {
+        "day": 294,
+        "samples": 4,
+        "gwei": 0.048501704
+      },
+      {
+        "day": 295,
+        "samples": 4,
+        "gwei": 0.09835183
+      },
+      {
+        "day": 296,
+        "samples": 4,
+        "gwei": 0.150558364
+      },
+      {
+        "day": 297,
+        "samples": 4,
+        "gwei": 0.100893202
+      },
+      {
+        "day": 298,
+        "samples": 4,
+        "gwei": 0.049150806
+      },
+      {
+        "day": 299,
+        "samples": 4,
+        "gwei": 0.069716844
+      },
+      {
+        "day": 300,
+        "samples": 4,
+        "gwei": 0.085624212
+      },
+      {
+        "day": 301,
+        "samples": 4,
+        "gwei": 0.044147295
+      },
+      {
+        "day": 302,
+        "samples": 4,
+        "gwei": 0.105324283
+      },
+      {
+        "day": 303,
+        "samples": 4,
+        "gwei": 0.090065108
+      },
+      {
+        "day": 304,
+        "samples": 4,
+        "gwei": 0.063612057
+      },
+      {
+        "day": 305,
+        "samples": 4,
+        "gwei": 0.029849315
+      },
+      {
+        "day": 306,
+        "samples": 4,
+        "gwei": 0.03173167
+      },
+      {
+        "day": 307,
+        "samples": 4,
+        "gwei": 0.029820326
+      },
+      {
+        "day": 308,
+        "samples": 4,
+        "gwei": 0.030841684
+      },
+      {
+        "day": 309,
+        "samples": 4,
+        "gwei": 0.043492669
+      },
+      {
+        "day": 310,
+        "samples": 4,
+        "gwei": 0.032408113
+      },
+      {
+        "day": 311,
+        "samples": 4,
+        "gwei": 0.030619114
+      },
+      {
+        "day": 312,
+        "samples": 4,
+        "gwei": 0.032758522
+      },
+      {
+        "day": 313,
+        "samples": 4,
+        "gwei": 0.031756539
+      },
+      {
+        "day": 314,
+        "samples": 4,
+        "gwei": 0.052394744
+      },
+      {
+        "day": 315,
+        "samples": 4,
+        "gwei": 0.03358083
+      },
+      {
+        "day": 316,
+        "samples": 4,
+        "gwei": 0.038390225
+      },
+      {
+        "day": 317,
+        "samples": 4,
+        "gwei": 0.045289005
+      },
+      {
+        "day": 318,
+        "samples": 4,
+        "gwei": 0.047705926
+      },
+      {
+        "day": 319,
+        "samples": 4,
+        "gwei": 0.048364525
+      },
+      {
+        "day": 320,
+        "samples": 4,
+        "gwei": 0.03950183
+      },
+      {
+        "day": 321,
+        "samples": 4,
+        "gwei": 0.105842905
+      },
+      {
+        "day": 322,
+        "samples": 4,
+        "gwei": 0.143880848
+      },
+      {
+        "day": 323,
+        "samples": 4,
+        "gwei": 0.171107614
+      },
+      {
+        "day": 324,
+        "samples": 4,
+        "gwei": 0.234468225
+      },
+      {
+        "day": 325,
+        "samples": 4,
+        "gwei": 0.335803386
+      },
+      {
+        "day": 326,
+        "samples": 4,
+        "gwei": 0.309933572
+      },
+      {
+        "day": 327,
+        "samples": 4,
+        "gwei": 0.028613446
+      },
+      {
+        "day": 328,
+        "samples": 4,
+        "gwei": 0.037970233
+      },
+      {
+        "day": 329,
+        "samples": 4,
+        "gwei": 0.046671163
+      },
+      {
+        "day": 330,
+        "samples": 4,
+        "gwei": 0.036196607
+      },
+      {
+        "day": 331,
+        "samples": 4,
+        "gwei": 0.053150666
+      },
+      {
+        "day": 332,
+        "samples": 4,
+        "gwei": 0.099229383
+      },
+      {
+        "day": 333,
+        "samples": 4,
+        "gwei": 0.038789207
+      },
+      {
+        "day": 334,
+        "samples": 4,
+        "gwei": 0.04622455
+      },
+      {
+        "day": 335,
+        "samples": 4,
+        "gwei": 0.047395136
+      },
+      {
+        "day": 336,
+        "samples": 4,
+        "gwei": 0.057124399
+      },
+      {
+        "day": 337,
+        "samples": 4,
+        "gwei": 0.064686517
+      },
+      {
+        "day": 338,
+        "samples": 4,
+        "gwei": 0.094035122
+      },
+      {
+        "day": 339,
+        "samples": 4,
+        "gwei": 0.136146897
+      },
+      {
+        "day": 340,
+        "samples": 4,
+        "gwei": 0.114177192
+      },
+      {
+        "day": 341,
+        "samples": 4,
+        "gwei": 0.137214535
+      },
+      {
+        "day": 342,
+        "samples": 4,
+        "gwei": 0.565208649
+      },
+      {
+        "day": 343,
+        "samples": 4,
+        "gwei": 0.542623974
+      },
+      {
+        "day": 344,
+        "samples": 4,
+        "gwei": 0.385627824
+      },
+      {
+        "day": 345,
+        "samples": 4,
+        "gwei": 0.273850315
+      },
+      {
+        "day": 346,
+        "samples": 4,
+        "gwei": 0.231538394
+      },
+      {
+        "day": 347,
+        "samples": 4,
+        "gwei": 0.132043546
+      },
+      {
+        "day": 348,
+        "samples": 4,
+        "gwei": 0.090975536
+      },
+      {
+        "day": 349,
+        "samples": 4,
+        "gwei": 0.35443099
+      },
+      {
+        "day": 350,
+        "samples": 4,
+        "gwei": 0.074167225
+      },
+      {
+        "day": 351,
+        "samples": 4,
+        "gwei": 0.204881258
+      },
+      {
+        "day": 352,
+        "samples": 4,
+        "gwei": 0.214834119
+      },
+      {
+        "day": 353,
+        "samples": 4,
+        "gwei": 0.311314631
+      },
+      {
+        "day": 354,
+        "samples": 4,
+        "gwei": 0.078880292
+      },
+      {
+        "day": 355,
+        "samples": 4,
+        "gwei": 0.14360972
+      },
+      {
+        "day": 356,
+        "samples": 4,
+        "gwei": 2.088829153
+      },
+      {
+        "day": 357,
+        "samples": 4,
+        "gwei": 1.02182882
+      },
+      {
+        "day": 358,
+        "samples": 4,
+        "gwei": 1.80567408
+      },
+      {
+        "day": 359,
+        "samples": 4,
+        "gwei": 0.675207572
+      },
+      {
+        "day": 360,
+        "samples": 4,
+        "gwei": 0.65624088
+      },
+      {
+        "day": 361,
+        "samples": 4,
+        "gwei": 0.131709473
+      },
+      {
+        "day": 362,
+        "samples": 4,
+        "gwei": 0.100631264
+      },
+      {
+        "day": 363,
+        "samples": 4,
+        "gwei": 0.169740549
+      },
+      {
+        "day": 364,
+        "samples": 4,
+        "gwei": 0.379533201
+      }
+    ]
+  },
+  {
+    "observed_at_utc": "2026-10-29T08:09:09.035Z",
+    "network": "Arbitrum One",
+    "chain_id": "42161",
+    "rpc": "https://arb1.arbitrum.io/rpc",
+    "block_number": 519300551,
+    "block_gas_limit": "1125899906842624",
+    "per_tx_gas_limit": 32000000,
+    "per_tx_limit_basis": "ArbOS per-transaction execution limit",
+    "window_blocks": 1024,
+    "mean_block_time_s": 0.27734375,
+    "eth_gasPrice_wei": "20012000",
+    "median_base_fee_wei": "20022000",
+    "median_priority_fee_p50_wei": "0",
+    "effective_gas_price_gwei": 0.020022,
+    "daily_window_days": 365,
+    "daily_samples": 365,
+    "daily_valid_samples": 365,
+    "daily_median_gwei": 0.020042,
+    "daily_min_gwei": 0.01,
+    "daily_max_gwei": 0.127828,
+    "daily": [
+      {
+        "day": 0,
+        "samples": 4,
+        "gwei": 0.02015
+      },
+      {
+        "day": 1,
+        "samples": 4,
+        "gwei": 0.020064
+      },
+      {
+        "day": 2,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 3,
+        "samples": 4,
+        "gwei": 0.02001
+      },
+      {
+        "day": 4,
+        "samples": 4,
+        "gwei": 0.02004
+      },
+      {
+        "day": 5,
+        "samples": 4,
+        "gwei": 0.020026
+      },
+      {
+        "day": 6,
+        "samples": 4,
+        "gwei": 0.020012
+      },
+      {
+        "day": 7,
+        "samples": 4,
+        "gwei": 0.020016
+      },
+      {
+        "day": 8,
+        "samples": 4,
+        "gwei": 0.020014
+      },
+      {
+        "day": 9,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 10,
+        "samples": 4,
+        "gwei": 0.02002
+      },
+      {
+        "day": 11,
+        "samples": 4,
+        "gwei": 0.020054
+      },
+      {
+        "day": 12,
+        "samples": 4,
+        "gwei": 0.020212
+      },
+      {
+        "day": 13,
+        "samples": 4,
+        "gwei": 0.020036
+      },
+      {
+        "day": 14,
+        "samples": 4,
+        "gwei": 0.02003
+      },
+      {
+        "day": 15,
+        "samples": 4,
+        "gwei": 0.020004
+      },
+      {
+        "day": 16,
+        "samples": 4,
+        "gwei": 0.020058
+      },
+      {
+        "day": 17,
+        "samples": 4,
+        "gwei": 0.02003
+      },
+      {
+        "day": 18,
+        "samples": 4,
+        "gwei": 0.020024
+      },
+      {
+        "day": 19,
+        "samples": 4,
+        "gwei": 0.020084
+      },
+      {
+        "day": 20,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 21,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 22,
+        "samples": 4,
+        "gwei": 0.020036
+      },
+      {
+        "day": 23,
+        "samples": 4,
+        "gwei": 0.020036
+      },
+      {
+        "day": 24,
+        "samples": 4,
+        "gwei": 0.020022
+      },
+      {
+        "day": 25,
+        "samples": 4,
+        "gwei": 0.020008
+      },
+      {
+        "day": 26,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 27,
+        "samples": 4,
+        "gwei": 0.020058
+      },
+      {
+        "day": 28,
+        "samples": 4,
+        "gwei": 0.020144
+      },
+      {
+        "day": 29,
+        "samples": 4,
+        "gwei": 0.020012
+      },
+      {
+        "day": 30,
+        "samples": 4,
+        "gwei": 0.02026
+      },
+      {
+        "day": 31,
+        "samples": 4,
+        "gwei": 0.020014
+      },
+      {
+        "day": 32,
+        "samples": 4,
+        "gwei": 0.020074
+      },
+      {
+        "day": 33,
+        "samples": 4,
+        "gwei": 0.02001
+      },
+      {
+        "day": 34,
+        "samples": 4,
+        "gwei": 0.020212
+      },
+      {
+        "day": 35,
+        "samples": 4,
+        "gwei": 0.02007
+      },
+      {
+        "day": 36,
+        "samples": 4,
+        "gwei": 0.02003
+      },
+      {
+        "day": 37,
+        "samples": 4,
+        "gwei": 0.020214
+      },
+      {
+        "day": 38,
+        "samples": 4,
+        "gwei": 0.02001
+      },
+      {
+        "day": 39,
+        "samples": 4,
+        "gwei": 0.020096
+      },
+      {
+        "day": 40,
+        "samples": 4,
+        "gwei": 0.020022
+      },
+      {
+        "day": 41,
+        "samples": 4,
+        "gwei": 0.02003
+      },
+      {
+        "day": 42,
+        "samples": 4,
+        "gwei": 0.020034
+      },
+      {
+        "day": 43,
+        "samples": 4,
+        "gwei": 0.020022
+      },
+      {
+        "day": 44,
+        "samples": 4,
+        "gwei": 0.02012
+      },
+      {
+        "day": 45,
+        "samples": 4,
+        "gwei": 0.02012
+      },
+      {
+        "day": 46,
+        "samples": 4,
+        "gwei": 0.020004
+      },
+      {
+        "day": 47,
+        "samples": 4,
+        "gwei": 0.020006
+      },
+      {
+        "day": 48,
+        "samples": 4,
+        "gwei": 0.020084
+      },
+      {
+        "day": 49,
+        "samples": 4,
+        "gwei": 0.020022
+      },
+      {
+        "day": 50,
+        "samples": 4,
+        "gwei": 0.020064
+      },
+      {
+        "day": 51,
+        "samples": 4,
+        "gwei": 0.02003
+      },
+      {
+        "day": 52,
+        "samples": 4,
+        "gwei": 0.02004
+      },
+      {
+        "day": 53,
+        "samples": 4,
+        "gwei": 0.020208
+      },
+      {
+        "day": 54,
+        "samples": 4,
+        "gwei": 0.020002
+      },
+      {
+        "day": 55,
+        "samples": 4,
+        "gwei": 0.020064
+      },
+      {
+        "day": 56,
+        "samples": 4,
+        "gwei": 0.020002
+      },
+      {
+        "day": 57,
+        "samples": 4,
+        "gwei": 0.020126
+      },
+      {
+        "day": 58,
+        "samples": 4,
+        "gwei": 0.020086
+      },
+      {
+        "day": 59,
+        "samples": 4,
+        "gwei": 0.020032
+      },
+      {
+        "day": 60,
+        "samples": 4,
+        "gwei": 0.020016
+      },
+      {
+        "day": 61,
+        "samples": 4,
+        "gwei": 0.020192
+      },
+      {
+        "day": 62,
+        "samples": 4,
+        "gwei": 0.020006
+      },
+      {
+        "day": 63,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 64,
+        "samples": 4,
+        "gwei": 0.02002
+      },
+      {
+        "day": 65,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 66,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 67,
+        "samples": 4,
+        "gwei": 0.020004
+      },
+      {
+        "day": 68,
+        "samples": 4,
+        "gwei": 0.020066
+      },
+      {
+        "day": 69,
+        "samples": 4,
+        "gwei": 0.020046
+      },
+      {
+        "day": 70,
+        "samples": 4,
+        "gwei": 0.020014
+      },
+      {
+        "day": 71,
+        "samples": 4,
+        "gwei": 0.020144
+      },
+      {
+        "day": 72,
+        "samples": 4,
+        "gwei": 0.020298
+      },
+      {
+        "day": 73,
+        "samples": 4,
+        "gwei": 0.020072
+      },
+      {
+        "day": 74,
+        "samples": 4,
+        "gwei": 0.020004
+      },
+      {
+        "day": 75,
+        "samples": 4,
+        "gwei": 0.020032
+      },
+      {
+        "day": 76,
+        "samples": 4,
+        "gwei": 0.020034
+      },
+      {
+        "day": 77,
+        "samples": 4,
+        "gwei": 0.02002
+      },
+      {
+        "day": 78,
+        "samples": 4,
+        "gwei": 0.020026
+      },
+      {
+        "day": 79,
+        "samples": 4,
+        "gwei": 0.020064
+      },
+      {
+        "day": 80,
+        "samples": 4,
+        "gwei": 0.020012
+      },
+      {
+        "day": 81,
+        "samples": 4,
+        "gwei": 0.020022
+      },
+      {
+        "day": 82,
+        "samples": 4,
+        "gwei": 0.020014
+      },
+      {
+        "day": 83,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 84,
+        "samples": 4,
+        "gwei": 0.02002
+      },
+      {
+        "day": 85,
+        "samples": 4,
+        "gwei": 0.020024
+      },
+      {
+        "day": 86,
+        "samples": 4,
+        "gwei": 0.020094
+      },
+      {
+        "day": 87,
+        "samples": 4,
+        "gwei": 0.02002
+      },
+      {
+        "day": 88,
+        "samples": 4,
+        "gwei": 0.020194
+      },
+      {
+        "day": 89,
+        "samples": 4,
+        "gwei": 0.020054
+      },
+      {
+        "day": 90,
+        "samples": 4,
+        "gwei": 0.020174
+      },
+      {
+        "day": 91,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 92,
+        "samples": 4,
+        "gwei": 0.020056
+      },
+      {
+        "day": 93,
+        "samples": 4,
+        "gwei": 0.020026
+      },
+      {
+        "day": 94,
+        "samples": 4,
+        "gwei": 0.020032
+      },
+      {
+        "day": 95,
+        "samples": 4,
+        "gwei": 0.020076
+      },
+      {
+        "day": 96,
+        "samples": 4,
+        "gwei": 0.020006
+      },
+      {
+        "day": 97,
+        "samples": 4,
+        "gwei": 0.020096
+      },
+      {
+        "day": 98,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 99,
+        "samples": 4,
+        "gwei": 0.020128
+      },
+      {
+        "day": 100,
+        "samples": 4,
+        "gwei": 0.020026
+      },
+      {
+        "day": 101,
+        "samples": 4,
+        "gwei": 0.020064
+      },
+      {
+        "day": 102,
+        "samples": 4,
+        "gwei": 0.020032
+      },
+      {
+        "day": 103,
+        "samples": 4,
+        "gwei": 0.020076
+      },
+      {
+        "day": 104,
+        "samples": 4,
+        "gwei": 0.020076
+      },
+      {
+        "day": 105,
+        "samples": 4,
+        "gwei": 0.02008
+      },
+      {
+        "day": 106,
+        "samples": 4,
+        "gwei": 0.020034
+      },
+      {
+        "day": 107,
+        "samples": 4,
+        "gwei": 0.020096
+      },
+      {
+        "day": 108,
+        "samples": 4,
+        "gwei": 0.020054
+      },
+      {
+        "day": 109,
+        "samples": 4,
+        "gwei": 0.020034
+      },
+      {
+        "day": 110,
+        "samples": 4,
+        "gwei": 0.020024
+      },
+      {
+        "day": 111,
+        "samples": 4,
+        "gwei": 0.020074
+      },
+      {
+        "day": 112,
+        "samples": 4,
+        "gwei": 0.020222
+      },
+      {
+        "day": 113,
+        "samples": 4,
+        "gwei": 0.020054
+      },
+      {
+        "day": 114,
+        "samples": 4,
+        "gwei": 0.02006
+      },
+      {
+        "day": 115,
+        "samples": 4,
+        "gwei": 0.020106
+      },
+      {
+        "day": 116,
+        "samples": 4,
+        "gwei": 0.020196
+      },
+      {
+        "day": 117,
+        "samples": 4,
+        "gwei": 0.020052
+      },
+      {
+        "day": 118,
+        "samples": 4,
+        "gwei": 0.020052
+      },
+      {
+        "day": 119,
+        "samples": 4,
+        "gwei": 0.02006
+      },
+      {
+        "day": 120,
+        "samples": 4,
+        "gwei": 0.020034
+      },
+      {
+        "day": 121,
+        "samples": 4,
+        "gwei": 0.020056
+      },
+      {
+        "day": 122,
+        "samples": 4,
+        "gwei": 0.02004
+      },
+      {
+        "day": 123,
+        "samples": 4,
+        "gwei": 0.020108
+      },
+      {
+        "day": 124,
+        "samples": 4,
+        "gwei": 0.02014
+      },
+      {
+        "day": 125,
+        "samples": 4,
+        "gwei": 0.020064
+      },
+      {
+        "day": 126,
+        "samples": 4,
+        "gwei": 0.020046
+      },
+      {
+        "day": 127,
+        "samples": 4,
+        "gwei": 0.020092
+      },
+      {
+        "day": 128,
+        "samples": 4,
+        "gwei": 0.020046
+      },
+      {
+        "day": 129,
+        "samples": 4,
+        "gwei": 0.020376
+      },
+      {
+        "day": 130,
+        "samples": 4,
+        "gwei": 0.02085
+      },
+      {
+        "day": 131,
+        "samples": 4,
+        "gwei": 0.02008
+      },
+      {
+        "day": 132,
+        "samples": 4,
+        "gwei": 0.020274
+      },
+      {
+        "day": 133,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 134,
+        "samples": 4,
+        "gwei": 0.02035
+      },
+      {
+        "day": 135,
+        "samples": 4,
+        "gwei": 0.020192
+      },
+      {
+        "day": 136,
+        "samples": 4,
+        "gwei": 0.02043
+      },
+      {
+        "day": 137,
+        "samples": 4,
+        "gwei": 0.02003
+      },
+      {
+        "day": 138,
+        "samples": 4,
+        "gwei": 0.020046
+      },
+      {
+        "day": 139,
+        "samples": 4,
+        "gwei": 0.020128
+      },
+      {
+        "day": 140,
+        "samples": 4,
+        "gwei": 0.020114
+      },
+      {
+        "day": 141,
+        "samples": 4,
+        "gwei": 0.020012
+      },
+      {
+        "day": 142,
+        "samples": 4,
+        "gwei": 0.020066
+      },
+      {
+        "day": 143,
+        "samples": 4,
+        "gwei": 0.020244
+      },
+      {
+        "day": 144,
+        "samples": 4,
+        "gwei": 0.020052
+      },
+      {
+        "day": 145,
+        "samples": 4,
+        "gwei": 0.020096
+      },
+      {
+        "day": 146,
+        "samples": 4,
+        "gwei": 0.02008
+      },
+      {
+        "day": 147,
+        "samples": 4,
+        "gwei": 0.020186
+      },
+      {
+        "day": 148,
+        "samples": 4,
+        "gwei": 0.020096
+      },
+      {
+        "day": 149,
+        "samples": 4,
+        "gwei": 0.020062
+      },
+      {
+        "day": 150,
+        "samples": 4,
+        "gwei": 0.020012
+      },
+      {
+        "day": 151,
+        "samples": 4,
+        "gwei": 0.020048
+      },
+      {
+        "day": 152,
+        "samples": 4,
+        "gwei": 0.020232
+      },
+      {
+        "day": 153,
+        "samples": 4,
+        "gwei": 0.020022
+      },
+      {
+        "day": 154,
+        "samples": 4,
+        "gwei": 0.020086
+      },
+      {
+        "day": 155,
+        "samples": 4,
+        "gwei": 0.020014
+      },
+      {
+        "day": 156,
+        "samples": 4,
+        "gwei": 0.02026
+      },
+      {
+        "day": 157,
+        "samples": 4,
+        "gwei": 0.020436
+      },
+      {
+        "day": 158,
+        "samples": 4,
+        "gwei": 0.020292
+      },
+      {
+        "day": 159,
+        "samples": 4,
+        "gwei": 0.020034
+      },
+      {
+        "day": 160,
+        "samples": 4,
+        "gwei": 0.020078
+      },
+      {
+        "day": 161,
+        "samples": 4,
+        "gwei": 0.020016
+      },
+      {
+        "day": 162,
+        "samples": 4,
+        "gwei": 0.020074
+      },
+      {
+        "day": 163,
+        "samples": 4,
+        "gwei": 0.020048
+      },
+      {
+        "day": 164,
+        "samples": 4,
+        "gwei": 0.020318
+      },
+      {
+        "day": 165,
+        "samples": 4,
+        "gwei": 0.02024
+      },
+      {
+        "day": 166,
+        "samples": 4,
+        "gwei": 0.02003
+      },
+      {
+        "day": 167,
+        "samples": 4,
+        "gwei": 0.020006
+      },
+      {
+        "day": 168,
+        "samples": 4,
+        "gwei": 0.020052
+      },
+      {
+        "day": 169,
+        "samples": 4,
+        "gwei": 0.020016
+      },
+      {
+        "day": 170,
+        "samples": 4,
+        "gwei": 0.020032
+      },
+      {
+        "day": 171,
+        "samples": 4,
+        "gwei": 0.020022
+      },
+      {
+        "day": 172,
+        "samples": 4,
+        "gwei": 0.02001
+      },
+      {
+        "day": 173,
+        "samples": 4,
+        "gwei": 0.020062
+      },
+      {
+        "day": 174,
+        "samples": 4,
+        "gwei": 0.0201
+      },
+      {
+        "day": 175,
+        "samples": 4,
+        "gwei": 0.021822
+      },
+      {
+        "day": 176,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 177,
+        "samples": 4,
+        "gwei": 0.020066
+      },
+      {
+        "day": 178,
+        "samples": 4,
+        "gwei": 0.020048
+      },
+      {
+        "day": 179,
+        "samples": 4,
+        "gwei": 0.020056
+      },
+      {
+        "day": 180,
+        "samples": 4,
+        "gwei": 0.020036
+      },
+      {
+        "day": 181,
+        "samples": 4,
+        "gwei": 0.020188
+      },
+      {
+        "day": 182,
+        "samples": 4,
+        "gwei": 0.020024
+      },
+      {
+        "day": 183,
+        "samples": 4,
+        "gwei": 0.020022
+      },
+      {
+        "day": 184,
+        "samples": 4,
+        "gwei": 0.02003
+      },
+      {
+        "day": 185,
+        "samples": 4,
+        "gwei": 0.020042
+      },
+      {
+        "day": 186,
+        "samples": 4,
+        "gwei": 0.02007
+      },
+      {
+        "day": 187,
+        "samples": 4,
+        "gwei": 0.020068
+      },
+      {
+        "day": 188,
+        "samples": 4,
+        "gwei": 0.020016
+      },
+      {
+        "day": 189,
+        "samples": 4,
+        "gwei": 0.02019
+      },
+      {
+        "day": 190,
+        "samples": 4,
+        "gwei": 0.02003
+      },
+      {
+        "day": 191,
+        "samples": 4,
+        "gwei": 0.020114
+      },
+      {
+        "day": 192,
+        "samples": 4,
+        "gwei": 0.02012
+      },
+      {
+        "day": 193,
+        "samples": 4,
+        "gwei": 0.020114
+      },
+      {
+        "day": 194,
+        "samples": 4,
+        "gwei": 0.02001
+      },
+      {
+        "day": 195,
+        "samples": 4,
+        "gwei": 0.020096
+      },
+      {
+        "day": 196,
+        "samples": 4,
+        "gwei": 0.020006
+      },
+      {
+        "day": 197,
+        "samples": 4,
+        "gwei": 0.02004
+      },
+      {
+        "day": 198,
+        "samples": 4,
+        "gwei": 0.020186
+      },
+      {
+        "day": 199,
+        "samples": 4,
+        "gwei": 0.02002
+      },
+      {
+        "day": 200,
+        "samples": 4,
+        "gwei": 0.02001
+      },
+      {
+        "day": 201,
+        "samples": 4,
+        "gwei": 0.02004
+      },
+      {
+        "day": 202,
+        "samples": 4,
+        "gwei": 0.02004
+      },
+      {
+        "day": 203,
+        "samples": 4,
+        "gwei": 0.02001
+      },
+      {
+        "day": 204,
+        "samples": 4,
+        "gwei": 0.020072
+      },
+      {
+        "day": 205,
+        "samples": 4,
+        "gwei": 0.020074
+      },
+      {
+        "day": 206,
+        "samples": 4,
+        "gwei": 0.020046
+      },
+      {
+        "day": 207,
+        "samples": 4,
+        "gwei": 0.020428
+      },
+      {
+        "day": 208,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 209,
+        "samples": 4,
+        "gwei": 0.020042
+      },
+      {
+        "day": 210,
+        "samples": 4,
+        "gwei": 0.020016
+      },
+      {
+        "day": 211,
+        "samples": 4,
+        "gwei": 0.020006
+      },
+      {
+        "day": 212,
+        "samples": 4,
+        "gwei": 0.020006
+      },
+      {
+        "day": 213,
+        "samples": 4,
+        "gwei": 0.020036
+      },
+      {
+        "day": 214,
+        "samples": 4,
+        "gwei": 0.020044
+      },
+      {
+        "day": 215,
+        "samples": 4,
+        "gwei": 0.020068
+      },
+      {
+        "day": 216,
+        "samples": 4,
+        "gwei": 0.020014
+      },
+      {
+        "day": 217,
+        "samples": 4,
+        "gwei": 0.02016
+      },
+      {
+        "day": 218,
+        "samples": 4,
+        "gwei": 0.020022
+      },
+      {
+        "day": 219,
+        "samples": 4,
+        "gwei": 0.020006
+      },
+      {
+        "day": 220,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 221,
+        "samples": 4,
+        "gwei": 0.020026
+      },
+      {
+        "day": 222,
+        "samples": 4,
+        "gwei": 0.02036
+      },
+      {
+        "day": 223,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 224,
+        "samples": 4,
+        "gwei": 0.020026
+      },
+      {
+        "day": 225,
+        "samples": 4,
+        "gwei": 0.02002
+      },
+      {
+        "day": 226,
+        "samples": 4,
+        "gwei": 0.020038
+      },
+      {
+        "day": 227,
+        "samples": 4,
+        "gwei": 0.020078
+      },
+      {
+        "day": 228,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 229,
+        "samples": 4,
+        "gwei": 0.020266
+      },
+      {
+        "day": 230,
+        "samples": 4,
+        "gwei": 0.020006
+      },
+      {
+        "day": 231,
+        "samples": 4,
+        "gwei": 0.02003
+      },
+      {
+        "day": 232,
+        "samples": 4,
+        "gwei": 0.020054
+      },
+      {
+        "day": 233,
+        "samples": 4,
+        "gwei": 0.020086
+      },
+      {
+        "day": 234,
+        "samples": 4,
+        "gwei": 0.020088
+      },
+      {
+        "day": 235,
+        "samples": 4,
+        "gwei": 0.020148
+      },
+      {
+        "day": 236,
+        "samples": 4,
+        "gwei": 0.020042
+      },
+      {
+        "day": 237,
+        "samples": 4,
+        "gwei": 0.020064
+      },
+      {
+        "day": 238,
+        "samples": 4,
+        "gwei": 0.020128
+      },
+      {
+        "day": 239,
+        "samples": 4,
+        "gwei": 0.020012
+      },
+      {
+        "day": 240,
+        "samples": 4,
+        "gwei": 0.02004
+      },
+      {
+        "day": 241,
+        "samples": 4,
+        "gwei": 0.020024
+      },
+      {
+        "day": 242,
+        "samples": 4,
+        "gwei": 0.020014
+      },
+      {
+        "day": 243,
+        "samples": 4,
+        "gwei": 0.020086
+      },
+      {
+        "day": 244,
+        "samples": 4,
+        "gwei": 0.020048
+      },
+      {
+        "day": 245,
+        "samples": 4,
+        "gwei": 0.020084
+      },
+      {
+        "day": 246,
+        "samples": 4,
+        "gwei": 0.020122
+      },
+      {
+        "day": 247,
+        "samples": 4,
+        "gwei": 0.020108
+      },
+      {
+        "day": 248,
+        "samples": 4,
+        "gwei": 0.020168
+      },
+      {
+        "day": 249,
+        "samples": 4,
+        "gwei": 0.020004
+      },
+      {
+        "day": 250,
+        "samples": 4,
+        "gwei": 0.020098
+      },
+      {
+        "day": 251,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 252,
+        "samples": 4,
+        "gwei": 0.020042
+      },
+      {
+        "day": 253,
+        "samples": 4,
+        "gwei": 0.02006
+      },
+      {
+        "day": 254,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 255,
+        "samples": 4,
+        "gwei": 0.020014
+      },
+      {
+        "day": 256,
+        "samples": 4,
+        "gwei": 0.020056
+      },
+      {
+        "day": 257,
+        "samples": 4,
+        "gwei": 0.020132
+      },
+      {
+        "day": 258,
+        "samples": 4,
+        "gwei": 0.020066
+      },
+      {
+        "day": 259,
+        "samples": 4,
+        "gwei": 0.020074
+      },
+      {
+        "day": 260,
+        "samples": 4,
+        "gwei": 0.02006
+      },
+      {
+        "day": 261,
+        "samples": 4,
+        "gwei": 0.020032
+      },
+      {
+        "day": 262,
+        "samples": 4,
+        "gwei": 0.020116
+      },
+      {
+        "day": 263,
+        "samples": 4,
+        "gwei": 0.020066
+      },
+      {
+        "day": 264,
+        "samples": 4,
+        "gwei": 0.020188
+      },
+      {
+        "day": 265,
+        "samples": 4,
+        "gwei": 0.020102
+      },
+      {
+        "day": 266,
+        "samples": 4,
+        "gwei": 0.0201
+      },
+      {
+        "day": 267,
+        "samples": 4,
+        "gwei": 0.020094
+      },
+      {
+        "day": 268,
+        "samples": 4,
+        "gwei": 0.020036
+      },
+      {
+        "day": 269,
+        "samples": 4,
+        "gwei": 0.02007
+      },
+      {
+        "day": 270,
+        "samples": 4,
+        "gwei": 0.020046
+      },
+      {
+        "day": 271,
+        "samples": 4,
+        "gwei": 0.020036
+      },
+      {
+        "day": 272,
+        "samples": 4,
+        "gwei": 0.020092
+      },
+      {
+        "day": 273,
+        "samples": 4,
+        "gwei": 0.020056
+      },
+      {
+        "day": 274,
+        "samples": 4,
+        "gwei": 0.020106
+      },
+      {
+        "day": 275,
+        "samples": 4,
+        "gwei": 0.020128
+      },
+      {
+        "day": 276,
+        "samples": 4,
+        "gwei": 0.020088
+      },
+      {
+        "day": 277,
+        "samples": 4,
+        "gwei": 0.02006
+      },
+      {
+        "day": 278,
+        "samples": 4,
+        "gwei": 0.020106
+      },
+      {
+        "day": 279,
+        "samples": 4,
+        "gwei": 0.020164
+      },
+      {
+        "day": 280,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 281,
+        "samples": 4,
+        "gwei": 0.020108
+      },
+      {
+        "day": 282,
+        "samples": 4,
+        "gwei": 0.020124
+      },
+      {
+        "day": 283,
+        "samples": 4,
+        "gwei": 0.020072
+      },
+      {
+        "day": 284,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 285,
+        "samples": 4,
+        "gwei": 0.02
+      },
+      {
+        "day": 286,
+        "samples": 4,
+        "gwei": 0.020092
+      },
+      {
+        "day": 287,
+        "samples": 4,
+        "gwei": 0.02003
+      },
+      {
+        "day": 288,
+        "samples": 4,
+        "gwei": 0.0206
+      },
+      {
+        "day": 289,
+        "samples": 4,
+        "gwei": 0.026236
+      },
+      {
+        "day": 290,
+        "samples": 4,
+        "gwei": 0.02675
+      },
+      {
+        "day": 291,
+        "samples": 4,
+        "gwei": 0.020554
+      },
+      {
+        "day": 292,
+        "samples": 4,
+        "gwei": 0.020218
+      },
+      {
+        "day": 293,
+        "samples": 4,
+        "gwei": 0.02011
+      },
+      {
+        "day": 294,
+        "samples": 4,
+        "gwei": 0.020146
+      },
+      {
+        "day": 295,
+        "samples": 4,
+        "gwei": 0.020176
+      },
+      {
+        "day": 296,
+        "samples": 4,
+        "gwei": 0.020076
+      },
+      {
+        "day": 297,
+        "samples": 4,
+        "gwei": 0.020496
+      },
+      {
+        "day": 298,
+        "samples": 4,
+        "gwei": 0.020034
+      },
+      {
+        "day": 299,
+        "samples": 4,
+        "gwei": 0.020084
+      },
+      {
+        "day": 300,
+        "samples": 4,
+        "gwei": 0.020022
+      },
+      {
+        "day": 301,
+        "samples": 4,
+        "gwei": 0.020076
+      },
+      {
+        "day": 302,
+        "samples": 4,
+        "gwei": 0.020314
+      },
+      {
+        "day": 303,
+        "samples": 4,
+        "gwei": 0.02003
+      },
+      {
+        "day": 304,
+        "samples": 4,
+        "gwei": 0.020022
+      },
+      {
+        "day": 305,
+        "samples": 4,
+        "gwei": 0.020218
+      },
+      {
+        "day": 306,
+        "samples": 4,
+        "gwei": 0.020102
+      },
+      {
+        "day": 307,
+        "samples": 4,
+        "gwei": 0.020428
+      },
+      {
+        "day": 308,
+        "samples": 4,
+        "gwei": 0.020104
+      },
+      {
+        "day": 309,
+        "samples": 4,
+        "gwei": 0.020034
+      },
+      {
+        "day": 310,
+        "samples": 4,
+        "gwei": 0.020058
+      },
+      {
+        "day": 311,
+        "samples": 4,
+        "gwei": 0.020046
+      },
+      {
+        "day": 312,
+        "samples": 4,
+        "gwei": 0.020146
+      },
+      {
+        "day": 313,
+        "samples": 4,
+        "gwei": 0.020012
+      },
+      {
+        "day": 314,
+        "samples": 4,
+        "gwei": 0.020046
+      },
+      {
+        "day": 315,
+        "samples": 4,
+        "gwei": 0.020042
+      },
+      {
+        "day": 316,
+        "samples": 4,
+        "gwei": 0.02005
+      },
+      {
+        "day": 317,
+        "samples": 4,
+        "gwei": 0.02006
+      },
+      {
+        "day": 318,
+        "samples": 4,
+        "gwei": 0.020022
+      },
+      {
+        "day": 319,
+        "samples": 4,
+        "gwei": 0.020012
+      },
+      {
+        "day": 320,
+        "samples": 4,
+        "gwei": 0.020034
+      },
+      {
+        "day": 321,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 322,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 323,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 324,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 325,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 326,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 327,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 328,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 329,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 330,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 331,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 332,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 333,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 334,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 335,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 336,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 337,
+        "samples": 4,
+        "gwei": 0.127828
+      },
+      {
+        "day": 338,
+        "samples": 4,
+        "gwei": 0.050982
+      },
+      {
+        "day": 339,
+        "samples": 4,
+        "gwei": 0.016361
+      },
+      {
+        "day": 340,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 341,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 342,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 343,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 344,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 345,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 346,
+        "samples": 4,
+        "gwei": 0.0104
+      },
+      {
+        "day": 347,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 348,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 349,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 350,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 351,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 352,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 353,
+        "samples": 4,
+        "gwei": 0.010432
+      },
+      {
+        "day": 354,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 355,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 356,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 357,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 358,
+        "samples": 4,
+        "gwei": 0.01
+      },
+      {
+        "day": 359,
+        "samples": 4,
+        "gwei": 0.034601
+      },
+      {
+        "day": 360,
+        "samples": 4,
+        "gwei": 0.015951
+      },
+      {
+        "day": 361,
+        "samples": 4,
+        "gwei": 0.016058
+      },
+      {
+        "day": 362,
+        "samples": 4,
+        "gwei": 0.010048
+      },
+      {
+        "day": 363,
+        "samples": 4,
+        "gwei": 0.01626
+      },
+      {
+        "day": 364,
+        "samples": 4,
+        "gwei": 0.01
+      }
+    ]
+  },
+  {
+    "observed_at_utc": "2026-10-29T08:11:23.104Z",
+    "network": "MegaETH",
+    "chain_id": "4326",
+    "rpc": "https://mainnet.megaeth.com/rpc",
+    "block_number": 30464337,
+    "block_gas_limit": "10000000000",
+    "per_tx_gas_limit": 10000000000,
+    "per_tx_limit_basis": "block gas limit (per-transaction feasibility measured on the testnet)",
+    "window_blocks": 1024,
+    "mean_block_time_s": 1,
+    "eth_gasPrice_wei": "1000000",
+    "median_base_fee_wei": "1000000",
+    "median_priority_fee_p50_wei": "0",
+    "effective_gas_price_gwei": 0.001,
+    "daily_window_days": 365,
+    "daily_samples": 365,
+    "daily_valid_samples": 365,
+    "daily_median_gwei": 0.001,
+    "daily_min_gwei": 0.001,
+    "daily_max_gwei": 0.001,
+    "daily": [
+      {
+        "day": 0,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 1,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 2,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 3,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 4,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 5,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 6,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 7,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 8,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 9,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 10,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 11,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 12,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 13,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 14,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 15,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 16,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 17,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 18,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 19,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 20,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 21,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 22,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 23,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 24,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 25,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 26,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 27,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 28,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 29,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 30,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 31,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 32,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 33,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 34,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 35,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 36,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 37,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 38,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 39,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 40,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 41,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 42,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 43,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 44,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 45,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 46,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 47,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 48,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 49,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 50,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 51,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 52,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 53,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 54,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 55,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 56,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 57,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 58,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 59,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 60,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 61,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 62,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 63,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 64,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 65,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 66,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 67,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 68,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 69,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 70,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 71,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 72,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 73,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 74,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 75,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 76,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 77,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 78,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 79,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 80,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 81,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 82,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 83,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 84,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 85,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 86,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 87,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 88,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 89,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 90,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 91,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 92,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 93,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 94,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 95,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 96,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 97,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 98,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 99,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 100,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 101,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 102,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 103,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 104,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 105,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 106,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 107,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 108,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 109,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 110,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 111,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 112,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 113,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 114,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 115,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 116,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 117,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 118,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 119,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 120,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 121,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 122,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 123,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 124,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 125,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 126,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 127,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 128,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 129,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 130,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 131,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 132,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 133,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 134,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 135,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 136,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 137,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 138,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 139,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 140,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 141,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 142,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 143,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 144,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 145,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 146,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 147,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 148,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 149,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 150,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 151,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 152,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 153,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 154,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 155,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 156,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 157,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 158,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 159,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 160,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 161,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 162,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 163,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 164,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 165,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 166,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 167,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 168,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 169,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 170,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 171,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 172,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 173,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 174,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 175,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 176,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 177,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 178,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 179,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 180,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 181,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 182,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 183,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 184,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 185,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 186,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 187,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 188,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 189,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 190,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 191,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 192,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 193,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 194,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 195,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 196,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 197,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 198,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 199,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 200,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 201,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 202,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 203,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 204,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 205,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 206,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 207,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 208,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 209,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 210,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 211,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 212,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 213,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 214,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 215,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 216,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 217,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 218,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 219,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 220,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 221,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 222,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 223,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 224,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 225,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 226,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 227,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 228,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 229,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 230,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 231,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 232,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 233,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 234,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 235,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 236,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 237,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 238,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 239,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 240,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 241,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 242,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 243,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 244,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 245,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 246,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 247,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 248,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 249,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 250,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 251,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 252,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 253,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 254,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 255,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 256,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 257,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 258,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 259,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 260,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 261,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 262,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 263,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 264,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 265,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 266,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 267,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 268,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 269,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 270,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 271,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 272,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 273,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 274,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 275,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 276,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 277,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 278,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 279,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 280,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 281,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 282,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 283,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 284,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 285,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 286,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 287,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 288,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 289,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 290,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 291,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 292,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 293,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 294,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 295,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 296,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 297,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 298,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 299,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 300,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 301,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 302,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 303,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 304,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 305,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 306,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 307,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 308,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 309,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 310,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 311,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 312,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 313,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 314,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 315,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 316,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 317,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 318,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 319,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 320,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 321,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 322,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 323,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 324,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 325,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 326,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 327,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 328,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 329,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 330,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 331,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 332,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 333,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 334,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 335,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 336,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 337,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 338,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 339,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 340,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 341,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 342,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 343,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 344,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 345,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 346,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 347,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 348,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 349,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 350,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 351,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 352,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 353,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 354,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 355,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 356,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 357,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 358,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 359,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 360,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 361,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 362,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 363,
+        "samples": 4,
+        "gwei": 0.001
+      },
+      {
+        "day": 364,
+        "samples": 4,
+        "gwei": 0.001
+      }
+    ]
+  }
+]

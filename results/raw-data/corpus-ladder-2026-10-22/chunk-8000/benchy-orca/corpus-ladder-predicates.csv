@@ -1,0 +1,5 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+benchy:orca,Identity,10961227,8000,1371,0,41530554982,41530830115,30369320,Valid
+benchy:orca,Access,10961227,8000,0,0,431105,483435,431105,Valid
+benchy:orca,Conformance,10961227,8000,1371,7892353871,57401300,7949950657,1262810,Valid
+benchy:orca,Feature,10961227,8000,1371,7892384033,17431876981,25324458785,13291869,Valid

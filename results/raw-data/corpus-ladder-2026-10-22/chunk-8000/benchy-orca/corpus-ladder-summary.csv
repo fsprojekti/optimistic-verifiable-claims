@@ -1,0 +1,2 @@
+artifact_key,model_id,slicer,slicer_version,output_sha256,size_bytes,line_count,chunk_size_bytes,chunk_count,upload_gas,identity_processing_gas,lifecycle_gas,upload_gas_per_byte,processing_gas_per_byte,lifecycle_gas_per_byte,local_elapsed_seconds_diagnostic_only,outcome,client_version,chain_id
+benchy:orca,benchy,orca,2.4.2,5407487be442fa5d8e1068db5c6cf3f55c282593f2553739eaef16aa667dab95,10961227,413982,8000,1371,7878480239,41530554982,49411625056,718.759,3788.860,4507.855,3990.407,Valid,anvil/v1.7.1,31337

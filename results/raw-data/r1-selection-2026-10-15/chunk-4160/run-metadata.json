@@ -1,0 +1,31 @@
+{
+  "started_at": "2026-10-15T13:20:48.167Z",
+  "client_version": "anvil/v1.7.1",
+  "chain_id": "31337",
+  "hardfork": "cancun",
+  "block_gas_limit": "10000000000",
+  "kernel_gas_limit": 3000000000,
+  "mode": "segmented",
+  "chunk_size_bytes": 4160,
+  "consumer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "provider": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+  "artifacts": [
+    {
+      "artifact": "rackstack_hinge:cura",
+      "bytes": 264386,
+      "sha256": "f1a51107fda5819a776de26b6068be1e577111bb2e84eb27341592842d582c33"
+    },
+    {
+      "artifact": "rackstack_hinge:orca",
+      "bytes": 280935,
+      "sha256": "d9c608650aa0a780a6a6d283107329ce9a47ee7f08b985ad4ee81ad6f53e879b"
+    },
+    {
+      "artifact": "rackstack_hinge:prusa",
+      "bytes": 316712,
+      "sha256": "3961ee85ee32938b17151ddd37e2ed800b89801b185b5ace76f48ff3b18e8761"
+    }
+  ],
+  "completed_at": "2026-10-15T13:24:13.979Z",
+  "successful_receipts": 1307
+}

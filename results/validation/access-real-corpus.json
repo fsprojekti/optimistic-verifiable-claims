@@ -1,0 +1,2167 @@
+{
+  "observed_at_utc": "2026-10-22T14:04:16.291Z",
+  "scope": "Stage 04 local Hardhat; complete Demand publication, encrypted key handover and Access disputes; not a public testnet run",
+  "bytecodes": {
+    "OVCAccess": "0xe4f93f2454b7ba84354acfacfd711a444235766752481b38cd9275ce387f0c38",
+    "BindingPhase": "0x7063c43318fa8f8bd622e0d3ab4bccd7244c4ba189787922f60775de5f554458",
+    "OVCIdentitySegmented": "0x1ad330ce03449285b6f54676b61438acd14fdc2530461aa5aba5d5f8c94e22aa",
+    "Demand": "0xbe8bbb8c52bb19da6e1305135e72623b79030af7a07b7c181fadc99fca440310"
+  },
+  "artifacts": [
+    {
+      "slicer": "cura",
+      "bytes": 264386,
+      "sha256": "f1a51107fda5819a776de26b6068be1e577111bb2e84eb27341592842d582c33",
+      "network": "hardhat-local",
+      "chunk_bytes": 3072,
+      "access_outcome": "Valid",
+      "envelope_bytes": 256,
+      "private_handover_verified": true,
+      "dispute_gas": "52330",
+      "reveal_gas": "458412",
+      "total_access_dispute_gas": "510742"
+    },
+    {
+      "slicer": "orca",
+      "bytes": 280935,
+      "sha256": "d9c608650aa0a780a6a6d283107329ce9a47ee7f08b985ad4ee81ad6f53e879b",
+      "network": "hardhat-local",
+      "chunk_bytes": 3072,
+      "access_outcome": "Valid",
+      "envelope_bytes": 256,
+      "private_handover_verified": true,
+      "dispute_gas": "52330",
+      "reveal_gas": "458412",
+      "total_access_dispute_gas": "510742"
+    },
+    {
+      "slicer": "prusa",
+      "bytes": 316712,
+      "sha256": "3961ee85ee32938b17151ddd37e2ed800b89801b185b5ace76f48ff3b18e8761",
+      "network": "hardhat-local",
+      "chunk_bytes": 3072,
+      "access_outcome": "Valid",
+      "envelope_bytes": 256,
+      "private_handover_verified": true,
+      "dispute_gas": "52330",
+      "reveal_gas": "458400",
+      "total_access_dispute_gas": "510730"
+    }
+  ],
+  "transactions": [
+    {
+      "slicer": "setup",
+      "operation": "registerAccessPublicKey",
+      "gas_used": "282538",
+      "transaction_hash": "0xd51d58ec1eb1e649268c70a2bd729cc582f6277aafc5c75f20422a7a5863edac",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "postDemand",
+      "gas_used": "258001",
+      "transaction_hash": "0x938a69ea1fca4451ca29afc3051de62b6a7581b5e965fd715b437cd5c20952c6",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "prepareBinding",
+      "gas_used": "82133",
+      "transaction_hash": "0x92d14b9271f4908e6f32419d7fa84b0f6406322f2fdb492eac7f2f2f164f02df",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2287162",
+      "transaction_hash": "0xbc0b18b3e9b48f730217effe9b09d09513309e6adccc97af7fe87d325aad24f1",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x7290618f77070f2bb2a2cc4a0ba1b5afff4988eb53e067bbb00862a67aafc961",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0xaea77c06fb283fe11577a2400f636d14c714e0eb46e8edc58ea5640a72493f51",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0x21635b0f509ac0edeceb5e8813cc6d11dd7e002f185223aa001b2416a99b53c9",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0x0524f6ecde40ae47eafe6d2c4478ec9778da56d42c45d1bf3cafdab3c69bcf37",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x49e0bc8bdaef4d8939ab23dfbea277f0750035b1358af972d5577311ee95b368",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0xdf5e3d5b53a59ecc0ee700474f3d102ff3ce2c50b51dec2fb5e9b04f9c25efb2",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x64f514aef52b6b5b11520d7169cbdceb901a6c7542f64066be45d9bce2a01314",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x5bbe0f40dd226c7a944d6d39dc4be7f3c6d63c6d013fde2cae24621a95a53615",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x2f884fa646f81f211ff1afc05da2374f80d8e85477670fb9bc9ca67764c56e16",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0x1f313e9c11f83c86397480fb219005347c73e1d3ade91ea65217ec27877c8cab",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252854",
+      "transaction_hash": "0x23cf8a09fcc0c2de503bfeb94906c56b7e0be7de596304982f465e45eb908522",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x909606bc26ac4a5e8ead4c69d8c96d7b7d111dd228d545f7cac01bb2707f0d44",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252974",
+      "transaction_hash": "0xa5910baf442e5968ec2c859456545ca74e75cb298a303ee04990cc21792fe630",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0x218fab5db4f29ba1be7f9804484377c032db37fd198e68994bc6740c12aaf62b",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0xd4a478ea4713ce13f9685225a8ea632ba9bfc5f74a25dc2be70077ac5387131a",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0xb52633754f08f7b4a12102791f1ac10aa240581fba76a4d8de05b12de72279dc",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x18d26d259d1b972bca4a58e4c2c99bcd8efaa4f4197519fbd55d26c824374245",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x3f6ebaf1d131f032c0d19fc8907b162a68be075e8c51160aeaff5baea18a0bed",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x35855048ec9b67d941af07fab80415514cf07c46c2bc539edfa44677abc8933a",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x28ac46b7fdcf4ae75e895168160e1a3cb71411473c5ee6755b6ea5c94710dd4d",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0x126b3fd0ee4660ae9034639d7280d1c499ddb306fe29e8eeb36e22fbcda46b63",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252854",
+      "transaction_hash": "0x1e97cb19c5b29b0c7cd57f2d7491e99fb4eaf8653fa83c663d584e31286cb8d2",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x3d6fbefdc0e155585d54c91ed7908e9a6edfeb176786d61f035c320679acb722",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0xa9f14270de1f1c989434fc43bdf2d151a0559c6a8843e0e06d1c076c6d6432ec",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x0483885b285381118e84547bfd170135b081dc60aeb501360bec400e8aa7c859",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0xae423576293ddda08f90ab3cbe48492c7d87324b3795d0b3e9d0dfd1dcee3071",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0x41d6ebb860ea174e9308abe549fdc837508188a2a91f00bb8ca1a5898b867e18",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0xf2590d72a2a7a13e226ac36654c7850d5635a59c1b8521eb415cda3922e15191",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252986",
+      "transaction_hash": "0x0aaaa97adf0b9759caa32ed9bfc4970a89083bbf1787d3ac3af89882158703b0",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0x27679c7c2b1387decc8a4feac13a321fe1b7b336fc5665725630c4d48a37b454",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x9b6f3a9541fbb59c10d3da566b2d8ccd65d02a24cdeaf2e7eaacee1a605733e0",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0xd4ded3bbc547b09660736bb7b5e5de276edbdc1ddfcc86871b91b47a30821bdc",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0x577afee0b0a050404877c0720676b8a60778ffd39cafd31637de7ac44122d764",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x48f298b1114807969bac483cbc5a261f0e336f52d9502f100db943193cb6dda5",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252842",
+      "transaction_hash": "0xa3549cf2ba3c90020f44fa8758acc528b684def587ce66712608a1fb42b19b54",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0xd544e5d21d269d0a6ed7afc34e2ece3f43714ab7b31458904d1877a41bd4ac5c",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0x2f457f9f24a17ba698cfb49231c60a1540b7de16dbbebb27cd44ddfc11a2e089",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0xed336a41751aa672fa7b398fb5ed352c5eed401270505500c8e01e53a1ea0f57",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x637bf18614d580172af5526f7a18f82f71218310df2dc33f9b7b9ebdb6905484",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0xe43c982213c319103ecca79e54873461fdefdf84b250bd4dace1782e810bc5e0",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0xdee4011c33060a4e84b1df40e3441babce8981225468870c96bd7f761b605ad1",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0xe3a827c83dfefd4ebd9f8660f388ab045d68274b719546c0c4f26a5c594882ab",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0x88f0d372768c7c6223cbeb717b6b82f4f9262b9572b2313edb3170347e53b93a",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0x3d89f8ca6c1ef12741d20916509bf5e47a09bd5f3cbf44e083ef8dcc8c7b7561",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0xd4b7c59a9140fe7ed3aaedc5740de834a67e7e57c2965da5badb8d4641a81d36",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0xdd7d88f6a68bcfb2ef55255c831aab5e787fa12ad5f3a0cd476d2ce0390d1a60",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0x572e833933857f0778edf4bf1638063be7850fe9891d5a6e298a3f84a23715cf",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0xd2df1ed01f102b0bdb58cebb38bf7bfb8eafce55e5b534434f45969a338d2173",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0x97f8844ab810eed7bcca48c41c7613bc6a3fc9b45c17c41b63de59b96e5b603e",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0xe1af31937623603c31325fa94c3ef97b6307cb4679d36a9836e320edf55ebdbb",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0xdc94f88e6fd366e724e270df81eac93a4d7f40bffe048baa287f2ef8513c0a5c",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0x00fc79d8a33753ee2e1ee15a24991274fe248cfa2e9d720bb93a5d535a20ca46",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0xacb9be59fec4542884b64c567b201d9e278e3e6b825114099356964887627284",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0x7ed9ca9f9e1bbeb4ceebbf35fcadb75de9e7de2d92c4360f6def4a800cacc74e",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252854",
+      "transaction_hash": "0xf19717f3028d3808010c70b02b8c9d422031ad9fdfce7561745726ba0f006011",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x1c9db5b88079d3e97625a5ac559b7413f58b6ac4a150b35602f8578baad23777",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x8962d96d54f6cbad40e19ccddf1a77913724687b39e6b878b05def2c56ba77b3",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x17ecd73278c26e2686d5cd94fa101895d24d146aa941701ffe16fbde736371c4",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0xce17096324746bc7c648caceccd3b724e9b38fafa4a23d0db27f508b88d13cdd",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0xc9c0a18d93a3693b7b74e3de5968e72dad8a6bf50f52513618f025d38d313ca3",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252974",
+      "transaction_hash": "0x32a3e38c40226329ca57f36bf58fd423a97d066903fe3337bec6a731468c8005",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252830",
+      "transaction_hash": "0x9cfecf2812c2fdcd14d2b52e60ef13f110c73e6933b094b1582567484a494e8d",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0x17612ffef8e3daea14b4e0d9ee67e474a302d506137c33030e40f17757e0da2c",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x2bc269f7bdb3ca22c80d81d638768ef4b6bea816006974df72cbf0292fc92367",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x2a92042e3c1242ccc07724300f9803b3ae5cd5b6f9f16bed31e518e7294079e2",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x77b6c1ef6c6d61b5b7954a6f9be14f7c2487323fbe2e070eb07f82d4f08c888b",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x492b80fab5615271fa53b412741bc036b1f0365131f66bed54f8628931409c0e",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x11a7f4eaa72d332cff5932f9a82cc2310f9bc29bd1ffcde111441ba18d61c9c1",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0x965a02c80afec3bf6f71c954f73120064d6af21e76ca64829d059e41ae2f1c86",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0xf80ca067bdeb0cbe7b97435c66f436815fa169643ca41010b95bf94b5a91031c",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0x2d3caad072eb4499b69f72b1c34dd626f208b2b35d8d86af7f019e068e917fd9",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0x015184f46e7306bb85955842cbf5e126cc3449c482a804972562ade7cd17c547",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0x802487179624d7243b28110c922f90c98bcda35ebfccbc47027a8f4415143f58",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0xf8c5e61e945ab967b8ab335f55aa161f4cdccc4752e9aa36e145161b4e9713c0",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0x2dd268b1e5900634ba4f0945c8637d5a3007cddaaf21d727a9a6f15db80a37be",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0x31b955a4aaf9267e07b0f97e4fb62cbf2047c127fcdadf7c05b266b9fab3cc2d",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0xb685703e0d70119b3946fd5e70a49603b549cf37f55ae83b2cfeb81ff82ea5e5",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0xed4203c82842b36c12ae266e570aea400ef52c929ea2dbea6a2aaac38634bf5f",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x046a2bb54a517bf3c0ba52a14f6fe99c2a6a4d386c999398a4562bcaa334f731",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0xb8b891a84168b43b2c7d31db9738a9985edf21177f6265f7c92232afd34bcdfd",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0xe5746b9a12242261e3fd6f6384e7e3fb0a8f5fbd7a770d6a086f792875890a9b",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0x0efc2fa780496f4605fabf1c0cceae9c5c01b845861902f9a70012b8f096c9aa",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x743c8d38cf446f837b99c65be931e56e568bbead9af76cec46dbb253b0d302ce",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0xcfd5a98b871a5a054e30fa8f773c98dbaa44e34bce8611e2cfb5ef7b731d9db1",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0xb0703128df604361ca6d1124a2a8877ee5c69f65f226b0a2416cf645efea0c48",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "231767",
+      "transaction_hash": "0x04dabf08538236a1e9ea64276707a682f4b37f5b96906a9767f11245bd8cec39",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "sealCiphertext",
+      "gas_used": "43499",
+      "transaction_hash": "0xcecd422625bdd501f6c271f93ba05c21e1d6aa3c1debe71f0b5e38f64f4ee249",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "bindProvider",
+      "gas_used": "1871333",
+      "transaction_hash": "0xd55f0f2453956ab9ec6b3d3464cd3422deb86699e32266a28d060edb936413af",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "disputeClaim",
+      "gas_used": "52330",
+      "transaction_hash": "0xf840443b20d686132bdde57d1dd40a5468eea6da84536612b0dc957f7951ea84",
+      "status": 1
+    },
+    {
+      "slicer": "cura",
+      "operation": "revealWitness",
+      "gas_used": "458412",
+      "transaction_hash": "0xb6f33c8947b047bb605f677f35e7a3f04ffcfbd312bcc8b175ac17422696ddaf",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "postDemand",
+      "gas_used": "240889",
+      "transaction_hash": "0x7241567d3cdd5ec9c4400f647ac1cd51b901f76d140989ba71a069ad10ac7374",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "prepareBinding",
+      "gas_used": "82133",
+      "transaction_hash": "0x5c886dbc0ecc228cf2bdc7903f461530867c64e882b153fbcc6cbb306da6635d",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2287162",
+      "transaction_hash": "0xbc8aab3356c24d5d70ccbfa6c26d15f358c4bb4a029477354c6a219d84e396a2",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x712b0efe216f6479341ae3a6f064947ef014fe92300a19389c3a82e82a7677c0",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252974",
+      "transaction_hash": "0x5417c9d8fb4fb40f3e8207bff03d43f0d316d3dfeb2de21f7603706faf43781c",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x944c9532c52f217163f346adc09ca590c03dbce665ab625987b25cff2e71863a",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252998",
+      "transaction_hash": "0x89f31a19fd028f6ef0450d64d89c8d92f0453a2353d4d8fda459e9211d47a183",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0xbdb435131efd5e294f52be05f62ecafa7083519e222e33b8db479642113b02d5",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0x9c0c33ed2b126a457f5c9fc48de269543c2b2f88c453c696f8bcb0fead30c276",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0xeb69db4f3318f67e0dadccd03fd51631730aecd04efdbba2d60a58c00eee7eab",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0x8422329e1adf27ed6021c6d613be751718743d711b24eb6ecbe0976c14c30388",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x5d0285a53272e3fe2c1df66e6136c97084096f449584f977cb16fb800a418908",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x911a5e6751ea6d37307e5d788c6799b19d8ac764cdf1281207d79ec5f92ad3c7",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252986",
+      "transaction_hash": "0x78bbcee165eb00d8a6cf8e5583031608b68e7cb3e7dea52c7ead61c91e70c183",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x8edaa6839b41dd314e83ef33477d8fa29ba53be0d2b0b824c5e60f0d838aa0b5",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x9a61812e91a8626875e78dec4dc9771066568d493274b841bc7b28c402f2e970",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x2e85c16010fd134e24456ed328ef0a1193c8dd041e33d2484af57242a6ebcbfc",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252854",
+      "transaction_hash": "0x241d5abe41b6575eaa7ced79e84e6f191376e74175c201ac1443426345bf22f9",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0x26cd75455a4ba77611945de31eb5f193d86f3f0c7b883cbe198fb9be40601d44",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0x22b29a823008d439ed6d770bc9e2ea1d3536dccbc1de6ebfa58c856f737fca01",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0xda86f8b78ab79170811a862adf65e5a36d563f11f3903c477107f246ca0c89bb",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0xcae3d3563161ecf3e65080daeb4a6b12897609527a008886ac1bcd50b7f3852b",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252974",
+      "transaction_hash": "0x69d83e8be361ed27e14a1d3bf274646128e01a67d4bc39d1ad0f48a4343ea006",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252974",
+      "transaction_hash": "0x8c71bdcfe5f52e3bd2a1d769cc26636d9b919d97efe0153bd47bdf6b2aa58a01",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0xfd5db390f122be724c0b56a9967bd80c7614245f784eab3613db5ca0bd98417c",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0xb374cc0e2dd1d6e481a3d960e533787e0d209321a84ea1f58dd94c429eafa0e6",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x6ae700c6564c257113f61b668a14a9dffc244c24c5af0cf9025ccfee81ac9ae9",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0x90cee5dea0cdc0ec157a91cd9a013a7a4e1feef80060b0233bff3e1cc6f11808",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0x6795783438bb5408064b5978fdcd413b94678d3842022d56011f6043fc92a8ed",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0x647f21506acfd2b158308699a1e73f148bf55ccd747e051348040a2d2aff2767",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0xcf18a9b7ce7be4e572cc9d072bc1cac8bb979584a20eb42c16a736aec4cb4281",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0x2a9a2801418ec192182c6051953ebd87cf835636f0bfbf256fb4fc4b7e7f935b",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2253022",
+      "transaction_hash": "0xfaa719e7541ee4d72e2a060b25a4b85c3e97e3b8e42f74292f0a8c68c9434435",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0xbca25dec9496de579b8b0992493cee19f08705606d125e5892a4b0fd61a4733d",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0xc48bbe40f7334ed3e1916ee91010be8be858bcf5e5db1b7c4756b603e1388c2f",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0xdbba7c5d10534613d124cb0a2b3bd4b4702a0371dc0ebcb7df9633b32d134693",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0x6c1a494455bb46f57207c3f8db244d7edbc3035c9ebe8af68ee0b69428308690",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x612ab412c98985560ffbee0368cf49d5e80049e0a86721d5c375c32083cb8a5a",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0xe97bc4a370c4c529f5a8412da2c32d3dff7c6a5ceb36c2ce7b323f0ce4669ebd",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0xdc90c977f03a0f5667e782f17530121049438e29c6ce607c894b108a12a4f9bb",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x0a5431793c64cf86fb2e7c48f97c4c156977e888347da497525ad84823d5fea3",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0xb3c06428abbf59eb5a857df280867dc7be7a303927409af0957c6eb1ccbd5a5e",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0x790e934075123562fe86c66b95071da6ce8ff73cf8093d9aaa4d8a94db93a192",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0xa72b3722ede3d8cac956fc59d10d2f5772b14b773fb3221f117bf68a64fdf861",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0xda4984b839c92d6d7c7bbf793fc47e37b82c6d1b447eb5cfffa155662d313fc5",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x8c608188d29ad533c0f086ef4b1c43f806321a79a7e780af830388b2dd2d3c50",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x0583ab9bb13bf3ef9d253b67d72cc6ceeaf2163f7fd4550a72794efe74fd49f5",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x1988cc289e66bf343d4d8c5c6be4342e5dd42cf296dbbc92fdadd1dea4d29f79",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252974",
+      "transaction_hash": "0xe1d7c1c1f99905797603357fd08edef22b6690836fc782b56f404b02cafe175f",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x373aa2acc7ce5d0c5060bc0026c07826e4996e8bb723466f1060f66714fb9911",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252986",
+      "transaction_hash": "0x19f225e123c8d28d6d3a7813f6e0b56ebfafc66fe33e8b7aa433e45f0600bb52",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0xeb46585a2d4e38983a1b102515ce38f498f64704f51219332854a2679b30d483",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0xe017d2c6b481dfa160ef03491b6d1c3db5256ddfef77c4b0be554dacd6a3ccdd",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252830",
+      "transaction_hash": "0xcb1d36840189908e12d35ef07083d77459ffe55e63ebd5074ee4bf26025f6126",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252986",
+      "transaction_hash": "0xe737704ae0f0330c64aa89d4d51b69afe1777e2088fbd84d2f0cd45bdb6e7cec",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0x6628d4d6f2da32286742cac6504244fd9406726d4b17cb9a8ae63c69a0b44838",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x2b5bcce36fcb28b0a98c6dea93990e9eb62db840f6740a1d16cdd0ab4e06b138",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0x598e4fb268d7491f01565f892c7a29163b36ec3e1918be347883141a219781d5",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0x127d8229f5f8c0820e47c70a2b49069fb3c5edd1481b1bb2ab630f233bad3ff1",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0xb6ba3e79e645612c886203540c1a083aa01aea0b09d357e32c968db5460ce8b2",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0x24ccc7e8efa5cf4e4d3317f1c3610b34d73cdb967decac174caa8625ec44b19b",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x224d20073ab5fa0ac8cbddc76a7900f35a2fa943203f0eb1a760d436f750e9d0",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0xa9f06e55feff3484d727c6de926341dc6a16b69c3e292afad8abccb43b69ed51",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x38ff1d348d4fd6e4a372e2bce8070e1cef254584549dc1d6147dd2b633159a25",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0xeed468fe9e116e5896844252e96c17da0a33e63f777c55188d4c391156954ce7",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252986",
+      "transaction_hash": "0xeef0ee8a4c75f7429ebb313d96b90b3848377d1f894293e9605ca16046e53ff7",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0x5dd9ce0c692b1ab2faeacc0deac374b2c8ffa6db9855c8ae9b35579e70be00ca",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2253010",
+      "transaction_hash": "0x70895951033fe76a41d75412c507e8702a152153adabbc969a6522fa902e0e47",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x3bb8fa0b34bcebadbde5926bb20cb52c244a9b86922ec8ff1c2499abe651ac79",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2253010",
+      "transaction_hash": "0x6e81b90234597d86a06ca730d1756f8ab8506a3feedf02ac31751102d5578e0c",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0xba27104760780747be3c33228f137dd7c2b4a559b0712c604da0ab28c90d5a5f",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0xdd1788860ed9f489ace2e1f20823a75f106e595e6e3bd5a5e8852868ac0de33e",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0xf0ba19d484b53e0579b9ff552af57bee1e4c43e1336abe5066373be6749a64a8",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x09c7dd2fd24324d574aeed883a670fdf8714e4b3737d8003f330ccf540a22130",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0x23e9e2d0710cb8d3585c315bfe2112cff97ed7f22992533d64340e548bad2c44",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0xae5dba6a039cd863b55ae6287b51cc232b7bec63aada2a8f815b4b210a8adef0",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0xbbdb6d66bd8cea8f02dfa6118603469385d845b013ee1e0ea52f2fc8290edac3",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0xc99ae91e9f9a48b82343c3609bacdeeb3fbbb2a4d33c62dc61d98f198aaaa247",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0x5879e0ca2015049ad2aedfb1ca0cb5acc06e79242e72a87db311f5bd0f1ffd2c",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0xa7ea62de7773cf6347685d7430a078925bad962b0df655bba646a318c427b140",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x3e4c2ef654ec7064df4d4e6f6abf532e2802000a537211bbc3b2a09a528dfe9e",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0xe4b3dd3f43ca4b554fc789ea2beca6d81defc68539c2a96299983387d18ce27c",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0xbf8b8736fefa7fe1ae36d7866dfbca1ab3b78d1280966eb7e0a53947015a18e2",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252830",
+      "transaction_hash": "0xadac7f0ad1ed802c70a4801732221d6912e8fb163bdf9d81978b87a70f879e25",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0xa5a4e7cc0db0d329625478998929e724384e0ecb1aced44a728a84cd2e19faae",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0x459b0a7a456681931e2d52a6ac1826d77bdccff3fa8da6568e2661e7f0ef19a9",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0xbbc3bf56b22adcda40f7c2ca3e26022fff9dbe00ec90f729c4220964318151c2",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0xa5a6daf108edadfc2ef21908d02deb373091141df460a34532cced4ef9cb06ae",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0xf070a974b4c293fb6f3ef3dffba4c4021caa9acd45d6a84ff4a7d2c16c83a0fc",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252974",
+      "transaction_hash": "0xaf2912d3e287481d9ddd73c84ed53e917fffc458cb604757be2b69fc14d01fb6",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x5180b4bec796613e74a8a4b8b37bdabff0072edc579c047c40a5bd31c07752ea",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252842",
+      "transaction_hash": "0x68472bc0c719322f1dd9fe5f6777cbcba6b8fdcad69c9ebd525d5ddecb5fa8de",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0x5184c17792f60278664ddc2e4860bacb5e86a21da61cb1e9ecb8d66c84e6ed60",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "1071993",
+      "transaction_hash": "0x6bd7d5c8a8a0bbabec841e024258d6ccba30e94697577a25bac5580415c6a272",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "sealCiphertext",
+      "gas_used": "43499",
+      "transaction_hash": "0x8dd179fb46978f0d3fc2b49f56043ad13f3e76c18d3ca82d2daf83c5a16b792d",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "bindProvider",
+      "gas_used": "1785785",
+      "transaction_hash": "0x2e552914df960fa3393ec2e4f2a5b3e664e75990a71a1e02312dbd06e81581bd",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "disputeClaim",
+      "gas_used": "52330",
+      "transaction_hash": "0x52ae502755874bc9f5340132abf72075148926a98d2e017754e6d6a17f524c52",
+      "status": 1
+    },
+    {
+      "slicer": "orca",
+      "operation": "revealWitness",
+      "gas_used": "458412",
+      "transaction_hash": "0x99bfc46f08d8eaa85911ce12e328402b2996a373d2062d2c1c92ea753615e34b",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "postDemand",
+      "gas_used": "240901",
+      "transaction_hash": "0x20928264e0e77467302af9e040b0d52895c98699a970885bf935c10b24c92d18",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "prepareBinding",
+      "gas_used": "82133",
+      "transaction_hash": "0x9582bc4f7e205fbb4ce511a159dea2345076caf264a7f96de67023e90f2844e4",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2287102",
+      "transaction_hash": "0x667953dc8089dfa87fefde7d8ff1b48bbda929c9cd8981f7e576df7b2794dd7a",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252830",
+      "transaction_hash": "0x6f0bd7b6a7ae169d1e9d7ac7bfce1d1ceaffda2f2d48b90cd0a51a1006f991ca",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252854",
+      "transaction_hash": "0x84c08409fa4416c841c74414e319f32f20c372e092439c49c1a988dc2bfdc883",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0xbb7fcc63365f48a2ee9c6adaf1d9a0e046145f240936f7121d5f1304013c166a",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0xf0d650bc3b6915b83431771597649ce83b3ba797befd788300196dbdd48f1333",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x298cab11cbe89615c3c906d941ba77f7bcb7a2c77855d7167ca7e4f883e3d380",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252842",
+      "transaction_hash": "0x595ea80952e3d61f50fc9abc91b38193c1410c4c7d83c87a6d00a6d0a60355ef",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0x887363067d60eedd70291b48d3660a38d8b7217dfd128a1fb4a7902a6dd12023",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0xdef8772d8b0261b20ffe02c14a49ce4f2fcdb8199a39cb9c517f96372ff72c3a",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x21afabbc9a75564ff66c0d4346f7ce3cd7a00b9268773d8bcf06c20d61662888",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0xd813dbf8fb1d27c1a17a13b99a44a8998843178957843b16af0d879041894955",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0x607dd4c5f3370122549c3d0a86871f553ee922d0d60e01d522221883c72ae0d9",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0x8254332d29bd92b593378cdf8c4693cbd684c3c5ec51d1639be79a553c9a77ed",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0x7901c528c818f7f3db1d7f8370f46f7dcbf820ba5da177d6d6eec0a89a12f97d",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x9a9c792243f07058194bb2a8935f658e7815dea5de6b2282a3e816562af110d8",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0x90af1cf593ed8f923c293a8c6ee3acba42e7d71583813e98ebfe78f624046733",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x5f5a98ba9bf57f0d6cd274cdd71b18623ea4582e684b34e4b6d7c44444cc2c14",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0xc88056dea260b91431728bbb2feb1cf5b856b5edbb60248a5d43cbc6c2908512",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x0fc44f99f5de1038b2a6b9401dc4d6f25de41f39268af4dc397106ec4de5c8cb",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252854",
+      "transaction_hash": "0x846b355d64b446a6def572c9ba2055ea423a546e6780f9e9e1be56ca5e085e2e",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252830",
+      "transaction_hash": "0x789744ab0275b37c14f34894d1677e534490f4e9ac3d25d5eb80f49cacd0c68f",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x58b7a800a3d67130e34f254a2065239690741b5a1f0db4735232d8cac8905491",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252986",
+      "transaction_hash": "0x390258f8d498860028fb397c0468a270f67c2234d78ea97b7ba8810fa20f3c21",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0xc11348bf5f98f7cd8849374b6300df05078ca91a7bf70f435f0bd3f4f4a6f81e",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x24c7d127229918973cc6d896bbf317173ceefc6c411f48d5d5c68ef193f8b93a",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x79d3116b0352181deb2e1519584daca73311e133d3a47f44152c4748fa511929",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252830",
+      "transaction_hash": "0xd84064911006c22163c09332843aa79804f9c540938d5fd9bf1682e8e6851a68",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0xbf105d63d9ecd94b266bef625feeb731c8d5fdbdb84b2d2424b9d3ea54cc8bb3",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0x6847a610ae2e9ebba101e6a601910ec64df7f51c7da70500031fcc77b7dce3d2",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252974",
+      "transaction_hash": "0x057f81383440fe16b14be57b5500c7cdd86dd82ae60fae68f754bf6c18a1a11a",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0xf768ba99d06e4fabda4595a15b5c1854ecff56d6d12f7c576656466d14424584",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0xe5566bd8d5e485721d6897289fe87a50c5f11328424a5bdd87b49b479f621329",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0xd786319926f66216388f4c8b032ae95c2336a799dcf76f98ad2a71cf497e4cdb",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0xac2056afb099a5e6637902e4159cb3c304fd867db5c1aeae9a5aea8adcb6ce7f",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0xfb97f7c70255522a5f25af3b30cd490963521c2ddcef6b333e8a4676a3b9ee6c",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x83267fc2b82a9b2b287c7fa08eddc61cef829ed6eeb648fce98264ebb246cc7c",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0xbb574ead211e162e9670b0685af759c93d05a15929e86c31905d6a3b2949157a",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0xfc55d20d8d6716cd729cf6cae3d4bd1bbd62fd025cd940d849d6359ce88c6275",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252854",
+      "transaction_hash": "0x074662bad46e3db394941cd88d07b97bd476300b76bd29cc00b697dc1826e2fd",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252842",
+      "transaction_hash": "0xeded0a59eeefbe113ff84b77da48dfe615ea47327a3395fc3aab562720867ec4",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0x6da1323e6de6370de7de31de46cf054e747fdace35401f8ab2e9da7c13e835d0",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252818",
+      "transaction_hash": "0x978b0fa0cead507e5acc3a091f4c0872edb9f1731d9ffb775080f586abb09a4a",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0xd21f34563a2081db982798df06d3fd6efe74b1965d5e9317f94a546bf18311c6",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0xfdafc0efa37bd2837b59a6728ad591f5cf7dd83bff5d28f51429c030613bd7a8",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x1b9fb3c583384544f970927c5adfe265e5d901c4b5b10bf159e2d9050e7d1b78",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252854",
+      "transaction_hash": "0x95b4988bc8458b4b02247d03ea1a0ce3efbbae5fb511c7208074a58263c4a0fd",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x1e09ba84dcfa5b4aeaf31d7a68172885e1f6fa7c694878d34f6b0dedd5d4dcb7",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0x243c9f8efa887ea573354f9229ab686188be32841b02e3a4e78cd623b044f549",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252986",
+      "transaction_hash": "0x4f444d58fc42da4db0820cdc717d19e1643149b584370e37a339c88733f9e0ae",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0xae0ea81ede8267dda7601885c98cd9f4d4deab2a2f33b56b1d74ebf17350c630",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0xc537acdfeda9816bd410648c0fcc0886d2ecca314bf4ea95ae66f592a564cfe4",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x57c1653cbd64812e8c102aa5dea9ee145aa2df89f6fde5ad30821f48d7a0cf79",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0x1c5d6bb28f1cebee53c093ca586c32d6f183c4850335e080e1991bff0df522c3",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252854",
+      "transaction_hash": "0x055c51e7ed80ec367f5938e3e9c5eb09fa9b00b52dce5f28f948019b0c76588b",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0x485f989ee05691fb8489d65cd068b3c26d159edda77c6b987f539fe9bb68270a",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x23050f225bffc13420de5ca57d8b1ab18c29567cb17ef2c4643c7db564e459a1",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0x2d3de7cd4bcdb608b129d6ef500f43a9d5326d2170643e4c891bf4fc48735117",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0xa4cd124306f717348b942cfaf4f27e1d5cdef18325f3959be64e9a7a2b7a12c9",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0xbd8cb31cff66b51900fd7f7f1ea658eeaf72a89e621add39888ec567567d0578",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x2f8a5ab2862b56b7887dbcfa33e306c28b9dfa9333770ff8983930150abc34f4",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0x1cbc0d94f31a74f4ccd11656c2aa8a486f979da5f4ca58337f645bd7cc4e1e02",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0xa0c03089354d474bb92b0acb1751e91bb5a8da93c829ebce150ac3e1b8ddd6da",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252974",
+      "transaction_hash": "0x9c9123853e8481b12827c93b19c3dd19470fd5dd7666f11deba470af5607d916",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x39d4d83bd78bcdd6d2678b95d8cd0e1f122888eca0b517cc960c8797f0e751a6",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x000445079499ac7c6d2865ce7c6c04754dad32a9d29bb6411b08b7a67d163d75",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252854",
+      "transaction_hash": "0x0dd722d5139ba2c5ffcbd0019d183a933c1d4134187872e8ebf47ca2e30970d6",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0xd193ded956444517da82a29b6916ee6661485e09ac18d21bb4909dc47d4b7263",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252974",
+      "transaction_hash": "0x738fbbd62a0f7e66e377df35a5de234c15fc268aabf72fabfde1747c031d9258",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252854",
+      "transaction_hash": "0x1ac423085b557c40ef83df4feacbc76917468d4d128f3d7c526bb53d22dbd5e5",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0xc602187ffcd2663406c58a04812d9643614f4cb2956efa144abca440ddb60baa",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0xb56eb332058c443e655430174e00b6c10f1834929b0f0e8794c752bc4ccb8e58",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0x8b7835df348d38224507ef3bbd26b28c4fb9dd765902c1a0af3932f0af99e243",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0xfadbb99c67617497342476312d2de81c07f039acc554a5f2aefc749645c961ce",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x4a87a3b4b881818ef2852379ced3e9f1e109dae33b337b815a20d695cb53101d",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x6045ed41c05652b79fa766f8dfa39dea68bdfd3ff58c14a72bfd6be7d73a59b6",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252842",
+      "transaction_hash": "0x507f00ec0eabd74a8c0516010e5a15d4ec279edb6ad9bb147bf961e67d5737d4",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252938",
+      "transaction_hash": "0xc5716bbe1fba25d44d920e806c54d621497bb464619b15e903bff32f0ca90760",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x095015d8049254dfaf31cb706eec74f7aabd0edf41e5e687494ccbe859bdb61a",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0xb07de4a6e4561a17d2d3d6c56c4368d47bd8c051818d7de80029d357d77f8c2b",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0xf8feaf18301565edb4c3234501c7dd9b7742496a1ea1b7a2c39e3d1b25e014d4",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0x0264f5d67f356df9fc0c5d61368f4d5ae8b3495df6a52fcf81d3da5903ea5c88",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0x59ec31908fb6d435a0760b079d828f62f4c5080ee21711e3fd098c695dcdfb91",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252818",
+      "transaction_hash": "0x90fc65d4316c73cebd6e3ff917446d2f13e7014e2003e72db3e6fe3cab759607",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252854",
+      "transaction_hash": "0xda9db08a219aa559b7a9d0170af05cf4203fe65ef9ec038fdb7d3c68cf2156cb",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252986",
+      "transaction_hash": "0x906cf5635be85a4297bdc7bf228ab9297705d9e08e4b3d1821374dd77e341bf1",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x0dfe98cabd3a9eebfe62c5766a3f6af6f8e37d431a53a328cd2ecb3fb074a5fb",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252926",
+      "transaction_hash": "0x275689cac0e07dc07f1f99a569e74d87cd79676be66b195045f865e825551e2d",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x14adf81175468e3fedac636f6c2d6976433da2cfb46a3d811d63a65e0e94991d",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252854",
+      "transaction_hash": "0x21d96f143f6b1b738b805f7d00ddc9fd942579c38e02d1bb11741f8e15e478ac",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252890",
+      "transaction_hash": "0xe7005ce94d20df259db9452ef0a4a8c674ee4f463289c5877fa8dc7235ac1746",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x2e05f0eb2762ca02ae83a85b6283e0970a654c5dcff8fe41b1fe326dc47a4f42",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252974",
+      "transaction_hash": "0x5498006d04411e0834a9bd1fe89767ed551eef5f90d15f0587a106b72c9ee61f",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252866",
+      "transaction_hash": "0xc29d828bf6d627d35fc3e035f51281fd19e4734d250f90d1d686c0be501fd820",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252986",
+      "transaction_hash": "0x44e5e10a95d4e343a3f3cdaebc88b04c93f8387b861635ea7037229f79c94760",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252830",
+      "transaction_hash": "0x88188f63952f7726ad56d687576ca5a1ab846300e99451c8fc87870bb8f46e31",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252842",
+      "transaction_hash": "0xbb76e5518526ab43d028bdc0ac84df4a104793947a505c115a99274a2a32cd05",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0x130d045c4ab5c0b2a24ae92bd3db050db981114123fdd22bb195173691ee05a8",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252962",
+      "transaction_hash": "0x5830e644e1c48c382741ff4b3a4b584036125022f979b5ee9f1145a97b6a5ded",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252878",
+      "transaction_hash": "0x2563cfed8c57ab41c3efc5816964a448cbe9e2a295df8b8a30e90640d2016ffb",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0x7229acfc97e6276d4f6fe1e04a0c82feaf528efb7408241613ad24560b08ac0e",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252914",
+      "transaction_hash": "0x8975facda14cbc1acca78c38ce405b245189298645b470e1f601bb72992e07e2",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252902",
+      "transaction_hash": "0x141e2f58ff93e05c4f9f90f4a39eeddd042f1b1a74715e066b8d9e08785ed7a1",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "2252950",
+      "transaction_hash": "0x6b9b65ea4c10ea5f0ce672526a5c875cbe14c47406c12730e4a55484276706e5",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "depositCiphertextChunk",
+      "gas_used": "299954",
+      "transaction_hash": "0x217aad94f9ec89a9012c91c7c12c8abb591d74fd1918ec29317b74e153ed901b",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "sealCiphertext",
+      "gas_used": "43499",
+      "transaction_hash": "0xb82cc59ff7b682cedd8f70ea9ad0566d690e9abc3a88c682ab66822b66e93c1a",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "bindProvider",
+      "gas_used": "1785785",
+      "transaction_hash": "0x83f09b28f4736dec1e67245dfe491091bbeeda202b77ba1666a0396a4b5ba111",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "disputeClaim",
+      "gas_used": "52330",
+      "transaction_hash": "0xa37bf09a380780c6354b15f67905c201c6bea83fe4dc42a020c7123e6cf6ec1e",
+      "status": 1
+    },
+    {
+      "slicer": "prusa",
+      "operation": "revealWitness",
+      "gas_used": "458400",
+      "transaction_hash": "0x79c15446c82ca903b8377fbb1af29d1a7b44a30d3e6053c20af1d6eb4a238959",
+      "status": 1
+    }
+  ]
+}

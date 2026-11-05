@@ -1,0 +1,275 @@
+{
+  "date": "2026-10-16",
+  "status": "exploratory model; not a production cost or network speed claim",
+  "corpus_files": 60,
+  "size_range_bytes": [
+    264386,
+    260511001
+  ],
+  "models": {
+    "sepolia": {
+      "gas_coefficients_intercept_per_tx_slope_per_byte": {
+        "postDemand": [
+          1023336.0,
+          0.0
+        ],
+        "prepareBinding": [
+          259261.0,
+          0.0
+        ],
+        "depositCiphertextChunk": [
+          285893.6435337419,
+          3422.4522656012273
+        ],
+        "sealCiphertext": [
+          44699.0,
+          0.0
+        ],
+        "commitClaim": [
+          793161.0,
+          0.0
+        ],
+        "setDemand": [
+          247138.0,
+          0.0
+        ],
+        "configureWitnessTerms": [
+          136704.0,
+          0.0
+        ],
+        "disputeClaim": [
+          166320.0,
+          0.0
+        ],
+        "revealKey": [
+          245291.0,
+          0.0
+        ],
+        "startAdjudication": [
+          40161.0,
+          0.0
+        ],
+        "processChunk": [
+          210166.82178542245,
+          3734.662153905418
+        ],
+        "finalizeAdjudication": [
+          64021.0,
+          0.0
+        ]
+      },
+      "conditional_client_seconds_per_operation": {
+        "postDemand": 10.464999914169312,
+        "prepareBinding": 11.51200008392334,
+        "depositCiphertextChunk": 27.092660776717924,
+        "sealCiphertext": 12.56166664759318,
+        "commitClaim": 15.29099996884664,
+        "setDemand": 12.628000100453695,
+        "configureWitnessTerms": 23.56666660308838,
+        "disputeClaim": 27.69700002670288,
+        "revealKey": 40.83633335431417,
+        "startAdjudication": 15.952999909718832,
+        "processChunk": 25.732915194211493,
+        "finalizeAdjudication": 24.23966670036316
+      },
+      "time_training_full_jobs": 3,
+      "gas_training_jobs": 4,
+      "gap_threshold_sensitivity_total_1MB_seconds": {
+        "30": 17415.888099832162,
+        "60": 17415.888099832162,
+        "120": 17415.888099832162,
+        "300": 17415.888099832162
+      }
+    },
+    "arbitrumSepolia": {
+      "gas_coefficients_intercept_per_tx_slope_per_byte": {
+        "postDemand": [
+          238056.0,
+          0.0
+        ],
+        "prepareBinding": [
+          82121.0,
+          0.0
+        ],
+        "depositCiphertextChunk": [
+          95294.81670639775,
+          702.5104169295836
+        ],
+        "sealCiphertext": [
+          43499.0,
+          0.0
+        ],
+        "commitClaim": [
+          183421.0,
+          0.0
+        ],
+        "setDemand": [
+          76798.0,
+          0.0
+        ],
+        "configureWitnessTerms": [
+          54884.0,
+          0.0
+        ],
+        "disputeClaim": [
+          76900.0,
+          0.0
+        ],
+        "revealKey": [
+          75351.0,
+          0.0
+        ],
+        "startAdjudication": [
+          38961.0,
+          0.0
+        ],
+        "processChunk": [
+          194844.46753648305,
+          3733.32306171678
+        ],
+        "finalizeAdjudication": [
+          45861.0,
+          0.0
+        ]
+      },
+      "conditional_client_seconds_per_operation": {
+        "postDemand": 122.30766661961873,
+        "prepareBinding": 123.66699997584026,
+        "depositCiphertextChunk": 138.894840989433,
+        "sealCiphertext": 177.3733333746592,
+        "commitClaim": 179.13333336512247,
+        "setDemand": 177.88466668128967,
+        "configureWitnessTerms": 137.11899987856546,
+        "disputeClaim": 182.34766674041748,
+        "revealKey": 137.5509999593099,
+        "startAdjudication": 137.5550000667572,
+        "processChunk": 163.50901413469347,
+        "finalizeAdjudication": 150.85766665140787
+      },
+      "time_training_full_jobs": 3,
+      "gas_training_jobs": 4,
+      "gap_threshold_sensitivity_total_1MB_seconds": {
+        "30": 100109.45310377821,
+        "60": 100109.45310377821,
+        "120": 100109.45310377821,
+        "300": 100451.1241424783
+      }
+    },
+    "megaethTestnet": {
+      "gas_coefficients_intercept_per_tx_slope_per_byte": {
+        "postDemand": [
+          324056.0,
+          0.0
+        ],
+        "prepareBinding": [
+          141721.0,
+          0.0
+        ],
+        "depositCiphertextChunk": [
+          154127.11163575848,
+          861.6562661574856
+        ],
+        "sealCiphertext": [
+          97159.0,
+          0.0
+        ],
+        "commitClaim": [
+          258231.0,
+          0.0
+        ],
+        "setDemand": [
+          119238.0,
+          0.0
+        ],
+        "configureWitnessTerms": [
+          111104.0,
+          0.0
+        ],
+        "disputeClaim": [
+          139250.0,
+          0.0
+        ],
+        "revealKey": [
+          121511.0,
+          0.0
+        ],
+        "startAdjudication": [
+          87501.0,
+          0.0
+        ],
+        "processChunk": [
+          235884.4675364943,
+          3733.32306171678
+        ],
+        "finalizeAdjudication": [
+          107836.0,
+          0.0
+        ]
+      },
+      "conditional_client_seconds_per_operation": {
+        "postDemand": 0.4646666844685872,
+        "prepareBinding": 2.2199999491373696,
+        "depositCiphertextChunk": 2.0957067139157135,
+        "sealCiphertext": 2.068333387374878,
+        "commitClaim": 2.0869999726613364,
+        "setDemand": 2.147333304087321,
+        "configureWitnessTerms": 2.05733331044515,
+        "disputeClaim": 2.0410000483194985,
+        "revealKey": 2.0383333365122476,
+        "startAdjudication": 2.050999959309896,
+        "processChunk": 2.1483286219013875,
+        "finalizeAdjudication": 2.012666702270508
+      },
+      "time_training_full_jobs": 3,
+      "gas_training_jobs": 4,
+      "gap_threshold_sensitivity_total_1MB_seconds": {
+        "30": 1402.7431861309617,
+        "60": 1402.7431861309617,
+        "120": 1402.7431861309617,
+        "300": 1705.4359140000158
+      }
+    }
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261016,
+    "cluster": "full job",
+    "within_cluster_block_length": 10,
+    "band": "2.5%-97.5% bootstrap band for conditional mean duration, not a prediction interval",
+    "independent_geometries": 1,
+    "full_jobs_per_network": 3
+  },
+  "phase_time_definition": "Each phase includes the preceding inter-transaction gap; first posting starts at submission. Durations sum exactly. Gaps above 60s excluded only from conditional scenario; all submission-to-receipt durations including recovery remain.",
+  "gas_model": "Per network/operation: chunk gas = intercept + slope * payload bytes; fixed-operation means. Four jobs per network; validation holds out complete full-file jobs.",
+  "normalized_cost": "Gas times 1 gwei, expressed in native token. A common unit-price sensitivity scenario only; not an observed fee, chain fee quote, or total rollup fee model.",
+  "timing_model": "Per network and operation, mean submission-to-observed-receipt plus recorded preceding client gap; no human bidding/selection waits, no finality guarantee.",
+  "coverage": {
+    "public_direct_identity": true,
+    "revised_public_binding_and_access": "observed separately, 3 jobs per network",
+    "public_full_four_claim_model": false,
+    "gas_measured_on_all_60_files": false
+  },
+  "limitations": [
+    "Largest input is over 800 times the largest executed artifact; no independent large-size validation.",
+    "Three slicer outputs share one geometry; hundreds of transactions are not hundreds of independent artifacts.",
+    "Arbitrum historical Identity timings are dominated by client/RPC recovery; later Access is a separate regime.",
+    "Bootstrap bands exclude model misspecification, future congestion changes and unobserved interruption tails.",
+    "Feature cost also depends on G-code content/state. Size alone is not validated for all corpus models.",
+    "Observed test-token fees do not establish production fiat prices; use an explicit fee scenario.",
+    "No pure inclusion-latency inference from client receipt timestamps."
+  ],
+  "validation": {
+    "sepolia": {
+      "gas_error_percent": 0.020494558206407554,
+      "time_error_percent": 23.429348396463233
+    },
+    "arbitrumSepolia": {
+      "gas_error_percent": 0.011004531430125475,
+      "time_error_percent": 5.92480250487446
+    },
+    "megaethTestnet": {
+      "gas_error_percent": 0.010408219537128005,
+      "time_error_percent": 0.9465224614394918
+    }
+  }
+}

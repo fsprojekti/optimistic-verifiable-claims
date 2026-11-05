@@ -1,0 +1,253 @@
+case,mode,artifact,artifact_bytes,chunk_bytes,chunks,process,total_gas,gas_per_byte,maximum_transaction_gas,within_reference_95_percent
+chunk-4096,segmented,rackstack_hinge:cura,264386,4096,65,Ciphertext upload,192411255,727.7664286308654,3013805,True
+chunk-4096,segmented,rackstack_hinge:cura,264386,4096,65,Conformance deposit,193073751,730.2722194064738,3040793,True
+chunk-4096,segmented,rackstack_hinge:cura,264386,4096,65,Feature deposit,193075181,730.2776281648802,3040815,True
+chunk-4096,segmented,rackstack_hinge:cura,264386,4096,65,Identity,1002981919,3793.627192816564,15593153,True
+chunk-4096,segmented,rackstack_hinge:cura,264386,4096,65,Conformance,3018839,11.418301271625579,396311,True
+chunk-4096,segmented,rackstack_hinge:cura,264386,4096,65,Feature,435663520,1647.8312769965128,6931873,True
+chunk-4096,segmented,rackstack_hinge:orca,280935,4096,69,Ciphertext upload,204443654,727.7258226992009,3013853,True
+chunk-4096,segmented,rackstack_hinge:orca,280935,4096,69,Conformance deposit,205145330,730.2234680620072,3040793,True
+chunk-4096,segmented,rackstack_hinge:orca,280935,4096,69,Feature deposit,205146848,730.228871447132,3040815,True
+chunk-4096,segmented,rackstack_hinge:orca,280935,4096,69,Identity,1065635563,3793.174802000463,15593153,True
+chunk-4096,segmented,rackstack_hinge:orca,280935,4096,69,Conformance,4045261,14.399277412924699,1258825,True
+chunk-4096,segmented,rackstack_hinge:orca,280935,4096,69,Feature,432375221,1539.0578639187001,7534287,True
+chunk-4096,segmented,rackstack_hinge:prusa,316712,4096,78,Ciphertext upload,230487744,727.7518502614363,3013793,True
+chunk-4096,segmented,rackstack_hinge:prusa,316712,4096,78,Conformance deposit,231278664,730.2491348606936,3040793,True
+chunk-4096,segmented,rackstack_hinge:prusa,316712,4096,78,Feature deposit,231280380,730.254553032408,3040815,True
+chunk-4096,segmented,rackstack_hinge:prusa,316712,4096,78,Identity,1201336814,3793.152182424411,15593153,True
+chunk-4096,segmented,rackstack_hinge:prusa,316712,4096,78,Conformance,4392926,13.870412235722045,1237697,True
+chunk-4096,segmented,rackstack_hinge:prusa,316712,4096,78,Feature,491997553,1553.454093940236,6667548,True
+chunk-4160,segmented,rackstack_hinge:cura,264386,4160,64,Ciphertext upload,192339066,727.4933846724108,3059224,True
+chunk-4160,segmented,rackstack_hinge:cura,264386,4160,64,Conformance deposit,192991830,729.9623656320682,3086224,True
+chunk-4160,segmented,rackstack_hinge:cura,264386,4160,64,Feature deposit,192993238,729.9676911788067,3086246,True
+chunk-4160,segmented,rackstack_hinge:cura,264386,4160,64,Identity,1002937765,3793.4601869993116,15835195,True
+chunk-4160,segmented,rackstack_hinge:cura,264386,4160,64,Conformance,2977862,11.263311975671934,396311,True
+chunk-4160,segmented,rackstack_hinge:cura,264386,4160,64,Feature,435794958,1648.328421323368,7011984,True
+chunk-4160,segmented,rackstack_hinge:orca,280935,4160,68,Ciphertext upload,204371514,727.4690373218004,3059272,True
+chunk-4160,segmented,rackstack_hinge:orca,280935,4160,68,Conformance deposit,205063458,729.9320412194992,3086224,True
+chunk-4160,segmented,rackstack_hinge:orca,280935,4160,68,Feature deposit,205064954,729.9373662946945,3086246,True
+chunk-4160,segmented,rackstack_hinge:orca,280935,4160,68,Identity,1065592113,3793.0201398900103,15835195,True
+chunk-4160,segmented,rackstack_hinge:orca,280935,4160,68,Conformance,4004284,14.253418050438714,1258825,True
+chunk-4160,segmented,rackstack_hinge:orca,280935,4160,68,Feature,432357480,1538.9947140797694,7669789,True
+chunk-4160,segmented,rackstack_hinge:prusa,316712,4160,77,Ciphertext upload,230415719,727.524435449241,3059224,True
+chunk-4160,segmented,rackstack_hinge:prusa,316712,4160,77,Conformance deposit,231196907,729.9909918159085,3086224,True
+chunk-4160,segmented,rackstack_hinge:prusa,316712,4160,77,Feature deposit,231198601,729.9963405238828,3086246,True
+chunk-4160,segmented,rackstack_hinge:prusa,316712,4160,77,Identity,1201296579,3793.025142716411,15835195,True
+chunk-4160,segmented,rackstack_hinge:prusa,316712,4160,77,Conformance,4351949,13.741029705221147,1237697,True
+chunk-4160,segmented,rackstack_hinge:prusa,316712,4160,77,Feature,492852545,1556.1536822097048,6733426,True
+chunk-4224,segmented,rackstack_hinge:cura,264386,4224,63,Ciphertext upload,192266108,727.217432087932,3104607,True
+chunk-4224,segmented,rackstack_hinge:cura,264386,4224,63,Conformance deposit,192909140,729.6496032316386,3131643,True
+chunk-4224,segmented,rackstack_hinge:cura,264386,4224,63,Feature deposit,192910526,729.6548455667092,3131665,True
+chunk-4224,segmented,rackstack_hinge:cura,264386,4224,63,Identity,1002893729,3793.2936274991866,16077244,False
+chunk-4224,segmented,rackstack_hinge:cura,264386,4224,63,Conformance,2936885,11.10832267971829,396311,True
+chunk-4224,segmented,rackstack_hinge:cura,264386,4224,63,Feature,435695105,1647.9507424750175,7132983,True
+chunk-4224,segmented,rackstack_hinge:orca,280935,4224,67,Ciphertext upload,204298557,727.2093437983875,3104691,True
+chunk-4224,segmented,rackstack_hinge:orca,280935,4224,67,Conformance deposit,204980769,729.6377062309787,3131643,True
+chunk-4224,segmented,rackstack_hinge:orca,280935,4224,67,Feature deposit,204982243,729.6429529962447,3131665,True
+chunk-4224,segmented,rackstack_hinge:orca,280935,4224,67,Identity,1065548787,3792.8659191627958,16077244,False
+chunk-4224,segmented,rackstack_hinge:orca,280935,4224,67,Conformance,3963307,14.107558687952729,1258825,True
+chunk-4224,segmented,rackstack_hinge:orca,280935,4224,67,Feature,432299224,1538.7873493868688,7673083,True
+chunk-4224,segmented,rackstack_hinge:prusa,316712,4224,75,Ciphertext upload,230269785,727.0636572027583,3104631,True
+chunk-4224,segmented,rackstack_hinge:prusa,316712,4224,75,Conformance deposit,231031509,729.4687571042462,3131643,True
+chunk-4224,segmented,rackstack_hinge:prusa,316712,4224,75,Feature deposit,231033159,729.4739668847407,3131665,True
+chunk-4224,segmented,rackstack_hinge:prusa,316712,4224,75,Identity,1201199456,3792.718482406729,16077244,False
+chunk-4224,segmented,rackstack_hinge:prusa,316712,4224,75,Conformance,4269995,13.482264644219354,1237697,True
+chunk-4224,segmented,rackstack_hinge:prusa,316712,4224,75,Feature,494316827,1560.7770687564728,6972578,True
+chunk-5120,segmented,rackstack_hinge:cura,264386,5120,52,Ciphertext upload,191463119,724.1802478194761,3740464,True
+chunk-5120,segmented,rackstack_hinge:cura,264386,5120,52,Conformance deposit,191999099,726.2075109877225,3767500,True
+chunk-5120,segmented,rackstack_hinge:cura,264386,5120,52,Feature deposit,192000243,726.2118379944475,3767522,True
+chunk-5120,segmented,rackstack_hinge:cura,264386,5120,52,Identity,1002447271,3791.604967736567,19466596,False
+chunk-5120,segmented,rackstack_hinge:cura,264386,5120,52,Conformance,2486138,9.403440424228211,396311,True
+chunk-5120,segmented,rackstack_hinge:cura,264386,5120,52,Feature,435061808,1645.5553924943076,8635970,True
+chunk-5120,segmented,rackstack_hinge:orca,280935,5120,55,Ciphertext upload,203422583,724.0912773417339,3740476,True
+chunk-5120,segmented,rackstack_hinge:orca,280935,5120,55,Conformance deposit,203988011,726.103942193034,3767500,True
+chunk-5120,segmented,rackstack_hinge:orca,280935,5120,55,Feature deposit,203989221,726.1082492391479,3767522,True
+chunk-5120,segmented,rackstack_hinge:orca,280935,5120,55,Identity,1065059208,3791.123242031075,19466596,False
+chunk-5120,segmented,rackstack_hinge:orca,280935,5120,55,Conformance,3471583,12.357246338120918,1258825,True
+chunk-5120,segmented,rackstack_hinge:orca,280935,5120,55,Feature,427110619,1520.3182907078149,8255367,True
+chunk-5120,segmented,rackstack_hinge:prusa,316712,5120,62,Ciphertext upload,229320796,724.0672787895628,3740440,True
+chunk-5120,segmented,rackstack_hinge:prusa,316712,5120,62,Conformance deposit,229956004,726.0729116673823,3767500,True
+chunk-5120,segmented,rackstack_hinge:prusa,316712,5120,62,Feature deposit,229957368,726.0772184192579,3767522,True
+chunk-5120,segmented,rackstack_hinge:prusa,316712,5120,62,Identity,1200674095,3791.059685139812,19466596,False
+chunk-5120,segmented,rackstack_hinge:prusa,316712,5120,62,Conformance,3737294,11.800291747707696,1237697,True
+chunk-5120,segmented,rackstack_hinge:prusa,316712,5120,62,Feature,492312892,1554.4497587713759,8263239,True
+chunk-6144,segmented,rackstack_hinge:cura,264386,6144,44,Ciphertext upload,190879848,721.9741136066207,4467127,True
+chunk-6144,segmented,rackstack_hinge:cura,264386,6144,44,Conformance deposit,191337972,723.7068982472597,4494211,True
+chunk-6144,segmented,rackstack_hinge:cura,264386,6144,44,Feature deposit,191338940,723.7105595606424,4494233,True
+chunk-6144,segmented,rackstack_hinge:cura,264386,6144,44,Identity,1002202904,3790.6806865719063,23341656,False
+chunk-6144,segmented,rackstack_hinge:cura,264386,6144,44,Conformance,2158322,8.163526056599064,396311,True
+chunk-6144,segmented,rackstack_hinge:cura,264386,6144,44,Feature,434315295,1642.7318201417625,10236531,True
+chunk-6144,segmented,rackstack_hinge:orca,280935,6144,46,Ciphertext upload,202766366,721.755445209746,4467091,True
+chunk-6144,segmented,rackstack_hinge:orca,280935,6144,46,Conformance deposit,203244206,723.4563368750779,4494211,True
+chunk-6144,segmented,rackstack_hinge:orca,280935,6144,46,Feature deposit,203245218,723.4599391318277,4494233,True
+chunk-6144,segmented,rackstack_hinge:orca,280935,6144,46,Identity,1064763803,3790.0717354548206,23341656,False
+chunk-6144,segmented,rackstack_hinge:orca,280935,6144,46,Conformance,3102790,11.04451207574706,1258825,True
+chunk-6144,segmented,rackstack_hinge:orca,280935,6144,46,Feature,430764700,1533.3251463861748,9860513,True
+chunk-6144,segmented,rackstack_hinge:prusa,316712,6144,52,Ciphertext upload,228591672,721.765111520877,4467079,True
+chunk-6144,segmented,rackstack_hinge:prusa,316712,6144,52,Conformance deposit,229129560,723.463462072798,4494211,True
+chunk-6144,segmented,rackstack_hinge:prusa,316712,6144,52,Feature deposit,229130704,723.4670741872742,4494233,True
+chunk-6144,segmented,rackstack_hinge:prusa,316712,6144,52,Identity,1200348592,3790.031928060825,23341656,False
+chunk-6144,segmented,rackstack_hinge:prusa,316712,6144,52,Conformance,3327524,10.506466442698729,1237697,True
+chunk-6144,segmented,rackstack_hinge:prusa,316712,6144,52,Feature,493235108,1557.3616029705222,9866529,True
+chunk-8192,segmented,rackstack_hinge:cura,264386,8192,33,Ciphertext upload,190078199,718.9419976852028,5920502,True
+chunk-8192,segmented,rackstack_hinge:cura,264386,8192,33,Conformance deposit,190429271,720.2698743503817,5947646,True
+chunk-8192,segmented,rackstack_hinge:cura,264386,8192,33,Feature deposit,190429997,720.2726203354187,5947668,True
+chunk-8192,segmented,rackstack_hinge:cura,264386,8192,33,Identity,1001983215,3789.8497462044133,31096623,False
+chunk-8192,segmented,rackstack_hinge:cura,264386,8192,33,Conformance,1707575,6.458643801108985,396311,True
+chunk-8192,segmented,rackstack_hinge:cura,264386,8192,33,Feature,433380998,1639.1979832517607,13502077,True
+chunk-8192,segmented,rackstack_hinge:orca,280935,8192,35,Ciphertext upload,201964782,718.9021731005392,5920418,True
+chunk-8192,segmented,rackstack_hinge:orca,280935,8192,35,Conformance deposit,202335570,720.2220086496876,5947646,True
+chunk-8192,segmented,rackstack_hinge:orca,280935,8192,35,Feature deposit,202336340,720.2247494972147,5947668,True
+chunk-8192,segmented,rackstack_hinge:orca,280935,8192,35,Identity,1064574435,3789.3976720593732,31096623,False
+chunk-8192,segmented,rackstack_hinge:orca,280935,8192,35,Conformance,2652043,9.440059088401231,1258825,True
+chunk-8192,segmented,rackstack_hinge:orca,280935,8192,35,Feature,430033272,1530.7215975225586,12906032,True
+chunk-8192,segmented,rackstack_hinge:prusa,316712,8192,39,Ciphertext upload,227644288,718.7738008032534,5920442,True
+chunk-8192,segmented,rackstack_hinge:prusa,316712,8192,39,Conformance deposit,228055660,720.0726843315063,5947646,True
+chunk-8192,segmented,rackstack_hinge:prusa,316712,8192,39,Feature deposit,228056518,720.0753934173634,5947668,True
+chunk-8192,segmented,rackstack_hinge:prusa,316712,8192,39,Identity,1200102254,3789.254129935083,31096623,False
+chunk-8192,segmented,rackstack_hinge:prusa,316712,8192,39,Conformance,2794823,8.824493546187073,1237697,True
+chunk-8192,segmented,rackstack_hinge:prusa,316712,8192,39,Feature,489400454,1545.2539025992069,13094502,True
+chunk-16384,segmented,rackstack_hinge:cura,264386,16384,17,Ciphertext upload,188914727,714.5413410694969,11733883,True
+chunk-16384,segmented,rackstack_hinge:cura,264386,16384,17,Conformance deposit,189110087,715.2802606794611,11761543,True
+chunk-16384,segmented,rackstack_hinge:cura,264386,16384,17,Feature deposit,189110461,715.2816752778135,11761565,True
+chunk-16384,segmented,rackstack_hinge:cura,264386,16384,17,Identity,1002725071,3792.655704159827,62181131,False
+chunk-16384,segmented,rackstack_hinge:cura,264386,16384,17,Conformance,1051943,3.978815065850688,396311,True
+chunk-16384,segmented,rackstack_hinge:cura,264386,16384,17,Feature,432264551,1634.9751915759534,26922742,False
+chunk-16384,segmented,rackstack_hinge:orca,280935,16384,18,Ciphertext upload,200728593,714.5019061348711,11734051,True
+chunk-16384,segmented,rackstack_hinge:orca,280935,16384,18,Conformance deposit,200933937,715.2328367771904,11761543,True
+chunk-16384,segmented,rackstack_hinge:orca,280935,16384,18,Feature deposit,200934333,715.2342463559187,11761565,True
+chunk-16384,segmented,rackstack_hinge:orca,280935,16384,18,Identity,1065362647,3792.203345969708,62181131,False
+chunk-16384,segmented,rackstack_hinge:orca,280935,16384,18,Conformance,1955434,6.960449926139498,1258825,True
+chunk-16384,segmented,rackstack_hinge:orca,280935,16384,18,Feature,424637799,1511.5161834588073,25639897,False
+chunk-16384,segmented,rackstack_hinge:prusa,316712,16384,20,Ciphertext upload,226262665,714.4114053146076,11733919,True
+chunk-16384,segmented,rackstack_hinge:prusa,316712,16384,20,Conformance deposit,226489129,715.1264524236531,11761543,True
+chunk-16384,segmented,rackstack_hinge:prusa,316712,16384,20,Feature deposit,226489569,715.1278416984516,11761565,True
+chunk-16384,segmented,rackstack_hinge:prusa,316712,16384,20,Identity,1200983178,3792.03559700927,62181131,False
+chunk-16384,segmented,rackstack_hinge:prusa,316712,16384,20,Conformance,2016260,6.366225466670034,1237697,True
+chunk-16384,segmented,rackstack_hinge:prusa,316712,16384,20,Feature,488060741,1541.0238355351235,25897767,False
+chunk-32768,segmented,rackstack_hinge:cura,264386,32768,9,Ciphertext upload,188339135,712.3642515110482,23361509,False
+chunk-32768,segmented,rackstack_hinge:cura,264386,32768,9,Conformance deposit,188456639,712.8086925934051,23390105,False
+chunk-32768,segmented,rackstack_hinge:cura,264386,32768,9,Feature deposit,188456837,712.8094414984151,23390127,False
+chunk-32768,segmented,rackstack_hinge:cura,264386,32768,9,Identity,1005578415,3803.4480456605115,124660419,False
+chunk-32768,segmented,rackstack_hinge:cura,264386,32768,9,Conformance,724127,2.73890069822154,396311,True
+chunk-32768,segmented,rackstack_hinge:cura,264386,32768,9,Feature,431703331,1632.852461930662,53767342,False
+chunk-32768,segmented,rackstack_hinge:orca,280935,32768,9,Ciphertext upload,200080180,712.1938526705466,23361761,False
+chunk-32768,segmented,rackstack_hinge:orca,280935,32768,9,Conformance deposit,200197936,712.6130101268977,23390105,False
+chunk-32768,segmented,rackstack_hinge:orca,280935,32768,9,Feature deposit,200198134,712.6137149162618,23390127,False
+chunk-32768,segmented,rackstack_hinge:orca,280935,32768,9,Identity,1068220331,3802.375392884475,124660419,False
+chunk-32768,segmented,rackstack_hinge:orca,280935,32768,9,Conformance,1586641,5.64771566376564,1258825,True
+chunk-32768,segmented,rackstack_hinge:orca,280935,32768,9,Feature,424062727,1509.469190382117,51113424,False
+chunk-32768,segmented,rackstack_hinge:prusa,316712,32768,10,Ciphertext upload,225542491,712.1374971583016,23361713,False
+chunk-32768,segmented,rackstack_hinge:prusa,316712,32768,10,Conformance deposit,225671635,712.5452619414484,23390105,False
+chunk-32768,segmented,rackstack_hinge:prusa,316712,32768,10,Feature deposit,225671855,712.5459565788476,23390127,False
+chunk-32768,segmented,rackstack_hinge:prusa,316712,32768,10,Identity,1204273442,3802.4244171360733,124660419,False
+chunk-32768,segmented,rackstack_hinge:prusa,316712,32768,10,Conformance,1606490,5.072400161661068,1237697,True
+chunk-32768,segmented,rackstack_hinge:prusa,316712,32768,10,Feature,486129463,1534.9259358660233,51720598,False
+chunk-65536,segmented,rackstack_hinge:cura,264386,65536,5,Ciphertext upload,188063627,711.3221842306325,46620157,False
+chunk-65536,segmented,rackstack_hinge:cura,264386,65536,5,Conformance deposit,188142203,711.6193860491857,46650301,False
+chunk-65536,segmented,rackstack_hinge:cura,264386,65536,5,Feature deposit,188142313,711.6198021075246,46650323,False
+chunk-65536,segmented,rackstack_hinge:cura,264386,65536,5,Identity,1011969919,3827.6229414568093,250860083,False
+chunk-65536,segmented,rackstack_hinge:cura,264386,65536,5,Conformance,560219,2.1189435144069657,396311,True
+chunk-65536,segmented,rackstack_hinge:cura,264386,65536,5,Feature,431438893,1631.852265248538,107190099,False
+chunk-65536,segmented,rackstack_hinge:orca,280935,65536,5,Ciphertext upload,199804672,711.2131703062986,46620589,False
+chunk-65536,segmented,rackstack_hinge:orca,280935,65536,5,Conformance deposit,199883500,711.4937619022194,46650301,False
+chunk-65536,segmented,rackstack_hinge:orca,280935,65536,5,Feature deposit,199883610,711.494153451866,46650323,False
+chunk-65536,segmented,rackstack_hinge:orca,280935,65536,5,Identity,1074611835,3825.126221367932,250860083,False
+chunk-65536,segmented,rackstack_hinge:orca,280935,65536,5,Conformance,1422733,5.064278213821702,1258825,True
+chunk-65536,segmented,rackstack_hinge:orca,280935,65536,5,Feature,423821171,1508.6093615960988,101791460,False
+chunk-65536,segmented,rackstack_hinge:prusa,316712,65536,5,Ciphertext upload,225196738,711.0458018641542,46620361,False
+chunk-65536,segmented,rackstack_hinge:prusa,316712,65536,5,Conformance deposit,225277222,711.2999254843517,46650301,False
+chunk-65536,segmented,rackstack_hinge:prusa,316712,65536,5,Feature deposit,225277332,711.3002728030514,46650323,False
+chunk-65536,segmented,rackstack_hinge:prusa,316712,65536,5,Identity,1211709990,3825.904891510268,250860083,False
+chunk-65536,segmented,rackstack_hinge:prusa,316712,65536,5,Conformance,1401605,4.425487509156584,1237697,True
+chunk-65536,segmented,rackstack_hinge:prusa,316712,65536,5,Feature,485840871,1534.014723155422,102785430,False
+chunk-131072,segmented,rackstack_hinge:cura,264386,131072,3,Ciphertext upload,187950449,710.8941055880417,93149513,False
+chunk-131072,segmented,rackstack_hinge:cura,264386,131072,3,Conformance deposit,188009561,711.1176877746931,93182981,False
+chunk-131072,segmented,rackstack_hinge:cura,264386,131072,3,Feature deposit,188009627,711.1179374096964,93183003,False
+chunk-131072,segmented,rackstack_hinge:cura,264386,131072,3,Identity,1025095335,3877.2678394468694,508223763,False
+chunk-131072,segmented,rackstack_hinge:cura,264386,131072,3,Conformance,478265,1.8089649224996784,396311,True
+chunk-131072,segmented,rackstack_hinge:cura,264386,131072,3,Feature,431331627,1631.4465478504912,213830930,False
+chunk-131072,segmented,rackstack_hinge:orca,280935,131072,3,Ciphertext upload,199691494,710.8103084343353,93150065,False
+chunk-131072,segmented,rackstack_hinge:orca,280935,131072,3,Conformance deposit,199750858,711.0216171000409,93182981,False
+chunk-131072,segmented,rackstack_hinge:orca,280935,131072,3,Feature deposit,199750924,711.021852029829,93183003,False
+chunk-131072,segmented,rackstack_hinge:orca,280935,131072,3,Identity,1087737251,3871.846694075142,508223763,False
+chunk-131072,segmented,rackstack_hinge:orca,280935,131072,3,Conformance,1340779,4.772559488849734,1258825,True
+chunk-131072,segmented,rackstack_hinge:orca,280935,131072,3,Feature,423661976,1508.0427002687454,202096154,False
+chunk-131072,segmented,rackstack_hinge:prusa,316712,131072,3,Ciphertext upload,225083560,710.6884488115386,93149753,False
+chunk-131072,segmented,rackstack_hinge:prusa,316712,131072,3,Conformance deposit,225144580,710.8811159665564,93182981,False
+chunk-131072,segmented,rackstack_hinge:prusa,316712,131072,3,Feature deposit,225144646,710.8813243577762,93183003,False
+chunk-131072,segmented,rackstack_hinge:prusa,316712,131072,3,Identity,1224835406,3867.347640758797,508223763,False
+chunk-131072,segmented,rackstack_hinge:prusa,316712,131072,3,Conformance,1319651,4.166722448154791,1237697,True
+chunk-131072,segmented,rackstack_hinge:prusa,316712,131072,3,Feature,485729501,1533.6630787592512,204355094,False
+whole-file,whole-file-single-chunk,rackstack_hinge:cura,264386,264386,1,Ciphertext upload,187872323,710.5986058263297,187872323,False
+whole-file,whole-file-single-chunk,rackstack_hinge:cura,264386,264386,1,Conformance deposit,187911971,710.7485683810792,187911971,False
+whole-file,whole-file-single-chunk,rackstack_hinge:cura,264386,264386,1,Feature deposit,187911993,710.748651592747,187911993,False
+whole-file,whole-file-single-chunk,rackstack_hinge:cura,264386,264386,1,Identity,1052388475,3980.500007564697,1052388475,False
+whole-file,whole-file-single-chunk,rackstack_hinge:cura,264386,264386,1,Conformance,396311,1.4989863305923914,396311,True
+whole-file,whole-file-single-chunk,rackstack_hinge:cura,264386,264386,1,Feature,431245424,1631.1204980596551,431245424,False
+whole-file,whole-file-single-chunk,rackstack_hinge:orca,280935,280935,1,Ciphertext upload,199629912,710.5911047039351,199629912,False
+whole-file,whole-file-single-chunk,rackstack_hinge:orca,280935,280935,1,Conformance deposit,199669812,710.7331304394255,199669812,False
+whole-file,whole-file-single-chunk,rackstack_hinge:orca,280935,280935,1,Feature deposit,199669834,710.7332087493548,199669834,False
+whole-file,whole-file-single-chunk,rackstack_hinge:orca,280935,280935,1,Identity,1121704250,3992.7536618790823,1121704250,False
+whole-file,whole-file-single-chunk,rackstack_hinge:orca,280935,280935,1,Conformance,1258825,4.480840763877765,1258825,True
+whole-file,whole-file-single-chunk,rackstack_hinge:orca,280935,280935,1,Feature,423599938,1507.8218733870824,423599938,False
+whole-file,whole-file-single-chunk,rackstack_hinge:prusa,316712,316712,1,Ciphertext upload,225057754,710.6069678446033,225057754,False
+whole-file,whole-file-single-chunk,rackstack_hinge:prusa,316712,316712,1,Conformance deposit,225099310,710.7381785344414,225099310,False
+whole-file,whole-file-single-chunk,rackstack_hinge:prusa,316712,316712,1,Feature deposit,225099332,710.7382479981814,225099332,False
+whole-file,whole-file-single-chunk,rackstack_hinge:prusa,316712,316712,1,Identity,1273256608,4020.2348127004975,1273256608,False
+whole-file,whole-file-single-chunk,rackstack_hinge:prusa,316712,316712,1,Conformance,1237697,3.907957387152997,1237697,True
+whole-file,whole-file-single-chunk,rackstack_hinge:prusa,316712,316712,1,Feature,485628934,1533.3455442168279,485628934,False
+chunk-3072,segmented,rackstack_hinge:cura,264386,3072,87,Ciphertext upload,194016139,733.8366592784791,2287114,True
+chunk-3072,segmented,rackstack_hinge:cura,264386,3072,87,Conformance deposit,194892739,737.1522660050078,2314090,True
+chunk-3072,segmented,rackstack_hinge:cura,264386,3072,87,Feature deposit,194894653,737.1595054201055,2314112,True
+chunk-3072,segmented,rackstack_hinge:cura,264386,3072,87,Identity,1004031333,3797.596442322967,11721325,True
+chunk-3072,segmented,rackstack_hinge:cura,264386,3072,87,Conformance,3920333,14.828065782605735,396311,True
+chunk-3072,segmented,rackstack_hinge:cura,264386,3072,87,Feature,437697165,1655.5232311847071,5248274,True
+chunk-3072,segmented,rackstack_hinge:orca,280935,3072,92,Ciphertext upload,206121487,733.6981401391781,2287186,True
+chunk-3072,segmented,rackstack_hinge:orca,280935,3072,92,Conformance deposit,207046999,736.992539199459,2314090,True
+chunk-3072,segmented,rackstack_hinge:orca,280935,3072,92,Feature deposit,207049023,736.9997437129585,2314112,True
+chunk-3072,segmented,rackstack_hinge:orca,280935,3072,92,Identity,1066727679,3797.0622350365743,11721325,True
+chunk-3072,segmented,rackstack_hinge:orca,280935,3072,92,Conformance,4987732,17.754042750102336,1258825,True
+chunk-3072,segmented,rackstack_hinge:orca,280935,3072,92,Feature,433781114,1544.062199441152,6398763,True
+chunk-3072,segmented,rackstack_hinge:prusa,316712,3072,104,Ciphertext upload,232384428,733.7405213569426,2287138,True
+chunk-3072,segmented,rackstack_hinge:prusa,316712,3072,104,Conformance deposit,233428380,737.0367400035364,2314090,True
+chunk-3072,segmented,rackstack_hinge:prusa,316712,3072,104,Feature deposit,233430668,737.0439642324889,2314112,True
+chunk-3072,segmented,rackstack_hinge:prusa,316712,3072,104,Identity,1202572758,3797.054604814469,11721325,True
+chunk-3072,segmented,rackstack_hinge:prusa,316712,3072,104,Conformance,5458328,17.23435802874536,1237697,True
+chunk-3072,segmented,rackstack_hinge:prusa,316712,3072,104,Feature,497277918,1570.1265439894921,6319013,True
+chunk-2048,segmented,rackstack_hinge:cura,264386,2048,130,Ciphertext upload,197153462,745.7031083340268,1560463,True
+chunk-2048,segmented,rackstack_hinge:cura,264386,2048,130,Conformance deposit,198448538,750.601537146445,1587391,True
+chunk-2048,segmented,rackstack_hinge:cura,264386,2048,130,Feature deposit,198451398,750.6123546632575,1587413,True
+chunk-2048,segmented,rackstack_hinge:cura,264386,2048,130,Identity,1006276816,3806.0896416602995,7851114,True
+chunk-2048,segmented,rackstack_hinge:cura,264386,2048,130,Conformance,5682344,21.492605508612407,396311,True
+chunk-2048,segmented,rackstack_hinge:cura,264386,2048,130,Feature,440588130,1666.4578684196592,3532537,True
+chunk-2048,segmented,rackstack_hinge:orca,280935,2048,138,Ciphertext upload,209477699,745.6447185291971,1560523,True
+chunk-2048,segmented,rackstack_hinge:orca,280935,2048,138,Conformance deposit,210850883,750.532624984427,1587391,True
+chunk-2048,segmented,rackstack_hinge:orca,280935,2048,138,Feature deposit,210853919,750.5434317546764,1587413,True
+chunk-2048,segmented,rackstack_hinge:orca,280935,2048,138,Identity,1069132451,3805.6221225550394,7851114,True
+chunk-2048,segmented,rackstack_hinge:orca,280935,2048,138,Conformance,6872674,24.463573424457614,1258825,True
+chunk-2048,segmented,rackstack_hinge:orca,280935,2048,138,Feature,437715993,1558.0685674622243,5115981,True
+chunk-2048,segmented,rackstack_hinge:prusa,316712,2048,155,Ciphertext upload,236105433,745.4893815201192,1560487,True
+chunk-2048,segmented,rackstack_hinge:prusa,316712,2048,155,Conformance deposit,237645717,750.3527400287959,1587391,True
+chunk-2048,segmented,rackstack_hinge:prusa,316712,2048,155,Feature deposit,237649127,750.3635069084846,1587413,True
+chunk-2048,segmented,rackstack_hinge:prusa,316712,2048,155,Identity,1205233282,3805.4550569602666,7851114,True
+chunk-2048,segmented,rackstack_hinge:prusa,316712,2048,155,Conformance,7548155,23.83286708429109,1237697,True
+chunk-2048,segmented,rackstack_hinge:prusa,316712,2048,155,Feature,500831762,1581.347602869484,5114425,True
+chunk-1024,segmented,rackstack_hinge:cura,264386,1024,259,Ciphertext upload,206566463,781.3063588843585,833828,True
+chunk-1024,segmented,rackstack_hinge:cura,264386,1024,259,Conformance deposit,209116967,790.9532539544454,860696,True
+chunk-1024,segmented,rackstack_hinge:cura,264386,1024,259,Feature deposit,209122665,790.9748057764027,860718,True
+chunk-1024,segmented,rackstack_hinge:cura,264386,1024,259,Identity,1013429975,3833.1453821306727,3982518,True
+chunk-1024,segmented,rackstack_hinge:cura,264386,1024,259,Conformance,10968377,41.486224686632426,396311,True
+chunk-1024,segmented,rackstack_hinge:cura,264386,1024,259,Feature,450715765,1704.7641138335616,1840192,True
+chunk-1024,segmented,rackstack_hinge:orca,280935,1024,275,Ciphertext upload,219474452,781.2285831242102,833864,True
+chunk-1024,segmented,rackstack_hinge:orca,280935,1024,275,Conformance deposit,222180920,790.8623702991795,860696,True
+chunk-1024,segmented,rackstack_hinge:orca,280935,1024,275,Feature deposit,222186970,790.8839055297489,860718,True
+chunk-1024,segmented,rackstack_hinge:orca,280935,1024,275,Identity,1076729218,3832.663135600762,3982518,True
+chunk-1024,segmented,rackstack_hinge:orca,280935,1024,275,Conformance,12486055,44.444640219267804,955594,True
+chunk-1024,segmented,rackstack_hinge:orca,280935,1024,275,Feature,448363201,1595.9677541068218,3819914,True
+chunk-1024,segmented,rackstack_hinge:prusa,316712,1024,310,Ciphertext upload,247415630,781.2006807446513,833828,True
+chunk-1024,segmented,rackstack_hinge:prusa,316712,1024,310,Conformance deposit,250464374,790.8269153047564,860696,True
+chunk-1024,segmented,rackstack_hinge:prusa,316712,1024,310,Feature deposit,250471194,790.848449064134,860718,True
+chunk-1024,segmented,rackstack_hinge:prusa,316712,1024,310,Identity,1213829279,3832.596425143348,3982518,True
+chunk-1024,segmented,rackstack_hinge:prusa,316712,1024,310,Conformance,13899122,43.885681628735256,955594,True
+chunk-1024,segmented,rackstack_hinge:prusa,316712,1024,310,Feature,513294469,1620.6978864078405,3818358,True

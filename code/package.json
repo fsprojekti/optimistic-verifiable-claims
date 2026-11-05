@@ -1,0 +1,23 @@
+{
+  "name": "ovc-stage-03-costly-verification-equilibrium",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "hardhat test",
+    "testnet:snapshot": "node scripts/snapshot-testnets.js",
+    "testnet:sepolia": "hardhat run scripts/run-testnet-identity.js --network sepolia",
+    "testnet:megaeth": "hardhat run scripts/run-testnet-identity.js --network megaethTestnet",
+    "testnet:arbitrum-sepolia": "hardhat run scripts/run-testnet-identity.js --network arbitrumSepolia",
+    "diagrams": "powershell -ExecutionPolicy Bypass -File scripts/mermaid-export.ps1",
+    "diagrams:svg": "powershell -ExecutionPolicy Bypass -File scripts/mermaid-export.ps1 -SvgOnly"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^11.15.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "dotenv": "^17.4.2",
+    "hardhat": "^2.28.6"
+  },
+  "dependencies": {
+    "chai": "^4.5.0"
+  }
+}

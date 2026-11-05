@@ -1,0 +1,35 @@
+{
+  "observed_at_utc": "2026-10-12T13:06:04.955Z",
+  "rpc": "https://sepolia.drpc.org",
+  "chain_id": 11155111,
+  "results": [
+    {
+      "job": "full-cura",
+      "final_transaction": "0x1cdc7632ce304ffa1521ac507452440cfc514c16f3c5115c0def41d97b7540d2",
+      "block_number": 11898029,
+      "block_hash": "0xa5cbbcd2d17e8b77c1baabe254eaa4f763186affb396ebb0330a07aa6c5573a3",
+      "receipt_status": "0x1",
+      "outcome": 2,
+      "verified": true
+    },
+    {
+      "job": "full-orca",
+      "final_transaction": "0xdda3413421ecdb95c49b1af53bb19ecdfb28822f4028cdc7506685ff2411aca7",
+      "block_number": 11898427,
+      "block_hash": "0x4bfa8d432d88a7437676bbe359bef7cc71aa83ea2c494cd582120bf3fb426b45",
+      "receipt_status": "0x1",
+      "outcome": 2,
+      "verified": true
+    },
+    {
+      "job": "full-prusa",
+      "final_transaction": "0x627098598b8fbeacfc214bf5a2297dd9e42e545f8da8922570ea2e79a2451ad7",
+      "block_number": 11898855,
+      "block_hash": "0x047805c17889f3b83d69d568a4a465b78b7500d13d7af1e0d4bf195209282a43",
+      "receipt_status": "0x1",
+      "outcome": 2,
+      "verified": true
+    }
+  ],
+  "all_verified": true
+}

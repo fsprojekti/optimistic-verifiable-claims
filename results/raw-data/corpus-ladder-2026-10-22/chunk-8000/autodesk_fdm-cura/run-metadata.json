@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-10-23T19:24:11.154Z",
+  "client_version": "anvil/v1.7.1",
+  "chain_id": "31337",
+  "hardfork": "cancun",
+  "block_gas_limit": "10000000000",
+  "kernel_gas_limit": 3000000000,
+  "mode": "segmented",
+  "chunk_size_bytes": 8000,
+  "consumer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "provider": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+  "artifacts": [
+    {
+      "artifact": "autodesk_fdm:cura",
+      "bytes": 28090066,
+      "sha256": "41feaf28aa0e35e1c502177b281c2a2949b05f7f236ad89466bcedcc5bfe008a"
+    }
+  ],
+  "completed_at": "2026-10-24T02:30:13.240Z",
+  "successful_receipts": 21093
+}
