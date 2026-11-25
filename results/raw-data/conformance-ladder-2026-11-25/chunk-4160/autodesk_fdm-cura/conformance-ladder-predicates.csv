@@ -1,0 +1,2 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,declared_height_mm,declare_gas,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+autodesk_fdm:cura,Conformance,28090066,4160,6753,92,95667,20493351963,55972896608,76466456533,8541292,Valid

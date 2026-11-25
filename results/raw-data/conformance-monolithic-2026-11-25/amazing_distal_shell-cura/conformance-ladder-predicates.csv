@@ -1,0 +1,2 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,declared_height_mm,declare_gas,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+amazing_distal_shell:cura,Conformance,4061669,4061669,1,23.6,95667,2914012578,10982233443,13896453983,10982233443,Valid

@@ -14,6 +14,7 @@ import csv
 import gzip
 import hashlib
 import json
+import os
 from collections import defaultdict
 from pathlib import Path
 
@@ -24,6 +25,18 @@ matplotlib.rcParams['pdf.fonttype'] = 42  # embed TrueType, not Type 3 (publishe
 import matplotlib.pyplot as plt
 
 import testnet_model as tm
+import stage08_conformance as s08
+
+# Stage 08 (D7): every Conformance operation takes the network gas ratio measured for it, and the two
+# Conformance chunk operations their testnet steps, in the campaign conformance-testnet-2026-11-25
+# (stage08_conformance.py, tests.md T13). OVC_S08_PROXY=1 rebuilds the T12 variant (Feature proxy).
+if os.environ.get('OVC_S08_PROXY') == '1':
+    tm.GAS_PROXY.update(s08.GAS_PROXY)
+    tm.STEP_PROXY.update(s08.STEP_PROXY)
+else:
+    for _chain in tm.TESTNET:
+        tm.ratios(_chain).update(s08.ratios(_chain))
+    tm.STEP_RUNS.update(s08.step_runs())
 
 STAGE = Path(__file__).resolve().parents[2]
 RAW = STAGE / 'results/raw-data'
@@ -66,7 +79,7 @@ LADDER_KEYS = HINGE + [
     for s in SLICERS] + ['aloha_under_arm:cura', 'moveo_articulation:orca', 'nasa_wrench:prusa']
 BENCHY = 'benchy:prusa'
 
-POST = ['postDemand']
+POST = ['postDemand', s08.DECLARE]  # Stage 08: the Consumer declares the Conformance claim when posting
 PUB = ['prepareBinding', 'depositCiphertextChunk', 'sealCiphertext']
 BIND = ['bindProvider']
 ACCEPT_OPS = ['acceptBinding']
@@ -121,7 +134,8 @@ def artifact_rows(key, chunk):
     if case not in _cache:
         batched = LADDER_BATCHED in case.parents or LADDER_MEGAETH in case.parents
         _cache[case] = read_rows(case / (BATCHED_CSV if batched else CSV_NAME))
-    return [r for r in _cache[case] if r['artifact_key'] == key]
+    # Stage 08: the Conformance dispute comes from the Stage 08 campaigns.
+    return s08.substitute([r for r in _cache[case] if r['artifact_key'] == key], key, chunk)
 
 
 def gas(rows, ops):
@@ -324,8 +338,7 @@ def r1_monolithic():
                 gas(rows, ['accessRevealWitness'])]
         rows_out.append((n, key, vals))
         for (name, _), v in zip(SWEEP_OPS, vals):
-            if name != 'OVC-Conformance':  # short-circuits on the first motion command
-                points[name].append((n, v / n))
+            points[name].append((n, v / n))  # Stage 08: Conformance parses every line
     rows_out.sort()
     write('monolithic.tex', '\n'.join(
         f'{label(k)} & {tex_int(n)} & ' + ' & '.join(tex_int(v) for v in vals) + ' \\\\'
@@ -351,7 +364,7 @@ def mono_gas_figure(mono):
     # Validated all-pairs (CVD, normal vision, 3:1 contrast), distinct from the chain colors;
     # marker shape as secondary encoding. Indices into the monolithic row values.
     procs = [('Deposit / upload', 0, '#c2417a', 'o'), ('OVC-Identity', 1, '#7b4fd6', 's'),
-             ('OVC-Feature', 3, '#a86d00', '^')]
+             ('OVC-Conformance', 2, '#0a7d8c', 'D'), ('OVC-Feature', 3, '#a86d00', '^')]
     with plt.rc_context({'font.size': 10, 'axes.edgecolor': muted, 'axes.labelcolor': ink,
                          'xtick.color': muted, 'ytick.color': muted,
                          'axes.spines.top': False, 'axes.spines.right': False}):
@@ -415,6 +428,8 @@ def r3_table():
     for d in sorted(ACCEPT.glob('*')) if ACCEPT.exists() else []:
         if audited(d):
             rows += read_rows(d / CSV_NAME)
+    for k in sorted({r['artifact_key'] for r in rows if r['artifact_key'] != 'setup'}):
+        rows.append(s08.declaration_row(k))  # Stage 08: posting includes the declaration
     if not rows:
         return None
     keys = sorted({r['artifact_key'] for r in rows if r['artifact_key'] != 'setup'})
@@ -484,7 +499,8 @@ def instance_table():
 def summary_json(mono, r3, inst):
     out = {'operating_chunks': [{'chain': c['chain'][0], 'chunk': c['z'], 'limiting': c['limiting'],
                                  'gas': c['gas'], 'next': c['next'], 'next_gas': c['next_gas']} for c in CSTAR],
-           'binding': r3, 'benchy_instances': inst, 'fee_spread': fee_spread(), 'artifacts': {}}
+           'binding': r3, 'benchy_instances': inst, 'fee_spread': fee_spread(), 'artifacts': {},
+           'machine_registration_gas': s08.registration_gas()}
     for key in LADDER_KEYS:
         entry = {}
         for c in CSTAR:
@@ -528,7 +544,7 @@ def source_map():
     outputs = sorted(TABLES.glob('*.tex')) + sorted(IMG.glob('r[124]-*.pdf')) + [DERIVED / 'stage05-results.json']
     digest = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
     data = {'generator': Path(__file__).relative_to(STAGE).as_posix(), 'generator_sha256': digest(Path(__file__)),
-            'inputs': {p.relative_to(STAGE).as_posix(): digest(p) for p in sorted(set(INPUTS))},
+            'inputs': {p.relative_to(STAGE).as_posix(): digest(p) for p in sorted(set(INPUTS + s08.INPUTS))},
             'outputs': {p.relative_to(STAGE).as_posix(): digest(p) for p in outputs}}
     (DERIVED / 'source-map.json').write_text(json.dumps(data, indent=2) + '\n', encoding='utf-8')
 

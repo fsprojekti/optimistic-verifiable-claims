@@ -13,6 +13,10 @@
  *   OVC_TESTNET_CHUNK_BYTES  chunk size (default per network)
  *   OVC_RUN_DIR              run directory under results/raw-data (resumable; journals live there)
  *   OVC_ACCEPT_PATH=1        undisputed path: the Provider accepts all four claims after binding
+ *   OVC_CONFORMANCE_ONLY=1   Stage 08: only the machine-profile Conformance (registration, declaration,
+ *                            claim set-up and the five dispute operations), as tests/pilot/conformance-ladder.js,
+ *                            for pairing with the local campaign conformance-r1-2026-11-25 at the same chunk
+ *   OVC_CORPUS_ROOT          corpus directory with gcode-manifest.csv (default: data/corpus/generated)
  *
  * Every transaction is signed into a journal before broadcast, so a relaunch resumes without
  * duplicating any operation. Submission and receipt times are recorded for the time model.
@@ -28,6 +32,7 @@ const { netExtrusion } = require("../tests/lib/gcode-reference");
 const { PLAINTEXT_DOMAIN, CIPHERTEXT_DOMAIN, segmentedCommitment } = require("../tests/lib/segmented-commitment");
 const { TransactionJournal, saveJson } = require("./transaction-journal");
 const { receiptIdentifier } = require("./receipt-identifiers");
+const { ref, machineArgs, declarationArgs } = require("../tests/lib/conformance-claim");
 
 const NETWORKS = {
   sepolia: { chainId: 11155111n, chunk: 4160, cap: 16_777_216n,
@@ -44,6 +49,10 @@ const DISPUTE_WINDOW = 100_000;
 // Receipt polling interval; it bounds the time resolution of every step (2 s before 08:10 UTC).
 const POLL_MS = 250;
 const ACCEPT_PATH = process.env.OVC_ACCEPT_PATH === "1";
+const CONFORMANCE_ONLY = process.env.OVC_CONFORMANCE_ONLY === "1";
+// The corpus profile and material window of the Stage 08 campaigns (T8): Prusa XL, generic PLA.
+const PROFILE = ref.machineProfile(ref.PRUSA_XL);
+const PLA = { nozzle: [190, 230], bed: [50, 70] };
 const REIMBURSEMENT = 1n;
 const STAGE_ROOT = path.join(__dirname, "..", "..");
 const CORPUS_ROOT = process.env.OVC_CORPUS_ROOT || path.join(STAGE_ROOT, "data", "corpus", "generated");
@@ -236,6 +245,68 @@ async function main() {
     const amount = networkName === "arbitrumSepolia" ? "0.05" : "0.02";
     const { receipt } = await journals[consumer.address].execute("fundProvider", () => consumer.sendTransaction({ to: providerWallet.address, value: ethers.parseEther(amount) }));
     console.log(`fundProvider ${amount}: ${receipt.hash}`);
+  }
+
+  if (CONFORMANCE_ONLY) {
+    // Stage 08: only OVCConformanceSegmented changed (T0'), so this run sends what changed, in the
+    // order and under the operation names of tests/pilot/conformance-ladder.js. The claim is
+    // committed by the Consumer directly, with the commitment and witness terms bindProvider writes.
+    const conformance = await deploy("OVCConformanceSegmented", [DISPUTE_WINDOW]);
+    state.contracts = { OVCConformanceSegmented: conformance.target };
+    state.machine_profile = ref.PRUSA_XL;
+    state.material_window = PLA;
+    saveJson(statePath, state);
+    const machine = machineArgs(PROFILE);
+    const machineId = await withRpcRetry("machineId", () => conformance.registerMachine.staticCall(...machine));
+    await call(consumer, null, "registerMachine", conformance, "registerMachine", machine);
+    for (const artifact of loadArtifacts()) {
+      const key0 = `${artifact.model_id}:${artifact.slicer}`;
+      const plaintext = fs.readFileSync(path.join(CORPUS_ROOT, artifact.output_file));
+      if (plaintext.length !== Number(artifact.size_bytes) ||
+          crypto.createHash("sha256").update(plaintext).digest("hex") !== artifact.output_sha256) {
+        throw new Error(`${key0}: corpus file does not match the frozen manifest`);
+      }
+      const st = state.artifacts[key0] ||= {};
+      if (st.completed_at_utc) { console.log(`${key0}: already complete`); continue; }
+      // The honest declaration: the file's highest extruding Z (reference model, T8).
+      const height = ref.conformance(plaintext, PROFILE, ref.declaration({ height: 1e6, ...PLA })).state.maxExtrudeZ / ref.SCALE;
+      const decl = ref.declaration({ height, ...PLA });
+      if (!ref.conformance(plaintext, PROFILE, decl).valid) throw new Error(`${key0}: reference verdict is not Valid`);
+      st.declared_height_mm = height;
+      saveJson(statePath, state);
+      const hG = segmentedCommitment(plaintext, chunkBytes, PLAINTEXT_DOMAIN);
+      const chunkCount = Math.ceil(plaintext.length / chunkBytes);
+
+      await call(consumer, artifact, "declareConformance", conformance, "declare", [hG, machineId, ...declarationArgs(decl)]);
+      const committed = await call(consumer, artifact, "conformanceCommitClaim", conformance, "commitClaim",
+        [providerWallet.address, hG, ethers.ZeroHash, 0, ethers.ZeroHash]);
+      const claimId = receiptIdentifier(committed, conformance, "ClaimCommitted", "claimId", "claimant", consumer.address);
+      await call(consumer, artifact, "conformanceConfigureWitnessTerms", conformance, "configureWitnessTerms",
+        [claimId, plaintext.length, REIMBURSEMENT]);
+      await call(consumer, artifact, "conformanceConfigureDepositFormat", conformance, "configureDepositFormat",
+        [claimId, PLAINTEXT_DOMAIN, plaintext.length, chunkBytes]);
+      await call(providerWallet, artifact, "conformanceDisputeClaim", conformance, "disputeClaim", [claimId], { value: REIMBURSEMENT });
+      for (let i = 0; i < chunkCount; ++i) {
+        const chunk = plaintext.subarray(i * chunkBytes, Math.min((i + 1) * chunkBytes, plaintext.length));
+        await call(consumer, artifact, "conformanceDepositChunk", conformance, "depositChunk", [claimId, chunk], { chunkIndex: i });
+      }
+      await call(consumer, artifact, "conformanceStartAdjudication", conformance, "startAdjudication", [claimId]);
+      for (let i = 0; i < chunkCount; ++i) {
+        await call(consumer, artifact, "conformanceProcessChunk", conformance, "processChunk", [claimId], { chunkIndex: i });
+      }
+      const fin = await call(consumer, artifact, "conformanceFinalizeAdjudication", conformance, "finalizeAdjudication", [claimId]);
+      if ((await withRpcRetry("read Conformance claim", () => conformance.claims(claimId, { blockTag: fin.blockNumber }))).outcome !== 2n) {
+        throw new Error(`${key0}: Conformance not Valid`);
+      }
+      st.completed_at_utc = new Date().toISOString();
+      st.outcome = "Conformance Valid";
+      saveJson(statePath, state);
+      console.log(`COMPLETE ${key0}: Conformance Valid (H = ${height} mm, ${chunkCount} chunks)`);
+    }
+    state.completed_at_utc = new Date().toISOString();
+    saveJson(statePath, state);
+    console.log(`${networkName} complete; ${rows.length} receipts in ${txPath}`);
+    return;
   }
 
   const demand = await deploy("Demand", [chunkBytes]);

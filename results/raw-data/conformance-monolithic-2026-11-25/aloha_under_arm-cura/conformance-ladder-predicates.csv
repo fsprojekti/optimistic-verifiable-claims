@@ -1,0 +1,2 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,declared_height_mm,declare_gas,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+aloha_under_arm:cura,Conformance,42353976,42353976,1,64.4,95667,33478466493,406695819702,440174494157,406695819702,Valid

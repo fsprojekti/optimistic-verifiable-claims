@@ -1,0 +1,99 @@
+{
+  "created_at_utc": "2026-11-25T13:26:10.890Z",
+  "network": "localhost",
+  "chain_id": "31337",
+  "client_version": "anvil/v1.7.1",
+  "chunk_bytes": 4160,
+  "consumer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "provider": "0xF7dEDd4d0d3957C995AE6675f9B72b6d62eC8c0d",
+  "artifacts": {
+    "rackstack_hinge:cura": {
+      "declared_height_mm": 15,
+      "completed_at_utc": "2026-11-25T13:26:51.996Z",
+      "outcome": "Conformance Valid"
+    },
+    "rackstack_hinge:orca": {
+      "declared_height_mm": 10,
+      "completed_at_utc": "2026-11-25T13:27:37.691Z",
+      "outcome": "Conformance Valid"
+    },
+    "rackstack_hinge:prusa": {
+      "declared_height_mm": 10,
+      "completed_at_utc": "2026-11-25T13:28:36.498Z",
+      "outcome": "Conformance Valid"
+    }
+  },
+  "launches": [
+    "2026-11-25T13:26:10.890Z"
+  ],
+  "access_public_key": "30820122300d06092a864886f70d01010105000382010f003082010a0282010100de0399bf140fcbf3338640cfab0034ba7ab4928c3643a3a3f44881c26289aaeadc9179e4e7780304e0fa3ac8c21fee444e9df33ea06c5e75d7e0fa49b1cbb15ad1010c74bf6a9a0504f5544d8280bcaac74ecd0b46538f65a5ad87b615afc9508b61fa83ba009f76872edff9862555804b466e61dc89df45583a9397d643ca09418058dfac3034c3f0509b9ee63c4d701c2a41e970954e2dd516b8e4ffdd7d2b3ed2c3c8209e3acb3fb8753696e1be61d1944b041ac3108f7140df66ff167f2cb7d8c10cff096d1177fa59064a2d6f377cb835529c00c5a83efa45c12a919e621bbf6187b58fc7b47c3952202995e0bce6821e16dcaaadaa5b676be68e5ab0a90203010001",
+  "access_private_key_pem": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDeA5m/FA/L8zOG\nQM+rADS6erSSjDZDo6P0SIHCYomq6tyReeTneAME4Po6yMIf7kROnfM+oGxeddfg\n+kmxy7Fa0QEMdL9qmgUE9VRNgoC8qsdOzQtGU49lpa2HthWvyVCLYfqDugCfdocu\n3/mGJVWAS0ZuYdyJ30VYOpOX1kPKCUGAWN+sMDTD8FCbnuY8TXAcKkHpcJVOLdUW\nuOT/3X0rPtLDyCCeOss/uHU2luG+YdGUSwQawxCPcUDfZv8Wfyy32MEM/wltEXf6\nWQZKLW83fLg1UpwAxag++kXBKpGeYhu/YYe1j8e0fDlSICmV4Lzmgh4W3Kqtqltn\na+aOWrCpAgMBAAECggEADdoZqKNezPHSoCjBDEFKCOyJAa+/3v6Bx0cS2Yb+Yeyf\ncHAziQGi5pYG5s4J1qYuGt2eBKVLvaUKoB3dpTs5SJpLv3Q1UThk4cdQyDlBQQRC\nxTbj4jJqewQYTKRevAYKgXfOgpODYG+rxY/x6J3BtOx9a3utn+iPUg7tkIas2hkV\n/jGMP7r5FpnWXaH807iddYyrgzNQ7rLGwEZkjD97QIDye6HDqalIVPJSvhn6Xltw\nBscAhALIoOa3iz1ZNRiSskYwAWq0AX4IfM7W7bQN6oNRcxcxp4GwWi0ZrhChPtaA\nqasZW1QTwhEYpWGTTmw/2muuhkEu5Xrfr0uoAMmqpQKBgQDvvQyzKQgHvtV8f1wU\nLTjrt5mwnKaToyRh8JJzHpMcaRpEDSssfvZsXHI9aWwhksYOTE7ImG3dOZbcURg7\n5wRxAI/caOvhCV0yZN7jm+40s9mij6IH/EfwGFmtqxlhyfdy4sUB6PDx9TpGRXP2\nLzfDYEyvuDxvEw2JQlGwyjeqswKBgQDtEsZK2/t8XqMwTRKFkkbXhk1C3IukQfAg\n4VYJiWNzuq4bGsTQ2QaD79E5lyeXRFmwPDagXkCgGnrjppsdb9po5X730sxCnAxM\nawJSenjZ0EDbRZw/NC0XIld6Zm9kE8pqvrM/VvRpzbqcbyO8ssFfyDnBI9sy/Ds0\nzY5z2DEVMwKBgGPBYHV0T1kZuS+StzfWEWdUAGmS5WVtbwgp2GZ6hHA/86P5bsuX\nEObKGOcg5NObhToR2n5xntV8zx9hxxm16Q00VKg8KFp9UQBVJMHE8nuPkrGn3p5A\nBZcMKtSu62LbbVGqtpsy2H91sQfognYf864idgZwPQVjAjDpHaDYpA0tAoGAaNFU\nOuToXCS7oi9xcP0rtT78CgPY+dbthJwcnjrQbeqr7+/19SD/cHYn236pUog132XA\nAUeq6x7KFr0i9/DscFSHvqrFBO5Zwa/OZwkfRa59/nTYkFlRVlkotEV2Gpllday7\nM9YOWnlLeL7q3hNqzB6K6oof8Hr08nOv+CguC2ECgYALIgJjaKDHB6JwuGdVH6fN\nCJixAVOTzwXQI2hAb9hwqpe4mhOfoPio+MVLAe+ywt8rFlna7FPzAXoIBuDHmLd1\nSLSeRd0cUyEO6/6Ir1GEtIO+Q1eTADU1h+ZQX5O9RZYjNtnC8Z95vSGyqDuVa933\nJ7W/BST81zq+e8M7QV100w==\n-----END PRIVATE KEY-----\n",
+  "contracts": {
+    "OVCConformanceSegmented": "0x76ED1eF13aDf314fAc6a53e3C622D24AB10530bB"
+  },
+  "machine_profile": {
+    "x": [
+      0,
+      360
+    ],
+    "y": [
+      -10,
+      360
+    ],
+    "z": [
+      0,
+      360
+    ],
+    "commands": [
+      "G0",
+      "G1",
+      "G2",
+      "G3",
+      "G17",
+      "G21",
+      "G28",
+      "G29",
+      "G90",
+      "G91",
+      "G92",
+      "M17",
+      "M73",
+      "M82",
+      "M83",
+      "M84",
+      "M104",
+      "M105",
+      "M106",
+      "M107",
+      "M109",
+      "M140",
+      "M142",
+      "M190",
+      "M201",
+      "M203",
+      "M204",
+      "M205",
+      "M221",
+      "M302",
+      "M555",
+      "M862.1",
+      "M900"
+    ],
+    "freeText": [
+      "M115",
+      "M486",
+      "M862.3"
+    ]
+  },
+  "material_window": {
+    "nozzle": [
+      190,
+      230
+    ],
+    "bed": [
+      50,
+      70
+    ]
+  },
+  "completed_at_utc": "2026-11-25T13:28:36.500Z"
+}

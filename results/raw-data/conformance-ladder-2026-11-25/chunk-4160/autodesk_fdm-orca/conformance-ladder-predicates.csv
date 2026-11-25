@@ -1,0 +1,2 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,declared_height_mm,declare_gas,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+autodesk_fdm:orca,Conformance,26590797,4160,6393,92,95667,19399589735,53990959204,73390756901,9115282,Valid

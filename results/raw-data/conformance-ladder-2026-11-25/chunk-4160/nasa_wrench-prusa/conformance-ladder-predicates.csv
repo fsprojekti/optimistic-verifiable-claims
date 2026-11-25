@@ -1,0 +1,2 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,declared_height_mm,declare_gas,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+nasa_wrench:prusa,Conformance,40031421,4160,9623,26,95655,29205174383,83001562341,112206944686,9351147,Valid

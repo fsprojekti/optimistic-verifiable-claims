@@ -1,0 +1,2 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,declared_height_mm,declare_gas,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+benchy:cura,Conformance,10928873,10928873,1,48,95655,7983720512,43195646746,51179575220,43195646746,Valid

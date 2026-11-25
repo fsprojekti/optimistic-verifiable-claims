@@ -1,0 +1,4 @@
+artifact_key,predicate,size_bytes,chunk_size_bytes,chunk_count,declared_height_mm,declare_gas,deposit_gas,process_gas,adjudication_gas,max_process_tx_gas,outcome
+rackstack_hinge:cura,Conformance,264386,16384,17,15,95667,189110495,519959958,709278415,32369770,Valid
+rackstack_hinge:orca,Conformance,280935,16384,18,10,95667,200934369,500096062,701221704,30726804,Valid
+rackstack_hinge:prusa,Conformance,316712,16384,20,10,95667,226489609,584933785,811614667,31360223,Valid

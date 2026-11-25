@@ -8,11 +8,14 @@ Public artifacts accompanying the paper:
 > Bidding in Decentralized Manufacturing"** — M. Corn, N. Rožman, P. Podržaj
 > (arXiv:2607.25517)
 
-**Version 4.0.0** belongs to the revised version of the paper. It contains the smart
+**Version 5.0.0** belongs to the current version of the paper. It contains the smart
 contracts, the measurement runners, every archived receipt and the code that generates each
-table and figure of the paper from those receipts. Versions 1.0.0–3.0.0 belong to the first
-version of the paper (synthetic artifacts, Ethereum/Arbitrum/opBNB) and remain available on
-Zenodo and as Git tags.
+table and figure of the paper from those receipts. It replaces the OVC-Conformance predicate
+with a machine-profile check (decision `decisions/D7-MACHINE-PROFILE-CONFORMANCE.md`) and
+re-measures only the conformance dispute; every other contract has the same executable bytecode
+as in version 4.0.0, and every other receipt is the one archived there. Version 4.0.0 belongs to
+the previous revision; versions 1.0.0–3.0.0 belong to the first version of the paper (synthetic
+artifacts, Ethereum/Arbitrum/opBNB). All remain available on Zenodo and as Git tags.
 
 ---
 
@@ -29,7 +32,7 @@ and the plaintext is disclosed only to settle a dispute.
 | :--- | :--- | :--- |
 | **OVC-Access** | `OVCAccess` | the decryption key reaches the selected Provider (RSA-OAEP key handover) |
 | **OVC-Identity** | `OVCIdentitySegmented` | the published ciphertext decrypts (ChaCha20) to the committed artifact |
-| **OVC-Conformance** | `OVCConformanceSegmented` | the artifact is G-code (G0/G1 motion marker) |
+| **OVC-Conformance** | `OVCConformanceSegmented` | the artifact is a program for a declared machine profile: every line parses, every command is in the profile's list, every move (arcs exactly) stays in the travel envelope, no material is deposited above the declared height, and the nozzle and bed setpoints lie in the declared material window |
 | **OVC-Feature** | `OVCFeatureSegmented` | the artifact commands the declared net filament extrusion (G0–G3, absolute/relative E) |
 
 `Demand.sol` holds the Demand and the deferred ciphertext; `BindingPhase.sol` instantiates all
@@ -65,8 +68,9 @@ deleted.
 | R1 operating chunk | `r1-chunk-sweep-2026-10-22`, `r1-megaeth-chunk-2026-10-29`, `r1-megaeth-bracket-2026-10-29`, `megaeth-chunk-probe-2026-10-29`, `monolithic-ladder-2026-10-22` |
 | R2 demand and publication, R4 disputes | `corpus-ladder-2026-10-22`, `corpus-ladder-batched-2026-10-26`, `corpus-ladder-megaeth-2026-10-29` |
 | R3 binding and acceptance | `r3-accept-2026-10-22` |
-| Ethereum gas (mainnet fork) | `mainnet-fork-2026-10-30` |
-| Transaction timing (public testnets) | `testnet-fullpath-2026-10-29`, `timing-revalidation-2026-11-02` (pre-registered protocol in `PROTOCOL.md`) |
+| OVC-Conformance (machine profile, v5.0.0) | `conformance-r1-2026-11-25` (chunk sweep), `conformance-ladder-2026-11-25` (corpus ladder), `conformance-monolithic-2026-11-25` (one transaction); corpus check `results/validation/t8-conformance-corpus-2026-11-25.json` |
+| Ethereum gas (mainnet fork) | `mainnet-fork-2026-10-30`; for OVC-Conformance `conformance-testnet-2026-11-25/mainnet-fork` |
+| Transaction timing (public testnets) | `testnet-fullpath-2026-10-29`, `timing-revalidation-2026-11-02`; for OVC-Conformance `conformance-testnet-2026-11-25` (pre-registered protocols in `PROTOCOL.md`) |
 | Chain parameters and fee variability | `chain-params-2026-10-29`, `token-prices-2026-10-29` |
 
 ---
@@ -88,7 +92,8 @@ archived ones; the PDF figures differ only in their embedded creation date.
 
 ### 2. Restore the G-code inputs
 
-The 18 executed files come from the
+The 18 executed files (and the 60 files of the conformance check,
+`code/scripts/validate-conformance-corpus.js`) come from the
 [OpenGCode MultiSlicer Corpus v1.0.0](https://github.com/fsprojekti/opengcode-multislicer-corpus/releases/tag/v1.0.0).
 Download `opengcode-multislicer-corpus-v1.0.0.zip`, verify it against the published `.sha256`,
 and copy `opengcode-multislicer-corpus-v1.0.0/data/corpus/generated/gcode/` to
@@ -115,7 +120,8 @@ RSA-OAEP calls there varies by a few units with the random padding.
 archives every receipt; it expects Anvil at `%USERPROFILE%/.foundry/bin/anvil.exe`. Gas is
 deterministic, so a re-run reproduces the archived `gasUsed` values.
 
-The public-testnet runners (`run-testnet-fullpath.js`, `run-timing-revalidation.sh`) need a
+The public-testnet runners (`run-testnet-fullpath.js`, `run-timing-revalidation.sh`,
+`run-conformance-testnet.sh`) need a
 funded testnet-only account in the environment variable `OVC_TESTNET_PRIVATE_KEY`; RPC
 endpoints default to public ones and can be overridden in `hardhat.config.js`. Testnet timing
 depends on network conditions and is not expected to repeat exactly.

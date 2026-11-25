@@ -254,3 +254,38 @@ Benchy (Prusa) with the new model, median [95 %]: undisputed Ethereum 12.1 h [11
 Arbitrum 1.1 h [1.0, 1.1], MegaETH 0.2 h [0.2, 0.3]; all four disputes Ethereum 60.5 h
 [58.9, 61.6], Arbitrum 6.1 h [5.7, 6.4], MegaETH 3.8 h [2.4, 4.1]. Tables regenerated (copy of
 the previous ones in the session scratchpad); manuscript text not yet updated.
+
+## 25 November 2026 — Stage 08: machine-profile Conformance (T0′, T8–T13)
+
+T0′: only `OVCConformanceSegmented` changed (11 contracts identical without metadata; Conformance
+21,595 B). T8: 60/60 corpus files Valid at the highest extruding Z, Incorrect 1 µm lower. T9: 35
+contract tests (26 targeted cases, chunk invariance at 1/7/16/64/whole, 120 generated programs,
+hinge files on-chain), suite 87 passing. T10: c* unchanged (Ethereum 4,160 B and Arbitrum 8,000 B,
+OVC-Identity; MegaETH 31,872 B, deposit state growth); the Conformance bound is 7.8 / 15.0 / 93.7 KiB.
+T11: 45 ladder and 15 monolithic cases Valid; the monolithic Conformance grows from 1,817 to 27,137
+gas/byte (per-move memory arrays kept until the transaction ends; below 1 % within 128 KiB chunks).
+T12: undisputed paths unchanged; declaration 95,655–95,667 gas per Demand, machine registration
+917,963 gas once.
+
+T13 (pre-registered, `results/raw-data/conformance-testnet-2026-11-25/PROTOCOL.md`): the new
+Conformance on Sepolia, Arbitrum Sepolia, the MegaETH testnet (hinge outputs; Benchy Prusa on
+MegaETH) and a mainnet fork. All files Valid, all receipts status 1 and paired once.
+
+| Operation | Ethereum (fork) | Arbitrum Sepolia | MegaETH | Sepolia (not used) |
+|---|---:|---:|---:|---:|
+| conformanceProcessChunk ratio | 1.00000 | 1.00000 | 1.0006 (1.0006–1.0081) | 1.013 (1.002–2.095) |
+| conformanceDepositChunk ratio | 1.00000 | 1.00000 | 1.227 | 4.80 |
+| declareConformance ratio | 1.00000 | 1.00000 | 1.766 | 3.70 |
+| registerMachine ratio | 1.00000 | 1.00000 | 1.190 | 4.64 |
+
+T12 proxy for comparison: Feature sweep ratio 1.0009 (MegaETH), declaration 1.351 (postDemand).
+Median step of the new sweep against the Feature sweep: Sepolia 12.46 vs 12.17 s, Arbitrum Sepolia
+2.40 vs 2.53 s, MegaETH 1.50 vs 1.65 s (mean 5.93 vs 5.11 s; 382 endpoint retries in the Benchy run,
+615 on Sepolia). Benchy Conformance chunk steps on MegaETH: 0.84 h measured against 0.44 h
+[0.39, 0.50] from the hinge run alone (reported, no criterion).
+
+Effect on the paper (Benchy Prusa, fully contested, median [95 %]): cost unchanged to the cent
+($37,840 / $6,275 / $329.32); duration Ethereum 71.7 → 74.8 h [73.7, 75.6], Arbitrum 7.3 → 7.0 h,
+MegaETH 4.4 → 3.9 h [2.6, 4.4]. 43.7 MB dispute: Ethereum 217 → 226 h, MegaETH 15.0 → 13.4 h.
+Four disputes in parallel: 41–43 % (Ethereum, Arbitrum) and 56 % (MegaETH) of the sequential
+dispute. Manuscript updated (introduction, testnet subsection, R4 duration, discussion, limitations).

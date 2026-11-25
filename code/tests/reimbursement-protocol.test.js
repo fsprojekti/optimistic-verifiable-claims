@@ -4,28 +4,36 @@ const {
   PLAINTEXT_DOMAIN,
   segmentedCommitment,
 } = require("./lib/segmented-commitment");
+const { ref, registerMachine, declare } = require("./lib/conformance-claim");
 
 const ZERO = ethers.ZeroHash;
 const WINDOW = 5;
 const F = ethers.parseEther("0.01");
+// Stage 08: the Conformance claim is declared against a machine profile before binding.
+const PROFILE = ref.machineProfile(ref.PRUSA_XL);
+const DECL = ref.declaration({ height: 10, nozzle: [190, 230], bed: [50, 70] });
+const VALID_G = "M140 S60\nM109 S215\nG1 Z0.2\nG1 X1 Y1 E1\n";
 
 describe("Stage 03 conditional witness reimbursement", function () {
-  let consumer, provider, executor, contract;
+  let consumer, provider, executor, contract, machineId;
 
   beforeEach(async function () {
     [consumer, provider, executor] = await ethers.getSigners();
     const Factory = await ethers.getContractFactory("OVCConformanceSegmented");
     contract = await Factory.deploy(WINDOW);
     await contract.waitForDeployment();
+    ({ id: machineId } = await registerMachine(contract, PROFILE));
   });
 
   async function createClaim(chunks, reimbursement = F) {
     const bytes = chunks.reduce((n, chunk) => n + ethers.getBytes(chunk).length, 0);
     const chunkSize = ethers.getBytes(chunks[0]).length;
     const artifact = ethers.concat(chunks);
+    const hG = segmentedCommitment(artifact, chunkSize, PLAINTEXT_DOMAIN);
+    await declare(contract, consumer, hG, machineId, DECL);
     await contract.connect(consumer).commitClaim(
       provider.address,
-      segmentedCommitment(artifact, chunkSize, PLAINTEXT_DOMAIN),
+      hG,
       ZERO,
       0,
       ZERO
@@ -52,7 +60,7 @@ describe("Stage 03 conditional witness reimbursement", function () {
   });
 
   it("credits Consumer after a Valid verdict and permits withdrawal", async function () {
-    const chunks = [ethers.toUtf8Bytes("G0 X1\n")];
+    const chunks = [ethers.toUtf8Bytes(VALID_G)];
     const claimId = await createClaim(chunks);
     await contract.connect(provider).disputeClaim(claimId, { value: F });
     await contract.connect(consumer).depositChunk(claimId, chunks[0]);
@@ -107,7 +115,7 @@ describe("Stage 03 conditional witness reimbursement", function () {
   });
 
   it("keeps an unprocessed adjudication unresolved with escrow locked", async function () {
-    const chunks = [ethers.toUtf8Bytes("G0 X1\n")];
+    const chunks = [ethers.toUtf8Bytes(VALID_G)];
     const claimId = await createClaim(chunks);
     await contract.connect(provider).disputeClaim(claimId, { value: F });
     await contract.connect(consumer).depositChunk(claimId, chunks[0]);

@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "identity": {
+    "network": "megaethTestnet",
+    "chain_id": "6343",
+    "chunk_bytes": 31872,
+    "bytecodes": {
+      "Demand": "0xbe8bbb8c52bb19da6e1305135e72623b79030af7a07b7c181fadc99fca440310",
+      "OVCAccess": "0xe4f93f2454b7ba84354acfacfd711a444235766752481b38cd9275ce387f0c38",
+      "OVCIdentitySegmented": "0x1ad330ce03449285b6f54676b61438acd14fdc2530461aa5aba5d5f8c94e22aa",
+      "OVCConformanceSegmented": "0xc4c0fb35bec19e8820c6b210db6b19cc9a4e8b92722adcbad99fc796c5741eeb",
+      "OVCFeatureSegmented": "0xb417ab972cd5afba4dc408c6025c6a7813eececc31fab50e13617abec8303e16",
+      "BindingPhase": "0x22ecb71ce1ac41a6b7fd0a4fd9c30bcc1396565cf3e914279d8d7d84c95b99ce"
+    },
+    "signer": "0x16EEc4F232bEf544F4cB55B0e29bA9c342F9f577"
+  },
+  "created_at_utc": "2026-11-25T13:28:52.306Z",
+  "operations": {
+    "benchy:prusa/conformanceDisputeClaim": {
+      "hash": "0xfe190235863d9ff3b28ff2173f0e46cfd7321fa2150c1b231c97bf5d5c8b4869",
+      "nonce": 62,
+      "gas_limit": "247818",
+      "submitted_at_utc": "2026-11-25T13:29:01.867Z",
+      "poll_ms": 250,
+      "phases_ms": {
+        "estimate": 141.5,
+        "nonce": 128,
+        "populate": 171,
+        "balance": 125.7,
+        "sign": 0.7,
+        "save": 0.7,
+        "broadcast": 292.2
+      },
+      "receipt_at_utc": "2026-11-25T13:29:02.286Z",
+      "block_number": 35902887,
+      "gas_used": "143209",
+      "fee_wei": "143209000000",
+      "contract_address": null,
+      "status": 1
+    }
+  },
+  "launches": 1
+}

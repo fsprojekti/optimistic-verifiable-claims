@@ -1,0 +1,99 @@
+{
+  "created_at_utc": "2026-11-25T13:25:58.144Z",
+  "network": "arbitrumSepolia",
+  "chain_id": "421614",
+  "client_version": "nitro/v3.13.0-rc.9+b72783f-20261116T155937Z/linux-amd64/go1.27.3",
+  "chunk_bytes": 8000,
+  "consumer": "0x3fFAa6B60c24356123b1eEd5f4570400Ac4efCb5",
+  "provider": "0x16EEc4F232bEf544F4cB55B0e29bA9c342F9f577",
+  "artifacts": {
+    "rackstack_hinge:cura": {
+      "declared_height_mm": 15,
+      "completed_at_utc": "2026-11-25T13:29:00.091Z",
+      "outcome": "Conformance Valid"
+    },
+    "rackstack_hinge:orca": {
+      "declared_height_mm": 10,
+      "completed_at_utc": "2026-11-25T13:32:07.435Z",
+      "outcome": "Conformance Valid"
+    },
+    "rackstack_hinge:prusa": {
+      "declared_height_mm": 10,
+      "completed_at_utc": "2026-11-25T13:35:28.123Z",
+      "outcome": "Conformance Valid"
+    }
+  },
+  "launches": [
+    "2026-11-25T13:25:58.144Z"
+  ],
+  "access_public_key": "30820122300d06092a864886f70d01010105000382010f003082010a0282010100c281032182f403af01a07cc7b2809da37215779021344846cc479129fa02e1b6a2ff2e5b917ed4bef7f982dfbbbbb0d1e03bad0ad6b07fded306eb738d5e468df0a9e527a166d0c8052334174c625913cbdc79be73c0ee4fbf2152241b5b71a013829c6b7f63b6c90ab73fec768b10d3d91a6d631af2f6b2a8ae9795128eef2cc5059ea28550ffb87fe960e0822ddd6a059dbd4d250dec537d7a781784aa080e6f467fd7f8d56b0184e23a8f1cc84c8dc76d1933bf604caf4631f84073ea3633ec570d4c9f27768661cd4be96398a4939643bd3a47535afbfca908ceb474472d8c964c088d37d4ed5e013be507eb05ec9ec299d86627ceba120caaf67b74a6cf0203010001",
+  "access_private_key_pem": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDCgQMhgvQDrwGg\nfMeygJ2jchV3kCE0SEbMR5Ep+gLhtqL/LluRftS+9/mC37u7sNHgO60K1rB/3tMG\n63ONXkaN8KnlJ6Fm0MgFIzQXTGJZE8vceb5zwO5PvyFSJBtbcaATgpxrf2O2yQq3\nP+x2ixDT2RptYxry9rKorpeVEo7vLMUFnqKFUP+4f+lg4IIt3WoFnb1NJQ3sU316\neBeEqggOb0Z/1/jVawGE4jqPHMhMjcdtGTO/YEyvRjH4QHPqNjPsVw1Mnyd2hmHN\nS+ljmKSTlkO9OkdTWvv8qQjOtHRHLYyWTAiNN9TtXgE75QfrBeyewpnYZifOuhIM\nqvZ7dKbPAgMBAAECggEABXX50IcMss3HDepy8OALjPs2/xRc2krtMe8QdE1Ap3Wp\nPeDfUUZuUq5DoxkE/FAKlHEYeqVsbyqiYh9aLy3mbTXEj1p9fZV/CCXk4IKUgEu9\n/YKthjJ0fmivVs8MtZSLGgEgwyPgeNFMK7jvuqRM5KXDyC5wI0Ip4fKE7vqGaNCc\nYy90e3kMbx/ceBQZMeOmzYK3NPhMYVuc/UTgLMuVMwc1Q3uRdhYSoieFFz1tZqxg\nlp/lcyecMTfQ53kKTjS57PHQ+uIndXpSSkTd61KhLbajN9QXZ4XlAFE8ZiEukm4b\nIISSd4+5AaxqGCSWPcWKSJ3Z/1pONB0snkFO0ClbgQKBgQDz09op1HHWcJtu2VD+\nmJx1l7G3CtwQ4lSmd1M0DeEdRCaohrCILKqhmlI441nM3OnT/JEeEo/SOZDaior3\nBuhRnlguwx+a2b8P4r7r7j/hqOZ9FxgfubsFk//MH4BZXNJ5yXUOIDqtRfj3W90z\nPINDp7yg3gerVKTob9pKh3wC0wKBgQDMNsxPGddiBaAVQD8ynF7pIyMFMIuVS6p6\ngcWFvGI9WUDJAfFTfWhYF+XQ3px+NGbWFTHQPetIQfNgbo0rvZhwirE+t89czYE7\nBESdtdOu1ZB7LOhiFqlZt+6z3km2PS7kPml8E6QIS17y+u1XsVLKnNkWTlyZosuZ\njYVkg4e2lQKBgFg6Fj0AlFiF0phfpkEZs7OROksDcPHjE8JQdxjk1MokOODOK956\nWxuynYHcMkhAv5NnVpNNICFvlwydCP+tzi6KX1o8XJlJpSr4XyE7yn27AfvNeXsx\nV40DKpIP6/9p6PcMgICmBNVh9l57LSU3BkBa15RWAuxp6mn430IMmEDlAoGAJPpL\nNouMV6CDIzX1+5kbCoYlQjxPGiKQZQx4ksXQ2CEAPSWP6DlOGp2BLLgSiDu+30cJ\nNRbxMq1Wf4ClKWV0Y/SJMb0g3EIOA3y7W/9frEnZlqREE/bchXVr0MAQguJDSmsO\nuLvpuOLE96R+M6HVRwDtwj9AP0WeLljU7aVvfp0CgYEA7AyfWwCgDokpwWDQLny9\nl//pwIVXIMmsbNAYrspdSP1bhXS1GoXypYMASzZvo1Sx89fcb4otzgYbtW/utvqH\nLpP+XTa82GKZt/Kt5Bs7h0javlvclEzL4+Gd0Fzqck+pmv/k8grjAQ/UXZo0/qv6\nY9D+WeNo69dEVV0lcPuChzk=\n-----END PRIVATE KEY-----\n",
+  "contracts": {
+    "OVCConformanceSegmented": "0x64C9cAb7b6EeAb2E2037721093caf2cea8251A22"
+  },
+  "machine_profile": {
+    "x": [
+      0,
+      360
+    ],
+    "y": [
+      -10,
+      360
+    ],
+    "z": [
+      0,
+      360
+    ],
+    "commands": [
+      "G0",
+      "G1",
+      "G2",
+      "G3",
+      "G17",
+      "G21",
+      "G28",
+      "G29",
+      "G90",
+      "G91",
+      "G92",
+      "M17",
+      "M73",
+      "M82",
+      "M83",
+      "M84",
+      "M104",
+      "M105",
+      "M106",
+      "M107",
+      "M109",
+      "M140",
+      "M142",
+      "M190",
+      "M201",
+      "M203",
+      "M204",
+      "M205",
+      "M221",
+      "M302",
+      "M555",
+      "M862.1",
+      "M900"
+    ],
+    "freeText": [
+      "M115",
+      "M486",
+      "M862.3"
+    ]
+  },
+  "material_window": {
+    "nozzle": [
+      190,
+      230
+    ],
+    "bed": [
+      50,
+      70
+    ]
+  },
+  "completed_at_utc": "2026-11-25T13:35:28.125Z"
+}

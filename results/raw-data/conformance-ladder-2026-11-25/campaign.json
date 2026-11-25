@@ -1,0 +1,711 @@
+{
+  "started_at": "2026-11-25T10:02:20.825483+00:00",
+  "status": "complete",
+  "source_sha256": {
+    "code/contracts/BindingPhase.sol": "416aa91485bd2859cb90963dd44e8eeb5c81a7df5a823209785da7c80beacf86",
+    "code/contracts/ChaCha20.sol": "d90e3b5cd2075b483aa4bf6cd4ee69e1b484b99d7c3e2eb136b82271c30c2c8c",
+    "code/contracts/ChaCha20Harness.sol": "1ed7e8ab184ecade2773863ae74372464999ab80ac0dd8b3d9bc87484a1effff",
+    "code/contracts/Demand.sol": "ca22e2dcf5fb924f290eedfe178c99caa34efde934c2d0f5343a29f8a096f9f6",
+    "code/contracts/OVCAccess.sol": "0ec7332de1f1b6cd3cab0505b30062d193bbf0c99d34b06da0e13e02cc6cf0f6",
+    "code/contracts/OVCBase.sol": "2478ab06681d122e68da24ed8852fc62c545c02860674b4d791c539f527e39aa",
+    "code/contracts/OVCBaseSegmented.sol": "756478e905f9b16b31ebe3ebd2f83962cbe863e9f7e99d3f9f72521f2a009652",
+    "code/contracts/OVCConformanceSegmented.sol": "76dee6ae05766ef451e812d118cd5dd56b6ea706e1f00968c1a58a01aaa9d8bd",
+    "code/contracts/OVCFeatureSegmented.sol": "2f2b5c95da42ce4132a21436c7a6ebb4c7be93b1655677520b78158bc7832bdc",
+    "code/contracts/OVCIdentitySegmented.sol": "1262a9f2d3b0b5ed2d1a6654526a2dd3d0ed7ede1616b83d51e638d86e8a1ecc",
+    "code/contracts/RSAOAEP.sol": "ac0cdfa7f488841e4cfef844e89e9228f5325239dece1a45bb3d215a7f0ab53a",
+    "code/contracts/RSAOAEPHarness.sol": "97148e043b6d63499dc8ae7c67c4e1ff1ef5b70bb018f0590127678ab76d19d1",
+    "code/contracts/SegmentedCommitment.sol": "947f3cec186131cc5363a09c567e84935ccb053e909828bbfbb74c9165e59274",
+    "code/hardhat.config.js": "8e5c5bd1e9ef7abc108f13ee37c0caeeb9d156bade027e6c65da3d2c3cddf26f",
+    "code/tests/pilot/corpus-ladder.js": "703e50759238d759b776222169ae3dbf4ad1d3f6c98e66516f297160fbc3fbdb",
+    "code/tests/pilot/corpus-ladder-batched.js": "a72033884676f37bbf72f91808d65ea3e280eb3c632450147032d089e2db0491",
+    "code/tests/pilot/conformance-ladder.js": "465933814953622e370bca7c3a8f14241cccdd63a7e33ed850787c063d27d12c",
+    "code/scripts/run-corpus-ladder.py": "ebce0854baa14eaccab2a6718110caa2b6e016b063f690f15829388738e7119d",
+    "code/tests/lib/conformance-reference.js": "4fb1f1d272b3c78950f1aa0e610697344ba4d033f2edead5ea1250dd47dd067c",
+    "code/tests/lib/conformance-claim.js": "34ed285cb111375d26067ed42ac3747b481b426bb6f6ebbb5f824a947e573a7d",
+    "code/tests/lib/chacha20.js": "9a4cccd6d21065f9ded36c30b4237b54cb137b28d76c98b1d5f628318ee26df0",
+    "code/tests/lib/segmented-commitment.js": "94c32d76c4abb6f7455e116cc4607ea37bc03e858cfeee4581e47ff144412545",
+    "code/tests/lib/gcode-reference.js": "d9062d7d58627356ad8d55f5977f6231a79a4889639a5633bf1d93254740c7ec",
+    "code/tests/lib/access-envelope.js": "5c0bb1c873c7544aa8a77dde9a058065753d56543b0c661c738f04ede82e79e3",
+    "data/corpus/generated/gcode-manifest.csv": "0d05cbf13a9d8af864cd5da86e085452b5e750adcc36b6ce8e4274a4656b0f7d"
+  },
+  "build_info": [
+    {
+      "sha256": "eca696b5483d4a031cd57fcb773f6ebad1ec7189d3504edaf92eab1df2a60820",
+      "solc_version": "0.8.20",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "evmVersion": "paris",
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "anvil_sha256": "5c2217d266135a6fbe5faaccccb1e9eb2ddc1d06f8aabeef5fdb16d9846e4880",
+  "node": {
+    "client": "Anvil 1.7.1",
+    "hardfork": "cancun",
+    "block_gas_limit": 1000000000000,
+    "prune_history": 1,
+    "fresh_instance_per_case": true
+  },
+  "reference_budget": 16777216,
+  "fill_factor": 0.95,
+  "settings": {
+    "driver": "tests/pilot/conformance-ladder.js",
+    "block_gas_limit": 1000000000000,
+    "outcomes_per_artifact": 1,
+    "env": {
+      "OVC_BATCH": "100"
+    }
+  },
+  "planned_cases": [
+    {
+      "name": "chunk-4160/electronics_enclosure-cura",
+      "chunk": 4160,
+      "artifacts": [
+        "electronics_enclosure:cura"
+      ]
+    },
+    {
+      "name": "chunk-4160/electronics_enclosure-orca",
+      "chunk": 4160,
+      "artifacts": [
+        "electronics_enclosure:orca"
+      ]
+    },
+    {
+      "name": "chunk-4160/electronics_enclosure-prusa",
+      "chunk": 4160,
+      "artifacts": [
+        "electronics_enclosure:prusa"
+      ]
+    },
+    {
+      "name": "chunk-4160/amazing_distal_shell-cura",
+      "chunk": 4160,
+      "artifacts": [
+        "amazing_distal_shell:cura"
+      ]
+    },
+    {
+      "name": "chunk-4160/amazing_distal_shell-orca",
+      "chunk": 4160,
+      "artifacts": [
+        "amazing_distal_shell:orca"
+      ]
+    },
+    {
+      "name": "chunk-4160/amazing_distal_shell-prusa",
+      "chunk": 4160,
+      "artifacts": [
+        "amazing_distal_shell:prusa"
+      ]
+    },
+    {
+      "name": "chunk-4160/benchy-cura",
+      "chunk": 4160,
+      "artifacts": [
+        "benchy:cura"
+      ]
+    },
+    {
+      "name": "chunk-4160/benchy-orca",
+      "chunk": 4160,
+      "artifacts": [
+        "benchy:orca"
+      ]
+    },
+    {
+      "name": "chunk-4160/benchy-prusa",
+      "chunk": 4160,
+      "artifacts": [
+        "benchy:prusa"
+      ]
+    },
+    {
+      "name": "chunk-4160/autodesk_fdm-cura",
+      "chunk": 4160,
+      "artifacts": [
+        "autodesk_fdm:cura"
+      ]
+    },
+    {
+      "name": "chunk-4160/autodesk_fdm-orca",
+      "chunk": 4160,
+      "artifacts": [
+        "autodesk_fdm:orca"
+      ]
+    },
+    {
+      "name": "chunk-4160/autodesk_fdm-prusa",
+      "chunk": 4160,
+      "artifacts": [
+        "autodesk_fdm:prusa"
+      ]
+    },
+    {
+      "name": "chunk-4160/aloha_under_arm-cura",
+      "chunk": 4160,
+      "artifacts": [
+        "aloha_under_arm:cura"
+      ]
+    },
+    {
+      "name": "chunk-4160/moveo_articulation-orca",
+      "chunk": 4160,
+      "artifacts": [
+        "moveo_articulation:orca"
+      ]
+    },
+    {
+      "name": "chunk-4160/nasa_wrench-prusa",
+      "chunk": 4160,
+      "artifacts": [
+        "nasa_wrench:prusa"
+      ]
+    },
+    {
+      "name": "chunk-8000/electronics_enclosure-cura",
+      "chunk": 8000,
+      "artifacts": [
+        "electronics_enclosure:cura"
+      ]
+    },
+    {
+      "name": "chunk-8000/electronics_enclosure-orca",
+      "chunk": 8000,
+      "artifacts": [
+        "electronics_enclosure:orca"
+      ]
+    },
+    {
+      "name": "chunk-8000/electronics_enclosure-prusa",
+      "chunk": 8000,
+      "artifacts": [
+        "electronics_enclosure:prusa"
+      ]
+    },
+    {
+      "name": "chunk-8000/amazing_distal_shell-cura",
+      "chunk": 8000,
+      "artifacts": [
+        "amazing_distal_shell:cura"
+      ]
+    },
+    {
+      "name": "chunk-8000/amazing_distal_shell-orca",
+      "chunk": 8000,
+      "artifacts": [
+        "amazing_distal_shell:orca"
+      ]
+    },
+    {
+      "name": "chunk-8000/amazing_distal_shell-prusa",
+      "chunk": 8000,
+      "artifacts": [
+        "amazing_distal_shell:prusa"
+      ]
+    },
+    {
+      "name": "chunk-8000/benchy-cura",
+      "chunk": 8000,
+      "artifacts": [
+        "benchy:cura"
+      ]
+    },
+    {
+      "name": "chunk-8000/benchy-orca",
+      "chunk": 8000,
+      "artifacts": [
+        "benchy:orca"
+      ]
+    },
+    {
+      "name": "chunk-8000/benchy-prusa",
+      "chunk": 8000,
+      "artifacts": [
+        "benchy:prusa"
+      ]
+    },
+    {
+      "name": "chunk-8000/autodesk_fdm-cura",
+      "chunk": 8000,
+      "artifacts": [
+        "autodesk_fdm:cura"
+      ]
+    },
+    {
+      "name": "chunk-8000/autodesk_fdm-orca",
+      "chunk": 8000,
+      "artifacts": [
+        "autodesk_fdm:orca"
+      ]
+    },
+    {
+      "name": "chunk-8000/autodesk_fdm-prusa",
+      "chunk": 8000,
+      "artifacts": [
+        "autodesk_fdm:prusa"
+      ]
+    },
+    {
+      "name": "chunk-8000/aloha_under_arm-cura",
+      "chunk": 8000,
+      "artifacts": [
+        "aloha_under_arm:cura"
+      ]
+    },
+    {
+      "name": "chunk-8000/moveo_articulation-orca",
+      "chunk": 8000,
+      "artifacts": [
+        "moveo_articulation:orca"
+      ]
+    },
+    {
+      "name": "chunk-8000/nasa_wrench-prusa",
+      "chunk": 8000,
+      "artifacts": [
+        "nasa_wrench:prusa"
+      ]
+    },
+    {
+      "name": "chunk-31872/electronics_enclosure-cura",
+      "chunk": 31872,
+      "artifacts": [
+        "electronics_enclosure:cura"
+      ]
+    },
+    {
+      "name": "chunk-31872/electronics_enclosure-orca",
+      "chunk": 31872,
+      "artifacts": [
+        "electronics_enclosure:orca"
+      ]
+    },
+    {
+      "name": "chunk-31872/electronics_enclosure-prusa",
+      "chunk": 31872,
+      "artifacts": [
+        "electronics_enclosure:prusa"
+      ]
+    },
+    {
+      "name": "chunk-31872/amazing_distal_shell-cura",
+      "chunk": 31872,
+      "artifacts": [
+        "amazing_distal_shell:cura"
+      ]
+    },
+    {
+      "name": "chunk-31872/amazing_distal_shell-orca",
+      "chunk": 31872,
+      "artifacts": [
+        "amazing_distal_shell:orca"
+      ]
+    },
+    {
+      "name": "chunk-31872/amazing_distal_shell-prusa",
+      "chunk": 31872,
+      "artifacts": [
+        "amazing_distal_shell:prusa"
+      ]
+    },
+    {
+      "name": "chunk-31872/benchy-cura",
+      "chunk": 31872,
+      "artifacts": [
+        "benchy:cura"
+      ]
+    },
+    {
+      "name": "chunk-31872/benchy-orca",
+      "chunk": 31872,
+      "artifacts": [
+        "benchy:orca"
+      ]
+    },
+    {
+      "name": "chunk-31872/benchy-prusa",
+      "chunk": 31872,
+      "artifacts": [
+        "benchy:prusa"
+      ]
+    },
+    {
+      "name": "chunk-31872/autodesk_fdm-cura",
+      "chunk": 31872,
+      "artifacts": [
+        "autodesk_fdm:cura"
+      ]
+    },
+    {
+      "name": "chunk-31872/autodesk_fdm-orca",
+      "chunk": 31872,
+      "artifacts": [
+        "autodesk_fdm:orca"
+      ]
+    },
+    {
+      "name": "chunk-31872/autodesk_fdm-prusa",
+      "chunk": 31872,
+      "artifacts": [
+        "autodesk_fdm:prusa"
+      ]
+    },
+    {
+      "name": "chunk-31872/aloha_under_arm-cura",
+      "chunk": 31872,
+      "artifacts": [
+        "aloha_under_arm:cura"
+      ]
+    },
+    {
+      "name": "chunk-31872/moveo_articulation-orca",
+      "chunk": 31872,
+      "artifacts": [
+        "moveo_articulation:orca"
+      ]
+    },
+    {
+      "name": "chunk-31872/nasa_wrench-prusa",
+      "chunk": 31872,
+      "artifacts": [
+        "nasa_wrench:prusa"
+      ]
+    }
+  ],
+  "cases": {
+    "chunk-4160/electronics_enclosure-cura": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:02:20.850018+00:00",
+      "completed_at": "2026-11-25T10:02:28.416Z",
+      "receipts": 764,
+      "rpc_audited": true
+    },
+    "chunk-4160/electronics_enclosure-orca": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:02:51.636785+00:00",
+      "completed_at": "2026-11-25T10:03:00.316Z",
+      "receipts": 884,
+      "rpc_audited": true
+    },
+    "chunk-4160/electronics_enclosure-prusa": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:03:22.444652+00:00",
+      "completed_at": "2026-11-25T10:03:30.820Z",
+      "receipts": 862,
+      "rpc_audited": true
+    },
+    "chunk-4160/amazing_distal_shell-cura": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:03:53.214401+00:00",
+      "completed_at": "2026-11-25T10:04:17.070Z",
+      "receipts": 1962,
+      "rpc_audited": true
+    },
+    "chunk-4160/amazing_distal_shell-orca": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:04:24.232225+00:00",
+      "completed_at": "2026-11-25T10:04:50.182Z",
+      "receipts": 2140,
+      "rpc_audited": true
+    },
+    "chunk-4160/amazing_distal_shell-prusa": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:04:55.359635+00:00",
+      "completed_at": "2026-11-25T10:05:15.453Z",
+      "receipts": 1804,
+      "rpc_audited": true
+    },
+    "chunk-4160/benchy-cura": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:05:26.387838+00:00",
+      "completed_at": "2026-11-25T10:06:39.813Z",
+      "receipts": 5264,
+      "rpc_audited": true
+    },
+    "chunk-4160/benchy-orca": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:06:58.424779+00:00",
+      "completed_at": "2026-11-25T10:08:12.559Z",
+      "receipts": 5278,
+      "rpc_audited": true
+    },
+    "chunk-4160/benchy-prusa": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:08:30.560379+00:00",
+      "completed_at": "2026-11-25T10:09:56.022Z",
+      "receipts": 5834,
+      "rpc_audited": true
+    },
+    "chunk-4160/autodesk_fdm-cura": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:10:02.597774+00:00",
+      "completed_at": "2026-11-25T10:14:22.895Z",
+      "receipts": 13514,
+      "rpc_audited": true
+    },
+    "chunk-4160/autodesk_fdm-orca": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:14:37.067000+00:00",
+      "completed_at": "2026-11-25T10:18:40.701Z",
+      "receipts": 12794,
+      "rpc_audited": true
+    },
+    "chunk-4160/autodesk_fdm-prusa": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:19:11.309521+00:00",
+      "completed_at": "2026-11-25T10:22:00.760Z",
+      "receipts": 9988,
+      "rpc_audited": true
+    },
+    "chunk-4160/aloha_under_arm-cura": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:22:14.774863+00:00",
+      "completed_at": "2026-11-25T10:29:00.140Z",
+      "receipts": 20372,
+      "rpc_audited": true
+    },
+    "chunk-4160/moveo_articulation-orca": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:29:18.750384+00:00",
+      "completed_at": "2026-11-25T10:37:59.258Z",
+      "receipts": 21040,
+      "rpc_audited": true
+    },
+    "chunk-4160/nasa_wrench-prusa": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:38:23.183240+00:00",
+      "completed_at": "2026-11-25T10:45:57.129Z",
+      "receipts": 19254,
+      "rpc_audited": true
+    },
+    "chunk-8000/electronics_enclosure-cura": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:46:27.152385+00:00",
+      "completed_at": "2026-11-25T10:46:33.344Z",
+      "receipts": 402,
+      "rpc_audited": true
+    },
+    "chunk-8000/electronics_enclosure-orca": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:46:57.776967+00:00",
+      "completed_at": "2026-11-25T10:47:04.750Z",
+      "receipts": 464,
+      "rpc_audited": true
+    },
+    "chunk-8000/electronics_enclosure-prusa": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:47:28.424096+00:00",
+      "completed_at": "2026-11-25T10:47:35.431Z",
+      "receipts": 452,
+      "rpc_audited": true
+    },
+    "chunk-8000/amazing_distal_shell-cura": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:47:59.031607+00:00",
+      "completed_at": "2026-11-25T10:48:18.028Z",
+      "receipts": 1024,
+      "rpc_audited": true
+    },
+    "chunk-8000/amazing_distal_shell-orca": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:48:29.768904+00:00",
+      "completed_at": "2026-11-25T10:48:50.627Z",
+      "receipts": 1118,
+      "rpc_audited": true
+    },
+    "chunk-8000/amazing_distal_shell-prusa": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:49:00.467101+00:00",
+      "completed_at": "2026-11-25T10:49:17.490Z",
+      "receipts": 942,
+      "rpc_audited": true
+    },
+    "chunk-8000/benchy-cura": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:49:31.206170+00:00",
+      "completed_at": "2026-11-25T10:50:33.305Z",
+      "receipts": 2742,
+      "rpc_audited": true
+    },
+    "chunk-8000/benchy-orca": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:51:02.156300+00:00",
+      "completed_at": "2026-11-25T10:52:04.884Z",
+      "receipts": 2750,
+      "rpc_audited": true
+    },
+    "chunk-8000/benchy-prusa": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:52:33.161580+00:00",
+      "completed_at": "2026-11-25T10:53:41.501Z",
+      "receipts": 3038,
+      "rpc_audited": true
+    },
+    "chunk-8000/autodesk_fdm-cura": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:54:04.182089+00:00",
+      "completed_at": "2026-11-25T10:57:12.999Z",
+      "receipts": 7032,
+      "rpc_audited": true
+    },
+    "chunk-8000/autodesk_fdm-orca": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:57:35.893235+00:00",
+      "completed_at": "2026-11-25T11:00:34.786Z",
+      "receipts": 6656,
+      "rpc_audited": true
+    },
+    "chunk-8000/autodesk_fdm-prusa": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:00:37.515836+00:00",
+      "completed_at": "2026-11-25T11:02:44.977Z",
+      "receipts": 5198,
+      "rpc_audited": true
+    },
+    "chunk-8000/aloha_under_arm-cura": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:03:08.987640+00:00",
+      "completed_at": "2026-11-25T11:08:41.615Z",
+      "receipts": 10598,
+      "rpc_audited": true
+    },
+    "chunk-8000/moveo_articulation-orca": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:09:11.438519+00:00",
+      "completed_at": "2026-11-25T11:14:38.654Z",
+      "receipts": 10946,
+      "rpc_audited": true
+    },
+    "chunk-8000/nasa_wrench-prusa": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:14:44.377864+00:00",
+      "completed_at": "2026-11-25T11:19:07.270Z",
+      "receipts": 10016,
+      "rpc_audited": true
+    },
+    "chunk-31872/electronics_enclosure-cura": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:19:16.923640+00:00",
+      "completed_at": "2026-11-25T11:19:22.171Z",
+      "receipts": 108,
+      "rpc_audited": true
+    },
+    "chunk-31872/electronics_enclosure-orca": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:19:47.480723+00:00",
+      "completed_at": "2026-11-25T11:19:53.067Z",
+      "receipts": 124,
+      "rpc_audited": true
+    },
+    "chunk-31872/electronics_enclosure-prusa": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:20:18.036634+00:00",
+      "completed_at": "2026-11-25T11:20:22.988Z",
+      "receipts": 120,
+      "rpc_audited": true
+    },
+    "chunk-31872/amazing_distal_shell-cura": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:20:48.597172+00:00",
+      "completed_at": "2026-11-25T11:21:00.882Z",
+      "receipts": 264,
+      "rpc_audited": true
+    },
+    "chunk-31872/amazing_distal_shell-orca": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:21:19.156956+00:00",
+      "completed_at": "2026-11-25T11:21:32.356Z",
+      "receipts": 288,
+      "rpc_audited": true
+    },
+    "chunk-31872/amazing_distal_shell-prusa": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:21:49.791049+00:00",
+      "completed_at": "2026-11-25T11:22:00.616Z",
+      "receipts": 244,
+      "rpc_audited": true
+    },
+    "chunk-31872/benchy-cura": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:22:20.378307+00:00",
+      "completed_at": "2026-11-25T11:22:52.635Z",
+      "receipts": 694,
+      "rpc_audited": true
+    },
+    "chunk-31872/benchy-orca": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:23:21.042204+00:00",
+      "completed_at": "2026-11-25T11:23:53.498Z",
+      "receipts": 696,
+      "rpc_audited": true
+    },
+    "chunk-31872/benchy-prusa": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:24:21.743535+00:00",
+      "completed_at": "2026-11-25T11:24:57.571Z",
+      "receipts": 770,
+      "rpc_audited": true
+    },
+    "chunk-31872/autodesk_fdm-cura": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:25:22.462374+00:00",
+      "completed_at": "2026-11-25T11:27:00.408Z",
+      "receipts": 1772,
+      "rpc_audited": true
+    },
+    "chunk-31872/autodesk_fdm-orca": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:27:23.399498+00:00",
+      "completed_at": "2026-11-25T11:28:47.426Z",
+      "receipts": 1678,
+      "rpc_audited": true
+    },
+    "chunk-31872/autodesk_fdm-prusa": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:28:54.260686+00:00",
+      "completed_at": "2026-11-25T11:30:05.379Z",
+      "receipts": 1312,
+      "rpc_audited": true
+    },
+    "chunk-31872/aloha_under_arm-cura": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:30:25.090296+00:00",
+      "completed_at": "2026-11-25T11:33:07.730Z",
+      "receipts": 2666,
+      "rpc_audited": true
+    },
+    "chunk-31872/moveo_articulation-orca": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:33:26.252712+00:00",
+      "completed_at": "2026-11-25T11:36:55.398Z",
+      "receipts": 2754,
+      "rpc_audited": true
+    },
+    "chunk-31872/nasa_wrench-prusa": {
+      "status": "complete",
+      "started_at": "2026-11-25T11:36:57.402390+00:00",
+      "completed_at": "2026-11-25T11:39:51.295Z",
+      "receipts": 2522,
+      "rpc_audited": true
+    }
+  },
+  "completed_at": "2026-11-25T11:39:58.472568+00:00"
+}

@@ -1,6 +1,6 @@
 {
   "title": "Optimistic Verifiable Claims (OVC): Reproducibility Package",
-  "description": "Smart contracts, measurement runners, archived transaction receipts and table/figure generation code for the revised version of the paper \"Optimistic Verifiable Claims: A Blockchain Protocol for Conditionally Confidential Bidding in Decentralized Manufacturing\" (arXiv:2607.25517). Version 4.0.0 executes the protocol on eighteen G-code files of the OpenGCode MultiSlicer Corpus v1.0.0 and projects the measurements onto Ethereum, Arbitrum and MegaETH, with transaction timing measured on their public testnets. Versions 1.0.0-3.0.0 belong to the first version of the paper.",
+  "description": "Smart contracts, measurement runners, archived transaction receipts and table/figure generation code for the paper \"Optimistic Verifiable Claims: A Blockchain Protocol for Conditionally Confidential Bidding in Decentralized Manufacturing\" (preprint arXiv:2607.25517). Version 5.0.0 replaces the OVC-Conformance predicate with a machine-profile check (line grammar, command list, travel envelope with exact arcs, extrusion height and material temperature window, decision D7), validates it on 60 G-code files of the OpenGCode MultiSlicer Corpus v1.0.0, and re-measures the conformance dispute locally and on the public testnets of Ethereum, Arbitrum and MegaETH. Every other contract and receipt is that of version 4.0.0. Versions 1.0.0-3.0.0 belong to the first version of the paper.",
   "upload_type": "software",
   "license": "MIT",
   "creators": [
@@ -28,8 +28,8 @@
     "additive manufacturing",
     "layer-2 rollups"
   ],
-  "version": "4.0.0",
-  "publication_date": "2026-11-05",
+  "version": "5.0.0",
+  "publication_date": "2026-11-25",
   "related_identifiers": [
     {
       "identifier": "arXiv:2607.25517",

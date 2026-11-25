@@ -1,0 +1,85 @@
+{
+  "started_at": "2026-11-25T10:04:25.175Z",
+  "client_version": "anvil/v1.7.1",
+  "chain_id": "31337",
+  "hardfork": "cancun",
+  "block_gas_limit": "1000000000000",
+  "kernel_gas_limit": 3000000000,
+  "mode": "segmented",
+  "chunk_size_bytes": 4160,
+  "consumer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "provider": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+  "machine_profile": {
+    "x": [
+      0,
+      360
+    ],
+    "y": [
+      -10,
+      360
+    ],
+    "z": [
+      0,
+      360
+    ],
+    "commands": [
+      "G0",
+      "G1",
+      "G2",
+      "G3",
+      "G17",
+      "G21",
+      "G28",
+      "G29",
+      "G90",
+      "G91",
+      "G92",
+      "M17",
+      "M73",
+      "M82",
+      "M83",
+      "M84",
+      "M104",
+      "M105",
+      "M106",
+      "M107",
+      "M109",
+      "M140",
+      "M142",
+      "M190",
+      "M201",
+      "M203",
+      "M204",
+      "M205",
+      "M221",
+      "M302",
+      "M555",
+      "M862.1",
+      "M900"
+    ],
+    "freeText": [
+      "M115",
+      "M486",
+      "M862.3"
+    ]
+  },
+  "material_window": {
+    "nozzle": [
+      190,
+      230
+    ],
+    "bed": [
+      50,
+      70
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact": "amazing_distal_shell:orca",
+      "bytes": 4434414,
+      "sha256": "303f576debc357c10fedf1be288dcdaf42d190ad308180f33334f5221a86926b"
+    }
+  ],
+  "completed_at": "2026-11-25T10:04:50.182Z",
+  "successful_receipts": 2140
+}

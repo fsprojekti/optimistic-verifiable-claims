@@ -122,10 +122,25 @@ def ratios(chain):
     return _ratios[chain]
 
 
+# Operations measured only locally take the ratio and steps of a measured operation (set by the
+# Stage 08 result builder; empty here, so validate() and summary() are those of Stage 05).
+GAS_PROXY = {}
+STEP_PROXY = {}
+# Operations whose steps come from a separate campaign: chain -> {operation: [runs]}, a run named by
+# its path under RAW. Their steps in the TIMING_RUNS are ignored, and the other operations' steps in
+# these runs are not used (set by the Stage 08 result builder; empty here).
+STEP_RUNS = {}
+
+
+def _run_dir(run):
+    return RAW / run if '/' in run else RUN / run
+
+
 def net_gas(rows, ops, chain):
     r = ratios(chain)
     wanted = set(ops)
-    return sum(int(x['gas_used']) * r[x['operation']]['ratio'] for x in rows if x['operation'] in wanted)
+    return sum(int(x['gas_used']) * r[GAS_PROXY.get(x['operation'], x['operation'])]['ratio']
+               for x in rows if x['operation'] in wanted)
 
 
 _steps = {}
@@ -140,7 +155,7 @@ def op_key(r):
 def retried(run):
     """Labels of the run's transactions that logged a transient RPC retry (log beside the run directory)."""
     if (RUN, run) not in _retried:
-        log = RUN / f'{run}.log'
+        log = _run_dir(run).parent / f'{Path(run).name}.log'
         text = log.read_text(encoding='utf-8', errors='replace') if log.exists() else ''
         _retried[(RUN, run)] = set(re.findall(r'^(\S+): transient RPC error', text, re.M))
     return _retried[(RUN, run)]
@@ -148,23 +163,31 @@ def retried(run):
 
 def timing_runs(chain):
     """Every measured run of the chain's testnet (full path, undisputed path, out-of-sample files)."""
-    return [run for run in TIMING_RUNS[chain] if (RUN / run / 'journal-transactions.csv').exists()]
+    return [run for run in TIMING_RUNS[chain] if (_run_dir(run) / 'journal-transactions.csv').exists()]
 
 
 def steps(chain, runs=None):
     """Measured per-transaction steps (seconds) by class, in execution order, and the outages."""
     runs = tuple(runs or timing_runs(chain))
-    if (chain, runs, RUN, REGULAR_ONLY) not in _steps:
+    override = STEP_RUNS.get(chain, {})
+    extra = tuple(sorted({run for src in override.values() for run in src
+                          if (_run_dir(run) / 'journal-transactions.csv').exists()} - set(runs)))
+    key = (chain, runs, extra, RUN, REGULAR_ONLY)
+    if key not in _steps:
         out = {'chunk': [], 'fixed': [], 'outages': [], 'network_s': [], 'prep_s': [], 'runs': list(runs),
                'by_op': defaultdict(list), 'retried_excluded': 0,
-               'per_run': {run: defaultdict(list) for run in runs}}
+               'step_runs': {op: list(src) for op, src in override.items()},
+               'per_run': {run: defaultdict(list) for run in runs + extra}}
         pairs = []
-        for run in runs:  # steps are consecutive within a run, never across runs
-            rows = sorted((r for r in _rows(RUN / run / 'journal-transactions.csv') if r['artifact_key'] != 'setup'),
+        for run in runs + extra:  # steps are consecutive within a run, never across runs
+            rows = sorted((r for r in _rows(_run_dir(run) / 'journal-transactions.csv') if r['artifact_key'] != 'setup'),
                           key=lambda r: _t(r['receipt_at_utc']))
             skip = retried(run) if REGULAR_ONLY else set()
             pairs += [(run, prev, r, op_key(r) in skip) for prev, r in zip(rows, rows[1:])]
         for run, prev, r, irregular in pairs:
+            src = override.get(r['operation'])
+            if (run not in src) if src is not None else (run in extra):
+                continue  # an operation with its own campaign takes its steps only from there
             if irregular:
                 out['retried_excluded'] += 1
                 continue
@@ -183,8 +206,8 @@ def steps(chain, runs=None):
             if r['operation'] in CHUNK_OPS:  # chunk steps differ by operation (estimation of a heavy sweep)
                 out['by_op'][r['operation']].append(prep + net)
             out['per_run'][run][r['operation'] if r['operation'] in CHUNK_OPS else 'fixed'].append(prep + net)
-        _steps[(chain, runs, RUN, REGULAR_ONLY)] = out
-    return _steps[(chain, runs, RUN, REGULAR_ONLY)]
+        _steps[key] = out
+    return _steps[key]
 
 
 def _block_sums(pool, n, rng, reps=REPS):
@@ -209,15 +232,26 @@ _dur = {}
 def duration(chain, counts, runs=None):
     """Median and 95% interval (seconds) of a sequential run with counts[op] chunk transactions of each
     chunk operation and counts['fixed'] fixed calls; each operation is drawn from its own steps."""
-    key = (chain, tuple(sorted(counts.items())), tuple(runs or ()), RUN, REGULAR_ONLY)
+    override = STEP_RUNS.get(chain, {})
+    key = (chain, tuple(sorted(counts.items())), tuple(runs or ()), RUN, REGULAR_ONLY,
+           tuple((op, tuple(src)) for op, src in sorted(override.items())))
     if key not in _dur:
         s = steps(chain, runs)
         rng = np.random.default_rng([SEED, list(TESTNET).index(chain), *[n for _, n in key[1]]])
-        names = list(s['per_run'])
+        names = list(s['runs'])
         pick = rng.integers(0, len(names), size=REPS)  # the run whose conditions each replicate shares
         tot = np.zeros(REPS)
         for op, n in key[1]:
             pooled = s['fixed'] if op == 'fixed' else s['by_op'][op]
+            if op in override:  # its own campaign: the run is drawn among that campaign's runs
+                own_names = [x for x in override[op] if x in s['per_run']]
+                own_pick = rng.integers(0, len(own_names), size=REPS)
+                for i, name in enumerate(own_names):
+                    chosen = own_pick == i
+                    if chosen.any():
+                        own = s['per_run'][name][op]
+                        tot[chosen] += _block_sums(own if len(own) >= MIN_STEPS else pooled, n, rng, int(chosen.sum()))
+                continue
             for i, name in enumerate(names):
                 chosen = pick == i
                 if chosen.any():
@@ -232,7 +266,8 @@ def rows_duration(rows, ops, chain, runs=None):
     counts = defaultdict(int)
     for r in rows:
         if r['operation'] in wanted:
-            counts[r['operation'] if r['operation'] in CHUNK_OPS else 'fixed'] += 1
+            op = STEP_PROXY.get(r['operation'], r['operation'])
+            counts[op if op in CHUNK_OPS else 'fixed'] += 1
     return duration(chain, dict(counts), runs)
 
 
@@ -273,7 +308,7 @@ def validate():
         for run in held:
             if run not in timing_runs(chain):
                 continue
-            rows = sorted((r for r in _rows(RUN / run / 'journal-transactions.csv') if r['artifact_key'] != 'setup'),
+            rows = sorted((r for r in _rows(_run_dir(run) / 'journal-transactions.csv') if r['artifact_key'] != 'setup'),
                           key=lambda r: _t(r['receipt_at_utc']))
             measured = steps(chain, [run])
             elapsed = sum(measured['chunk']) + sum(measured['fixed'])

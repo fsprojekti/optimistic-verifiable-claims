@@ -1,0 +1,39 @@
+flowchart TB
+    subgraph BIDDING ["Bidding"]
+        direction LR
+        A0["Post Demand<br/>commitments only"] --> A1["Collect offers"] --> A2["Select Provider"]
+    end
+
+    BIDDING --> BINDING
+
+    subgraph BINDING ["Binding"]
+        direction LR
+        BP["Prepare binding<br/>fix Provider"] --> UP["Upload C in chunks<br/>verify commitment; seal"]
+        UP --> BC["Bind four claims<br/>publish RSA-OAEP envelope of K"]
+    end
+
+    BINDING --> HANDOVER
+
+    subgraph HANDOVER ["Specification Handover"]
+        direction TB
+        KT["Provider opens envelope to obtain K<br/>and decrypts C to G (ChaCha20)"]
+        OA["OVC-Access<br/>key delivered to this Provider"]
+        OI["OVC-Identity<br/>decrypted G is the committed artifact"]
+        OC["OVC-Conformance<br/>G0/G1 motion command present"]
+        OF["OVC-Feature<br/>net extrusion equals declared value"]
+        DONE(["Handover Complete"])
+        DISPUTE["Challenge<br/>on-chain verification of the claim"]
+        FAIL(["Handover Failed"])
+
+        KT --> OA
+        OA -->|"accept"| OI
+        OI -->|"accept"| OC
+        OC -->|"accept"| OF
+        OF -->|"accept"| DONE
+        OA -->|"challenge"| DISPUTE
+        OI -->|"challenge"| DISPUTE
+        OC -->|"challenge"| DISPUTE
+        OF -->|"challenge"| DISPUTE
+        DISPUTE -->|"Valid; remaining claims accepted"| DONE
+        DISPUTE -->|"Inconsistent / Incorrect / Withheld"| FAIL
+    end

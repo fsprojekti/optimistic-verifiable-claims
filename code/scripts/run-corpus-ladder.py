@@ -73,6 +73,16 @@ CAMPAIGNS = {
 }
 
 BATCHED = 'tests/pilot/corpus-ladder-batched.js'
+# Stage 08: only OVC-Conformance changed (T0), so only its dispute is re-measured, on the R1
+# grid of the hinge outputs (plus the MegaETH operating chunk and brackets), the corpus ladder at
+# the three operating chunks, and the monolithic profile. One Valid outcome per artifact.
+CONFORMANCE = 'tests/pilot/conformance-ladder.js'
+CAMPAIGNS['conformance-r1-2026-11-25'] = [
+    {'name': 'whole-file' if z == 'whole' else f'chunk-{z}', 'chunk': z, 'artifacts': HINGE}
+    for z in R1_SIZES[:-1] + [31872] + list(range(49536, 49985, 64)) + ['whole']]
+CAMPAIGNS['conformance-ladder-2026-11-25'] = ladder_cases([4160, 8000, 31872])
+CAMPAIGNS['conformance-monolithic-2026-11-25'] = [
+    {'name': key.replace(':', '-'), 'chunk': 'whole', 'artifacts': [key]} for key in LADDER]
 # Campaign-specific settings; defaults reproduce the R1 sweep and the corpus ladder.
 SETTINGS = {
     'r3-accept-2026-10-22': {'outcome': 'Accepted', 'env': {'OVC_ACCEPT_PATH': '1'}},
@@ -83,6 +93,13 @@ SETTINGS = {
                                          'env': {'OVC_BATCH': '100'}},
     'corpus-ladder-megaeth-2026-10-29': {'driver': BATCHED, 'block_gas_limit': 1_000_000_000_000,
                                          'env': {'OVC_BATCH': '100'}},
+    'conformance-r1-2026-11-25': {'driver': CONFORMANCE, 'block_gas_limit': 1_000_000_000_000,
+                                  'outcomes_per_artifact': 1, 'env': {'OVC_BATCH': '100'}},
+    'conformance-ladder-2026-11-25': {'driver': CONFORMANCE, 'block_gas_limit': 1_000_000_000_000,
+                                      'outcomes_per_artifact': 1, 'env': {'OVC_BATCH': '100'}},
+    'conformance-monolithic-2026-11-25': {'driver': CONFORMANCE, 'block_gas_limit': 2_000_000_000_000,
+                                          'node_flags': ['--no-request-size-limit'], 'outcomes_per_artifact': 1,
+                                          'env': {'OVC_KERNEL_GAS_LIMIT': '1900000000000', 'OVC_BATCH': '1'}},
 }
 
 
@@ -115,7 +132,8 @@ def last_line(path):
 
 def source_hashes():
     paths = sorted((CODE / 'contracts').glob('*.sol')) + [
-        CODE / 'hardhat.config.js', CODE / DRIVER, CODE / BATCHED, Path(__file__),
+        CODE / 'hardhat.config.js', CODE / DRIVER, CODE / BATCHED, CODE / CONFORMANCE, Path(__file__),
+        CODE / 'tests/lib/conformance-reference.js', CODE / 'tests/lib/conformance-claim.js',
         CODE / 'tests/lib/chacha20.js', CODE / 'tests/lib/segmented-commitment.js',
         CODE / 'tests/lib/gcode-reference.js', CODE / 'tests/lib/access-envelope.js',
         STAGE / 'data/corpus/generated/gcode-manifest.csv']
@@ -198,7 +216,7 @@ def main():
 
     for case in cases:
         directory = out / case['name']
-        expected = 4 * len(case['artifacts'])
+        expected = settings.get('outcomes_per_artifact', 4) * len(case['artifacts'])
         audit_path = directory / 'rpc-audit.json'
         if audit_path.exists():
             manifest['cases'][case['name']]['status'] = 'complete'

@@ -53,6 +53,27 @@ reported as what the protocol took there, not as a validated prediction. Pre-reg
 +48-57 %; endpoint retries on MegaETH); leave-one-run-out with the pooled model: within 2.6 %,
 9.0 %, 7.6 %. `code/scripts/evaluate-timing-revalidation.py`.
 
+## Stage 08: machine-profile conformance (D7)
+
+Only `OVCConformanceSegmented` changed (T0′), so every Stage 05 receipt outside the Conformance
+dispute is kept. Re-measured locally (Anvil 1.7.1, Cancun, fresh node per case, batched sweeps):
+the R1 grid on the hinge outputs (`conformance-r1-2026-11-25`, T10), the 15 ladder files at each
+chain's c* (`conformance-ladder-2026-11-25`) and as one transaction (`conformance-monolithic-2026-11-25`,
+T11). `tests/pilot/conformance-ladder.js` commits the claim directly (bindProvider's own gas is
+unchanged) and measures the one-time machine registration, the declaration and the five dispute
+operations. `build-stage05-results.py` substitutes those five operations per (artifact, chunk)
+through `stage08_conformance.py` and adds the declaration to posting (T12). Profile Prusa XL,
+material window PLA (nozzle 190–230 °C, bed 50–70 °C), H = the file's highest extruding Z (T8).
+
+Network gas and steps of the new Conformance (owner decision 25 November 2026; T13, pre-registered
+in `results/raw-data/conformance-testnet-2026-11-25/PROTOCOL.md`): the same operations on the
+hinge outputs on Sepolia, Arbitrum Sepolia and the MegaETH testnet (plus Benchy Prusa on MegaETH),
+and on a local mainnet fork for Ethereum gas, each receipt paired with its local counterpart.
+Every Conformance operation takes its measured ratio; the two Conformance chunk operations draw
+their steps from these runs (`testnet_model.STEP_RUNS`), and all other operations keep the
+2 November steps, so the undisputed path is unchanged. `OVC_S08_PROXY=1` rebuilds the earlier
+variant, in which the new sweep borrowed the Feature sweep's ratio and steps.
+
 ## Chunk selection
 
 $c^* = \max\{z : \max_i g_i^{max}(z) \le \phi\,G_{limit}\}$ with $\phi = 0.95$, evaluated on a

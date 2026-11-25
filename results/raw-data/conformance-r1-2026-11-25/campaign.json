@@ -1,0 +1,545 @@
+{
+  "started_at": "2026-11-25T09:47:33.098542+00:00",
+  "status": "complete",
+  "source_sha256": {
+    "code/contracts/BindingPhase.sol": "416aa91485bd2859cb90963dd44e8eeb5c81a7df5a823209785da7c80beacf86",
+    "code/contracts/ChaCha20.sol": "d90e3b5cd2075b483aa4bf6cd4ee69e1b484b99d7c3e2eb136b82271c30c2c8c",
+    "code/contracts/ChaCha20Harness.sol": "1ed7e8ab184ecade2773863ae74372464999ab80ac0dd8b3d9bc87484a1effff",
+    "code/contracts/Demand.sol": "ca22e2dcf5fb924f290eedfe178c99caa34efde934c2d0f5343a29f8a096f9f6",
+    "code/contracts/OVCAccess.sol": "0ec7332de1f1b6cd3cab0505b30062d193bbf0c99d34b06da0e13e02cc6cf0f6",
+    "code/contracts/OVCBase.sol": "2478ab06681d122e68da24ed8852fc62c545c02860674b4d791c539f527e39aa",
+    "code/contracts/OVCBaseSegmented.sol": "756478e905f9b16b31ebe3ebd2f83962cbe863e9f7e99d3f9f72521f2a009652",
+    "code/contracts/OVCConformanceSegmented.sol": "76dee6ae05766ef451e812d118cd5dd56b6ea706e1f00968c1a58a01aaa9d8bd",
+    "code/contracts/OVCFeatureSegmented.sol": "2f2b5c95da42ce4132a21436c7a6ebb4c7be93b1655677520b78158bc7832bdc",
+    "code/contracts/OVCIdentitySegmented.sol": "1262a9f2d3b0b5ed2d1a6654526a2dd3d0ed7ede1616b83d51e638d86e8a1ecc",
+    "code/contracts/RSAOAEP.sol": "ac0cdfa7f488841e4cfef844e89e9228f5325239dece1a45bb3d215a7f0ab53a",
+    "code/contracts/RSAOAEPHarness.sol": "97148e043b6d63499dc8ae7c67c4e1ff1ef5b70bb018f0590127678ab76d19d1",
+    "code/contracts/SegmentedCommitment.sol": "947f3cec186131cc5363a09c567e84935ccb053e909828bbfbb74c9165e59274",
+    "code/hardhat.config.js": "8e5c5bd1e9ef7abc108f13ee37c0caeeb9d156bade027e6c65da3d2c3cddf26f",
+    "code/tests/pilot/corpus-ladder.js": "703e50759238d759b776222169ae3dbf4ad1d3f6c98e66516f297160fbc3fbdb",
+    "code/tests/pilot/corpus-ladder-batched.js": "a72033884676f37bbf72f91808d65ea3e280eb3c632450147032d089e2db0491",
+    "code/tests/pilot/conformance-ladder.js": "465933814953622e370bca7c3a8f14241cccdd63a7e33ed850787c063d27d12c",
+    "code/scripts/run-corpus-ladder.py": "ebce0854baa14eaccab2a6718110caa2b6e016b063f690f15829388738e7119d",
+    "code/tests/lib/conformance-reference.js": "4fb1f1d272b3c78950f1aa0e610697344ba4d033f2edead5ea1250dd47dd067c",
+    "code/tests/lib/conformance-claim.js": "34ed285cb111375d26067ed42ac3747b481b426bb6f6ebbb5f824a947e573a7d",
+    "code/tests/lib/chacha20.js": "9a4cccd6d21065f9ded36c30b4237b54cb137b28d76c98b1d5f628318ee26df0",
+    "code/tests/lib/segmented-commitment.js": "94c32d76c4abb6f7455e116cc4607ea37bc03e858cfeee4581e47ff144412545",
+    "code/tests/lib/gcode-reference.js": "d9062d7d58627356ad8d55f5977f6231a79a4889639a5633bf1d93254740c7ec",
+    "code/tests/lib/access-envelope.js": "5c0bb1c873c7544aa8a77dde9a058065753d56543b0c661c738f04ede82e79e3",
+    "data/corpus/generated/gcode-manifest.csv": "0d05cbf13a9d8af864cd5da86e085452b5e750adcc36b6ce8e4274a4656b0f7d"
+  },
+  "build_info": [
+    {
+      "sha256": "eca696b5483d4a031cd57fcb773f6ebad1ec7189d3504edaf92eab1df2a60820",
+      "solc_version": "0.8.20",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "evmVersion": "paris",
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "anvil_sha256": "5c2217d266135a6fbe5faaccccb1e9eb2ddc1d06f8aabeef5fdb16d9846e4880",
+  "node": {
+    "client": "Anvil 1.7.1",
+    "hardfork": "cancun",
+    "block_gas_limit": 1000000000000,
+    "prune_history": 1,
+    "fresh_instance_per_case": true
+  },
+  "reference_budget": 16777216,
+  "fill_factor": 0.95,
+  "settings": {
+    "driver": "tests/pilot/conformance-ladder.js",
+    "block_gas_limit": 1000000000000,
+    "outcomes_per_artifact": 1,
+    "env": {
+      "OVC_BATCH": "100"
+    }
+  },
+  "planned_cases": [
+    {
+      "name": "chunk-1024",
+      "chunk": 1024,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-2048",
+      "chunk": 2048,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-3072",
+      "chunk": 3072,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-4096",
+      "chunk": 4096,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-4160",
+      "chunk": 4160,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-4224",
+      "chunk": 4224,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-5120",
+      "chunk": 5120,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-6144",
+      "chunk": 6144,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-7936",
+      "chunk": 7936,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-8000",
+      "chunk": 8000,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-8064",
+      "chunk": 8064,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-8192",
+      "chunk": 8192,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-16384",
+      "chunk": 16384,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-24896",
+      "chunk": 24896,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-24960",
+      "chunk": 24960,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-25024",
+      "chunk": 25024,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-32768",
+      "chunk": 32768,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-65536",
+      "chunk": 65536,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-131072",
+      "chunk": 131072,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-31872",
+      "chunk": 31872,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-49536",
+      "chunk": 49536,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-49600",
+      "chunk": 49600,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-49664",
+      "chunk": 49664,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-49728",
+      "chunk": 49728,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-49792",
+      "chunk": 49792,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-49856",
+      "chunk": 49856,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-49920",
+      "chunk": 49920,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "chunk-49984",
+      "chunk": 49984,
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    },
+    {
+      "name": "whole-file",
+      "chunk": "whole",
+      "artifacts": [
+        "rackstack_hinge:cura",
+        "rackstack_hinge:orca",
+        "rackstack_hinge:prusa"
+      ]
+    }
+  ],
+  "cases": {
+    "chunk-1024": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:47:33.127147+00:00",
+      "completed_at": "2026-11-25T09:47:41.825Z",
+      "receipts": 1710,
+      "rpc_audited": true
+    },
+    "chunk-2048": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:48:04.131889+00:00",
+      "completed_at": "2026-11-25T09:48:10.496Z",
+      "receipts": 868,
+      "rpc_audited": true
+    },
+    "chunk-3072": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:48:34.857003+00:00",
+      "completed_at": "2026-11-25T09:48:40.431Z",
+      "receipts": 588,
+      "rpc_audited": true
+    },
+    "chunk-4096": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:49:05.553097+00:00",
+      "completed_at": "2026-11-25T09:49:10.655Z",
+      "receipts": 446,
+      "rpc_audited": true
+    },
+    "chunk-4160": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:49:36.188026+00:00",
+      "completed_at": "2026-11-25T09:49:41.384Z",
+      "receipts": 440,
+      "rpc_audited": true
+    },
+    "chunk-4224": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:50:06.816852+00:00",
+      "completed_at": "2026-11-25T09:50:11.955Z",
+      "receipts": 432,
+      "rpc_audited": true
+    },
+    "chunk-5120": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:50:37.464006+00:00",
+      "completed_at": "2026-11-25T09:50:42.493Z",
+      "receipts": 360,
+      "rpc_audited": true
+    },
+    "chunk-6144": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:51:08.077540+00:00",
+      "completed_at": "2026-11-25T09:51:12.946Z",
+      "receipts": 306,
+      "rpc_audited": true
+    },
+    "chunk-7936": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:51:38.697108+00:00",
+      "completed_at": "2026-11-25T09:51:43.281Z",
+      "receipts": 242,
+      "rpc_audited": true
+    },
+    "chunk-8000": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:52:09.300815+00:00",
+      "completed_at": "2026-11-25T09:52:14.126Z",
+      "receipts": 242,
+      "rpc_audited": true
+    },
+    "chunk-8064": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:52:39.920750+00:00",
+      "completed_at": "2026-11-25T09:52:44.523Z",
+      "receipts": 238,
+      "rpc_audited": true
+    },
+    "chunk-8192": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:53:10.503933+00:00",
+      "completed_at": "2026-11-25T09:53:15.139Z",
+      "receipts": 236,
+      "rpc_audited": true
+    },
+    "chunk-16384": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:53:41.091529+00:00",
+      "completed_at": "2026-11-25T09:53:45.385Z",
+      "receipts": 132,
+      "rpc_audited": true
+    },
+    "chunk-24896": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:54:11.665184+00:00",
+      "completed_at": "2026-11-25T09:54:16.046Z",
+      "receipts": 94,
+      "rpc_audited": true
+    },
+    "chunk-24960": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:54:42.223396+00:00",
+      "completed_at": "2026-11-25T09:54:46.459Z",
+      "receipts": 94,
+      "rpc_audited": true
+    },
+    "chunk-25024": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:55:12.784656+00:00",
+      "completed_at": "2026-11-25T09:55:17.178Z",
+      "receipts": 94,
+      "rpc_audited": true
+    },
+    "chunk-32768": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:55:43.347095+00:00",
+      "completed_at": "2026-11-25T09:55:47.577Z",
+      "receipts": 78,
+      "rpc_audited": true
+    },
+    "chunk-65536": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:56:13.929623+00:00",
+      "completed_at": "2026-11-25T09:56:18.085Z",
+      "receipts": 52,
+      "rpc_audited": true
+    },
+    "chunk-131072": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:56:44.490594+00:00",
+      "completed_at": "2026-11-25T09:56:48.579Z",
+      "receipts": 40,
+      "rpc_audited": true
+    },
+    "chunk-31872": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:57:15.018025+00:00",
+      "completed_at": "2026-11-25T09:57:19.165Z",
+      "receipts": 78,
+      "rpc_audited": true
+    },
+    "chunk-49536": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:57:45.597567+00:00",
+      "completed_at": "2026-11-25T09:57:49.774Z",
+      "receipts": 60,
+      "rpc_audited": true
+    },
+    "chunk-49600": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:58:16.149439+00:00",
+      "completed_at": "2026-11-25T09:58:20.246Z",
+      "receipts": 60,
+      "rpc_audited": true
+    },
+    "chunk-49664": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:58:46.705807+00:00",
+      "completed_at": "2026-11-25T09:58:50.781Z",
+      "receipts": 60,
+      "rpc_audited": true
+    },
+    "chunk-49728": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:59:17.251278+00:00",
+      "completed_at": "2026-11-25T09:59:21.518Z",
+      "receipts": 60,
+      "rpc_audited": true
+    },
+    "chunk-49792": {
+      "status": "complete",
+      "started_at": "2026-11-25T09:59:47.799748+00:00",
+      "completed_at": "2026-11-25T09:59:51.859Z",
+      "receipts": 60,
+      "rpc_audited": true
+    },
+    "chunk-49856": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:00:18.353645+00:00",
+      "completed_at": "2026-11-25T10:00:22.345Z",
+      "receipts": 60,
+      "rpc_audited": true
+    },
+    "chunk-49920": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:00:48.916630+00:00",
+      "completed_at": "2026-11-25T10:00:53.054Z",
+      "receipts": 60,
+      "rpc_audited": true
+    },
+    "chunk-49984": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:01:19.483767+00:00",
+      "completed_at": "2026-11-25T10:01:23.589Z",
+      "receipts": 60,
+      "rpc_audited": true
+    },
+    "whole-file": {
+      "status": "complete",
+      "started_at": "2026-11-25T10:01:50.044091+00:00",
+      "completed_at": "2026-11-25T10:01:54.208Z",
+      "receipts": 28,
+      "rpc_audited": true
+    }
+  },
+  "completed_at": "2026-11-25T10:02:20.619427+00:00"
+}
